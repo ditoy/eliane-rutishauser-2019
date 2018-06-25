@@ -1,0 +1,32 @@
+<div class="teaser" data-index="{{ .index }}">
+    <div class="screen">
+        {{ if .page.Params.iphone }}
+            {{ partial "project-teaser-iphone" . }}
+        {{ end }}
+
+        {{ if .page.Params.imagefull }}
+            <div class="illustration">
+                <img src="{{ .page.Params.imagefull }}" alt="{{ .page.Title }}">
+            </div>
+        {{ end }}
+    </div>
+    <div class="text">
+        <h2>{{ .page.Title }}</h2>
+        {{ if .page.Params.teaser }}
+            <p>{{ .page.Params.teaser }}</p>
+        {{ end }}
+
+        {{ if .page.Content }}
+            <span class="link">
+                <a href="{{ .page.Permalink }}">zur Fallstudie</a>
+            </span>
+        {{ end }}
+
+        {{ if .page.Params.reference }}
+            <span class="link">
+                <a href="{{ .page.Params.reference }}" rel="noopener" target="_blank">Webseite anzeigen</a>
+            </span>
+        {{ end }}
+
+    </div>
+</div>

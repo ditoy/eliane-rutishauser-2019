@@ -1,0 +1,29 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ if .Title }}{{ .Title | plainify }} – {{ $.Site.Params.appTitleShort }}{{ else }}{{ $.Site.Title }}{{ end }}</title>
+  {{ partial "head-common" . }}
+  <meta name="description" content="{{ .Summary | plainify | truncate 280 "..." }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:description" content="{{ .Summary | plainify | truncate 280 "..." }}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Summary | plainify | truncate 280 "..." }}" />
+  <meta property="og:url" content="{{ .Site.Params.appSitemapUrl }}{{ .Permalink }}" />
+  {{ if .Params.authors }}
+    {{ range .Params.authors }}
+      <meta property="og:author" content="{{ . | plainify }}" />
+    {{ end }}
+  {{ end }}
+  {{ if .Params.image }}
+    <link rel="image_src" href="{{ .Params.image }}" />
+    <meta name="twitter:image" content="{{ .Params.image }}" />
+    <meta property="og:image" content="{{ .Params.image }}" />
+  {{ else }}
+    <link rel="image_src" href="images/ditoy-digital-agentur.jpg" />
+    <meta property="og:image" content="images/ditoy-digital-agentur.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="332" />
+  {{ end }}
+</head>

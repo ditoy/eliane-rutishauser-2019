@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="de">
+{{ partial "head-single" . }}
+<body id="root">
+    {{ partial "structure-top" . }}
+
+    <div class="project">
+
+        {{ partial "link-prev-next" . }}
+
+        <h1 class="has-prev-next">{{ .Title }}</h1>
+
+        {{ if .Params.teaser }}
+            <h4>{{ .Params.teaser }}</h4>
+        {{ end }}
+
+        <article>
+            {{ .Content }}
+        </article>
+
+        {{ if .Params.reference }}
+            <h2>Link</h2>
+            <a href="{{ .Params.reference }}" rel="noopener" target="_blank">{{ .Params.reference }}</a>
+        {{ end }}
+
+    </div>
+
+    <div class="spacer-5x"></div>
+
+    {{ partial "structure-bottom" . }}
+</body>
+{{partial "javascript" . }}
+</html>

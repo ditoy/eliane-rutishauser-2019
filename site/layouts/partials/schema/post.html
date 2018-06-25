@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "Article",
+	"name" : "{{ .Title }}",
+	{{ if .Params.authors }}
+        {{ range .Params.authors }}
+            "author": "{{ . }}",
+        {{ end }}
+    {{ end }}
+	"datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
+	"dateModified": "{{ .Date.Format "2006-01-02T15:04:05Z" }}",
+	"wordCount": "{{ .WordCount }}",
+	"headline": "{{ .Plain | truncate 107 "..." }}",
+	"articleBody": "{{ .Plain }}",
+	"publisher": {
+		"@type": "Organization",
+		"name": "{{ .Site.Params.appPublisher }}",
+		"logo" : {
+		    "type": "ImageObject",
+		    "url": "{{ .Site.Params.appUrl }}"
+        }
+	}
+}
+</script>

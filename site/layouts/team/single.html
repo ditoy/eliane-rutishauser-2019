@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+{{ partial "head-single" . }}
+<body id="root">
+    {{ partial "structure-top" . }}
+
+    <div class="team">
+
+        {{ partial "link-prev-next" . }}
+
+        <h1>
+            {{ .Title }}<br>
+            <small>
+                {{ .Params.function }}
+            </small>
+        </h1>
+
+        
+        {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="Bild {{ .Title }}" class="overflow">
+        {{ end }}
+
+        <div class="spacer-2x"></div>
+
+        <article>
+            {{ .Content }}
+        </article>
+		<div>
+            {{ if .Params.email }}
+            <a href="mailto:{{ .Params.email }}" rel="noopener" class="nowrap"><br/>
+                {{ .Params.email }}</a>
+            {{ end }}
+			<br/>
+            {{ if .Params.phone }}
+            <a href="tel:{{ .Params.phone }}" rel="noopener" class="nowrap">
+                {{ .Params.phone }}</a>
+            {{ end }}
+			<br/>
+            <!--{{ if .Params.twitter }}-->
+            <!--<a href="https://twitter.com/{{ .Params.twitter }}" rel="noopener" target="_blank" class="nowrap">-->
+                <!--@{{ .Params.twitter }}</a>-->
+            <!--{{ end }}-->
+
+            {{ if .Params.linkedin }}
+            <a href="{{ .Params.linkedin }}" rel="noopener" target="_blank" class="nowrap">
+                LinkedIn</a>
+            {{ end }}
+			<!--{{ if .Params.instagram }}-->
+                <!--{{ range .Params.instagram }}-->
+                    <!--<a href="https://www.instagram.com/{{ . }}" rel="noopener" target="_blank" class="nowrap">-->
+                        <!--{{ . }}</a>-->
+                <!--{{ end }}-->
+            <!--{{ end }}-->
+
+            {{ if .Params.web }}
+                {{ range $index, $url := .Params.web }}
+                <a href="{{ $url }}" rel="noopener" target="_blank" class="nowrap">
+                    Web {{ add 1 $index }}</a>
+                {{ end }}
+            {{ end }}
+        </div>
+        <div class="spacer-5x"></div>
+
+        <!--{{ if .Params.favorites }}-->
+            <!--<div class="favorites">-->
+                <!--<p>-->
+                    <!--{{ range $index, $src := .Params.favorites }}-->
+                    <!--<span class="wrapper">-->
+                        <!--<img src="{{ $src }}" alt="favorite #{{ $index }}" title="Favorite #{{ add 1 $index }}" >-->
+                    <!--</span>-->
+                    <!--{{ end }}-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--{{ end}}-->
+
+    </div>
+
+    <div class="spacer-5x"></div>
+
+    {{ partial "structure-bottom" . }}
+</body>
+{{partial "javascript" . }}
+</html>

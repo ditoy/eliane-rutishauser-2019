@@ -1,0 +1,21 @@
+<!doctype html>
+{{ partial "head-3dimensional" }}
+<html lang="de">
+{{ partial "head-site" . }}
+<body id="root">
+    <canvas id="bg-animation"></canvas>
+    {{ partial "structure-top" . }}
+
+    {{ .Content }}
+
+    {{ partial "projects" . }}
+
+    <div class="spacer-10x"></div>
+
+    {{ partial "contact-callout" . }}
+
+    {{ partial "structure-bottom" . }}
+</body>
+{{ partial "schema/global" . }}
+{{ partial "javascript" . }}
+</html>

@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-inner">
+        <a href="{{ .Permalink }}">
+            {{ if .Params.imagethumb }}
+                <div class="featuredimageWrapper">
+                    <div class="featuredimage" style="background-image: url('{{ .Params.imagethumb }}');" title="{{ .Params.title }}"></div>
+                </div>
+            {{ end }}
+            <article class="summary">
+                <h3>{{ .Title}}</h3>
+                {{ if .Params.function }}
+                {{ .Params.function }}
+                {{ end }}
+            </article>
+        </a>
+    </div>
+</div>
+

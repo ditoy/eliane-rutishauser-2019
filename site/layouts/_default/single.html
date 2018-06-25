@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="de">
+{{ partial "head-single" . }}
+<body id="root">
+    {{ partial "structure-top" . }}
+
+    <div class="page">
+        <article>
+            {{ .Content }}
+        </article>
+    </div>
+
+    {{ partial "structure-bottom" . }}
+</body>
+{{partial "javascript" . }}
+</html>

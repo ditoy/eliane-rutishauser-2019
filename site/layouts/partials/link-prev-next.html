@@ -1,0 +1,50 @@
+<div class="nav-prev-next">
+    {{ $mysection := ($.Site.GetPage "section" .Section).Pages }}
+    {{ if .NextInSection }}
+    <a href="{{ .NextInSection.Permalink }}" class="nowrap nav-prev">
+        <div class="arrow-left">
+			<div class="anim-left">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+    </a>
+    {{ else }}
+    {{range last 1 $mysection }}
+    <a href="{{ .Permalink }}" class="nowrap nav-prev">
+        <div class="arrow-left">
+			<div class="anim-left">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>    
+    </a>
+    {{ end }}
+    {{ end }}
+
+    {{ if .PrevInSection }}
+    <a href="{{ .PrevInSection.Permalink }}" class="nowrap nav-next">
+        <div class="arrow-right">
+			<div class="anim-right">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>    
+    </a>
+    {{ else }}
+    {{ range first 1 $mysection }}
+    <a href="{{ .Permalink }}" class="nowrap nav-next">
+        <div class="arrow-right">
+			<div class="anim-right">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>      
+    </a>
+    {{ end }}
+    {{ end }}
+</div>

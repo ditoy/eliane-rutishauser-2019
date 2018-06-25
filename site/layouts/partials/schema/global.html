@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+{
+	"@context" : "http://schema.org",
+	"@type" : "Organization",
+	"name" : "{{ .Site.Params.appPublisher }}",
+	"logo" : "{{ .Site.Params.appLogo }}",
+	"url" : "{{ .Site.Params.appUrl }}",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "{{ .Site.Params.appAddress.city }}",
+		"addressCountry" : "{{ .Site.Params.appAddress.country }}",
+		"postalCode": "{{ .Site.Params.appAddress.zip }}",
+		"streetAddress": "{{ .Site.Params.appAddress.street }}"
+	}
+}
+</script>

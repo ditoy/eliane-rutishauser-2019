@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow:
+{{ range .Data.Pages }}
+{{ if .Params.robotsExclude }}
+Disallow: {{ .Permalink }}
+{{ end }}
+{{ end }}

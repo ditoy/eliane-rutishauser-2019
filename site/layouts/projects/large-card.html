@@ -1,0 +1,17 @@
+<div class="large-card">
+    <a href="{{ .Permalink }}">
+        <div class="card-inner">
+            {{ if .Params.imagethumb }}
+                <div class="featuredimageWrapper">
+                    {{ if .Params.imagefull }}
+                        <div class="featuredimage" style="background-image: url('{{ .Params.imagefull }}');" aria-label="{{ .Params.title }}"></div>
+                    {{ else }}
+                        <div class="featuredimage" style="background-image: url('{{ .Params.imagethumb }}');" aria-label="{{ .Params.title }}"></div>
+                    {{ end }}
+                </div>
+            {{ end }}
+        </div>
+        <h3>{{ .Title}}</h3>
+    </a>
+</div>
+
