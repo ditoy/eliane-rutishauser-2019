@@ -1,0 +1,42 @@
+// grid widths
+$w-grid:        96%;
+$w-gutter:      4%;
+$w-container:   65rem;
+
+
+// colors
+$c-white:       #FFF;
+$c-lightgray:   #F5F5F5;
+$c-mediumgray:  #E5E5E5;
+$c-gray:        #6A6A6A;
+$c-darkgray:    #363636;
+$c-black:       #171717;
+
+$c-primary:     #b6c229;
+$c-secondary:   $c-darkgray;
+
+
+// navbar height
+$h-navbar:      90px;
+
+
+// base spacing
+$spacer:        1em;
+
+
+// fonts
+$f-regular:     "Open Sans", Helvetica, Arial, sans-serif;
+$f-headings:    $f-regular;
+
+
+// transitions
+$tr-speed-fast: 200ms;
+$tr-speed:      500ms;
+$tr-speed-slow: 800ms;
+$tr-scope:      all;
+$tr-ease:       cubic-bezier(0.15, 1.05, 0.9, 1);
+$tr-ease-alt:   cubic-bezier(0.2, 0.75, 0.85, 1);
+
+
+// breakpoints (for include-media)
+$breakpoints:   (phone: 600px, tablet: 768px, desktop: 1200px, mega: 1600px);

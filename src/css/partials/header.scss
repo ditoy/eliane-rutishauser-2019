@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  top: 0;
+  height: $h-navbar;
+  width: 100%;
+  background: rgba($c-darkgray, 0.5);
+  z-index: 9970;
+
+  .logo {
+    display: block;
+    float: left;
+    padding: 0;
+    margin-top: 0.5rem;
+
+    a {
+      background: none;
+    }
+
+    img,
+    svg {
+      width: 160px !important;
+      height: auto;
+    }
+  }
+}

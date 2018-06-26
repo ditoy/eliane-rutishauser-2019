@@ -1,0 +1,276 @@
+.main {
+
+  ul.details {
+    list-style: square;
+	margin-left: 22px;
+	padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+	  color: $c-black;
+
+    }
+  }
+
+  .details {
+  }
+
+  .nav-prev-next {
+    position: relative;
+    top: 15px;
+    width: 100%;
+
+    @include media("<=phone") {
+	    top: 3px;
+    }
+  }
+
+  .nav-prev {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-next {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1.has-prev-next {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .cards {
+    margin: 0;
+    padding: 0;
+
+    @include media("<=phone") {
+      border: none;
+      text-align: left;
+    }
+  }
+
+    @include media("<desktop") {
+    	.cards.home .card:last-child {
+	   		display: none
+		}
+    }
+    @include media("<phone") {
+    	.cards.home .card:last-child {
+	   		display: block;
+		}
+    }
+
+
+
+  /* card sizing */
+  .cards-sizer, .card {
+    width: calc(1/3 * 99%) ; // 3 cols on desktops
+
+    @include media("<=phone") {
+      width: 100%; // 1 col on smartphones
+    }
+
+    @include media(">phone", "<desktop") {
+      width: 50%; // 2 col on tablet
+    }
+  }
+
+  .card {
+    float: left;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+
+    /* h3 in .card > a: projects page */
+    &> a > h3 {
+      height: 4em;
+      max-height: 4em;
+      overflow: hidden;
+    }
+  }
+
+  .large-card {
+    position: static;
+    display: block;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    width: 80%;
+    margin: 0 auto 5rem auto;
+
+    @include media("<=phone") {
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  .card-inner {
+    transition: $tr-scope $tr-speed $tr-ease;
+    overflow: hidden;
+
+    *,
+    &:hover * {
+      transition: $tr-scope $tr-speed $tr-ease;
+    }
+
+    /* preps for hover fill effect */
+    .featuredimageWrapper {
+      border-radius: 0.2rem;
+      background-color: $c-white;
+      overflow: hidden;
+    }
+
+    .featuredimage {
+      transition: transform $tr-speed-slow $tr-ease;
+      transform: scale(1);
+    }
+
+    /* elevate and fill card on hover effect */
+    &:hover {
+      .featuredimageWrapper {
+        transition: filter $tr-speed-slow $tr-ease;
+        filter: grayscale(0);
+      }
+
+      .featuredimage {
+        transition: transform $tr-speed-slow $tr-ease;
+        transform: scale(1.08);
+      }
+
+      article {
+        transition: $tr-scope $tr-speed $tr-ease;
+        opacity: 1;
+        background: rgba($c-black, 0.7);
+        color: $c-white;
+
+        /* h3 in article: team page*/
+        h3 {
+          transition: $tr-scope $tr-speed $tr-ease;
+          color: $c-white;
+        }
+      }
+
+      a {
+        color: $c-black;
+      }
+    }
+
+    /* linking of the card */
+    &> a {
+      padding: 0;
+      display: block;
+      color: $c-black;
+      text-decoration: none;
+      transition: $tr-scope $tr-speed $tr-ease;
+    }
+
+    article {
+      transition: $tr-scope $tr-speed $tr-ease;
+      position: relative;
+      left: 0;
+      bottom: 4.5em;
+      height: 4.5em;
+      max-height: 4.5em;
+      padding: 0.5rem 2rem;
+      width: 100%;
+      opacity: 0;
+      font-size: 1.2rem;
+      overflow: hidden;
+    }
+
+    .featuredimage {
+      width: 100%;
+      display: block;
+      padding: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+    }
+  }
+
+  .cards,
+  .card,
+  .large-card {
+    a {
+      color: $c-black;
+      text-decoration: none;
+
+      &:hover {
+        color: $c-black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // sizing and hover for small cards
+  .card {
+    .featuredimage {
+      height: 280px;
+
+      @include media('<=phone') {
+        height: 80vw;
+      }
+
+      @include media('>phone', '<desktop') {
+        height: 45vw;
+      }
+
+      @include media('>tablet', '<mega') {
+        height: ($w-container * 0.29);
+      }
+
+      @include media('>=mega') {
+        height: ($w-container * 0.29);
+      }
+    }
+  }
+
+  // sizing and hover for large cards
+  .large-card {
+
+    .featuredimage {
+      height: 280px;
+
+      @include media('<=phone') {
+        height: 80vw;
+      }
+
+      @include media('>phone', '<desktop') {
+        height: (100vw * (9/16));
+      }
+
+      @include media('>tablet', '<mega') {
+        height: ($w-container * (9/16));
+      }
+
+      @include media('>=mega') {
+        height: ($w-container * (9/16));
+      }
+    }
+
+    @include media('<=phone') {
+      margin-bottom: 3rem;
+    }
+
+  }
+
+  .card,
+  .large-card {
+    h3 {
+      font-family: $f-headings;
+      transition: $tr-scope $tr-speed $tr-ease;
+      background: rgba($c-white, 0);
+      padding: 0.5rem 0 0 0;
+      margin: 0;
+      font-size: 1.6rem;
+      letter-spacing: 0.03em;
+      line-height: normal;
+      overflow: hidden;
+    }
+  }
+}

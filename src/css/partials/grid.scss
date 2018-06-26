@@ -1,0 +1,97 @@
+/**
+ * Grid is adapted from Simple Grid
+ * @see https://github.com/zachacole/Simple-Grid
+ */
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $w-container;
+
+/*
+  @include media('>=tablet', '<desktop') {
+    width: 80%;
+  }
+
+  @include media('>=mega') {
+     width: 75%;
+    max-width: $w-container;
+  }
+*/
+
+
+    @include media("<mega" ) {
+			width: 80%;
+	}
+  	  @include media("<tablet" ) {
+			width: 90%;
+	}
+
+
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: $w-grid;
+}
+
+.col-1-sm { width:($w-grid / 12) - ($w-gutter * 11 / 12); }
+.col-2-sm { width: ($w-grid / 6) - ($w-gutter * 10 / 12); }
+.col-3-sm { width: ($w-grid / 4) - ($w-gutter * 9 / 12); }
+.col-4-sm { width: ($w-grid / 3) - ($w-gutter * 8 / 12); }
+.col-5-sm { width: ($w-grid / (12 / 5)) - ($w-gutter * 7 / 12); }
+.col-6-sm { width: ($w-grid / 2) - ($w-gutter * 6 / 12); }
+.col-7-sm { width: ($w-grid / (12 / 7)) - ($w-gutter * 5 / 12); }
+.col-8-sm { width: ($w-grid / (12 / 8)) - ($w-gutter * 4 / 12); }
+.col-9-sm { width: ($w-grid / (12 / 9)) - ($w-gutter * 3 / 12); }
+.col-10-sm { width: ($w-grid / (12 / 10)) - ($w-gutter * 2 / 12); }
+.col-11-sm { width: ($w-grid / (12 / 11)) - ($w-gutter * 1 / 12); }
+.col-12-sm { width: $w-grid; }
+
+@include media('>=tablet') {
+  .col-1 { width:($w-grid / 12) - ($w-gutter * 11 / 12); }
+  .col-2 { width: ($w-grid / 6) - ($w-gutter * 10 / 12); }
+  .col-3 { width: ($w-grid / 4) - ($w-gutter * 9 / 12); }
+  .col-4 { width: ($w-grid / 3) - ($w-gutter * 8 / 12); }
+  .col-5 { width: ($w-grid / (12 / 5)) - ($w-gutter * 7 / 12); }
+  .col-6 { width: ($w-grid / 2) - ($w-gutter * 6 / 12); }
+  .col-7 { width: ($w-grid / (12 / 7)) - ($w-gutter * 5 / 12); }
+  .col-8 { width: ($w-grid / (12 / 8)) - ($w-gutter * 4 / 12); }
+  .col-9 { width: ($w-grid / (12 / 9)) - ($w-gutter * 3 / 12); }
+  .col-10 { width: ($w-grid / (12 / 10)) - ($w-gutter * 2 / 12); }
+  .col-11 { width: ($w-grid / (12 / 11)) - ($w-gutter * 1 / 12); }
+  .col-12 { width: $w-grid; }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+

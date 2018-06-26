@@ -1,0 +1,31 @@
+/* fonts first */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin');
+
+/* extensions */
+@import "../../node_modules/include-media/dist/include-media";
+
+/* settings */
+@import "partials/settings";
+@import "partials/effects";
+
+/* reset styles */
+@import "partials/reset";
+
+/* import partials */
+@import "partials/grid";
+@import "partials/typography";
+@import "partials/links";
+@import "partials/buttons";
+@import "partials/forms";
+@import "partials/images";
+@import "partials/main";
+@import "partials/header";
+@import "partials/navbar";
+@import "partials/article";
+@import "partials/lists";
+@import "partials/footer";
+
+/* custom project styles */
+@import "partials/project";
+@import "partials/team";
+@import "partials/customers";

@@ -1,0 +1,12 @@
+$footer-text: $c-mediumgray;
+
+.footer {
+  clear: both;
+  background: $c-darkgray;
+  color: $footer-text;
+  padding: 5vh 0;
+
+  a {
+    color: $footer-text;
+  }
+}

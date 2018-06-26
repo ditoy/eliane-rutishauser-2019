@@ -1,0 +1,52 @@
+article {
+
+  .author,
+  .date,
+  .wordcount,
+  .type,
+  .tag,
+  .category {
+    display: inline-block;
+    white-space: nowrap !important;
+    color: $c-white;
+    border-radius: 0.2em;
+    padding: 0.1em 0.5em;
+    margin: 0 0.5em 0.5em 0;
+    text-decoration: none;
+  }
+
+  .author {
+    background: $c-gray;
+  }
+
+  .date {
+    background: $c-black;
+  }
+
+  .wordcount {
+    color: $c-gray;
+  }
+
+  .type {
+    background: $c-black;
+  }
+
+  .tag {
+    background: $c-black;
+  }
+
+  .category {
+    background: $c-black;
+  }
+
+  .postpre {
+    font-size: 0.9em;
+    color: $c-darkgray;
+    margin-bottom: 1em;
+  }
+
+  .postnav {
+
+  }
+
+}

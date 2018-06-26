@@ -1,0 +1,240 @@
+.navbar {
+  width: 100%;
+  color: $c-mediumgray;
+  z-index: 9990;
+  padding: 0;
+  margin: 0;
+
+  @include media("print") {
+    width: 100%;
+  }
+
+  #collapsible {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 0;
+    color: $c-mediumgray;
+    background-color: $c-darkgray;
+    transition: $tr-scope $tr-speed-slow $tr-ease-alt;
+    overflow: hidden;
+    z-index: 9997; // 1 more than navbar
+    width: 100% !important;
+    opacity: 0.2;
+
+    &.expanded {
+      height: 100vh;
+      max-height: 100vh;
+      opacity: 1;
+      transition: $tr-scope $tr-speed $tr-ease-alt;
+    }
+  }
+
+  .menu {
+    overflow: hidden;
+    list-style: none;
+    height: auto;
+    background: $c-darkgray;
+    z-index: 9998; // 1 more than collapsible
+
+    li {
+      display: block;
+      padding: 0;
+      margin: 0 auto;
+
+      a {
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        margin: 0;
+        text-decoration: none;
+        color: $c-white;
+        transition: $tr-scope $tr-speed $tr-ease;
+        background: none;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $c-primary;
+          transition: $tr-scope $tr-speed $tr-ease;
+        }
+
+        &.active {
+          background-color: $c-darkgray;
+        }
+      }
+
+      &.spacer {
+        padding: 1rem 0;
+      }
+
+      &.small {
+        @include media('<=phone') {
+          font-size: 1rem;
+        }
+      }
+    }
+
+  }
+
+}
+
+/* animated hamburger menu icon -> changes to X when menu open */
+
+.toggler {
+  z-index: 9999;
+  position: relative;
+  float: right;
+  top: 1.3rem;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: none;
+  padding: 0;
+  margin: 0 auto;
+
+  @include media('<=phone') {
+    height: 0;
+    right: 0;
+  }
+
+  &:focus,
+  &:active {
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  &:hover {
+
+    div:nth-child(1) {
+      top: 13px;
+      left: 13px;
+    }
+
+    div:nth-child(2) {
+      top: 13px;
+      left: 23px;
+    }
+
+
+    div:nth-child(3) {
+      top: 23px;
+      left: 13px;
+    }
+
+    div:nth-child(4){
+      top: 23px;
+      left: 23px;
+    }
+
+    div {
+      &:hover {
+        transition: $tr-scope $tr-speed-fast ease-out;
+      }
+    }
+
+  }
+
+  .text {
+    display: none;
+  }
+}
+
+.animated-menu-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  vertical-align:middle;
+  transform: rotate(0deg);
+  cursor: pointer;
+  //outline: 1px solid red;
+
+  > div {
+    display:block;
+    position: absolute;
+    left: 0;
+    padding: 0;
+    background-color: $c-black;
+    height: 8px !important; // force px for equally high bars
+    transform: rotate(0deg);
+    transition: $tr-scope $tr-speed-fast ease-out;
+  }
+
+  div:nth-child(1) {
+    top: 10px;
+    left: 10px;
+    width: 8px;
+    transform-origin: left center;
+  }
+
+  div:nth-child(2) {
+    top: 10px;
+    left: 26px;
+    width: 8px;
+    transform-origin: right center;
+  }
+
+  div:nth-child(3) {
+    top: 26px;
+    left: 10px;
+    width: 8px;
+    transform-origin: right center;
+  }
+
+  div:nth-child(4){
+    top: 26px;
+    left: 26px;
+    width: 8px;
+    transform-origin: left center;
+  }
+}
+
+.animated-menu-icon.expanded {
+
+  > div {
+    background-color: $c-mediumgray;
+    width: 16px !important;
+    height: 8px;
+  }
+
+  &:hover div {
+    background-color: $c-gray;
+  }
+
+  div:nth-child(3),
+  div:nth-child(2) {
+    height: 8px !important;
+  }
+
+
+  // rotate 1 and 4 from left
+
+  div:nth-child(1) {
+    transform: rotate(-135deg);
+    top: 17px;
+    left: 19px;
+  }
+
+
+  div:nth-child(2) {
+    transform: rotate(-45deg);
+    top: 23px;
+    left: 4px;
+  }
+
+
+  div:nth-child(3) {
+    transform: rotate(-135deg);
+    top: 23px;
+    left: 10px;
+  }
+
+  div:nth-child(4) {
+    transform: rotate(-45deg);
+    top: 17px;
+    left: 26px;
+  }
+
+}

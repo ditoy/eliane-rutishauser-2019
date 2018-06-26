@@ -1,0 +1,42 @@
+.project,
+.projects,
+.team,
+.page,
+.inquiry,
+.customers {
+
+  h3 {
+    max-width: 900px;
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+
+.projects {
+
+  .references {
+
+    font-size: 80%;
+
+    .row {
+      border-bottom: 1px solid $c-mediumgray;
+
+      &.head {
+        border-color: $c-black;
+        font-weight: bold;
+      }
+
+      &.year {
+        background: $c-mediumgray;
+      }
+
+      @include media("<=phone") {
+        .col-2 {
+          display: none;
+        }
+      }
+    }
+  }
+}

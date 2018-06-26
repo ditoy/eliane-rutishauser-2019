@@ -1,0 +1,130 @@
+input[type='text'],
+input[type='email'],
+input[type='password'],
+select,
+textarea {
+  // reset
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 0 !important;
+
+  // force disable rounded corners for select inputs
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  // actual styling
+  border-bottom: 1px solid lightgray;
+  font-family: $f-regular;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding: 0.2rem 0.8rem;
+  margin: 0;
+  transition: $tr-scope $tr-speed $tr-ease;
+  width: 100%;
+  color: $c-gray;
+
+
+  // fill from left side effect
+  background: linear-gradient(to right, rgba($c-white,0) 50%, rgba($c-mediumgray, 1) 50%);
+  background-size: 220%;
+  background-position: 0 0;
+
+
+  @include media('<=phone') {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+
+  &:focus {
+    transition: $tr-scope $tr-speed $tr-ease;
+    border-color: $c-gray;
+    color: $c-gray;
+
+    // fill from left side effect
+    background-position: -90% 0;
+  }
+  
+
+
+}
+
+label:not(.radio),
+label:not(.checkbox) {
+  .text {
+    font-family: $f-regular;
+    text-transform: uppercase;
+  }
+}
+
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+
+  &.autoresize {
+    box-sizing: content-box;
+  }
+}
+
+.inquiry {
+	padding: 0 10%;
+
+    @include media('<=phone') {
+      padding: 0;
+    }
+
+	.col-4 {
+		margin: 0.7rem 0;		
+	}
+	.col-8 {
+		margin: 0.4rem 0;
+	}
+
+  @include media('<tablet') {
+	.col-4 {
+		margin: 0.7rem 0;		
+	}
+	
+	.col-8 {
+		margin: 0.4rem 0;
+	}
+
+  }
+
+}
+
+.submit {
+  padding:  0;
+}
+
+label.radio,
+label.checkbox {
+  display: block;
+
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+  }
+
+  .text {
+    float: right;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: calc(100% - 2em);
+    text-transform: none;
+    font-family: $f-regular;
+  }
+
+  input {
+    float: left;
+    display: inline-block;
+    margin-top: 1em;
+  }
+}

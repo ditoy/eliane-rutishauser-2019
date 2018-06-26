@@ -1,0 +1,139 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $c-darkgray;
+}
+
+h1, h2 {
+  font-family: $f-headings;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 3rem 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+h4, h5, h6 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+p {
+  margin: 1em 0;
+}
+
+hr {
+  width: 2em !important;
+  height: 4px;
+  border-radius: 4px;
+  appearance: none;
+  border: 0 none;
+  background: $c-black;
+  padding: 0;
+  margin: 0.7em 0 1.5em 0;
+  text-align: left;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-on-phone {
+  @include media("<=phone") {
+    display: none !important;
+  }
+}
+
+.hide-on-tablet {
+  @include media(">phone", "<desktop") {
+    display: none !important;
+  }
+}
+
+.hide-on-desktop {
+  @include media(">=desktop") {
+    display: none !important;
+  }
+}
+
+.spacer-1x {
+  display: block;
+  padding-top: $spacer;
+
+  @include media("<=phone") {
+    padding-top: 0.5*$spacer;
+  }
+}
+
+.spacer-2x {
+  display: block;
+  padding-top: 2*$spacer;
+
+  @include media("<=phone") {
+    padding-top: 1*$spacer;
+  }
+}
+
+.spacer-3x {
+  display: block;
+  padding-top: 3*$spacer;
+
+  @include media("<=phone") {
+    padding-top: 1.5*$spacer;
+  }
+}
+
+.spacer-4x {
+  display: block;
+  padding-top: 4*$spacer;
+
+  @include media("<=phone") {
+    padding-top: 2*$spacer;
+  }
+}
+
+.spacer-5x {
+  display: block;
+  padding-top: 5*$spacer;
+
+  @include media("<=phone") {
+    padding-top: 2.5*$spacer;
+  }
+}
+
+.spacer-8x {
+  display: block;
+  padding-top: 8*$spacer;
+
+  @include media("<=phone") {
+    padding-top: 4*$spacer;
+  }
+}
+
+.spacer-10x {
+  display: block;
+  padding-top: 10*$spacer;
+
+  @include media("<=phone") {
+    padding-top: 5*$spacer;
+  }
+}

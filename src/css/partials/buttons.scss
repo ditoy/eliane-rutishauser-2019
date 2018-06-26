@@ -1,0 +1,29 @@
+.btn,
+.main .btn,
+.btn:visited,
+.main .btn:visited,
+.simple-btn {
+  display: inline-block;
+  border: 2px solid $c-black;
+  background-color: $c-black;
+  color: $c-white;
+  outline: none;
+  -webkit-appearance: none;
+  transition: $tr-scope $tr-speed $tr-ease;
+  font-family: $f-regular;
+  font-weight: 200;
+  font-size: 1.5rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 1px;
+  text-decoration: none;
+
+  &:hover {
+    transition: $tr-scope $tr-speed $tr-ease;
+    color: $c-white !important;
+    background: $c-gray;
+    border-color: $c-gray;
+  }
+}
