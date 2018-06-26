@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: ditoy/3dimensional-website-2018 # Path to your Github repository
-  branch: dev # Branch to update (master by default)
+  branch: master # Branch to update (master by default)
 
 display_url: https://www.3dimensional.ch
 

@@ -63,6 +63,19 @@
   &.gray {
     background-color: $c-lightgray;
   }
+
+  &.black {
+    background-color: $c-darkgray;
+
+    cite {
+      color: $c-lightgray;
+
+      &:before,
+      &:after {
+        color: lighten($c-darkgray, 10%);
+      }
+    }
+  }
 }
 
 body.has-hero {
