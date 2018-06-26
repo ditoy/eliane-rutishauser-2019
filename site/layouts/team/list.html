@@ -1,29 +1,26 @@
 <!doctype html>
+{{ partial "head-3dimensional" }}
 <html lang="de">
-  {{partial "head-site" . }}
+  {{ partial "head-site" . }}
   <body id="root">
-  {{ partial "header" . }}
+    {{ partial "header" . }}
 
-  <div class="team">
-    <article>
-      {{ .Content }}
-    </article>
+    <div class="container">
+      <article>
+        {{ .Content }}
+      </article>
 
-    <a name="team"></a>
-    <h2 class="mainheading">Team</h2>
-
-    <div class="cards">
-      <div class="cards-sizer"></div>
-      {{  range (.Data.Pages.ByParam "position") }}
+      <div class="cards">
+        <div class="cards-sizer"></div>
+        {{  range (.Data.Pages.ByParam "position") }}
         {{ if .Params.active }}
-          {{ .Render "card"}}
+        {{ .Render "card"}}
         {{ end }}
-      {{ end }}
+        {{ end }}
+      </div>
     </div>
-  </div>
-  <div class="clear"></div>
-
-  {{ partial "footer" . }}
-</body>
-{{partial "javascript" . }}
+    {{ partial "footer" . }}
+  </body>
+{{ partial "schema/global" . }}
+{{ partial "javascript" . }}
 </html>

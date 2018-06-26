@@ -50,7 +50,6 @@
       transition: transform $tr-speed $tr-ease;
       margin: 0 1.5rem 1.5rem 0;
       border: 3px solid $c-mediumgray;
-      z-index: 1;
       padding: 1rem;
       background: white;
       overflow: hidden;
@@ -73,7 +72,6 @@
         transition: all $tr-speed $tr-ease;
         transform: scale(2);
         position: relative;
-        z-index: 9995;
 
         @include media('<=phone') {
           transform: scale(1.6);

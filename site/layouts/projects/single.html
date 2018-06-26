@@ -29,3 +29,34 @@
 </body>
 {{partial "javascript" . }}
 </html>
+
+
+<!doctype html>
+<html lang="de">
+{{ partial "head-single" . }}
+<body id="root">
+    {{ partial "header" . }}
+    <div class="container">
+
+        {{ partial "link-prev-next" . }}
+
+        <h1 class="has-prev-next">{{ .Title }}</h1>
+
+        {{ if .Params.teaser }}
+            <h4>{{ .Params.teaser }}</h4>
+        {{ end }}
+
+        <article>
+            {{ .Content }}
+        </article>
+
+        {{ if .Params.reference }}
+            <h2>Link</h2>
+            <a href="{{ .Params.reference }}" rel="noopener" target="_blank">{{ .Params.reference }}</a>
+        {{ end }}
+    </div>
+    {{ partial "footer" . }}
+</body>
+{{ partial "schema/global" . }}
+{{ partial "javascript" . }}
+</html>

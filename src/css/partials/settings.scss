@@ -17,7 +17,7 @@ $c-secondary:   $c-darkgray;
 
 
 // navbar height
-$h-navbar:      90px;
+$h-navbar:      200px;
 
 
 // base spacing
@@ -40,3 +40,16 @@ $tr-ease-alt:   cubic-bezier(0.2, 0.75, 0.85, 1);
 
 // breakpoints (for include-media)
 $breakpoints:   (phone: 600px, tablet: 768px, desktop: 1200px, mega: 1600px);
+
+
+// z-indexes
+$z-hero:        9940;
+$z-header:      9950;
+$z-navbar:      9960;
+$z-collapsible: 9970;
+$z-menu:        9980;
+$z-toggler:     9990;
+$z-toggler-l1:  9994;
+$z-toggler-l2:  9992;
+$z-toggler-l3:  9994;
+$z-toggler-l4:  9992;

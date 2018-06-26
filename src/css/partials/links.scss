@@ -2,12 +2,10 @@
 
 a,
 button {
-  color: $c-black;
   text-decoration: underline;
   transition: $tr-scope $tr-speed $tr-ease;
 
   &:visited {
-    color: $c-black;
     text-decoration: none;
     transition: $tr-scope $tr-speed $tr-ease;
   }
@@ -21,7 +19,6 @@ button {
     &:hover,
     &:visited:hover,
     &:visited:focus {
-      color: $c-gray;
       transition: $tr-scope $tr-speed $tr-ease;
     }
   }

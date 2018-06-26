@@ -3,14 +3,14 @@
 {{ partial "head-single" . }}
 <body id="root">
     {{ partial "header" . }}
-
-    <div class="page">
+    <div class="container">
+        <h1>{{ .Title }}</h1>
         <article>
             {{ .Content }}
         </article>
     </div>
-
     {{ partial "footer" . }}
 </body>
-{{partial "javascript" . }}
+{{ partial "schema/global" . }}
+{{ partial "javascript" . }}
 </html>
