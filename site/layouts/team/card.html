@@ -8,6 +8,9 @@
             {{ end }}
             <article class="summary">
                 <h3>{{ .Title}}</h3>
+                {{ if .Params.function }}
+                    {{ .Params.function }}
+                {{ end }}
             </article>
         </a>
     </div>

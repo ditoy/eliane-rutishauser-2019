@@ -2,29 +2,53 @@
 <html lang="de">
 {{partial "head-site" . }}
 <body id="root">
-{{ partial "header" . }}
+  <div class="wrapper">
+    {{ partial "header" . }}
 
-<div class="projects">
-  <h1>{{ .Title }}</h1>
+    <div class="projects">
 
-  {{ if .Params.teaser }}
-    <h3>{{ .Params.teaser }}</h3>
-  {{ end }}
+      <div class="stripe">
+        <div class="container">
+          <article>
+            <h1>{{ .Title }}</h1>
 
-  <div class="cards">
-    <div class="cards-sizer"></div>
-    {{  range $index, $page := .Data.Pages }}
-      {{ if and (isset .Params "active") (.Params.active) }}
-        {{ if and (isset .Params "featured") (not .Params.featured) }}
-          {{ .Render "card" }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
+            <label for="f1">
+              <div class="text">Filter1:</div>
+              <select name="f1" id="f1">
+                <option>FILTER1</option>
+              </select>
+            </label>
+
+            <label for="f2">
+              <div class="text">Filter 2:</div>
+              <select name="f2" id="f2">
+                <option>FILTER2</option>
+              </select>
+            </label>
+
+            <div class="clear"></div>
+
+            {{ .Content }}
+          </article>
+        </div>
+      </div>
+      <div class="stripe gray">
+        <div class="container">
+          <div class="cards">
+            <div class="cards-sizer"></div>
+            {{  range $index, $page := .Data.Pages }}
+            {{ if and (isset .Params "active") (.Params.active) }}
+            {{ .Render "card" }}
+            {{ end }}
+            {{ end }}
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+    {{ partial "footer" . }}
   </div>
-  <div class="clear"></div>
-</div>
-
-{{ partial "footer" . }}
 </body>
 {{partial "javascript" . }}
 </html>

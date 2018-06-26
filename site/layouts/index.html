@@ -3,21 +3,42 @@
 <html lang="de">
 {{ partial "head-site" . }}
 <body id="root" class="has-hero">
-    <div class="hero">
-        <div class="container">
-            <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
+    <div class="wrapper">
+
+        <div class="hero">
+            <div class="container">
+                <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
+            </div>
         </div>
+
+        {{ partial "header" . }}
+
+        <div class="stripe gray">
+            <div class="container">
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+
+        <div class="stripe">
+            <div class="container">
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+
+        <div class="stripe gray">
+            <div class="container">
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+
+        {{ partial "footer" . }}
     </div>
-
-    {{ partial "header" . }}
-
-    <div class="container">
-        <article>
-            {{ .Content }}
-        </article>
-    </div>
-
-    {{ partial "footer" . }}
 </body>
 {{ partial "schema/global" . }}
 {{ partial "javascript" . }}

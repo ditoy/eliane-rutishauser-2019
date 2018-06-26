@@ -6,7 +6,9 @@ robotsExclude:  false
 imagethumb:     ""
 image:          ""
 ---
-## Lernen Sie unser interdisziplinäres Team aus erfahrenen Handwerkern kennen.
+# Unser Team
+
+### Lernen Sie unser interdisziplinäres Team aus erfahrenen Handwerkern kennen.
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales dui pulvinar turpis rhoncus dapibus. Pellentesque 

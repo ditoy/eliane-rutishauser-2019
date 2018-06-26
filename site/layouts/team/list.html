@@ -1,26 +1,38 @@
 <!doctype html>
 {{ partial "head-3dimensional" }}
 <html lang="de">
-  {{ partial "head-site" . }}
-  <body id="root">
+{{ partial "head-site" . }}
+<body id="root">
+  <div class="wrapper">
     {{ partial "header" . }}
 
-    <div class="container">
-      <article>
-        {{ .Content }}
-      </article>
+    <div class="team">
+      <div class="stripe">
+        <div class="container">
+          <div class="cards">
+            <div class="cards-sizer"></div>
+            {{  range (.Data.Pages.ByParam "position") }}
+            {{ if .Params.active }}
+            {{ .Render "card"}}
+            {{ end }}
+            {{ end }}
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
 
-      <div class="cards">
-        <div class="cards-sizer"></div>
-        {{  range (.Data.Pages.ByParam "position") }}
-        {{ if .Params.active }}
-        {{ .Render "card"}}
-        {{ end }}
-        {{ end }}
+      <div class="stripe gray">
+        <div class="container">
+          <article>
+            {{ .Content }}
+          </article>
+        </div>
       </div>
     </div>
+
     {{ partial "footer" . }}
-  </body>
+  </div>
+</body>
 {{ partial "schema/global" . }}
 {{ partial "javascript" . }}
 </html>

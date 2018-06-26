@@ -2,14 +2,20 @@
 <html lang="de">
 {{ partial "head-single" . }}
 <body id="root">
-    {{ partial "header" . }}
-    <div class="container">
-        <h1>{{ .Title }}</h1>
-        <article>
-            {{ .Content }}
-        </article>
+    <div class="wrapper">
+        {{ partial "header" . }}
+
+        <div class="stripe">
+            <div class="container">
+                <h1>{{ .Title }}</h1>
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+        </div>
+
+        {{ partial "footer" . }}
     </div>
-    {{ partial "footer" . }}
 </body>
 {{ partial "schema/global" . }}
 {{ partial "javascript" . }}

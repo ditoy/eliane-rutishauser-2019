@@ -2,55 +2,62 @@
 <html lang="de">
 {{ partial "head-single" . }}
 <body id="root">
-    {{ partial "header" . }}
+    <div class="wrapper">
+        {{ partial "header" . }}
 
-    <div class="team">
+        <div class="stripe">
+            <div class="container">
+                <article>
+                    <h1>
+                        {{ .Title }}<br>
+                        <small>
+                            {{ .Params.function }}
+                        </small>
+                    </h1>
 
-        {{ partial "link-prev-next" . }}
+                    {{ if .Params.image }}
+                    <img src="{{ .Params.image }}" alt="Bild {{ .Title }}" class="overflow">
+                    {{ end }}
 
-        <h1>
-            {{ .Title }}<br>
-            <small>
-                {{ .Params.function }}
-            </small>
-        </h1>
+                    <article>
+                        <em>
+                            {{ .Summary }}
+                        </em>
 
-        {{ if .Params.image }}
-            <img src="{{ .Params.image }}" alt="Bild {{ .Title }}" class="overflow">
-        {{ end }}
+                        {{ $body := replace .Content .Summary "" }}
+                        {{ $body | safeHTML }}
+                    </article>
 
-        <article>
-            {{ .Content }}
-        </article>
+                    <div>
+                        {{ if .Params.email }}
+                        <a href="mailto:{{ .Params.email }}" rel="noopener" class="nowrap"><br/>
+                            {{ .Params.email }}</a>
+                        {{ end }}
+                        <br/>
+                        {{ if .Params.phone }}
+                        <a href="tel:{{ .Params.phone }}" rel="noopener" class="nowrap">
+                            {{ .Params.phone }}</a>
+                        {{ end }}
+                        <br/>
 
-		<div>
-            {{ if .Params.email }}
-            <a href="mailto:{{ .Params.email }}" rel="noopener" class="nowrap"><br/>
-                {{ .Params.email }}</a>
-            {{ end }}
-			<br/>
-            {{ if .Params.phone }}
-            <a href="tel:{{ .Params.phone }}" rel="noopener" class="nowrap">
-                {{ .Params.phone }}</a>
-            {{ end }}
-			<br/>
+                        {{ if .Params.linkedin }}
+                        <a href="{{ .Params.linkedin }}" rel="noopener" target="_blank" class="nowrap">
+                            LinkedIn</a>
+                        {{ end }}
 
-            {{ if .Params.linkedin }}
-            <a href="{{ .Params.linkedin }}" rel="noopener" target="_blank" class="nowrap">
-                LinkedIn</a>
-            {{ end }}
-
-            {{ if .Params.web }}
-                {{ range $index, $url := .Params.web }}
-                <a href="{{ $url }}" rel="noopener" target="_blank" class="nowrap">
-                    Web {{ add 1 $index }}</a>
-                {{ end }}
-            {{ end }}
+                        {{ if .Params.web }}
+                        {{ range $index, $url := .Params.web }}
+                        <a href="{{ $url }}" rel="noopener" target="_blank" class="nowrap">
+                            Web {{ add 1 $index }}</a>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </article>
+            </div>
         </div>
 
+        {{ partial "footer" . }}
     </div>
-
-    {{ partial "footer" . }}
 </body>
 {{partial "javascript" . }}
 </html>

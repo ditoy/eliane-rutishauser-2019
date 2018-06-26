@@ -32,7 +32,7 @@
 /* override for hero pages: show header on top of hero */
 body.has-hero {
   .header {
-    position: fixed;
+    position: absolute;
     top: 0;
 
     a {

@@ -13,6 +13,7 @@
   z-index: $z-hero;
   padding: 20vh 0;
 
+
   &::after {
     content: " ";
     display: block;
@@ -22,24 +23,11 @@
     width: 100vw;
     max-width: 100%;
     min-height: 100vh;
-    outline: 2px solid red;
     z-index: ($z-hero + 1);
     background-image: url('/images/uploads/3dimensional-grid.svg');
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: 85vw;
-
-    @include media(">=tablet") {
-      background-size: 70vw;
-    }
-
-    @include media(">=desktop") {
-      background-size: 55vw;
-    }
-
-    @include media(">=mega") {
-      background-size: 40vw;
-    }
+    background-size: 80vh;
   }
 
   @include media(">=tablet") {
@@ -60,5 +48,25 @@
     font-weight: 400;
     text-align: left;
     max-width: (2/3) * $w-container;
+  }
+}
+
+
+.stripe {
+  margin: 0;
+  padding: 10rem 0;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  &.gray {
+    background-color: $c-lightgray;
+  }
+}
+
+body.has-hero {
+  .stripe:first-of-type {
+    padding-top: 10rem;
   }
 }
