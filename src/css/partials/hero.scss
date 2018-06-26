@@ -70,3 +70,34 @@ body.has-hero {
     padding-top: 10rem;
   }
 }
+
+.icon {
+  float: none;
+  width: 100%;
+  text-align: center;
+
+  img {
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+  }
+
+  &:nth-of-type(odd) {
+    float: left;
+  }
+
+  &:nth-of-type(even) {
+    float: right;
+  }
+
+  @include media(">=tablet") {
+
+    width: 280px;
+    padding: 2em;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -5,6 +5,9 @@ $footer-text: $c-mediumgray;
   background: $c-darkgray;
   color: $footer-text;
   padding: 5vh 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  min-height: 30vh;
 
   a {
     color: $footer-text;

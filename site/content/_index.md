@@ -6,28 +6,49 @@ robotsExclude:  false
 imagethumb:     ""
 image:          ""
 ---
-## Kompetenzen
+# Kompetenzen
 
-<i class="icon">icon_bulb</i>
 
-### Die Idee
+{{< row >}}
+    {{< col 4 >}}
+        {{< icon bulb >}}
+    {{< /col >}}
+    {{< col 8 >}}
+        {{< heading "Die Idee" >}}
+        
+        Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. 
+        Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus 
+        in odio nibh.
+        
+    {{< /col >}}
+{{< /row >}}
 
-Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. 
-Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus 
-in odio nibh.
 
-<i class="icon">icon_lineal</i>
+{{< row >}}
+    {{< col 8 >}}
+        {{< heading "Die Planung" >}}
+        
+        Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. 
+        Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus 
+        in odio nibh.
+        
+    {{< /col >}}
+    {{< col 4 >}}
+        {{< icon ruler >}}
+    {{< /col >}}
+{{< /row >}}
 
-### Die Planung
 
-Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. 
-Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus 
-in odio nibh.
-
-<i class="icon">icon_saw</i>
-
-### Die Ausführung
-
-Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. 
-Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus 
-in odio nibh.
+{{< row >}}
+    {{< col 4 >}}
+        {{< icon saw >}}
+    {{< /col >}}
+    {{< col 8 >}}
+        {{< heading "Die Ausführung" >}}
+        
+        Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. 
+        Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus 
+        in odio nibh.
+        
+    {{< /col >}}
+{{< /row >}}
