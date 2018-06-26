@@ -1,5 +1,5 @@
 ---
-title:          "Ladenbau, Standbau, POS - 3dimensional AG Zürich"
+title:          "3dimensional"
 date:           "2018-07-01"
 draft:          false
 robotsExclude:  false

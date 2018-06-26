@@ -1,2 +1,48 @@
-{{ partial "navbar" . }}
-<div class="clear"></div>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/" aria-label="3dimensional Home">
+                    3dimensional
+                </a>
+            </div>
+            <button id="toggler" class="toggler" type="button" aria-label="Menü">
+                <div class="animated-menu-icon" id="togglericon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="text" aria-hidden="false">MENU</div>
+            </button>
+            <div class="clear"></div>
+
+            <div id="collapsible">
+                <div class="container">
+                    <ul class="menu" id="menu">
+                        <li>
+                            <a href="/projects/">
+                                Referenzen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/team/">
+                                Team
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact/">
+                                Kontakt
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/jobs/">
+                                Jobs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- end collapsible -->
+        </div><!-- end navbar -->
+    </div><!-- end container -->
+</div><!-- end header -->

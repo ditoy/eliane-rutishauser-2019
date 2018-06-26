@@ -1,5 +1,5 @@
 ---
-title:          "Projektreferenzen - 3dimensional AG Zürich"
+title:          "Referenzen"
 date:           "2018-07-01"
 draft:          false
 robotsExclude:  false

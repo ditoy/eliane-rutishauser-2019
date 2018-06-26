@@ -3,18 +3,21 @@
 <html lang="de">
 {{ partial "head-site" . }}
 <body id="root">
-    <canvas id="bg-animation"></canvas>
-    {{ partial "structure-top" . }}
+    <div class="hero">
+        <div class="container">
+            <h1>Hello World!</h1>
+        </div>
+    </div>
 
-    {{ .Content }}
+    {{ partial "header" . }}
 
-    {{ partial "projects" . }}
+    <div class="container">
+        <article>
+            {{ .Content }}
+        </article>
+    </div>
 
-    <div class="spacer-10x"></div>
-
-    {{ partial "contact-callout" . }}
-
-    {{ partial "structure-bottom" . }}
+    {{ partial "footer" . }}
 </body>
 {{ partial "schema/global" . }}
 {{ partial "javascript" . }}
