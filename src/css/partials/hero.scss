@@ -1,0 +1,64 @@
+/* heroes */
+
+.hero {
+  position: relative;
+  top: 0;
+  background-image: url('/images/uploads/3dimensional-hero-1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  z-index: $z-hero;
+  padding: 20vh 0;
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh;
+    outline: 2px solid red;
+    z-index: ($z-hero + 1);
+    background-image: url('/images/uploads/3dimensional-grid.svg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 85vw;
+
+    @include media(">=tablet") {
+      background-size: 70vw;
+    }
+
+    @include media(">=desktop") {
+      background-size: 55vw;
+    }
+
+    @include media(">=mega") {
+      background-size: 40vw;
+    }
+  }
+
+  @include media(">=tablet") {
+    padding: 25vh 0;
+  }
+
+  @include media(">=desktop") {
+    padding: 30vh 0;
+  }
+
+  @include media(">=mega") {
+    padding: 35vh 0;
+  }
+
+  h1, h2 {
+    color: $c-mediumgray;
+    text-transform: none;
+    font-weight: 400;
+    text-align: left;
+    max-width: (2/3) * $w-container;
+  }
+}

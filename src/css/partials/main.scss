@@ -45,42 +45,6 @@ body {
   //outline:1px solid red;
 }
 
-/* heroes */
-
-.hero {
-  position: relative;
-  top: 0;
-  background-image: url('/images/uploads/3dimensional-hero-1.jpg');
-  background-size: cover;
-  background-position: center center;
-  width: 100vw;
-  max-width: 100%;
-  min-height: 100vh;
-  z-index: $z-hero;
-  padding: 20vh 0;
-
-  @include media(">=tablet") {
-    padding: 25vh 0;
-  }
-
-  @include media(">=desktop") {
-    padding: 30vh 0;
-  }
-
-  @include media(">=mega") {
-    padding: 35vh 0;
-  }
-
-  h1, h2 {
-    color: $c-mediumgray;
-    text-transform: none;
-    font-weight: 400;
-    text-align: left;
-    max-width: (2/3) * $w-container;
-  }
-}
-
-
 /* clears */
 
 .clear {
