@@ -27,6 +27,14 @@
       height: auto;
     }
   }
+
+  .logo-hero {
+    display: none;
+  }
+
+  .logo-regular {
+    display: block;
+  }
 }
 
 /* override for hero pages: show header on top of hero */
@@ -37,6 +45,14 @@ body.has-hero {
 
     a {
       color: $c-mediumgray;
+    }
+
+    .logo-hero {
+      display: block;
+    }
+
+    .logo-regular {
+      display: none;
     }
   }
 }
