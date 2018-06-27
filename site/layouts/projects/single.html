@@ -1,33 +1,33 @@
 <!doctype html>
 <html lang="de">
-{{ partial "head-single" . }}
-<body id="root">
-    <div class="wrapper">
-        {{ partial "header" . }}
+    {{ partial "head-single" . }}
+    {{ partial "body" . }}
+        <div class="wrapper">
+            {{ partial "header" . }}
 
-        <div class="project">
+            <div class="project">
 
-            {{ partial "link-prev-next" . }}
+                {{ partial "link-prev-next" . }}
 
-            <h1 class="has-prev-next">{{ .Title }}</h1>
+                <h1 class="has-prev-next">{{ .Title }}</h1>
 
-            {{ if .Params.teaser }}
-            <h4>{{ .Params.teaser }}</h4>
-            {{ end }}
+                {{ if .Params.teaser }}
+                <h4>{{ .Params.teaser }}</h4>
+                {{ end }}
 
-            <article>
-                {{ .Content }}
-            </article>
+                <article>
+                    {{ .Content }}
+                </article>
 
-            {{ if .Params.reference }}
-            <h2>Link</h2>
-            <a href="{{ .Params.reference }}" rel="noopener" target="_blank">{{ .Params.reference }}</a>
-            {{ end }}
+                {{ if .Params.reference }}
+                <h2>Link</h2>
+                <a href="{{ .Params.reference }}" rel="noopener" target="_blank">{{ .Params.reference }}</a>
+                {{ end }}
 
+            </div>
+
+            {{ partial "footer" . }}
         </div>
-
-        {{ partial "footer" . }}
-    </div>
-</body>
-{{partial "javascript" . }}
+    </body>
+    {{partial "javascript" . }}
 </html>

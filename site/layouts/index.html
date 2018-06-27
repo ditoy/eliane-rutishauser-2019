@@ -1,75 +1,75 @@
 <!doctype html>
 {{ partial "head-3dimensional" }}
 <html lang="de">
-{{ partial "head-site" . }}
-<body id="root" class="has-hero">
-    <div class="wrapper">
+    {{ partial "head-site" . }}
+    {{ partial "body" (dict "context" . "hero" true) }}
+        <div class="wrapper">
 
-        <div class="hero">
-            <div class="container">
-                <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
+            <div class="hero">
+                <div class="container">
+                    <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
+                </div>
             </div>
-        </div>
 
-        {{ partial "header" . }}
+            {{ partial "header" . }}
 
-        <div class="stripe gray">
-            <div class="container">
-                <article>
-                    {{ .Content }}
-                </article>
+            <div class="stripe gray">
+                <div class="container">
+                    <article>
+                        {{ .Content }}
+                    </article>
+                </div>
             </div>
-        </div>
 
-        <div class="stripe gray">
-            <div class="container">
-                <article>
-                    <h2>Referenzen</h2>
-                    <p class="text-center">...</p>
-                </article>
+            <div class="stripe gray">
+                <div class="container">
+                    <article>
+                        <h2>Referenzen</h2>
+                        <p class="text-center">...</p>
+                    </article>
+                </div>
             </div>
-        </div>
 
-        <div class="stripe black">
-            <div class="container">
-                <article>
-                    <cite>
-                        Statement Kunde lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
-                    </cite>
-                </article>
+            <div class="stripe black">
+                <div class="container">
+                    <article>
+                        <cite>
+                            Statement Kunde lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
+                        </cite>
+                    </article>
+                </div>
             </div>
-        </div>
 
-        <div class="stripe gray">
-            <div class="container">
-                <article>
-                    <h2>Team</h2>
-                    <p class="text-center">...</p>
-                </article>
+            <div class="stripe gray">
+                <div class="container">
+                    <article>
+                        <h2>Team</h2>
+                        <p class="text-center">...</p>
+                    </article>
+                </div>
             </div>
-        </div>
 
-        <div class="stripe">
-            <div class="container">
-                <article>
-                    <h2>Kunden</h2>
-                    <p class="text-center">...</p>
-                </article>
+            <div class="stripe">
+                <div class="container">
+                    <article>
+                        <h2>Kunden</h2>
+                        <p class="text-center">...</p>
+                    </article>
+                </div>
             </div>
-        </div>
 
-        <div class="stripe gray">
-            <div class="container">
-                <article>
-                    <cite>
-                        Statement Mitarbeiter lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
-                    </cite>
-                </article>
+            <div class="stripe gray">
+                <div class="container">
+                    <article>
+                        <cite>
+                            Statement Mitarbeiter lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
+                        </cite>
+                    </article>
+                </div>
             </div>
+            {{ partial "footer" . }}
         </div>
-        {{ partial "footer" . }}
-    </div>
-</body>
-{{ partial "schema/global" . }}
-{{ partial "javascript" . }}
+    </body>
+    {{ partial "schema/global" . }}
+    {{ partial "javascript" . }}
 </html>

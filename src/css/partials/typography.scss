@@ -155,27 +155,25 @@ cite {
   @extend h3;
   font-style: normal;
   width: 100%;
-  padding: 0 3em;
+  padding: 0;
   display: inline-block;
   text-align: center;
+
+  @include media(">=tablet") {
+    padding: 0 3em;
+  }
 
   &:before,
   &:after {
     display: inline;
     color: $c-primary;
-    position: relative;
   }
 
   &:before {
-    float: left;
-    content: "«";
-    left: -1.5em;
-
+    content: "« ";
   }
 
   &:after {
-    float: right;
-    content: "»";
-    right: -1.5em;
+    content: " »";
   }
 }
