@@ -154,31 +154,28 @@ hr {
 cite {
   @extend h3;
   font-style: normal;
-  margin: 0 3em;
-  display: block;
+  width: 100%;
+  padding: 0 3em;
+  display: inline-block;
   text-align: center;
 
   &:before,
   &:after {
     display: inline;
-    font-size: 3em;
-    width: 1em;
-    line-height: 1;
-    color: $c-mediumgray;
+    color: $c-primary;
     position: relative;
   }
 
   &:before {
     float: left;
-    content: "„";
-    top: -1em;
-    left: -1em;
+    content: "«";
+    left: -1.5em;
+
   }
 
   &:after {
     float: right;
-    content: "”";
-    bottom: -1em;
-    right: -1em;
+    content: "»";
+    right: -1.5em;
   }
 }

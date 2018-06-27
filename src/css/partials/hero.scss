@@ -69,11 +69,6 @@
 
     cite {
       color: $c-lightgray;
-
-      &:before,
-      &:after {
-        color: lighten($c-darkgray, 10%);
-      }
     }
   }
 }
@@ -109,6 +104,7 @@ body.has-hero {
 
     width: 280px;
     padding: 2em;
+    margin-top: 3em;
 
     img {
       width: 100%;
