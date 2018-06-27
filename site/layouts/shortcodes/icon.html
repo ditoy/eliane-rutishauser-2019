@@ -1,15 +1,5 @@
 <div class="clear"></div>
 <i class="icon">
-    {{ if eq "bulb" (.Get 0) }}
-        <img src="https://zippy.gfycat.com/UnkemptWideAss.gif" />
-    {{ end }}
-
-    {{ if eq "ruler" (.Get 0) }}
-        <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/7301-200.png" />
-    {{ end }}
-
-    {{ if eq "saw" (.Get 0) }}
-        <img src="https://cdn2.iconfinder.com/data/icons/line-construction-and-building/200/saw-512.png" />
-    {{ end }}
+    <img src="images/uploads/icon_{{ .Get 0 }}.svg" />
 </i>
 
