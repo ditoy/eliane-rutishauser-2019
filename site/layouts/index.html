@@ -26,7 +26,7 @@
                     <article>
                         <h2>Referenzen</h2>
                             {{ range first 6 (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
-                            {{ .Render "card" }}
+                              {{ .Render "card" }}
                             {{ end }}
                         <div class="clear"></div>
                     </article>

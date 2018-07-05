@@ -36,7 +36,6 @@ const Autogrow = require('textarea-autogrow');
  */
 window.onload = function() {
     checkResize();
-    equalize();
 };
 
 /**
@@ -72,11 +71,10 @@ if (toggler) {
 /**
  * equalize height of elements
  */
-
 function equalize() {
     const nodes = document.querySelectorAll('.equalize'),
-          elems = [].slice.call(nodes),
-          tallest = Math.max.apply(Math, elems.map(function(elem, index) {
+        elems = [].slice.call(nodes),
+        tallest = Math.max.apply(Math, elems.map(function(elem, index) {
             elem.style.minHeight = '';
             return elem.offsetHeight;
         }))
@@ -84,7 +82,7 @@ function equalize() {
 
     for (let i = 0; i < elems.length; i++) {
         const elem = elems[i];
-        elem.style.minHeight = tallest + 'px';
+        elem.style.minHeight = (tallest + 1) + 'px'; // adjust tallest by 1px
     }
 }
 
