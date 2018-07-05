@@ -7,6 +7,21 @@
                 </div>
             {{ end }}
         </div>
-        <h3>{{ .Title}}</h3>
+        <h3>{{ .Title }}</h3>
+        <div class="teaser">
+            {{ .Params.teaser }}
+        </div>
+        <div class="icons">
+            {{ if eq .Params.concept true }}
+                {{ partial "icon" (dict "context" . "icon" "bulb") }}
+            {{ end }}
+            {{ if eq .Params.planning true }}
+                {{ partial "icon" (dict "context" . "icon" "ruler") }}
+            {{ end }}
+            {{ if eq .Params.implementation true }}
+                {{ partial "icon" (dict "context" . "icon" "saw") }}
+            {{ end }}
+        </div>
+
     </a>
 </div>

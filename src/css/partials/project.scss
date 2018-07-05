@@ -1,26 +1,10 @@
 .projects {
 
-  .references {
-
-    font-size: 80%;
-
-    .row {
-      border-bottom: 1px solid $c-mediumgray;
-
-      &.head {
-        border-color: $c-black;
-        font-weight: bold;
-      }
-
-      &.year {
-        background: $c-mediumgray;
-      }
-
-      @include media("<=phone") {
-        .col-2 {
-          display: none;
-        }
-      }
+  .icons {
+    img {
+      width: 2em;
+      height: auto;
+      display: inline-block;
     }
   }
 }

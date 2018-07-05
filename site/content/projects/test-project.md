@@ -1,9 +1,9 @@
 ---
-title:          "{{ replace .TranslationBaseName "-" " " | title }}"
-date:           "{{ .Date }}"
+title:          "Test-Projekt kurz"
+date:           "1989-12-03"
 position:       0
 active:         true
-draft:          true
+draft:          false
 robotsExclude:  false
 imagethumb:     ""
 image:          ""
@@ -14,8 +14,6 @@ concept:        true
 planning:       true
 implementation: true
 pictures:       []
-teaser:         ""
+teaser:         "Kleiner Teaser eines Projekts. Class aptent taciti sociosqu"
 ---
-kurzer Teaser des Projekts
-<!--more-->
 Beschreibung des Projekts
