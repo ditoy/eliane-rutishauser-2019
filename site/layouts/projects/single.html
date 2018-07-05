@@ -7,7 +7,6 @@
             {{ partial "header" . }}
 
             <div class="container">
-
                 <div class="project">
 
                     {{ partial "link-prev-next" . }}
@@ -15,7 +14,7 @@
                     <h1 class="has-prev-next">{{ .Title }}</h1>
 
                     {{ if .Params.teaser }}
-                        <h4>{{ .Params.teaser }}</h4>
+                    <h4>{{ .Params.teaser }}</h4>
                     {{ end }}
 
                     <div class="icons bigger text-center">

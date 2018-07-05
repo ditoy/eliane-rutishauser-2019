@@ -1,54 +1,55 @@
 <!doctype html>
 <html lang="de">
-  {{partial "head-site" . }}
-  {{ partial "body" . }}
-    <div class="wrapper">
-      {{ partial "header" . }}
+{{partial "head-site" . }}
+{{ partial "body" . }}
+<div class="wrapper">
+    {{ partial "header" . }}
 
-      <div class="projects">
+    <div class="projects">
+        <div class="container">
 
-        <div class="stripe">
-          <div class="container">
-            <article>
-              <h1>{{ .Title }}</h1>
+            <h1>{{ .Title }}</h1>
 
-              <label for="f1">
-                <div class="text">Filter1:</div>
-                <select name="f1" id="f1">
-                  <option>FILTER1</option>
-                </select>
-              </label>
+            {{ .Content }}
 
-              <label for="f2">
-                <div class="text">Filter 2:</div>
-                <select name="f2" id="f2">
-                  <option>FILTER2</option>
-                </select>
-              </label>
+            <div class="spacer-3x"></div>
 
-              <div class="clear"></div>
+            <div class="row">
+                <div class="col-2 hide-on-small"></div>
+                <div class="col-4">
+                    <label for="f1">
+                        <select name="f1" id="f1">
+                            <option>Kompetenzen</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-4">
+                    <label for="f2">
+                        <select name="f2" id="f2">
+                            <option>Aufgabenbereich</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-2 hide-on-small"></div>
+            </div>
 
-              {{ .Content }}
-            </article>
-          </div>
-        </div>
-        <div class="stripe gray">
-          <div class="container">
+            <div class="spacer-3x"></div>
+
             <div class="cards">
-              <div class="cards-sizer"></div>
-              {{  range $index, $page := .Data.Pages }}
-                {{ if and (isset .Params "active") (.Params.active) }}
-                  {{ .Render "card" }}
+                <div class="cards-sizer"></div>
+                {{  range $index, $page := .Data.Pages }}
+                    {{ if and (isset .Params "active") (.Params.active) }}
+                        {{ .Render "card" }}
+                    {{ end }}
                 {{ end }}
-              {{ end }}
             </div>
             <div class="clear"></div>
-          </div>
-        </div>
-      </div>
 
-      {{ partial "footer" . }}
+        </div>
     </div>
-  </body>
-  {{partial "javascript" . }}
+
+    {{ partial "footer" . }}
+</div>
+</body>
+{{partial "javascript" . }}
 </html>

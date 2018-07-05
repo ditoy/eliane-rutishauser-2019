@@ -1,3 +1,7 @@
+body.projects {
+  background-color: $c-lightgray;
+}
+
 .projects {
 
   .icons {
@@ -15,4 +19,9 @@
       }
     }
   }
+
+  select {
+    text-transform: uppercase;
+  }
+
 }

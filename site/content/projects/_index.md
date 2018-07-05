@@ -6,4 +6,3 @@ robotsExclude:  false
 imagethumb:     ""
 image:          ""
 ---
-gugus
