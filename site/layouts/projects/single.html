@@ -3,30 +3,47 @@
     {{ partial "head-single" . }}
     {{ partial "body" . }}
         <div class="wrapper">
+
             {{ partial "header" . }}
 
-            <div class="project">
+            <div class="container">
 
-                {{ partial "link-prev-next" . }}
+                <div class="project">
 
-                <h1 class="has-prev-next">{{ .Title }}</h1>
+                    {{ partial "link-prev-next" . }}
 
-                {{ if .Params.teaser }}
-                <h4>{{ .Params.teaser }}</h4>
-                {{ end }}
+                    <h1 class="has-prev-next">{{ .Title }}</h1>
 
-                <article>
-                    {{ .Content }}
-                </article>
+                    {{ if .Params.teaser }}
+                        <h4>{{ .Params.teaser }}</h4>
+                    {{ end }}
 
-                {{ if .Params.reference }}
-                <h2>Link</h2>
-                <a href="{{ .Params.reference }}" rel="noopener" target="_blank">{{ .Params.reference }}</a>
-                {{ end }}
+                    <div class="icons bigger text-center">
+                        {{ if eq .Params.concept true }}
+                            {{ partial "icon" (dict "context" . "icon" "bulb") }}
+                        {{ end }}
+                        {{ if eq .Params.planning true }}
+                            {{ partial "icon" (dict "context" . "icon" "ruler") }}
+                        {{ end }}
+                        {{ if eq .Params.implementation true }}
+                            {{ partial "icon" (dict "context" . "icon" "saw") }}
+                        {{ end }}
+                    </div>
 
+                    <article>
+                        {{ .Content }}
+                    </article>
+
+                    {{ if .Params.reference }}
+                    <h2>Link</h2>
+                    <a href="{{ .Params.reference }}" rel="noopener" target="_blank">{{ .Params.reference }}</a>
+                    {{ end }}
+
+                </div>
             </div>
 
             {{ partial "footer" . }}
+
         </div>
     </body>
     {{partial "javascript" . }}

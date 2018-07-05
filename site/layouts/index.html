@@ -25,9 +25,9 @@
                 <div class="container projects">
                     <article>
                         <h2>Referenzen</h2>
-                            {{ range first 6 (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
-                              {{ .Render "card" }}
-                            {{ end }}
+                        {{ range first 6 (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
+                            {{ .Render "card" }}
+                        {{ end }}
                         <div class="clear"></div>
                     </article>
                 </div>
@@ -44,10 +44,13 @@
             </div>
 
             <div class="stripe gray">
-                <div class="container">
+                <div class="container team">
                     <article>
                         <h2>Team</h2>
-                        <p class="text-center">...</p>
+                        {{ range first 6 (where (where .Site.Pages "Section" "team") ".Params.active" "=" true) }}
+                            {{ .Render "card" }}
+                        {{ end }}
+                        <div class="clear"></div>
                     </article>
                 </div>
             </div>

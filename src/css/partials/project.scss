@@ -4,9 +4,15 @@
     margin-top: 0.6*$spacer;
 
     img {
-      width: 2em;
+      width: 1.8em;
       height: auto;
       display: inline-block;
+    }
+
+    &.bigger {
+      img {
+        width: 2.5em;
+      }
     }
   }
 }

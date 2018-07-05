@@ -37,9 +37,9 @@
             <div class="cards">
               <div class="cards-sizer"></div>
               {{  range $index, $page := .Data.Pages }}
-              {{ if and (isset .Params "active") (.Params.active) }}
-              {{ .Render "card" }}
-              {{ end }}
+                {{ if and (isset .Params "active") (.Params.active) }}
+                  {{ .Render "card" }}
+                {{ end }}
               {{ end }}
             </div>
             <div class="clear"></div>

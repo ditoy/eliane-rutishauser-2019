@@ -1,5 +1,5 @@
 ---
-title:          "Test-Projekt Extra-Gross"
+title:          "Test-Projekt 7"
 date:           "1989-12-03"
 position:       4
 active:         true
