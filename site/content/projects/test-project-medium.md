@@ -1,11 +1,11 @@
 ---
 title:          "Test-Projekt mittel"
 date:           "1989-12-03"
-position:       0
+position:       3
 active:         true
 draft:          false
 robotsExclude:  false
-imagethumb:     ""
+imagethumb:     "images/uploads/prairie-01.jpg"
 image:          ""
 year:           2018
 customerName:   "Kunde"

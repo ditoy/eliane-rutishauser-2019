@@ -1,7 +1,7 @@
 ---
 title:          "Test-Projekt kurz"
 date:           "1989-12-03"
-position:       0
+position:       6
 active:         true
 draft:          false
 robotsExclude:  false

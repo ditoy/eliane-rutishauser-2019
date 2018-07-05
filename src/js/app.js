@@ -36,6 +36,7 @@ const Autogrow = require('textarea-autogrow');
  */
 window.onload = function() {
     checkResize();
+    equalize();
 };
 
 /**

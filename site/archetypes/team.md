@@ -14,7 +14,6 @@ linkedin:       "LinkedIn URL"
 twitter:        "@twitterHandle"
 imagethumb:     ""
 image:          ""
+quote:          ""
 ---
 Kurzbiographie
-<!--more-->
-detaillierte, tabelarische Biographie

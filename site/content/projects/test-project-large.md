@@ -1,11 +1,11 @@
 ---
 title:          "Test-Projekt gross"
 date:           "1989-12-03"
-position:       0
+position:       1
 active:         true
 draft:          false
 robotsExclude:  false
-imagethumb:     ""
+imagethumb:     "images/uploads/prairie-01.jpg"
 image:          ""
 year:           2018
 customerName:   "Kunde"
