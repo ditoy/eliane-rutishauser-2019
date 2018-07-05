@@ -60,13 +60,11 @@ ul.details {
 
 .card {
   float: left;
-  padding: 1rem;
-  background: $c-lightgray;
-
+  padding: 0;
 
   h3 {
     font-family: $f-regular;
-    transition: $tr-scope $tr-speed $tr-ease;
+    transition: $tr-scope $tr-speed $tr-ease-alt;
     padding: 0.5rem 0 0 0;
     margin: 0;
     width: 100%;
@@ -88,36 +86,36 @@ ul.details {
 }
 
 .card-inner {
-  transition: $tr-scope $tr-speed $tr-ease;
-  overflow: hidden;
+  transition: $tr-scope $tr-speed $tr-ease-linear;
+  padding: 1rem;
+  margin: 0.6rem;
+  border-radius: 1px;
 
-  *,
-  &:hover * {
-    transition: $tr-scope $tr-speed $tr-ease;
+  * {
+    transition: $tr-scope $tr-speed $tr-ease-linear;
   }
 
   /* preps for hover fill effect */
   .featuredimageWrapper {
-    border-radius: 0.2rem;
     background-color: $c-white;
     overflow: hidden;
   }
 
   .featuredimage {
-    transition: transform $tr-speed-slow $tr-ease;
+    transition: transform $tr-speed $tr-ease-alt;
     transform: scale(1);
   }
 
   /* elevate and fill card on hover effect */
   &:hover {
-    .featuredimageWrapper {
-      transition: filter $tr-speed-slow $tr-ease;
-      filter: grayscale(0);
-    }
+    background: darken($c-lightgray, 3%);
+    box-shadow: 1px 1px 6px rgba($c-black, 0.35);
+    transition: $tr-scope $tr-speed $tr-ease-linear;
 
     .featuredimage {
-      transition: transform $tr-speed-slow $tr-ease;
-      transform: scale(1.08);
+      transition: transform $tr-speed $tr-ease-alt;
+      transition-delay: 50ms;
+      transform: scale(1.1);
     }
 
     a {
@@ -131,7 +129,6 @@ ul.details {
     display: block;
     color: $c-darkgray;
     text-decoration: none;
-    transition: $tr-scope $tr-speed $tr-ease;
   }
 
   .featuredimage {
@@ -141,6 +138,6 @@ ul.details {
     padding-bottom: percentage(3/4);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
   }
 }

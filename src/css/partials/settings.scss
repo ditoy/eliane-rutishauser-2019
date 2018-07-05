@@ -35,7 +35,8 @@ $tr-speed:      500ms;
 $tr-speed-slow: 800ms;
 $tr-scope:      all;
 $tr-ease:       cubic-bezier(0.15, 1.05, 0.9, 1);
-$tr-ease-alt:   cubic-bezier(0.2, 0.75, 0.85, 1);
+$tr-ease-alt:   cubic-bezier(0.15, 1.5, 0.8, 1);
+$tr-ease-linear:cubic-bezier(0.15, 0.65, 0.9, 1);
 
 
 // breakpoints (for include-media)
