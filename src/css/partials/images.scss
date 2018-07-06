@@ -11,6 +11,11 @@ img,
     max-width: 50vh;
   }
 
+  &.overflow {
+    width: 100%;
+    max-width: 100%;
+  }
+
   svg {
     display: inline-block;
     max-width: 100% !important;

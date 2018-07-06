@@ -9,33 +9,35 @@
             <div class="container">
                 <div class="project">
 
-                    {{ partial "link-prev-next" . }}
-
-                    <h1 class="has-prev-next">{{ .Title }}</h1>
-
-                    {{ if .Params.teaser }}
-                    <h4>{{ .Params.teaser }}</h4>
-                    {{ end }}
+                    <img class="overflow" src="{{ .Params.image }}">
 
                     <div class="icons bigger text-center">
                         {{ if eq .Params.concept true }}
-                            {{ partial "icon" (dict "context" . "icon" "bulb") }}
+                        {{ partial "icon" (dict "context" . "icon" "bulb") }}
                         {{ end }}
                         {{ if eq .Params.planning true }}
-                            {{ partial "icon" (dict "context" . "icon" "ruler") }}
+                        {{ partial "icon" (dict "context" . "icon" "ruler") }}
                         {{ end }}
                         {{ if eq .Params.implementation true }}
-                            {{ partial "icon" (dict "context" . "icon" "saw") }}
+                        {{ partial "icon" (dict "context" . "icon" "saw") }}
                         {{ end }}
                     </div>
 
-                    <article>
+                    {{ partial "link-prev-next" . }}
+
+                    <h1>{{ .Title }}</h1>
+
+                    {{ if .Params.teaser }}
+                    <h4 class="text-center">{{ .Params.teaser }}</h4>
+                    {{ end }}
+
+                    <article class="text-center">
                         {{ .Content }}
                     </article>
 
                     {{ if .Params.reference }}
                     <h2>Link</h2>
-                    <a href="{{ .Params.reference }}" rel="noopener" target="_blank">{{ .Params.reference }}</a>
+                    <a href="{{ .Params.customerUrl }}" rel="noopener" target="_blank">{{ .Params.customerName }}</a>
                     {{ end }}
 
                 </div>
