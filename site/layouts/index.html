@@ -37,8 +37,9 @@
             <div class="stripe black">
                 <div class="container">
                     <article>
+                        <h2 class="cite text-center">Statement Kunde</h2>
                         <cite>
-                            Statement Kunde lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
+                             lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
                         </cite>
                     </article>
                 </div>
@@ -61,7 +62,12 @@
                 <div class="container">
                     <article>
                         <h2>Kunden</h2>
-                        <p class="text-center">...</p>
+                        <p class="text-center">
+                            {{ range first 10 (where .Site.Pages "Section" "customers") }}
+                                {{ .Params.title }}<br>
+                            {{ end }}
+                            <br>...
+                        </p>
                     </article>
                 </div>
             </div>

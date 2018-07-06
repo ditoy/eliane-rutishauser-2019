@@ -22,6 +22,9 @@ h1, h2 {
   @include media(">=mega") {
     font-size: 2.4rem;
   }
+  &.cite {
+    color: $c-primary;
+  }
 }
 
 h3 {
@@ -158,6 +161,7 @@ cite {
   padding: 0;
   display: inline-block;
   text-align: center;
+  margin: 0;
 
   @include media(">=tablet") {
     padding: 0 3em;
