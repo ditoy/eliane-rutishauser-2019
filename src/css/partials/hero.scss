@@ -54,7 +54,7 @@
 
 .stripe {
   margin: 0;
-  padding: 10rem 0;
+  padding: 5rem 0;
 
   &:first-of-type {
     padding-top: 0;
@@ -70,12 +70,6 @@
     cite {
       color: $c-lightgray;
     }
-  }
-}
-
-body.has-hero {
-  .stripe:first-of-type {
-    padding-top: 10rem;
   }
 }
 
