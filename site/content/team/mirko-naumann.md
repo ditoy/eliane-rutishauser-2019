@@ -1,7 +1,7 @@
 ---
 title:          "Philipp Keusch"
 date:           "2018-07-01"
-position:       2
+position:       3
 active:         true
 draft:          false
 robotsExclude:  false

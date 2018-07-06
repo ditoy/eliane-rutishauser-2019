@@ -8,37 +8,40 @@
 
             <div class="container">
                 <div class="project">
+                    <article>
 
-                    <img class="overflow" src="{{ .Params.image }}">
+                        <img class="overflow" src="{{ .Params.image }}">
 
-                    <div class="icons bigger text-center">
-                        {{ if eq .Params.concept true }}
-                        {{ partial "icon" (dict "context" . "icon" "bulb") }}
+                        <div class="icons bigger text-center">
+                            {{ if eq .Params.concept true }}
+                                {{ partial "icon" (dict "context" . "icon" "bulb") }}
+                            {{ end }}
+                            {{ if eq .Params.planning true }}
+                                {{ partial "icon" (dict "context" . "icon" "ruler") }}
+                            {{ end }}
+                            {{ if eq .Params.implementation true }}
+                                {{ partial "icon" (dict "context" . "icon" "saw") }}
+                            {{ end }}
+                        </div>
+
+                        {{ partial "link-prev-next" . }}
+
+                        <h1>{{ .Title }}</h1>
+
+                        {{ if .Params.teaser }}
+                        <h4 class="text-center">{{ .Params.teaser }}</h4>
                         {{ end }}
-                        {{ if eq .Params.planning true }}
-                        {{ partial "icon" (dict "context" . "icon" "ruler") }}
+
+                        <article class="text-center">
+                            {{ .Content }}
+                        </article>
+
+                        {{ if .Params.reference }}
+                        <h2>Link</h2>
+                        <a href="{{ .Params.customerUrl }}" rel="noopener" target="_blank">{{ .Params.customerName }}</a>
                         {{ end }}
-                        {{ if eq .Params.implementation true }}
-                        {{ partial "icon" (dict "context" . "icon" "saw") }}
-                        {{ end }}
-                    </div>
 
-                    {{ partial "link-prev-next" . }}
-
-                    <h1>{{ .Title }}</h1>
-
-                    {{ if .Params.teaser }}
-                    <h4 class="text-center">{{ .Params.teaser }}</h4>
-                    {{ end }}
-
-                    <article class="text-center">
-                        {{ .Content }}
                     </article>
-
-                    {{ if .Params.reference }}
-                    <h2>Link</h2>
-                    <a href="{{ .Params.customerUrl }}" rel="noopener" target="_blank">{{ .Params.customerName }}</a>
-                    {{ end }}
 
                 </div>
             </div>
@@ -47,5 +50,5 @@
 
         </div>
     </body>
-    {{partial "javascript" . }}
+    {{ partial "javascript" . }}
 </html>

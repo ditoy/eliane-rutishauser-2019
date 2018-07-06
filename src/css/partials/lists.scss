@@ -112,13 +112,12 @@ ul.details {
   &:hover {
     background: darken($c-lightgray, 3%);
     box-shadow: 1px 1px 6px rgba($c-black, 0.35);
-    transform: rotateY(12deg) rotateX(8deg);
     transition: $tr-scope $tr-speed $tr-ease-linear;
 
 
     .featuredimage {
-      //transition: transform $tr-speed $tr-ease-alt;
-      //transform: scale(1.1);
+      transition: transform $tr-speed $tr-ease-alt;
+      transform: scale(1.1);
     }
 
     a {

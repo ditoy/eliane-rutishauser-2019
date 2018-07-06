@@ -8,24 +8,23 @@
         <div class="stripe">
             <div class="container">
                 <article>
-                    <h1>
-                        {{ .Title }}<br>
-                        <small>
-                            {{ .Params.function }}
-                        </small>
-                    </h1>
-
                     {{ if .Params.image }}
                     <img src="{{ .Params.image }}" alt="Bild {{ .Title }}" class="overflow">
                     {{ end }}
 
-                    <article>
-                        <em>
-                            {{ .Summary }}
-                        </em>
+                    {{ partial "link-prev-next" . }}
 
-                        {{ $body := replace .Content .Summary "" }}
-                        {{ $body | safeHTML }}
+                    <h1>{{ .Title }}</h1>
+
+                    <p class="text-center">{{ .Params.function }}</p>
+
+
+                    {{ if .Params.quote }}
+                    <h4 class="text-center">{{ .Params.quote }}</h4>
+                    {{ end }}
+
+                    <article>
+                        {{ .Content }}
                     </article>
 
                     <div>
