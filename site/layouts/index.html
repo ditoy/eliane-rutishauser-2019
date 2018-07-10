@@ -62,11 +62,13 @@
                 <div class="container">
                     <article>
                         <h2>Kunden</h2>
-                        <p class="text-center">
-                            {{ range first 10 (where .Site.Pages "Section" "customers") }}
-                                {{ .Params.title }}<br>
+                        <p class="text-left column-3">
+                            {{ $collection := where .Site.Pages "Section" "customers" }}
+                                {{ range sort $collection ".File.LogicalName" }}
+                                {{ if .Params.title }}
+                                    {{ .Params.title }}<br>
+                                {{ end }}
                             {{ end }}
-                            <br>...
                         </p>
                     </article>
                 </div>
