@@ -51,6 +51,7 @@
     "respond.js": "^1.4.2",
     "scrollreveal": "^3.4.0",
     "selectivizr": "^1.0.3",
+    "sellect.js": "github:ditoy/sellect.js",
     "smooth-scrollbar": "^8.2.7",
     "textarea-autogrow": "^1.0.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
