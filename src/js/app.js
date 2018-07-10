@@ -74,22 +74,22 @@ if (toggler) {
  */
 function equalize() {
     const equalizers = document.querySelectorAll('.equalize');
-
-    for (let i = 0; i < equalizers.length; i++) {
-        const equalizer = equalizers[i];
-        const nodes = equalizer.parentNode.querySelectorAll('.equalize'),
-            elems = [].slice.call(nodes),
-            tallest = Math.max.apply(Math, elems.map(function(elem, index) {
-                elem.style.minHeight = '';
-                return elem.offsetHeight;
-            }))
-        ;
-
-        for (let j = 0; j < elems.length; j++) {
-            const elem = elems[j];
-            elem.style.minHeight = (tallest + 1) + 'px'; // adjust tallest by 1px
-        }
+    const parents = new Set();
+    for (const item of equalizers) {
+        parents.add(item.parentNode);
     }
+    parents.forEach(function(parent) {
+        const children = parent.querySelectorAll('.equalize');
+        const tallest = Math.max.apply(Math, Array.from(children).map(function(elem) {
+            elem.style.minHeight = '';
+            return elem.offsetHeight;
+        }));
+
+        children.forEach(function(child) {
+            child.style.minHeight = (tallest + 1) + 'px';
+        });
+
+    });
 }
 
 /**
