@@ -60,12 +60,12 @@
 
             <div class="stripe">
                 <div class="container">
+                    <h2>Kunden</h2>
                     <article class="text-left text-columns-3">
-                        <h2>Kunden</h2>
-                        <ul class="no-bullet">
                             {{ $alfa := (slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "V" "W" "X" "Y" "Z") }}
                             {{ $collection := sort (where .Site.Pages "Section" "customers") ".File.LogicalName" }}
                             {{ range $alfa }}
+                            <ul class="no-bullet">
                                 {{ $current := . }}
                                 <li class="text-heading">{{ $current }}</li>
                                 {{ range $collection }}
@@ -73,8 +73,8 @@
                                         <li>{{ .Params.title }}</li>
                                     {{ end }}
                                 {{ end }}
+                            </ul>
                             {{ end }}
-                        </ul>
                     </article>
                 </div>
             </div>
