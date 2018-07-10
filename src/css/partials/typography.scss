@@ -43,10 +43,6 @@ h4, h5, h6 {
 
 p {
   margin: 1em 0;
-
-  &.column-3 {
-    column-count: 3;
-  }
 }
 
 hr {
@@ -71,6 +67,10 @@ hr {
 
 .text-left {
   text-align: left !important;
+}
+
+.text-columns-3 {
+  column-count: 3;
 }
 
 .hide {
@@ -183,5 +183,17 @@ cite {
 
   &:after {
     content: " »";
+  }
+}
+
+ul {
+  &.no-bullet {
+    list-style: none;
+  }
+}
+
+li {
+  &.text-heading {
+    font-weight: 700;
   }
 }

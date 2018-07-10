@@ -60,16 +60,21 @@
 
             <div class="stripe">
                 <div class="container">
-                    <article>
+                    <article class="text-left text-columns-3">
                         <h2>Kunden</h2>
-                        <p class="text-left column-3">
-                            {{ $collection := where .Site.Pages "Section" "customers" }}
-                                {{ range sort $collection ".File.LogicalName" }}
-                                {{ if .Params.title }}
-                                    {{ .Params.title }}<br>
+                        <ul class="no-bullet">
+                            {{ $alfa := (slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "V" "W" "X" "Y" "Z") }}
+                            {{ $collection := sort (where .Site.Pages "Section" "customers") ".File.LogicalName" }}
+                            {{ range $alfa }}
+                                {{ $current := . }}
+                                <li class="text-heading">{{ $current }}</li>
+                                {{ range $collection }}
+                                    {{ if eq (lower (substr .Params.title 0 1)) (lower $current) }}
+                                        <li>{{ .Params.title }}</li>
+                                    {{ end }}
                                 {{ end }}
                             {{ end }}
-                        </p>
+                        </ul>
                     </article>
                 </div>
             </div>
