@@ -36,6 +36,7 @@ const Autogrow = require('textarea-autogrow');
  */
 window.onload = function() {
     checkResize();
+    // testSellect("aufgaben");
 };
 
 /**
@@ -76,7 +77,7 @@ function equalize() {
 
     for (let i = 0; i < equalizers.length; i++) {
         const equalizer = equalizers[i];
-        const nodes = getEqualizeSiblings(equalizer),
+        const nodes = equalizer.parentNode.querySelectorAll('.equalize'),
             elems = [].slice.call(nodes),
             tallest = Math.max.apply(Math, elems.map(function(elem, index) {
                 elem.style.minHeight = '';
@@ -89,26 +90,6 @@ function equalize() {
             elem.style.minHeight = (tallest + 1) + 'px'; // adjust tallest by 1px
         }
     }
-    // const nodes = document.querySelectorAll('.equalize'),
-    //     elems = [].slice.call(nodes),
-    //     tallest = Math.max.apply(Math, elems.map(function(elem, index) {
-    //         elem.style.minHeight = '';
-    //         return elem.offsetHeight;
-    //     }))
-    // ;
-    //
-    // for (let i = 0; i < elems.length; i++) {
-    //     const elem = elems[i];
-    //     elem.style.minHeight = (tallest + 1) + 'px'; // adjust tallest by 1px
-    // }
-}
-
-function getEqualizeSiblings(elem) {
-    const siblings = [];
-    siblings.push(elem);
-    let el = elem.parentNode.firstChild;
-    do { if (el.className === 'equalize') siblings.push(el); } while (el = el.nextSibling);
-    return siblings;
 }
 
 /**
@@ -141,3 +122,13 @@ if (autoresizes) {
         new Autogrow(autoresizes[j]);
     }
 }
+
+// function testSellect(id) {
+//     if (document.getElementById(id)) {
+//         var mySellect = sellect("#" + id, {
+//             originList: ["Gorilla","Taube","Fiesling"],
+//             destinationList: ["Taube"]
+//         });
+//         mySellect.init();
+//     }
+// }

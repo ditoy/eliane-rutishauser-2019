@@ -29,7 +29,7 @@ export default {
 
   context: path.join(__dirname, "src"),
   entry: {
-    app: ["./js/app"]
+    app: ["../node_modules/sellect.js/src/sellect", "./js/app"]
   },
   output: {
     path: path.join(__dirname, "dist"),
