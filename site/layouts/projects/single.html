@@ -41,6 +41,14 @@
                         <a href="{{ .Params.customerUrl }}" rel="noopener" target="_blank">{{ .Params.customerName }}</a>
                         {{ end }}
 
+                        <div>
+                        {{ if .Params.pictures }}
+                            {{ range .Params.pictures }}
+                                <img src="{{ . }}">
+                            {{ end }}
+                        {{ end }}
+                        </div>
+
                     </article>
 
                 </div>
