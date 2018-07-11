@@ -15,6 +15,7 @@ title = "3dimensional: Innenarchitektur, Gestaltung und dreidimensionale Kommuni
     appTitleShort = "3dimensional"
     appImage = "images/uploads/3dimensional-hero-1.jpg"
     appGoogleVerification = "123xyz-google-hash"
+    referenceActivities = [ "Shopdesign", "Bürodesign", "Rendering", "Ausstellungsgestaltung", "Schaufenstergestaltung", "Eventgestaltung", "Messegestaltung", "Signaletik", "Display", "Point of Sale" ]
 
 # URL Management
 [permalinks]
@@ -28,3 +29,7 @@ MetaDataFormat = "yaml"
 #     tag = "tags"
 #     category = "categories"
 #     author = "authors"
+
+# outputs
+[outputs]
+    home = ["HTML", "json" ]

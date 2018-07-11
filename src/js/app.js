@@ -36,7 +36,7 @@ const Autogrow = require('textarea-autogrow');
  */
 window.onload = function() {
     checkResize();
-    // testSellect("aufgaben");
+    testSellect('aufgaben', originList);
 };
 
 /**
@@ -123,12 +123,12 @@ if (autoresizes) {
     }
 }
 
-// function testSellect(id) {
-//     if (document.getElementById(id)) {
-//         var mySellect = sellect("#" + id, {
-//             originList: ["Gorilla","Taube","Fiesling"],
-//             destinationList: ["Taube"]
-//         });
-//         mySellect.init();
-//     }
-// }
+function testSellect(id, originList) {
+    if (document.getElementById(id)) {
+        var mySellect = sellect('#' + id, {
+            originList: originList,
+            destinationList: ['Taube']
+        });
+        mySellect.init();
+    }
+}
