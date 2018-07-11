@@ -36,7 +36,8 @@ const Autogrow = require('textarea-autogrow');
  */
 window.onload = function() {
     checkResize();
-    testSellect('aufgaben', originList);
+    runSellect('kompetenzen', competenceList, competenceList);
+    runSellect('aufgaben', activityList, []);
 };
 
 /**
@@ -123,11 +124,11 @@ if (autoresizes) {
     }
 }
 
-function testSellect(id, originList) {
+function runSellect(id, originList, destinationList) {
     if (document.getElementById(id)) {
         var mySellect = sellect('#' + id, {
             originList: originList,
-            destinationList: ['Taube']
+            destinationList: destinationList
         });
         mySellect.init();
     }

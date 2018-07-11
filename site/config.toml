@@ -16,6 +16,7 @@ title = "3dimensional: Innenarchitektur, Gestaltung und dreidimensionale Kommuni
     appImage = "images/uploads/3dimensional-hero-1.jpg"
     appGoogleVerification = "123xyz-google-hash"
     referenceActivities = [ "Shopdesign", "Bürodesign", "Rendering", "Ausstellungsgestaltung", "Schaufenstergestaltung", "Eventgestaltung", "Messegestaltung", "Signaletik", "Display", "Point of Sale" ]
+    referenceCompetences = [ "Idee", "Planung", "Ausführung" ]
 
 # URL Management
 [permalinks]

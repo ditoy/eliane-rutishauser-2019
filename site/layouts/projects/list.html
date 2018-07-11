@@ -17,19 +17,12 @@
             <div class="row">
                 <div class="col-2 hide-on-small"></div>
                 <div class="col-4">
-                    <label for="f1">
-                        <select name="f1" id="f1">
-                            <option>Kompetenzen</option>
-                        </select>
-                    </label>
+                    <label for="kompetenzen">Kompetenzen</label>
+                        <input type="hidden" id="kompetenzen">
                 </div>
                 <div class="col-4">
-                    <label for="f2">
-                        <select name="f2" id="f2">
-                            <option>Aufgabenbereich</option>
-                        </select>
-                        <input type="text" id="aufgaben">
-                    </label>
+                    <label for="aufgaben">Aufgabenbereich</label>
+                        <input type="hidden" id="aufgaben">
                 </div>
                 <div class="col-2 hide-on-small"></div>
             </div>
@@ -54,8 +47,9 @@
     {{ partial "footer" . }}
 </div>
 <script>
-    var originList = [ {{ range $index, $element := .Site.Params.referenceActivities }}{{ if $index }}, {{ end }}"{{ $element }}"{{ end }} ];
-    console.log(originList);
+    var activityList = [ {{ range $index, $element := .Site.Params.referenceActivities }}{{ if $index }}, {{ end }}"{{ $element }}"{{ end }} ];
+    var competenceList = [ {{ range $index, $element := .Site.Params.referenceCompetences }}{{ if $index }}, {{ end }}"{{ $element }}"{{ end }} ];
+    // console.log(competenceList);
 </script>
 </body>
 {{partial "javascript" . }}
