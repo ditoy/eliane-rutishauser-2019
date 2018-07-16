@@ -80,3 +80,16 @@ body {
   }
 
 }
+
+.contact article {
+	text-align: center;
+	a {
+		color: $c-darkgray;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: $c-primary;
+	}
+
+}

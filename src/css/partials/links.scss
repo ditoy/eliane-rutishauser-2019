@@ -1,8 +1,16 @@
 /* hyperlinks */
 
+a {
+	color: $c-green;
+	text-decoration: none;
+}
+
+a:hover {
+	color:	$c-darkgray;
+}
+
 a,
 button {
-  text-decoration: underline;
   transition: $tr-scope $tr-speed $tr-ease;
 
   &:visited {
