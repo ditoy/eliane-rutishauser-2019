@@ -66,7 +66,7 @@ ul.details {
     font-family: $f-regular;
     transition: $tr-scope $tr-speed $tr-ease-alt;
     padding: 0.5rem 0 0 0;
-    margin: 0;
+    margin: 0.3rem 0;
     width: 100%;
     font-size: 1rem;
     letter-spacing: 0.03em;
@@ -92,6 +92,9 @@ ul.details {
   border-radius: 1px;
   perspective: 1500px;
   transform-origin: 60% 40%;
+  .icons {
+  	margin-top: 0.5rem !important;
+  }
 
   * {
     transition: $tr-scope $tr-speed $tr-ease-linear;
@@ -110,8 +113,6 @@ ul.details {
 
   /* elevate and fill card on hover effect */
   &:hover {
-    background: darken($c-lightgray, 3%);
-    box-shadow: 1px 1px 6px rgba($c-black, 0.35);
     transition: $tr-scope $tr-speed $tr-ease-linear;
 
 
