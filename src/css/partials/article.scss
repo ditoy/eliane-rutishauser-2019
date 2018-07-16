@@ -45,8 +45,18 @@ article {
     margin-bottom: 1em;
   }
 
-  .postnav {
-
+  .nav-prev-next img {
+	width: 30px;	  
+  }
+  .nav-prev {
+	  img {
+	  transform: rotate(180deg);	  
+	}
+  }
+  
+  .nav-prev:hover,
+  .nav-next:hover {
+  	opacity: 0.4;
   }
 
 }
