@@ -42,7 +42,7 @@ gulp.task('sass', () => {
     ];
 
     // compile sass to css and post-process
-    gulp.src('./src/css/*.scss')
+    gulp.src(['./src/css/*.scss', './node_modules/lightgallery.js/dist/css/*.css'])
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dist/css'))

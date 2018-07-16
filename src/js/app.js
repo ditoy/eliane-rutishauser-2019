@@ -1,4 +1,13 @@
-// import ScrollReveal from 'scrollreveal';
+/*
+import lightGallery from 'lightgallery.js';
+lightGallery(document.getElementById('lightgallery'));
+*/
+
+require(['lightgallery'], function() {
+    require(["lg-zoom", "lg-thumbnail"], function(){
+        lightGallery(document.getElementById('lightgallery'));
+    });
+});
 
 const Autogrow = require('textarea-autogrow');
 
@@ -36,8 +45,8 @@ const Autogrow = require('textarea-autogrow');
  */
 window.onload = function() {
     checkResize();
-    runSellect('kompetenzen', competenceList, competenceList);
-    runSellect('aufgaben', activityList, []);
+//     runSellect('kompetenzen', competenceList, competenceList);
+//    runSellect('aufgaben', activityList, []);
 };
 
 /**
@@ -133,3 +142,6 @@ function runSellect(id, originList, destinationList) {
         mySellect.init();
     }
 }
+
+
+
