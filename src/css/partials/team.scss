@@ -2,5 +2,10 @@
 	img {
 		margin-bottom: 6rem;
 	}
-
+	table {
+		td:first-child {
+			font-weight: 700;
+			padding-right: 40px;
+		}
+	}
 }
