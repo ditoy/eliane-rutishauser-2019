@@ -13,7 +13,9 @@ $footer-text: $c-mediumgray;
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	min-height: 600px;
-
+		  @include media("<=tablet") {
+					min-height: 400px;
+		  }
 	a {
 		color: $footer-text;
 		text-decoration: none;
@@ -25,6 +27,10 @@ $footer-text: $c-mediumgray;
 
 	.social-media {
 		margin-top: 100px;
+		  @include media("<=tablet") {
+				margin-top: 20px;
+		  }
+
 		a {
 			margin: 0 4px;
 			display: inline-block;
