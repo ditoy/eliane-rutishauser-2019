@@ -100,7 +100,11 @@ ul.details {
     transition: $tr-scope $tr-speed $tr-ease-linear;
   }
 
-  /* preps for hover fill effect */
+  	p {
+	  	font-size: 1rem;
+	  	line-height:  1.5rem;
+  	}
+   /* preps for hover fill effect */
   .featuredimageWrapper {
     background-color: $c-white;
     overflow: hidden;

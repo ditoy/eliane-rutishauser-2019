@@ -9,7 +9,7 @@
 
             <h3>{{ .Title }}</h3>
             <div class="teaser">
-                {{ .Params.teaser | truncate 100 }}
+	            <p>{{ .Params.teaser | truncate 100 }}</p>
             </div>
             <div class="icons">
                 {{ if eq .Params.concept true }}
