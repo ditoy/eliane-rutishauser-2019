@@ -17,6 +17,10 @@ $footer-text: $c-mediumgray;
 	a {
 		color: $footer-text;
 		text-decoration: none;
+		&:hover {
+			opacity: 0.6;
+		}		
+
 	}
 
 	.social-media {
@@ -25,10 +29,6 @@ $footer-text: $c-mediumgray;
 			margin: 0 4px;
 			display: inline-block;
 			max-width: 40px;
-			&:hover {
-				opacity: 0.6;
-			}		
-
 		}
 	}
 }
