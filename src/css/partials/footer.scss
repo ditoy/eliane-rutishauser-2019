@@ -4,7 +4,7 @@ $footer-text: $c-mediumgray;
 	clear: both;
 	background: $c-darkgray;
 	color: $footer-text;
-	padding: 5vh 0;
+	padding-top: 3rem;
 	font-size: 0.9rem;
 	letter-spacing: 0.05em;
 	min-height: 30vh;
@@ -14,7 +14,7 @@ $footer-text: $c-mediumgray;
 	background-repeat: no-repeat;
 	min-height: 600px;
 		  @include media("<=tablet") {
-					min-height: 400px;
+					min-height: 520px;
 		  }
 	a {
 		color: $footer-text;
