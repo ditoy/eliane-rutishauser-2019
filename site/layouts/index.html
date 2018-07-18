@@ -62,7 +62,7 @@
                 <div class="container">
                     <h2>Kunden</h2>
                     <article class="text-left text-columns-3">
-                            {{ $alfa := (slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "V" "W" "X" "Y" "Z") }}
+                            {{ $alfa := (slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z") }}
                             {{ $collection := sort (where .Site.Pages "Section" "customers") ".File.LogicalName" }}
                             {{ range $alfa }}
                             <ul class="no-bullet">
