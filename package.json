@@ -57,6 +57,7 @@
     "textarea-autogrow": "^1.0.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "^0.5.7",
+    "vivus": "^0.4.4",
     "webpack": "3.6.0",
     "whatwg-fetch": "^1.0.0"
   },

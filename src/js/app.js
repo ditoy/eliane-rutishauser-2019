@@ -1,6 +1,8 @@
-import lightGallery from 'lightgallery.js';
+import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used as window.lightGallery - the import statement is required here
 
 const Autogrow = require('textarea-autogrow');
+const Vivus = require('vivus');
+
 
 /**
  * custom polyfills
@@ -44,6 +46,18 @@ window.onload = function() {
     catch (e) {}
 
     window.lightGallery(document.getElementById('lightgallery'));
+
+
+    new Vivus(
+        'animated-grid-svg', {
+            duration: 800,
+            type: 'sync',
+            reverseStack: true,
+            pathTimingFunction: Vivus.EASE,
+            animTimingFunction: Vivus.EASE
+        }, () => {
+            // tbd
+        });
 };
 
 
