@@ -36,12 +36,15 @@ const Autogrow = require('textarea-autogrow');
  */
 window.onload = function() {
     checkResize();
-    // runSellect('kompetenzen', competenceList, competenceList);
-    // runSellect('aufgaben', activityList, []);
+
+    try {
+        runSellect('kompetenzen', competenceList, competenceList);
+        runSellect('aufgaben', activityList, []);
+    }
+    catch (e) {}
 
     window.lightGallery(document.getElementById('lightgallery'));
 };
-
 
 
 /**
@@ -128,15 +131,18 @@ if (autoresizes) {
     }
 }
 
+/**
+ * handle filter tags in references
+ */
+
 function runSellect(id, originList, destinationList) {
     if (document.getElementById(id)) {
-        var mySellect = sellect('#' + id, {
+        const mySellect = sellect('#' + id, {
             originList: originList,
             destinationList: destinationList
         });
         mySellect.init();
     }
 }
-
 
 
