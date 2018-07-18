@@ -14,14 +14,14 @@
   z-index: ($z-hero + 1);
   overflow: hidden;
   text-align: left;
+}
 
-  svg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
+#animated-grid-svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 80%;
 }
 
 
@@ -37,23 +37,6 @@
   min-height: 100vh;
   z-index: $z-hero;
   padding: 20vh 0;
-
-
-  //&::after {
-  //  content: " ";
-  //  display: block;
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  width: 100vw;
-  //  max-width: 100%;
-  //  min-height: 100vh;
-  //  z-index: ($z-hero + 1);
-  //  background-image: url('/images/uploads/3dimensional-grid.svg');
-  //  background-position: bottom right;
-  //  background-repeat: no-repeat;
-  //  background-size: 80vh;
-  //}
 
   @include media(">=tablet") {
     padding: 25vh 0;

@@ -48,15 +48,14 @@ window.onload = function() {
     window.lightGallery(document.getElementById('lightgallery'));
 
 
-    new Vivus(
+    let gridAnimationDirection = 1;
+    const gridAnimationForward = new Vivus(
         'animated-grid-svg', {
-            duration: 800,
-            type: 'sync',
-            reverseStack: true,
-            pathTimingFunction: Vivus.EASE,
-            animTimingFunction: Vivus.EASE
+            duration: 500,
+            type: 'delayed'
         }, () => {
-            // tbd
+            // gridAnimationDirection = gridAnimationDirection * -1;
+            // gridAnimationForward.play(gridAnimationDirection);
         });
 };
 
