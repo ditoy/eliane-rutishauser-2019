@@ -13,6 +13,7 @@ customerUrl:    "Kundenwebsite"
 concept:        true
 planning:       true
 implementation: true
+activities:     ""
 pictures:       []
 teaser:         ""
 ---

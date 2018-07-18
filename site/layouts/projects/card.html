@@ -1,4 +1,7 @@
-<div class="card equalize">
+<div class="card equalize"
+     data-competence="{{ if eq .Params.concept true }}concept {{ end }}{{ if eq .Params.planning true }}planning {{ end }}{{ if eq .Params.implementation true }}implementation {{ end }}"
+     data-activity="{{ .Params.activities }}"
+>
     <a href="{{ .Permalink }}">
         <div class="card-inner">
             {{ if .Params.imagethumb }}
