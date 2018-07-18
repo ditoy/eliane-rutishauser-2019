@@ -1,5 +1,24 @@
+body.team {
+	  background-color: $c-lightgray;
+}
 .team {
-
-
-
+	img {
+		margin-bottom: 6rem;
+	}
+	table {
+		td:first-child {
+			font-weight: 700;
+			padding-right: 40px;
+		}
+		margin-bottom: 3rem;
+	}
+	p {
+		margin: 0;
+	}
+	h1 {
+		margin-bottom: 0;
+	}
+	h4 {
+		margin: 3rem 0;
+	}
 }

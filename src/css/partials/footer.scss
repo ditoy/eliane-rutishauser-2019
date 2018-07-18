@@ -1,16 +1,40 @@
 $footer-text: $c-mediumgray;
 
 .footer {
-  clear: both;
-  background: $c-darkgray;
-  color: $footer-text;
-  padding: 5vh 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  min-height: 30vh;
+	clear: both;
+	background: $c-darkgray;
+	color: $footer-text;
+	padding-top: 3rem;
+	font-size: 0.9rem;
+	letter-spacing: 0.05em;
+	min-height: 30vh;
+	position: relative;
+	background-image: url('/images/uploads/3dimensional-grid.svg');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	min-height: 600px;
+		  @include media("<=tablet") {
+					min-height: 520px;
+		  }
+	a {
+		color: $footer-text;
+		text-decoration: none;
+		&:hover {
+			opacity: 0.6;
+		}		
 
-  a {
-    color: $footer-text;
-    text-decoration: none;
-  }
+	}
+
+	.social-media {
+		margin-top: 100px;
+		  @include media("<=tablet") {
+				margin-top: 20px;
+		  }
+
+		a {
+			margin: 0 4px;
+			display: inline-block;
+			max-width: 40px;
+		}
+	}
 }

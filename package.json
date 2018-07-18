@@ -1,8 +1,8 @@
 {
-  "name": "ditoy-website-2018",
-  "version": "1.0.0",
-  "description": "New ditoy website based on Hugo",
-  "repository": "ditoy/ditoy-website-2018",
+  "name": "3dimensional-website-2018",
+  "version": "0.0.1",
+  "description": "New 3dimensional website based on Hugo",
+  "repository": "ditoy/3dimensional-website-2018",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -42,6 +42,7 @@
     "hugo-bin": "^0.13.0",
     "imports-loader": "^0.7.1",
     "include-media": "^1.4.9",
+    "lightgallery.js": "^1.0.3",
     "particles.js": "^2.0.0",
     "path": "^0.12.7",
     "popmotion": "^8.1.22",

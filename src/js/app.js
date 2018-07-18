@@ -1,4 +1,4 @@
-// import ScrollReveal from 'scrollreveal';
+import lightGallery from 'lightgallery.js';
 
 const Autogrow = require('textarea-autogrow');
 
@@ -36,9 +36,13 @@ const Autogrow = require('textarea-autogrow');
  */
 window.onload = function() {
     checkResize();
-    runSellect('kompetenzen', competenceList, competenceList);
-    runSellect('aufgaben', activityList, []);
+    // runSellect('kompetenzen', competenceList, competenceList);
+    // runSellect('aufgaben', activityList, []);
+
+    window.lightGallery(document.getElementById('lightgallery'));
 };
+
+
 
 /**
  * menu toggle
@@ -133,3 +137,6 @@ function runSellect(id, originList, destinationList) {
         mySellect.init();
     }
 }
+
+
+

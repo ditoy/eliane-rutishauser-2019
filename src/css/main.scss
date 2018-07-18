@@ -31,3 +31,11 @@
 @import "partials/team";
 @import "partials/customers";
 @import "partials/sellect";
+
+
+/* vendors */
+
+// lightbox.js
+@import "../../node_modules/lightgallery.js/src/css/lg-fb-comment-box";
+@import "../../node_modules/lightgallery.js/src/css/lg-transitions";
+@import "../../node_modules/lightgallery.js/src/css/lightgallery";
