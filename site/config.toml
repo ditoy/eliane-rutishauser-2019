@@ -30,3 +30,6 @@ MetaDataFormat = "yaml"
 #     tag = "tags"
 #     category = "categories"
 #     author = "authors"
+
+[outputs]
+  section = ["HTML", "JSON"]

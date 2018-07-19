@@ -1,0 +1,10 @@
+[
+{{ $collection := .Pages }}
+    {{ range $index,$element := ($collection.ByParam "position") }}
+    {{ if gt $index 0 }},{{ end }}
+    {
+        "title" : "{{ .Params.title }}",
+        "date" : "{{ .Params.date }}"
+    }
+    {{ end }}
+]
