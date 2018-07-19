@@ -1,14 +1,17 @@
-[
+{{ $concept_icon := "<img src='images/uploads/icon_bulb.svg' />" }}{{ $planning_icon := "<img src='images/uploads/icon_ruler.svg' />" }}{{ $implementation_icon := "<img src='images/uploads/icon_saw.svg' />" }}[
 {{ $collection := (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
-    {{ range $index,$element := ($collection.ByParam "position") }}
+    {{ range $index, $element := ($collection.ByParam "position") }}
     {{ if gt $index 0 }},{{ end }}
     {
         "title" : "{{ $element.Params.title }}",
         "imagethumb" : "{{ $element.Params.imagethumb }}",
         "teaser" : "{{ $element.Params.teaser }}",
-        "concept" : "{{ $element.Params.concept }}",
-        "planning" : "{{ $element.Params.planning }}",
-        "implementation" : "{{ $element.Params.implementation }}",
-        "activities" : "{{ $element.Params.activities }}"
+        "teaser_truncated" : "{{ $element.Params.teaser| truncate 100 }}",
+        "concept" : {{ if eq $element.Params.concept true }}true{{ else }}false{{ end }},
+        "planning" : {{ if eq $element.Params.planning true }}true{{ else }}false{{ end }},
+        "implementation" : {{ if eq $element.Params.implementation true }}true{{ else }}false{{ end }},
+        "activities" : "{{ $element.Params.activities }}",
+        "icons" : "{{ if eq $element.Params.concept true }}{{ $concept_icon }}{{ end }}{{ if eq $element.Params.planning true }}{{ $planning_icon }}{{ end }}{{ if eq $element.Params.implementation true }}{{ $implementation_icon }}{{ end }}",
+        "featuredimage" : "background-image: url('{{ $element.Params.imagethumb }}');"
     }{{ end }}
 ]

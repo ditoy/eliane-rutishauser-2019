@@ -7,11 +7,11 @@ const Vivus = require('vivus');
 /**
  * get projects json data and populate filters
  */
+let projects = [];
 if (document.getElementById('projects-filterable')) {
-    let projects = [];
     axios.get("/projects/index.json").then((r) => {
         projects = r.data;
-        console.log(projects);
+        // console.log(projects);
     });
 }
 
@@ -182,16 +182,28 @@ function selectProjects(id, originList) {
 }
 
 function listProjects(id) {
-    var options = {
+    const options = {
         valueNames: [
+            'title',
+            'teaser_truncated',
+            'icons',
+            {name: 'permalink', attr: 'href'},
             {name: 'competence', attr: 'data-competence'},
-            {name: 'activity', attr: 'data-activity'}
-        ]
+            {name: 'activity', attr: 'data-activity'},
+            {name: 'featuredimage', attr: 'style'}
+        ],
+        item: '<li class="card equalize"><a class="permalink link" href=""><div class="card-inner"> <div class="featuredimageWrapper">' +
+        '<div class="featuredimage" style="" aria-label=""></div></div>' +
+        '<h3 class="competence title" data-competence=""></h3><div class="teaser activity" data-activity=""><p class="teaser_truncated"></p>' +
+        '</div><div class="icons"></div></div></a><div class="clear"></div></li>'
     };
 
-    var mylist = new List(id, options);
-    console.log('List.js');
-    console.log(mylist.visibleItems);
+    let mylist = new List(id, options);
+    // console.log(mylist.visibleItems);
+    // console.log(projects);
+    mylist.add(
+        projects
+    );
 
 }
 
