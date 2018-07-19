@@ -5,6 +5,10 @@
     {
         "title" : "{{ $element.Params.title }}",
         "imagethumb" : "{{ $element.Params.imagethumb }}",
-        "teaser" : "{{ $element.Params.teaser }}"
+        "teaser" : "{{ $element.Params.teaser }}",
+        "concept" : "{{ $element.Params.concept }}",
+        "planning" : "{{ $element.Params.planning }}",
+        "implementation" : "{{ $element.Params.implementation }}",
+        "activities" : "{{ $element.Params.activities }}"
     }{{ end }}
 ]
