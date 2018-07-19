@@ -25,6 +25,42 @@
 }
 
 
+.cls{ 
+    fill: none;
+	stroke:#b6b6b7;
+	stroke-miterlimit:10;
+}
+
+@keyframes anim01 {
+  0% {
+    opacity: 10;
+  }
+  
+   50% {
+    opacity: 0;
+  }
+
+  100% {
+   opacity: 1;
+  }
+}
+
+
+.cls-15, .cls-28, cls-40, .cls-16 {
+   animation: anim01 10s infinite;
+       fill: $c-green;
+}
+.cls-3, .cls-30, .cls-33    {
+   animation: anim01 7s infinite;
+       fill: $c-green;
+}
+
+.cls-10, .cls-26  {
+   animation: anim01 15s infinite;
+          fill: $c-green;
+}
+
+
 .hero {
   position: relative;
   top: 0;
