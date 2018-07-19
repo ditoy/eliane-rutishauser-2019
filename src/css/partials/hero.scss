@@ -1,19 +1,19 @@
 /* heroes */
 
 #animated-grid {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 500px;
-  width: 100vw;
-  max-width: 100%;
-  min-height: 500px;
-  height: 100vh;
-  max-height: 100vh;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -35%;
+    min-width: 500px;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    text-align: left;
   z-index: ($z-hero + 1);
-  overflow: hidden;
-  text-align: left;
 }
 
 #animated-grid-svg {
