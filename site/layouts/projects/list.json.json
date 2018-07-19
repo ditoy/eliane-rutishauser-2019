@@ -3,6 +3,7 @@
     {{ range $index, $element := ($collection.ByParam "position") }}
     {{ if gt $index 0 }},{{ end }}
     {
+        "permalink" : "{{ $element.Permalink }}",
         "title" : "{{ $element.Params.title }}",
         "imagethumb" : "{{ $element.Params.imagethumb }}",
         "teaser" : "{{ $element.Params.teaser }}",
