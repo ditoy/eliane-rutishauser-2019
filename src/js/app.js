@@ -1,5 +1,6 @@
 import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used as window.lightGallery - the import statement is required here
 import * as axios from 'axios';
+import {fadeIn, fadeOut} from 'ditoy-js-utils';
 
 const List = require('list.js');
 const Autogrow = require('textarea-autogrow');
@@ -62,7 +63,6 @@ if (document.getElementById('projects-filterable')) {
 /**
  * action after onload event
  */
-
 window.onload = function() {
     checkResize();
 
@@ -99,7 +99,20 @@ window.onload = function() {
     listProjects('project-list', intersection);
 
     window.lightGallery(document.getElementById('lightgallery'));
+
+
+    // smooth page transitions
+    const wrapper = document.querySelector('.wrapper');
+    wrapper.style.opacity = 0;
+    wrapper.style.paddingTop = 0;
+    fadeIn(wrapper);
 };
+
+
+/**
+ * action before unload event
+ */
+window.addEventListener("beforeunload", (e) => { fadeOut(document.querySelector('.wrapper')); });
 
 
 /**
