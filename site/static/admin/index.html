@@ -4,13 +4,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
-
-    <!-- Include the styles for the Netlify CMS UI, after your own styles -->
     <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.7.0/dist/cms.css" />
-
+    <script async src="https://unpkg.com/netlify-cms@^1.7.0/dist/cms.js"></script>
 </head>
 <body>
-<!-- Include the script that builds the page and powers Netlify CMS -->
-<script src="https://unpkg.com/netlify-cms@^1.7.0/dist/cms.js"></script>
+<script>
+
+
+
+
+    var registerCMS = function () {
+
+        var ProjectPreview = createClass({
+            render: function() {
+                var entry = this.props.entry;
+
+                var image = entry.getIn(['data', 'image']);
+                var imageBg = image && this.props.getAsset(image);
+
+                var imagethumb = entry.getIn(['data', 'imagethumb']);
+                var imagethumbBg = imagethumb && this.props.getAsset(imagethumb);
+
+
+                var concept = entry.getIn(['data', 'concept']) || false;
+                var planning = entry.getIn(['data', 'planning']) || false;
+                var implementation = entry.getIn(['data', 'implementation']) || false;
+
+
+                return h('div', {},
+                    h('div', {className: "cover"},
+
+                        concept ? h('img', {src: '/images/uploads/icon_bulb.svg', width: '30px', height: 'auto'}) : null,
+                        planning ? h('img', {src: '/images/uploads/icon_ruler.svg', width: '30px', height: 'auto'}) : null,
+                        implementation ? h('img', {src: '/images/uploads/icon_saw.svg', width: 'auto', height: '21px'}) : null,
+
+                        h('h1', {}, entry.getIn(['data', 'title'])),
+                        h('h3', {}, entry.getIn(['data', 'teaser'])),
+                        imagethumbBg ? h('img', {src: imagethumbBg.toString(), width: '200px', height: 'auto'}) : null,
+                        imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto'}) : null
+                    ),
+                    h('article', {"className": "text"}, this.props.widgetFor('body'))
+                );
+            }
+        });
+
+        CMS.registerPreviewTemplate("project", ProjectPreview);
+    };
+
+
+    window.onload = function () {
+        registerCMS();
+    }
+</script>
 </body>
 </html>
