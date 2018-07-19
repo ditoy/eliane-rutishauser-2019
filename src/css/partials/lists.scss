@@ -118,13 +118,7 @@ ul.details {
   /* elevate and fill card on hover effect */
   &:hover {
     transition: $tr-scope $tr-speed $tr-ease-linear;
-
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 81%, #f4f4f4 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 81%,#f4f4f4 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 81%,#f4f4f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4',GradientType=0 ); /* IE6-9 */
-
+	background: #ffffff;
 
     .featuredimage {
       transition: transform $tr-speed $tr-ease-alt;
