@@ -13,6 +13,9 @@ if (document.getElementById('projects-filterable')) {
         projects = r.data;
         // console.log(projects);
     });
+
+    // listProjects('project-list');
+
 }
 
 
@@ -201,6 +204,7 @@ function listProjects(id) {
     let mylist = new List(id, options);
     // console.log(mylist.visibleItems);
     // console.log(projects);
+    mylist.clear();
     mylist.add(
         projects
     );
