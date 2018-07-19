@@ -7,12 +7,11 @@ $footer-text: $c-mediumgray;
 	padding-top: 3rem;
 	font-size: 0.9rem;
 	letter-spacing: 0.05em;
-	min-height: 30vh;
+	min-height: 36em;
 	position: relative;
 	background-image: url('/images/uploads/3dimensional-grid.svg');
 	background-position: bottom right;
 	background-repeat: no-repeat;
-	min-height: 600px;
 		  @include media("<=tablet") {
 					min-height: 520px;
 		  }
@@ -26,11 +25,6 @@ $footer-text: $c-mediumgray;
 	}
 
 	.social-media {
-		margin-top: 100px;
-		  @include media("<=tablet") {
-				margin-top: 20px;
-		  }
-
 		a {
 			margin: 0 4px;
 			display: inline-block;

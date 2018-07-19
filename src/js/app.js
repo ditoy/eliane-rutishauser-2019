@@ -62,6 +62,7 @@ window.onload = function() {
     window.lightGallery(document.getElementById('lightgallery'));
 
 
+/*
     if (document.getElementById('animated-grid-svg')) {
         new Vivus(
             'animated-grid-svg', {
@@ -72,6 +73,7 @@ window.onload = function() {
                 // gridAnimationForward.play(gridAnimationDirection);
             });
     }
+*/
 };
 
 
