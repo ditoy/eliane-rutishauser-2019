@@ -1,7 +1,20 @@
 import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used as window.lightGallery - the import statement is required here
 import * as axios from 'axios';
+
+const List = require('list.js');
 const Autogrow = require('textarea-autogrow');
-const Vivus = require('vivus');
+
+// const Vivus = require('vivus');
+// if (document.getElementById('animated-grid-svg')) {
+//     new Vivus(
+//         'animated-grid-svg', {
+//             duration: 500,
+//             type: 'delayed'
+//         }, () => {
+//             // gridAnimationDirection = gridAnimationDirection * -1;
+//             // gridAnimationForward.play(gridAnimationDirection);
+//         });
+// }
 
 
 /**
@@ -63,20 +76,6 @@ window.onload = function() {
     listProjects('project-list');
 
     window.lightGallery(document.getElementById('lightgallery'));
-
-
-/*
-    if (document.getElementById('animated-grid-svg')) {
-        new Vivus(
-            'animated-grid-svg', {
-                duration: 500,
-                type: 'delayed'
-            }, () => {
-                // gridAnimationDirection = gridAnimationDirection * -1;
-                // gridAnimationForward.play(gridAnimationDirection);
-            });
-    }
-*/
 };
 
 
