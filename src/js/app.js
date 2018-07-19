@@ -223,11 +223,11 @@ const customersList = document.querySelector('.customers');
 if (!!customersList) {
     const letterLists = customersList.querySelectorAll('ul');
     if (!!letterLists) {
-        letterLists.forEach((list) => {
-            const items = list.querySelectorAll('li');
+        for (let i = 0; i < letterLists.length; $i++) {
+            const items = letterLists[i].querySelectorAll('li');
             if (!items.length || items.length === 1) {
                 list.style.display = 'none';
             }
-        });
+        }
     }
 }
