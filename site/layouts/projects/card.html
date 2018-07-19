@@ -1,5 +1,5 @@
 <li class="card equalize">
-    <a href="{{ .Permalink }}">
+    <a class="link permalink" href="{{ .Permalink }}">
         <div class="card-inner">
             {{ if .Params.imagethumb }}
                 <div class="featuredimageWrapper">
@@ -7,9 +7,9 @@
                 </div>
             {{ end }}
 
-            <h3 class="competence" data-competence="{{ if eq .Params.concept true }}concept {{ end }}{{ if eq .Params.planning true }}planning {{ end }}{{ if eq .Params.implementation true }}implementation {{ end }}">{{ .Title }}</h3>
+            <h3 class="competence title" data-competence="{{ if eq .Params.concept true }}concept {{ end }}{{ if eq .Params.planning true }}planning {{ end }}{{ if eq .Params.implementation true }}implementation {{ end }}">{{ .Title }}</h3>
             <div class="teaser activity" data-activity="{{ .Params.activities }}">
-	            <p>{{ .Params.teaser | truncate 100 }}</p>
+	            <p class="teaser_truncated">{{ .Params.teaser | truncate 100 }}</p>
             </div>
             <div class="icons">
                 {{ if eq .Params.concept true }}
