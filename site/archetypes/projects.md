@@ -10,9 +10,9 @@ image:          ""
 year:           2018
 customerName:   "Kunde"
 customerUrl:    "Kundenwebsite"       
-concept:        true
-planning:       true
-implementation: true
+concept:        false
+planning:       false
+implementation: false
 activities:     ""
 pictures:       []
 teaser:         ""

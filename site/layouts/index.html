@@ -29,10 +29,12 @@
                 <div class="container projects">
                     <article>
                         <h2>Referenzen</h2>
-                        {{ $collection := (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
-                        {{ range first 6 ($collection.ByParam "position") }}
-                            {{ .Render "card" }}
-                        {{ end }}
+                            <ul class="no-bullet">
+                                {{ $collection := (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
+                                {{ range first 6 ($collection.ByParam "position") }}
+                                    {{ .Render "card" }}
+                                {{ end }}
+                            </ul>
                         <div class="clear"></div>
                     </article>
                 </div>
@@ -65,7 +67,7 @@
             <div class="stripe">
                 <div class="container">
                     <h2>Kunden</h2>
-                    <article class="text-left text-columns-3">
+                    <article class="text-left text-columns-3 customers">
                             {{ $alfa := (slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z") }}
                             {{ $collection := sort (where .Site.Pages "Section" "customers") ".File.LogicalName" }}
                             {{ range $alfa }}
