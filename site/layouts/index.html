@@ -28,10 +28,12 @@
                 <div class="container projects">
                     <article>
                         <h2>Referenzen</h2>
-                        {{ $collection := (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
-                        {{ range first 6 ($collection.ByParam "position") }}
-                            {{ .Render "card" }}
-                        {{ end }}
+                            <ul class="no-bullet">
+                                {{ $collection := (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
+                                {{ range first 6 ($collection.ByParam "position") }}
+                                    {{ .Render "card" }}
+                                {{ end }}
+                            </ul>
                         <div class="clear"></div>
                     </article>
                 </div>
