@@ -1,6 +1,20 @@
-import lightGallery from 'lightgallery.js';
-
+import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used as window.lightGallery - the import statement is required here
+import * as axios from 'axios';
 const Autogrow = require('textarea-autogrow');
+const Vivus = require('vivus');
+
+
+/**
+ * get projects json data and populate filters
+ */
+if (document.getElementById('projects-filterable')) {
+    let projects = [];
+    axios.get("/projects/index.json").then((r) => {
+        projects = r.data;
+        console.log(projects);
+    });
+}
+
 
 /**
  * custom polyfills
@@ -44,6 +58,18 @@ window.onload = function() {
     catch (e) {}
 
     window.lightGallery(document.getElementById('lightgallery'));
+
+
+    if (document.getElementById('animated-grid-svg')) {
+        new Vivus(
+            'animated-grid-svg', {
+                duration: 500,
+                type: 'delayed'
+            }, () => {
+                // gridAnimationDirection = gridAnimationDirection * -1;
+                // gridAnimationForward.play(gridAnimationDirection);
+            });
+    }
 };
 
 

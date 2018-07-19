@@ -1,0 +1,10 @@
+[
+{{ $collection := (where (where .Site.Pages "Section" "projects") ".Params.active" "=" true) }}
+    {{ range $index,$element := ($collection.ByParam "position") }}
+    {{ if gt $index 0 }},{{ end }}
+    {
+        "title" : "{{ $element.Params.title }}",
+        "imagethumb" : "{{ $element.Params.imagethumb }}",
+        "teaser" : "{{ $element.Params.teaser }}"
+    }{{ end }}
+]

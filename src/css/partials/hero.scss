@@ -1,5 +1,30 @@
 /* heroes */
 
+#animated-grid {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -35%;
+    min-width: 500px;
+    width: 100vw;
+    max-width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    text-align: left;
+  z-index: ($z-hero + 1);
+}
+
+#animated-grid-svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 80%;
+}
+
+
 .hero {
   position: relative;
   top: 0;
@@ -12,23 +37,6 @@
   min-height: 100vh;
   z-index: $z-hero;
   padding: 20vh 0;
-
-
-  &::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    max-width: 100%;
-    min-height: 100vh;
-    z-index: ($z-hero + 1);
-    background-image: url('/images/uploads/3dimensional-grid.svg');
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: 80vh;
-  }
 
   @include media(">=tablet") {
     padding: 25vh 0;
