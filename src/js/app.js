@@ -52,10 +52,12 @@ window.onload = function() {
     checkResize();
 
     try {
-        runSellect('kompetenzen', competenceList, competenceList);
-        runSellect('aufgaben', activityList, []);
+        selectProjects('kompetenzen', competenceList, competenceList);
+        selectProjects('aufgaben', activityList, []);
     }
     catch (e) {}
+
+    listProjects('project-list');
 
     window.lightGallery(document.getElementById('lightgallery'));
 
@@ -161,7 +163,7 @@ if (autoresizes) {
  * handle filter tags in references
  */
 
-function runSellect(id, originList, destinationList) {
+function selectProjects(id, originList, destinationList) {
     if (document.getElementById(id)) {
         const mySellect = sellect('#' + id, {
             originList: originList,
@@ -171,6 +173,19 @@ function runSellect(id, originList, destinationList) {
     }
 }
 
+function listProjects(id) {
+    var options = {
+        valueNames: [
+            {name: 'competence', attr: 'data-competence'},
+            {name: 'activity', attr: 'data-activity'}
+        ]
+    };
+
+    var mylist = new List(id, options);
+    console.log('List.js');
+    console.log(mylist.visibleItems);
+
+}
 
 /**
  * hide letters in customer list where no customers available for that letter
