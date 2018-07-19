@@ -20,15 +20,13 @@ const Autogrow = require('textarea-autogrow');
 /**
  * get projects json data and populate filters
  */
+
 let projects = [];
 if (document.getElementById('projects-filterable')) {
     axios.get("/projects/index.json").then((r) => {
         projects = r.data;
         console.log('JSON', projects);
     });
-
-    // listProjects('project-list');
-
 }
 
 
@@ -64,6 +62,7 @@ if (document.getElementById('projects-filterable')) {
 /**
  * action after onload event
  */
+
 window.onload = function() {
     checkResize();
 
@@ -73,7 +72,31 @@ window.onload = function() {
     }
     catch (e) {}
 
-    listProjects('project-list');
+    // test maps
+    let concept = [];
+    let planning = [];
+    let implementation = [];
+    if (projects.length > 0) {
+        projects.forEach(function (item) {
+            if (item.concept) {
+                concept.push(item);
+            }
+            if (item.planning) {
+                planning.push(item);
+            }
+            if (item.implementation) {
+                implementation.push(item);
+            }
+        });
+        console.log('concept', concept);
+        console.log('planning', planning);
+        console.log('implementation', implementation);
+    }
+
+    let intersection = concept.filter(proj => (planning.includes(proj)));
+    intersection = intersection.filter(proj => implementation.includes(proj));
+
+    listProjects('project-list', intersection);
 
     window.lightGallery(document.getElementById('lightgallery'));
 };
@@ -112,6 +135,7 @@ if (toggler) {
 /**
  * equalize height of elements
  */
+
 function equalize() {
     const equalizers = document.querySelectorAll('.equalize');
     const parents = new Set();
@@ -187,7 +211,7 @@ function selectProjects(id, originList) {
  * generate project cards from json import
  */
 
-function listProjects(id) {
+function listProjects(id, list) {
     const options = {
         valueNames: [
             'title',
@@ -199,18 +223,19 @@ function listProjects(id) {
             {name: 'featuredimage', attr: 'style'}
         ],
         item: '<li class="card equalize"><a class="permalink link" href=""><div class="card-inner"> <div class="featuredimageWrapper">' +
-        '<div class="featuredimage" style="" aria-label=""></div></div>' +
+        '<div class="featuredimage title" style="" aria-label=""></div></div>' +
         '<h3 class="competence title" data-competence=""></h3><div class="teaser activity" data-activity=""><p class="teaser_truncated"></p>' +
         '</div><div class="icons"></div></div></a><div class="clear"></div></li>'
     };
 
-    let mylist = new List(id, options);
-    console.log('LIST.JS', projects);
-    if (projects.length > 0) {
+    console.log('LIST.JS', list);
+    if (list.length > 0) {
+        let mylist = new List(id, options);
         mylist.clear();
         mylist.add(
-            projects
+            list
         );
+
     }
 
 }
