@@ -187,3 +187,19 @@ function listProjects(id) {
 
 }
 
+/**
+ * hide letters in customer list where no customers available for that letter
+ */
+
+const customersList = document.querySelector('.customers');
+if (!!customersList) {
+    const letterLists = customersList.querySelectorAll('ul');
+    if (!!letterLists) {
+        letterLists.forEach((list) => {
+            const items = list.querySelectorAll('li');
+            if (!items.length || items.length === 1) {
+                list.style.display = 'none';
+            }
+        });
+    }
+}
