@@ -24,7 +24,7 @@ let projects = [];
 if (document.getElementById('projects-filterable')) {
     axios.get("/projects/index.json").then((r) => {
         projects = r.data;
-        // console.log(projects);
+        console.log('JSON', projects);
     });
 
     // listProjects('project-list');
@@ -183,6 +183,10 @@ function selectProjects(id, originList) {
     }
 }
 
+/**
+ * generate project cards from json import
+ */
+
 function listProjects(id) {
     const options = {
         valueNames: [
@@ -201,12 +205,13 @@ function listProjects(id) {
     };
 
     let mylist = new List(id, options);
-    // console.log(mylist.visibleItems);
-    // console.log(projects);
-    mylist.clear();
-    mylist.add(
-        projects
-    );
+    console.log('LIST.JS', projects);
+    if (projects.length > 0) {
+        mylist.clear();
+        mylist.add(
+            projects
+        );
+    }
 
 }
 
