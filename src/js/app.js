@@ -52,8 +52,8 @@ window.onload = function() {
     checkResize();
 
     try {
-        selectProjects('kompetenzen', competenceList, competenceList);
-        selectProjects('aufgaben', activityList, []);
+        selectProjects('kompetenzen', competenceList);
+        // selectProjects('aufgaben', activityList, []);
     }
     catch (e) {}
 
@@ -163,11 +163,17 @@ if (autoresizes) {
  * handle filter tags in references
  */
 
-function selectProjects(id, originList, destinationList) {
+function selectProjects(id, originList) {
     if (document.getElementById(id)) {
         const mySellect = sellect('#' + id, {
             originList: originList,
-            destinationList: destinationList
+            onInsert: function(event, item) {
+                console.log(mySellect.getSelected());
+                const element = document.getElementById('aufgaben');
+                while (element.firstChild) {
+                    element.removeChild(element.firstChild);
+                }
+            }
         });
         mySellect.init();
     }
