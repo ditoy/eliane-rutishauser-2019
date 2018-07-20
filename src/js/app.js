@@ -325,10 +325,10 @@ const customersList = document.querySelector('.customers');
 if (!!customersList) {
     const letterLists = customersList.querySelectorAll('ul');
     if (!!letterLists) {
-        for (let i = 0; i < letterLists.length; $i++) {
+        for (let i = 0; i < letterLists.length; i++) {
             const items = letterLists[i].querySelectorAll('li');
             if (!items.length || items.length === 1) {
-                list.style.display = 'none';
+                letterLists[i].style.display = 'none';
             }
         }
     }
