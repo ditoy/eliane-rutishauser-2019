@@ -23,6 +23,25 @@ const Autogrow = require('textarea-autogrow');
  */
 
 let projects = [];
+const competence = {
+    concept: [],
+    planning: [],
+    implementation: [],
+    getByTag: function(tag) {
+        if (tag == 'Idee') {
+            return this.concept;
+        } else if (tag == 'Planung') {
+            return this.planning;
+        } else if (tag == 'Ausführung') {
+            return this.implementation;
+        }
+    }
+}
+let activity = {
+    concept: [],
+    planning: [],
+    implementation: []
+}
 if (document.getElementById('projects-filterable')) {
     axios.get("/projects/index.json").then((r) => {
         projects = r.data;
@@ -73,30 +92,25 @@ window.onload = function() {
     catch (e) {}
 
     // test maps
-    let concept = [];
-    let planning = [];
-    let implementation = [];
     if (projects.length > 0) {
-        projects.forEach(function (item) {
+        projects.forEach(function(item) {
             if (item.concept) {
-                concept.push(item);
+                competence.concept.push(item);
+                activity.concept = union(activity.concept, item.activities.split(' '));
             }
             if (item.planning) {
-                planning.push(item);
+                competence.planning.push(item);
+                activity.planning = union(activity.planning, item.activities.split(' '));
             }
             if (item.implementation) {
-                implementation.push(item);
+                competence.implementation.push(item);
+                activity.implementation = union(activity.implementation, item.activities.split(' '));
             }
         });
-        console.log('concept', concept);
-        console.log('planning', planning);
-        console.log('implementation', implementation);
+        console.log('competence', competence);
+        console.log('activity', activity);
     }
-
-    let intersection = intersect(concept, planning);
-    intersection = intersect(intersection, implementation);
-
-    listProjects('project-list', intersection);
+    listProjects('project-list', projects);
 
     window.lightGallery(document.getElementById('lightgallery'));
 
@@ -209,6 +223,14 @@ function intersect(array1, array2) {
 }
 
 /**
+ * return union of two arrays with no duplicates
+ */
+
+function union(array1, array2) {
+    return [ ...new Set((array1.concat(array2)))];
+}
+
+/**
  * handle filter tags in references
  */
 
@@ -217,7 +239,16 @@ function selectProjects(id, originList) {
         const mySellect = sellect('#' + id, {
             originList: originList,
             onInsert: function(event, item) {
-                console.log(mySellect.getSelected());
+                const selected = mySellect.getSelected();
+                console.log('SELLECTED', selected);
+                let myprojects = projects;
+                selected.forEach(function(element) {
+                    item = competence.getByTag(element);
+                    myprojects = intersect(myprojects, item);
+                });
+                console.log('SELECTED PROJ', myprojects);
+                listProjects('project-list', myprojects);
+
                 const element = document.getElementById('aufgaben');
                 while (element.firstChild) {
                     element.removeChild(element.firstChild);
@@ -257,7 +288,7 @@ function listProjects(id, list) {
         mylist.add(
             list
         );
-
+        equalize();
     }
 
 }
