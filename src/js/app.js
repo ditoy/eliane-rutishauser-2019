@@ -1,6 +1,6 @@
 import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used as window.lightGallery - the import statement is required here
 import * as axios from 'axios';
-import {fadeIn, fadeOut} from 'ditoy-js-utils';
+import {fadeIn, fadeOut, forEach} from 'ditoy-js-utils';
 
 const List = require('list.js');
 const Autogrow = require('textarea-autogrow');
@@ -310,11 +310,11 @@ const customersList = document.querySelector('.customers');
 if (!!customersList) {
     const letterLists = customersList.querySelectorAll('ul');
     if (!!letterLists) {
-        for (let i = 0; i < letterLists.length; i++) {
-            const items = letterLists[i].querySelectorAll('li');
+        forEach(letterLists, (list) => {
+            const items = list.querySelectorAll('li');
             if (!items.length || items.length === 1) {
-                letterLists[i].style.display = 'none';
+                list.style.display = 'none';
             }
-        }
+        });
     }
 }
