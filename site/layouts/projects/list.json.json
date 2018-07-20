@@ -5,6 +5,7 @@
     {
         "permalink" : "{{ $element.Permalink }}",
         "title" : "{{ $element.Params.title }}",
+        "label" : "{{ $element.Params.title }}",
         "imagethumb" : "{{ $element.Params.imagethumb }}",
         "teaser" : "{{ $element.Params.teaser }}",
         "teaser_truncated" : "{{ $element.Params.teaser| truncate 100 }}",

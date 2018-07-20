@@ -93,8 +93,8 @@ window.onload = function() {
         console.log('implementation', implementation);
     }
 
-    let intersection = concept.filter(proj => (planning.includes(proj)));
-    intersection = intersection.filter(proj => implementation.includes(proj));
+    let intersection = intersect(concept, planning);
+    intersection = intersect(intersection, implementation);
 
     listProjects('project-list', intersection);
 
@@ -201,6 +201,14 @@ if (autoresizes) {
 }
 
 /**
+ * return intersection of two arrays
+ */
+
+function intersect(array1, array2) {
+    return array1.filter(x => (array2.includes(x)));
+}
+
+/**
  * handle filter tags in references
  */
 
@@ -234,10 +242,10 @@ function listProjects(id, list) {
             {name: 'competence', attr: 'data-competence'},
             {name: 'activity', attr: 'data-activity'},
             {name: 'featuredimage', attr: 'style'},
-            {name: 'title', attr: 'aria-label'}
+            {name: 'label', attr: 'aria-label'}
         ],
         item: '<li class="card equalize"><a class="permalink link" href=""><div class="card-inner"> <div class="featuredimageWrapper">' +
-        '<div class="featuredimage title" style="" aria-label=""></div></div>' +
+        '<div class="featuredimage label" style="" aria-label=""></div></div>' +
         '<h3 class="competence title" data-competence=""></h3><div class="teaser activity" data-activity=""><p class="teaser_truncated"></p>' +
         '</div><div class="icons"></div></div></a><div class="clear"></div></li>'
     };
