@@ -18,30 +18,55 @@ const Autogrow = require('textarea-autogrow');
 // }
 
 
+let projects = [];
+
+const project = {
+    competence: {
+        concept: [],
+        planning: [],
+        implementation: []
+    },
+    activity: {
+        concept: [],
+        planning: [],
+        implementation: []
+    },
+    init: function(projects) {
+        if (projects.length > 0) {
+            var me = this;
+            projects.forEach(function (item) {
+                if (item.concept) {
+                    me.competence.concept.push(item);
+                    me.activity.concept = union(me.activity.concept, item.activities.split(' '));
+                }
+                if (item.planning) {
+                    me.competence.planning.push(item);
+                    me.activity.planning = union(me.activity.planning, item.activities.split(' '));
+                }
+                if (item.implementation) {
+                    me.competence.implementation.push(item);
+                    me.activity.implementation = union(me.activity.implementation, item.activities.split(' '));
+                }
+            });
+            console.log('PROJECT-competence', this.competence);
+            console.log('PROJECT-activity', this.activity);
+        }
+    },
+    getCompetenceByTag: function(tag) {
+        if (tag == 'Idee') {
+            return this.competence.concept;
+        } else if (tag == 'Planung') {
+            return this.competence.planning;
+        } else if (tag == 'Ausführung') {
+            return this.competence.implementation;
+        }
+    }
+}
+
 /**
  * get projects json data and populate filters
  */
 
-let projects = [];
-const competence = {
-    concept: [],
-    planning: [],
-    implementation: [],
-    getByTag: function(tag) {
-        if (tag == 'Idee') {
-            return this.concept;
-        } else if (tag == 'Planung') {
-            return this.planning;
-        } else if (tag == 'Ausführung') {
-            return this.implementation;
-        }
-    }
-}
-let activity = {
-    concept: [],
-    planning: [],
-    implementation: []
-}
 if (document.getElementById('projects-filterable')) {
     axios.get("/projects/index.json").then((r) => {
         projects = r.data;
@@ -91,25 +116,10 @@ window.onload = function() {
     }
     catch (e) {}
 
-    // test maps
-    if (projects.length > 0) {
-        projects.forEach(function(item) {
-            if (item.concept) {
-                competence.concept.push(item);
-                activity.concept = union(activity.concept, item.activities.split(' '));
-            }
-            if (item.planning) {
-                competence.planning.push(item);
-                activity.planning = union(activity.planning, item.activities.split(' '));
-            }
-            if (item.implementation) {
-                competence.implementation.push(item);
-                activity.implementation = union(activity.implementation, item.activities.split(' '));
-            }
-        });
-        console.log('competence', competence);
-        console.log('activity', activity);
-    }
+    // analyze project data
+    project.init(projects);
+
+    // initial project list without filtering
     listProjects('project-list', projects);
 
     window.lightGallery(document.getElementById('lightgallery'));
@@ -202,7 +212,6 @@ const checkResize = function() {
     }
 ;
 
-
 /**
  * auto-resize textareas as user types in
  */
@@ -243,7 +252,7 @@ function selectProjects(id, originList) {
                 console.log('SELLECTED', selected);
                 let myprojects = projects;
                 selected.forEach(function(element) {
-                    item = competence.getByTag(element);
+                    item = project.getCompetenceByTag(element);
                     myprojects = intersect(myprojects, item);
                 });
                 console.log('SELECTED PROJ', myprojects);
