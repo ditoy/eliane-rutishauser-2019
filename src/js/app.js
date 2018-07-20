@@ -1,21 +1,9 @@
-import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used as window.lightGallery - the import statement is required here
+import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used!
 import * as axios from 'axios';
 import {fadeIn, fadeOut, forEach} from 'ditoy-js-utils';
 
 const List = require('list.js');
 const Autogrow = require('textarea-autogrow');
-
-// const Vivus = require('vivus');
-// if (document.getElementById('animated-grid-svg')) {
-//     new Vivus(
-//         'animated-grid-svg', {
-//             duration: 500,
-//             type: 'delayed'
-//         }, () => {
-//             // gridAnimationDirection = gridAnimationDirection * -1;
-//             // gridAnimationForward.play(gridAnimationDirection);
-//         });
-// }
 
 
 // global var
