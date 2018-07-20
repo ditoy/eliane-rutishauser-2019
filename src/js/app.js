@@ -233,7 +233,8 @@ function listProjects(id, list) {
             {name: 'permalink', attr: 'href'},
             {name: 'competence', attr: 'data-competence'},
             {name: 'activity', attr: 'data-activity'},
-            {name: 'featuredimage', attr: 'style'}
+            {name: 'featuredimage', attr: 'style'},
+            {name: 'title', attr: 'aria-label'}
         ],
         item: '<li class="card equalize"><a class="permalink link" href=""><div class="card-inner"> <div class="featuredimageWrapper">' +
         '<div class="featuredimage title" style="" aria-label=""></div></div>' +
