@@ -1,10 +1,5 @@
 {
-  "presets": [["es2015", {
-    "targets": {
-      "browsers": ["last 5 versions", "ie >= 9"]
-    },
-    "useBuiltIns": true
-  }]],
+  "presets": ["env"],
   "plugins": [
     "syntax-object-rest-spread",
     "transform-object-rest-spread"
