@@ -26,6 +26,7 @@ let projects = [];
  */
 
 const project = {
+    selectedProjects: [],
     competence: {
         concept: [],
         planning: [],
@@ -37,9 +38,22 @@ const project = {
         implementation: [],
         all: []
     },
+    byActivity: {
+        'Shopdesign': [],
+        'Bürodesign': [],
+        'Rendering': [],
+        'Ausstellungsgestaltung': [],
+        'Schaufenstergestaltung': [],
+        'Eventgestaltung': [],
+        'Messegestaltung': [],
+        'Signaletik': [],
+        'Display': [],
+        'Point-of-Sale': []
+    },
     init: function(projects) {
+        this.selectedProjects = projects;
         if (projects.length > 0) {
-            var me = this;
+            const me = this;
             projects.forEach(function(item) {
                 if (item.concept) {
                     me.competence.concept.push(item);
@@ -53,9 +67,14 @@ const project = {
                     me.competence.implementation.push(item);
                     me.activity.implementation = union(me.activity.implementation, item.activities.split(' '));
                 }
-                me.activity.all = union(me.activity.concept, me.activity.planning);
-                me.activity.all = union(me.activity.all, me.activity.implementation);
+                me.activity.all = union(me.activity.all, item.activities.split(' '));
+
+                item.activities.split(' ').forEach(function(element) {
+                    me.byActivity[element] = union(me.byActivity[element], item);
+                });
+
             });
+            // console.log('BY-ACTIVITY', this.byActivity);
             // console.log('PROJECT-competence', this.competence);
             // console.log('PROJECT-activity', this.activity);
             return this;
@@ -81,7 +100,23 @@ const project = {
     },
     getAvailableActivies: function() {
         return this.activity.all;
+    },
+    getByActivity: function(activity) {
+        return this.byActivity[activity];
     }
+}
+
+/**
+ * add listener to activity dropdown
+ */
+
+function addActivityListener(id) {
+    document.getElementById(id).addEventListener('change', function(event) {
+        // console.log(event.target.value);
+        let myprojects = project.selectedProjects;
+        myprojects = intersect(myprojects, project.getByActivity(event.target.value));
+        listProjects('project-list', myprojects);
+    });
 }
 
 /**
@@ -142,6 +177,8 @@ window.onload = function() {
 
         // initial project list without filtering
         listProjects('project-list', projects);
+
+        addActivityListener('aufgaben');
     }
 
     window.lightGallery(document.getElementById('lightgallery'));
