@@ -131,18 +131,18 @@ if (document.getElementById('projects-filterable')) {
 window.onload = function() {
     checkResize();
 
-    try {
+    if (document.getElementById('projects-filterable')) {
+
+        // prepare competence tag selector
         selectProjects('kompetenzen', competenceList);
-        // selectProjects('aufgaben', activityList, []);
+
+        // analyze project data
+        project.init(projects);
+        populateSelect('aufgaben', project.getAvailableActivies());
+
+        // initial project list without filtering
+        listProjects('project-list', projects);
     }
-    catch (e) {}
-
-    // analyze project data
-    project.init(projects);
-    populateSelect('aufgaben', project.getAvailableActivies());
-
-    // initial project list without filtering
-    listProjects('project-list', projects);
 
     window.lightGallery(document.getElementById('lightgallery'));
 
