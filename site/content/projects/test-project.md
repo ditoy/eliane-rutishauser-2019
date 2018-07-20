@@ -13,7 +13,7 @@ customerUrl:    "Kundenwebsite.ch"
 concept:        true
 planning:       true
 implementation: true
-activities:     "Bürodesign Schaufenstergestaltung"
+activities:     "Bürodesign Schaufenstergestaltung Signaletik"
 pictures:       [ "/images/uploads/prairie-02.jpg", "/images/uploads/prairie-03.jpg", "/images/uploads/prairie-04.jpg" ]
 teaser:         "Kleiner Teaser eines Projekts. Class aptent taciti sociosqu"
 ---

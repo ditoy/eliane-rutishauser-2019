@@ -9,6 +9,7 @@ implementation: true
 imagethumb: images/uploads/prairie-01.jpg
 image: /images/uploads/candyshop-01.jpg
 teaser: Kleiner Teaser eines Projekts. Class aptent taciti sociosqu
+activities:     "Eventgestaltung Display"
 ---
 Beschreibung des Projekts
 

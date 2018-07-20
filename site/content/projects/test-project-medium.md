@@ -14,6 +14,7 @@ concept:        true
 planning:       false
 implementation: true
 pictures:       []
+activities:     "Rendering Signaletik"
 teaser:         "Mittlerer Teaser eines Projekts. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed.
 "
 ---

@@ -13,6 +13,7 @@ customerUrl:    "Kundenwebsite"
 concept:        true
 planning:       true
 implementation: true
+activities:     "Shopdesign Point-of-Sale Display"
 pictures:       [ "images/uploads/prairie-01.jpg", "images/uploads/prairie-02.png" ]
 teaser:         "Kleiner Teaser eines Projekts. Class aptent taciti sociosqu"
 ---
