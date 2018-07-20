@@ -34,12 +34,13 @@ const project = {
     activity: {
         concept: [],
         planning: [],
-        implementation: []
+        implementation: [],
+        all: []
     },
     init: function(projects) {
         if (projects.length > 0) {
             var me = this;
-            projects.forEach(function (item) {
+            projects.forEach(function(item) {
                 if (item.concept) {
                     me.competence.concept.push(item);
                     me.activity.concept = union(me.activity.concept, item.activities.split(' '));
@@ -52,9 +53,12 @@ const project = {
                     me.competence.implementation.push(item);
                     me.activity.implementation = union(me.activity.implementation, item.activities.split(' '));
                 }
+                me.activity.all = union(me.activity.concept, me.activity.planning);
+                me.activity.all = union(me.activity.all, me.activity.implementation);
             });
-            console.log('PROJECT-competence', this.competence);
-            console.log('PROJECT-activity', this.activity);
+            // console.log('PROJECT-competence', this.competence);
+            // console.log('PROJECT-activity', this.activity);
+            return this;
         }
     },
     getCompetenceByTag: function(tag) {
@@ -74,6 +78,9 @@ const project = {
         } else if (tag == 'Ausführung') {
             return this.activity.implementation;
         }
+    },
+    getAvailableActivies: function() {
+        return this.activity.all;
     }
 }
 
@@ -84,7 +91,7 @@ const project = {
 if (document.getElementById('projects-filterable')) {
     axios.get("/projects/index.json").then((r) => {
         projects = r.data;
-        console.log('JSON', projects);
+        // console.log('JSON', projects);
     });
 }
 
@@ -132,6 +139,7 @@ window.onload = function() {
 
     // analyze project data
     project.init(projects);
+    populateSelect('aufgaben', project.getAvailableActivies());
 
     // initial project list without filtering
     listProjects('project-list', projects);
@@ -263,15 +271,15 @@ function selectProjects(id, originList) {
             originList: originList,
             onInsert: function() {
                 const selected = mySellect.getSelected();
-                console.log('SELLECTED', selected);
+                // console.log('SELLECTED', selected);
                 let myprojects = projects;
                 let competence = [];
                 selected.forEach(function(element) {
                     competence = project.getCompetenceByTag(element);
                     myprojects = intersect(myprojects, competence);
                 });
-                console.log('SELECTED PROJ', myprojects);
-                console.log('MYYYYPROJECT', myprojects);
+                // console.log('SELECTED PROJ', myprojects);
+                // console.log('MYYYYPROJECT', myprojects);
                 project.init(myprojects);
                 let myactivities = [];
                 let activity = [];
@@ -279,20 +287,9 @@ function selectProjects(id, originList) {
                     activity = project.getActivityByTag(element);
                     myactivities = union(myactivities, activity);
                 });
-                console.log('SELECTED ACT', myactivities);
+                // console.log('SELECTED ACT', myactivities);
 
-                const select = document.getElementById('aufgaben');
-                while (select.firstChild) {
-                    select.removeChild(select.firstChild);
-                }
-
-                myactivities.forEach(function(element) {
-                    if (element) {
-                        let option = document.createElement('option');
-                        option.innerHTML = element;
-                        select.appendChild(option);
-                    }
-                });
+                populateSelect('aufgaben', myactivities);
 
                 listProjects('project-list', myprojects);
 
@@ -324,7 +321,7 @@ function listProjects(id, list) {
         '</div><div class="icons"></div></div></a><div class="clear"></div></li>'
     };
 
-    console.log('LIST.JS', list);
+    // console.log('LIST.JS', list);
     if (list.length > 0) {
         let mylist = new List(id, options);
         mylist.clear();
@@ -333,6 +330,26 @@ function listProjects(id, list) {
         );
         equalize();
     }
+
+}
+
+/**
+ * populate  dropdown menu with array of option labels
+ */
+
+function populateSelect(id, options) {
+    const select = document.getElementById(id);
+    while (select.firstChild) {
+        select.removeChild(select.firstChild);
+    }
+    options.unshift('--- bitte auswählen ---');
+    options.forEach(function(element) {
+        if (element) {
+            const option = document.createElement('option');
+            option.innerHTML = element;
+            select.appendChild(option);
+        }
+    });
 
 }
 
