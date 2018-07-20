@@ -271,12 +271,31 @@ function selectProjects(id, originList) {
                     myprojects = intersect(myprojects, competence);
                 });
                 console.log('SELECTED PROJ', myprojects);
+                console.log('MYYYYPROJECT', myprojects);
+                project.init(myprojects);
+                let myactivities = [];
+                let activity = [];
+                selected.forEach(function(element) {
+                    activity = project.getActivityByTag(element);
+                    myactivities = union(myactivities, activity);
+                });
+                console.log('SELECTED ACT', myactivities);
+
+                const select = document.getElementById('aufgaben');
+                while (select.firstChild) {
+                    select.removeChild(select.firstChild);
+                }
+
+                myactivities.forEach(function(element) {
+                    if (element) {
+                        let option = document.createElement('option');
+                        option.innerHTML = element;
+                        select.appendChild(option);
+                    }
+                });
+
                 listProjects('project-list', myprojects);
 
-                const element = document.getElementById('aufgaben');
-                while (element.firstChild) {
-                    element.removeChild(element.firstChild);
-                }
             }
         });
         mySellect.init();
