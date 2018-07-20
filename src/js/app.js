@@ -18,7 +18,12 @@ const Autogrow = require('textarea-autogrow');
 // }
 
 
+// global var
 let projects = [];
+
+/**
+ * handle project analysis
+ */
 
 const project = {
     competence: {
@@ -59,6 +64,15 @@ const project = {
             return this.competence.planning;
         } else if (tag == 'Ausführung') {
             return this.competence.implementation;
+        }
+    },
+    getActivityByTag: function(tag) {
+        if (tag == 'Idee') {
+            return this.activity.concept;
+        } else if (tag == 'Planung') {
+            return this.activity.planning;
+        } else if (tag == 'Ausführung') {
+            return this.activity.implementation;
         }
     }
 }
@@ -247,13 +261,14 @@ function selectProjects(id, originList) {
     if (document.getElementById(id)) {
         const mySellect = sellect('#' + id, {
             originList: originList,
-            onInsert: function(event, item) {
+            onInsert: function() {
                 const selected = mySellect.getSelected();
                 console.log('SELLECTED', selected);
                 let myprojects = projects;
+                let competence = [];
                 selected.forEach(function(element) {
-                    item = project.getCompetenceByTag(element);
-                    myprojects = intersect(myprojects, item);
+                    competence = project.getCompetenceByTag(element);
+                    myprojects = intersect(myprojects, competence);
                 });
                 console.log('SELECTED PROJ', myprojects);
                 listProjects('project-list', myprojects);
