@@ -3,10 +3,25 @@
 <html lang="de">
     {{ partial "head-site" . }}
     {{ partial "body" (dict "context" . "hero" true) }}
-        <div class="wrapper">
 
-            <div class="hero">
-	            
+
+
+
+
+
+  <div class="wrapper">
+    <div id="slides" class="hero">
+		<div class="slide slide-1 showing">Slide 1</div>
+		<div class="slide slide-2">Slide 2</div>
+		<div class="slide slide-3">Slide 3</div>
+		<div id="animated-grid">
+            {{ partial "svg/grid" . }}
+		</div>
+	</div>
+</div>
+   			
+<!--
+   			<div class="slide hero">
 	            <div id="animated-grid">
                     {{ partial "svg/grid" . }}
 				</div>
@@ -14,6 +29,7 @@
                     <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
                 </div>
             </div>
+-->
 
             {{ partial "header" . }}
 
@@ -95,8 +111,71 @@
                 </div>
             </div>
             {{ partial "footer" . }}
+           
         </div>
+
+
+
+
+<style>
+
+
+.slide {
+	position: absolute;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+  .slide {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 0;
+	width: 100vw;
+	max-width: 100%;
+	min-height: 100vh;
+	z-index: $z-hero;
+	padding: 20vh 0;
+  }
+  
+	.slide-1 {
+		background-image: url('https://pre00.deviantart.net/c53d/th/pre/i/2004/301/3/a/dark_landscape_by_sicho.jpg');
+	}
+	.slide-2 {
+		background-image: url('https://pre00.deviantart.net/c53d/th/pre/i/2004/301/3/a/dark_landscape_by_sicho.jpg');
+	}
+	.slide-3 {
+		background-image: url('https://pre00.deviantart.net/c53d/th/pre/i/2004/301/3/a/dark_landscape_by_sicho.jpg');
+	}
+
+</style>
+<script>
+	var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
+
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
+</script>
+
+
+
     </body>
     {{ partial "schema/global" . }}
     {{ partial "javascript" . }}
 </html>
+         

@@ -1,5 +1,4 @@
-/* heroes */
-
+ 
 #animated-grid {
     display: block;
     right: 0;
@@ -67,13 +66,10 @@
 }
 
 
-.hero {
+.hero, #slides {
   position: relative;
   top: 0;
-  background-image: url('/images/uploads/3dimensional-hero-1.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+
   width: 100vw;
   max-width: 100%;
   min-height: 100vh;
@@ -91,7 +87,7 @@
   @include media(">=mega") {
     padding: 35vh 0;
   }
-
+  
   h1, h2 {
     color: $c-mediumgray;
     text-transform: none;
