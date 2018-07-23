@@ -226,18 +226,18 @@ function equalize() {
     for (const item of equalizers) {
         parents.add(item.parentNode);
     }
-    parents.forEach(function(parent) {
+
+    for (const parent of parents) {
         const children = parent.querySelectorAll('.equalize');
         const tallest = Math.max.apply(Math, Array.from(children).map(function(elem) {
             elem.style.minHeight = '';
             return elem.offsetHeight;
         }));
 
-        children.forEach(function(child) {
+        for (const child of children) {
             child.style.minHeight = (tallest + 1) + 'px';
-        });
-
-    });
+        }
+    }
 }
 
 /**
@@ -296,23 +296,19 @@ function selectProjects(id, originList) {
             originList: originList,
             onInsert: function() {
                 const selected = mySellect.getSelected();
-                // console.log('SELLECTED', selected);
                 let myprojects = projects;
                 let competence = [];
-                selected.forEach(function(element) {
+                for (const element of selected) {
                     competence = project.getCompetenceByTag(element);
                     myprojects = intersect(myprojects, competence);
-                });
-                // console.log('SELECTED PROJ', myprojects);
-                // console.log('MYYYYPROJECT', myprojects);
+                }
                 project.init(myprojects);
                 let myactivities = [];
                 let activity = [];
-                selected.forEach(function(element) {
+                for (const element of selected) {
                     activity = project.getActivityByTag(element);
                     myactivities = union(myactivities, activity);
-                });
-                // console.log('SELECTED ACT', myactivities);
+                }
 
                 populateSelect('aufgaben', myactivities);
 
@@ -368,13 +364,13 @@ function populateSelect(id, options) {
         select.removeChild(select.firstChild);
     }
     options.unshift('--- bitte auswählen ---');
-    options.forEach(function(element) {
+    for (const element of options) {
         if (element) {
             const option = document.createElement('option');
             option.innerHTML = element;
             select.appendChild(option);
         }
-    });
+    }
 
 }
 
