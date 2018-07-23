@@ -315,7 +315,6 @@ function selectProjects(id, originList) {
                 const selected = mySellect.getSelected();
                 if (selected.length == 0) {
                     project.init(projects);
-                    console.log(project.getAvailableActivies());
                     populateSelect('aufgaben', project.getAvailableActivies());
                 }
             }
