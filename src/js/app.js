@@ -366,7 +366,7 @@ function populateSelect(id, options) {
     while (select.firstChild) {
         select.removeChild(select.firstChild);
     }
-    options.unshift('--- bitte auswählen ---');
+    options.unshift('alle');
     options = [ ...new Set(options)];
     for (const element of options) {
         if (element) {
