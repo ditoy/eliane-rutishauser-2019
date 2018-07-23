@@ -271,7 +271,11 @@ if (autoresizes) {
  */
 
 function intersect(array1, array2) {
-    return array1.filter(x => (array2.includes(x)));
+    if (array2 && array2.length > 0) {
+        return array1.filter((x) => (array2.includes(x)));
+    }
+
+    return array1;
 }
 
 /**
