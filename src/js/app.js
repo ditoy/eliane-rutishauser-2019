@@ -42,7 +42,7 @@ const project = {
         this.selectedProjects = projects;
         if (projects.length > 0) {
             const me = this;
-            projects.forEach(function(item) {
+            for (const item of projects) {
                 if (item.concept) {
                     me.competence.concept.push(item);
                     me.activity.concept = union(me.activity.concept, item.activities.split(' '));
@@ -57,14 +57,10 @@ const project = {
                 }
                 me.activity.all = union(me.activity.all, item.activities.split(' '));
 
-                item.activities.split(' ').forEach(function(element) {
+                for (const element of item.activities.split(' ')) {
                     me.byActivity[element] = union(me.byActivity[element], item);
-                });
-
-            });
-            // console.log('BY-ACTIVITY', this.byActivity);
-            // console.log('PROJECT-competence', this.competence);
-            // console.log('PROJECT-activity', this.activity);
+                }
+            }
             return this;
         }
     },
@@ -314,6 +310,14 @@ function selectProjects(id, originList) {
 
                 listProjects('project-list', myprojects);
 
+            },
+            onRemove: function() {
+                const selected = mySellect.getSelected();
+                if (selected.length == 0) {
+                    project.init(projects);
+                    console.log(project.getAvailableActivies());
+                    populateSelect('aufgaben', project.getAvailableActivies());
+                }
             }
         });
         mySellect.init();
@@ -364,6 +368,7 @@ function populateSelect(id, options) {
         select.removeChild(select.firstChild);
     }
     options.unshift('--- bitte auswählen ---');
+    options = [ ...new Set(options)];
     for (const element of options) {
         if (element) {
             const option = document.createElement('option');
