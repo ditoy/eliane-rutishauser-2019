@@ -3,17 +3,30 @@
 <html lang="de">
     {{ partial "head-site" . }}
     {{ partial "body" (dict "context" . "hero" true) }}
-        <div class="wrapper">
 
-            <div class="hero">
-	            
-	            <div id="animated-grid">
-                    {{ partial "svg/grid" . }}
-				</div>
-                <div class="container">
-                    <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
+
+	<div class="wrapper">
+		<div id="slides" class="hero">
+			<div class="slide showing">
+				<div class="container">
+					<h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
                 </div>
-            </div>
+     		</div>
+			<div class="slide">
+				<div class="container">
+					<h1>Lorem ipsum dolor sit amet, consetetur sadipscing</h1>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="container">
+					<h1>sed diam nonumy eirmod tempor invidunt ut labore.</h1>
+				</div>
+			</div>
+			<div id="animated-grid">
+	            {{ partial "svg/grid" . }}
+			</div>
+		</div>
+
 
             {{ partial "header" . }}
 
@@ -96,7 +109,9 @@
             </div>
             {{ partial "footer" . }}
         </div>
+
     </body>
     {{ partial "schema/global" . }}
     {{ partial "javascript" . }}
 </html>
+         

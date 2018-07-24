@@ -21,8 +21,50 @@ body.projects {
     }
   }
 
-  select {
+  label {
     text-transform: uppercase;
+    position: relative;
+
+    select {
+      box-sizing: border-box;
+      padding: 0.1em 1.5em 0.1em 0.5em;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      width: 100%;
+      border-radius: 0;
+      padding: 5px;
+      min-height: 35px;
+    }
+
+    &[for=aufgaben]:before {
+      display: inline-block;
+      pointer-events: none;
+      content: " ";
+      border: solid black;
+      border-width: 0 2px 2px 0;
+      padding: 3px;
+      transform: rotate(45deg);
+
+      position: absolute;
+      right: 0.5em;
+      top: 2.1em;
+    }
+  }
+
+  .sellect-item {
+    font-family: $f-regular;
+    color: #6a6a6a;
+    background-color: $c-white !important;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .sellect-container {
+    border-radius: 0;
+    background-color: $c-white !important;
+    border: 1px solid #6a6a6a;
+    min-height: 35px;
+    padding: 0;
   }
 
 }
