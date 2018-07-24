@@ -3,6 +3,7 @@ baseurl = "/"
 languageCode = "de-ch"
 languageLang = "de"
 title = "3dimensional: Innenarchitektur, Gestaltung und dreidimensionale Kommunikation"
+enableRobotsTXT = "true"
 
 # Parameter Management
 [params]

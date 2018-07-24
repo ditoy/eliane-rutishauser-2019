@@ -1,7 +1,3 @@
-User-Agent: *
-Disallow:
-{{ range .Data.Pages }}
-{{ if .Params.robotsExclude }}
-Disallow: {{ .Permalink }}
-{{ end }}
-{{ end }}
+User-Agent: *{{ range .Data.Pages }}{{ if .Params.robotsExclude }}
+Disallow: {{ .Site.Params.appSitemapUrl }}{{ .Permalink }}{{ end }}{{ end }}
+Sitemap: {{ .Site.Params.appSitemapUrl }}/sitemap.xml
