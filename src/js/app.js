@@ -420,6 +420,8 @@ function nextSlide(){
 
 
 
+var MobileDetect = require('mobile-detect'),
+md = new MobileDetect(window.navigator.userAgent);
 
 
 
