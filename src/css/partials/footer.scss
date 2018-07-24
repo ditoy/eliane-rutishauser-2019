@@ -6,6 +6,7 @@ $footer-text: $c-mediumgray;
 	color: $footer-text;
 	padding-top: 3rem;
 	font-size: 0.9rem;
+	margin-top: 10rem;
 	letter-spacing: 0.05em;
 	min-height: 36em;
 	position: relative;
@@ -18,6 +19,7 @@ $footer-text: $c-mediumgray;
 	a {
 		color: $footer-text;
 		text-decoration: none;
+		max-height: 18px;
 		&:hover {
 			opacity: 0.6;
 		}		
