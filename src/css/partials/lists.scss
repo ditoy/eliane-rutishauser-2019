@@ -92,6 +92,10 @@ ul.details {
   border-radius: 1px;
   perspective: 1500px;
   transform-origin: 60% 40%;
+  @include media("<=phone") {
+	  padding: 0rem;
+	  margin: 0;
+  }
   .icons {
   	margin-top: 0.5rem !important;
   }
