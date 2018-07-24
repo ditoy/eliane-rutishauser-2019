@@ -66,7 +66,7 @@
 }
 
 
-.hero, #slides {
+#slides {
   position: relative;
   top: 0;
 
@@ -94,6 +94,11 @@
     font-weight: 400;
     text-align: left;
     max-width: (2/3) * $w-container;
+    top: 70%;
+    position: absolute;	
+	text-shadow: 0 1 0.2em #000;
+	line-height: normal;    
+    
   }
 }
 
