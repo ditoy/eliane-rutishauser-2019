@@ -21,10 +21,11 @@
                         <input type="hidden" id="kompetenzen">
                 </div>
                 <div class="col-4">
-                    <label for="aufgaben">Aufgabenbereich</label>
+                    <label for="aufgaben">Aufgabenbereich
                         <select id="aufgaben">
-                            <option>--- bitte auswählen ---</option>
+                            <option>alle</option>
                         </select>
+                    </label>
                 </div>
                 <div class="col-2 hide-on-small"></div>
             </div>
@@ -51,9 +52,7 @@
     {{ partial "footer" . }}
 </div>
 <script>
-    var activityList = [ {{ range $index, $element := .Site.Params.referenceActivities }}{{ if $index }}, {{ end }}"{{ $element }}"{{ end }} ];
     var competenceList = [ {{ range $index, $element := .Site.Params.referenceCompetences }}{{ if $index }}, {{ end }}"{{ $element }}"{{ end }} ];
-    // console.log(competenceList);
 </script>
 </body>
 {{partial "javascript" . }}
