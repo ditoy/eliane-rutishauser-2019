@@ -1,3 +1,4 @@
+import ScrollReveal from 'scrollreveal';
 import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used!
 import * as axios from 'axios';
 import {fadeIn, fadeOut, forEach} from 'ditoy-js-utils';
@@ -398,6 +399,56 @@ if (!!customersList) {
         });
     }
 }
+
+
+
+
+/**
+ * scrollreveal
+ *
+ */
+
+const revealOptions = {
+    duration: 600,
+    delay: 15,
+    useDelay: 'once',
+    reset: false,
+    origin: 'bottom',
+    distance: '10vh',
+    scale: 1,
+    viewFactor: 0.25,
+    easing: 'cubic-bezier(0.15, 1.05, 0.9, 1)'
+};
+
+const revealOptionsHeader = {
+    duration: 800,
+    delay: 0,
+    useDelay: 'always',
+    reset: true,
+    origin: 'top',
+    distance: '30vh',
+    scale: 1,
+    viewFactor: 0.60,
+    easing: 'cubic-bezier(0.2, 0.75, 0.85, 1)'
+};
+
+const revealOptionsFooterContent = {
+    duration: 800,
+    delay: 200,
+    useDelay: 'always',
+    reset: true,
+    origin: 'bottom',
+    scale: 1,
+    viewFactor: 0.15,
+    easing: 'cubic-bezier(0.15, 1.05, 0.9, 1)'
+};
+
+const sr = ScrollReveal();
+
+sr.reveal('.header .logo, .header a', revealOptionsHeader, 20);
+sr.reveal('.main p, .main a, .main li, .main img, .main h2, .main h3, .main h4, .main h5, .main h6, .main .row, .main .large-card, .main .card, .reveal, .reveal *, .stripe *', revealOptions);
+sr.reveal('.footer li, .footer .col-4, .footer a, .footer p', revealOptionsFooterContent, 20);
+
 
 
 
