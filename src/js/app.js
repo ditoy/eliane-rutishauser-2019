@@ -409,8 +409,8 @@ if (!!customersList) {
  */
 
 const revealOptions = {
-    duration: 600,
-    delay: 15,
+    duration: 800,
+    delay: 10,
     useDelay: 'once',
     reset: false,
     origin: 'bottom',
@@ -418,18 +418,6 @@ const revealOptions = {
     scale: 1,
     viewFactor: 0.25,
     easing: 'cubic-bezier(0.15, 1.05, 0.9, 1)'
-};
-
-const revealOptionsHeader = {
-    duration: 800,
-    delay: 0,
-    useDelay: 'always',
-    reset: true,
-    origin: 'top',
-    distance: '30vh',
-    scale: 1,
-    viewFactor: 0.60,
-    easing: 'cubic-bezier(0.2, 0.75, 0.85, 1)'
 };
 
 const revealOptionsFooterContent = {
@@ -442,6 +430,20 @@ const revealOptionsFooterContent = {
     viewFactor: 0.15,
     easing: 'cubic-bezier(0.15, 1.05, 0.9, 1)'
 };
+
+
+const revealOptionsHeader = {
+    duration: 800,
+    delay: 0,
+    useDelay: 'always',
+    reset: true,
+    origin: 'bottom',
+    distance: '20vh',
+    scale: { direction: 'up', power: '5%' },
+    viewFactor: 0.60,
+    easing: 'ease'
+};
+
 
 const sr = ScrollReveal();
 
