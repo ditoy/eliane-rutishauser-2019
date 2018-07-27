@@ -53,6 +53,10 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Thumbnail Teaser-Bild", name: "imagethumb", widget: "file" }
       - { label: "Teaser-Bild", name: "image", widget: "file" }
       - { label: "Teaser-Text", name: "teaser", widget: "text" }
+      - label: "Projektbilder"
+        name: "pictures"
+        widget: "list"
+        field: {label: "Bild", name: "src", widget: "file"}
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
 
   - name: "team"

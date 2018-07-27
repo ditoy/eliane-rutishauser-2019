@@ -4,15 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3dimensional CMS</title>
-    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.7.0/dist/cms.css" />
+    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.9.0/dist/cms.css" />
     <script async src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script async src="https://unpkg.com/netlify-cms@^1.7.0/dist/cms.js"></script>
+    <script async src="https://unpkg.com/netlify-cms@^1.9.0/dist/cms.js"></script>
 </head>
 <body>
 <script>
     var registerCMS = function () {
 
         var ProjectPreview = createClass({
+
+
+            preparePictures: function(pictures) {
+                var pics = [];
+                pictures.forEach(function (picture) { pics.push(h('img', {src: picture, style: {padding: '5px', width: 'calc(33% - 10px)', height: 'auto'}}))});
+                return pics;
+            },
+
+
             render: function() {
                 var entry = this.props.entry;
 
@@ -22,6 +31,8 @@
                 var imagethumb = entry.getIn(['data', 'imagethumb']);
                 var imagethumbBg = imagethumb && this.props.getAsset(imagethumb);
 
+                var pictures = entry.getIn(['data', 'pictures']);
+                var hasPictures = (pictures && pictures.size > 0);
 
                 var concept = entry.getIn(['data', 'concept']) || false;
                 var planning = entry.getIn(['data', 'planning']) || false;
@@ -40,7 +51,8 @@
                         imagethumbBg ? h('img', {src: imagethumbBg.toString(), width: '200px', height: 'auto'}) : null,
                         imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto'}) : null
                     ),
-                    h('article', {"className": "text"}, this.props.widgetFor('body'))
+                    h('article', {"className": "text"}, this.props.widgetFor('body')),
+                    hasPictures ? this.preparePictures(pictures) : null
                 );
             }
         });
