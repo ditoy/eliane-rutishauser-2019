@@ -1,76 +1,15 @@
-.customers {
-
+.customers{
   margin: 0;
   padding: 0;
+  border: none;
+  text-align: left;
+  column-count: 1;
 
-  @include media("<=phone") {
-    border: none;
-    text-align: left;
+  @include media(">phone") {
+    column-count: 2;
   }
 
-  .wrapper {
-    text-align: center;
-    margin: 0 auto;
+  @include media(">tablet") {
+    column-count: 3;
   }
-
-  img {
-    padding: 0;
-    margin: 0.5rem 0.6rem;
-    filter: grayscale(1);
-    opacity: 1 !important;
-    position: relative;
-    display: inline;
-	max-width: 14%;
- 
-
-    @include media("<desktop") {
-		max-width: 19%;
-   }
-    
-    @include media("<tablet") {
-		max-width: 25%;
-    }
-
-    @include media("<=phone") {
-      display: inline-block;
-      text-align: center;
-      margin: 0 auto;
-		max-width: 30%;
-    }
-
-	}
-	
-    @include media("<desktop") {
-		img:nth-child(9),
-		img:nth-child(10),
-		img:nth-child(11),
-		img:nth-child(12) {
-			display: none;
-		}
-	}
-	
-	@include media("<tablet") {
-
-		img:nth-child(7),
-		img:nth-child(8) {
-			display: none;
-		}
-	}
-	
-  @include media("<=tablet") {
-	  img::last-child {
-		  display: none;
-	  }
-  }
-}
-
-
-
-.logodesign {
-
-  img {
-    display: block;
-    margin: 10vh auto 10vh auto;
-  }
-
 }

@@ -185,39 +185,35 @@ window.onload = function() {
  */
 const attachScrollReveal = () => {
 
-    const revealOptions = {
+    const revealOptionsMain = {
         duration: 800,
-        delay: 25,
-        useDelay: 'once',
-        reset: false,
-        origin: 'bottom',
-        distance: '10vh',
-        scale: 1,
-    };
-
-    const revealOptionsFooterContent = {
-        duration: 800,
-        delay: 100,
+        delay: 250,
         useDelay: 'always',
-        reset: true,
         origin: 'bottom',
-        distance: '10vh',
         scale: 1,
     };
 
     const revealOptionsHeader = {
         duration: 800,
         delay: 0,
-        useDelay: 'once',
-        reset: false,
         origin: 'top',
         scale: 1,
     };
 
+    const revealOptionsFooter = {
+        duration: 800,
+        delay: 150,
+        useDelay: 'always',
+        origin: 'bottom',
+        scale: 1,
+    };
+
+
+
     const sr = ScrollReveal();
     sr.reveal('.header', revealOptionsHeader);
-    sr.reveal('.main p, .main a, .main li, .main img, h1, h2, h3, h4, h5, h6, .row, .main .large-card, .main .card, .reveal, .reveal *, .stripe *', revealOptions);
-    sr.reveal('.footer *', revealOptionsFooterContent, 20);
+    sr.reveal('.main p, .main a, .main ul, .main img, .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main cite, .card, .reveal', revealOptionsMain);
+    sr.reveal('.footer *', revealOptionsFooter, 20);
 };
 
 
