@@ -25,7 +25,7 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "job"
     label: "Jobs"
-    folder: "site/content"
+    folder: "site/content/jobs"
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields:
