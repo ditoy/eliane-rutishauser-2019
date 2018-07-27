@@ -11,6 +11,14 @@
 /* reset styles */
 @import "partials/reset";
 
+/* import vendors */
+// sellect.js
+@import "vendors/sellect";
+// lightbox.js
+@import "../../node_modules/lightgallery.js/src/css/lg-fb-comment-box";
+@import "../../node_modules/lightgallery.js/src/css/lg-transitions";
+@import "../../node_modules/lightgallery.js/src/css/lightgallery";
+
 /* import partials */
 @import "partials/main";
 @import "partials/grid";
@@ -30,14 +38,3 @@
 @import "partials/project";
 @import "partials/team";
 @import "partials/customers";
-@import "partials/sellect";
-
-
-/* vendors */
-
-// lightbox.js
-@import "../../node_modules/lightgallery.js/src/css/lg-fb-comment-box";
-@import "../../node_modules/lightgallery.js/src/css/lg-transitions";
-@import "../../node_modules/lightgallery.js/src/css/lightgallery";
-
-

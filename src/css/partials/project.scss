@@ -52,13 +52,6 @@ body.projects {
     }
   }
 
-  .sellect-item {
-    font-family: $f-regular;
-    color: #6a6a6a;
-    background-color: $c-white !important;
-    font-size: 1rem;
-    margin: 0;
-  }
   .sellect-container {
     border-radius: 0;
     background-color: $c-white !important;
@@ -66,6 +59,39 @@ body.projects {
     min-height: 35px;
     padding: 0;
   }
+
+
+  .sellect-destination-list {
+    .sellect-item {
+      font-family: $f-regular;
+      background-color: darken($c-mediumgray, 15%);
+      color: $c-white;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      margin: 0.2rem;
+      padding: 0.1rem 0.3rem;
+    }
+
+    .fa.fa-times:after {
+      box-sizing: border-box;
+      display: inline-block;
+      content: "✕";
+      margin-left: 0.2rem;
+      font-style: normal;
+      border-radius: 50%;
+      background-color: $c-white;
+      color: darken($c-mediumgray, 15%);
+      line-height: 1;
+      vertical-align: top;
+      height: 17px;
+      width: 17px;
+      font-size: 10px;
+      padding: 3px 4px;
+      position: relative;
+      top: 1px;
+    }
+  }
+
 
 }
 
