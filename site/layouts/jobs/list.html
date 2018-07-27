@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+{{partial "head-site" . }}
+{{ partial "body" . }}
+<div class="wrapper">
+    {{ partial "header" . }}
+
+    <div class="jobs">
+        <div class="container main">
+
+            <h1>{{ .Title }}</h1>
+
+            {{ .Content }}
+
+            <div class="spacer-3x"></div>
+
+            {{  range $index, $page := .Data.Pages.ByParam "date" }}
+                {{ if and (isset .Params "active") (.Params.active) }}
+                    {{ .Render "card" }}
+                {{ end }}
+            {{ end }}
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="spacer-10x"></div>
+
+    {{ partial "footer" . }}
+</div>
+</body>
+{{partial "javascript" . }}
+</html>

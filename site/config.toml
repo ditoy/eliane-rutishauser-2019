@@ -18,10 +18,6 @@ enableRobotsTXT = "true"
     appGoogleVerification = "123xyz-google-hash"
     referenceCompetences = [ "Idee", "Planung", "Ausführung" ]
 
-# URL Management
-[permalinks]
-  posts = "/posts/:title/"
-
 # Archetypes Management
 MetaDataFormat = "yaml"
 
