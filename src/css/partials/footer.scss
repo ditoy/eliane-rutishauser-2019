@@ -1,28 +1,30 @@
 $footer-text: $c-mediumgray;
 
 .footer {
-	clear: both;
-	background: $c-darkgray;
-	color: $footer-text;
-	padding-top: 3rem;
-	font-size: 0.9rem;
-	margin-top: 10rem;
-	letter-spacing: 0.05em;
-	min-height: 36em;
 	position: relative;
+	clear: both;
+	background-color: $c-darkgray;
 	background-image: url('/images/uploads/3dimensional-grid.svg');
 	background-position: bottom right;
 	background-repeat: no-repeat;
-		  @include media("<=tablet") {
-					min-height: 520px;
-		  }
+	color: $footer-text;
+	font-size: 0.9rem;
+	padding-top: 3rem;
+	letter-spacing: 0.05em;
+	min-height: 520px;
+
+	@include media(">tablet") {
+		min-height: 36em;
+	}
+
 	a {
 		color: $footer-text;
 		text-decoration: none;
 		max-height: 18px;
+
 		&:hover {
 			opacity: 0.6;
-		}		
+		}
 
 	}
 
@@ -33,4 +35,9 @@ $footer-text: $c-mediumgray;
 			max-width: 40px;
 		}
 	}
+}
+
+
+body:not(.has-hero) .footer {
+	margin-top: 10rem;
 }
