@@ -67,16 +67,18 @@ body.projects {
       background-color: darken($c-mediumgray, 15%);
       color: $c-white;
       border-radius: 5px;
-      font-size: 0.8rem;
-      margin: 0.2rem;
-      padding: 0.1rem 0.3rem;
+      font-size: 11px;
+      margin: 2px;
+      padding: 3px 5px;
+      text-transform: uppercase;
+      text-rendering: optimizeLegibility;
     }
 
     .fa.fa-times:after {
       box-sizing: border-box;
       display: inline-block;
       content: "✕";
-      margin-left: 0.2rem;
+      margin-left: 3px;
       font-style: normal;
       border-radius: 50%;
       background-color: $c-white;
@@ -87,8 +89,6 @@ body.projects {
       width: 17px;
       font-size: 10px;
       padding: 3px 4px;
-      position: relative;
-      top: 1px;
     }
   }
 
