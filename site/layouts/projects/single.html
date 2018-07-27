@@ -41,16 +41,15 @@
                         <a href="{{ .Params.customerUrl }}" rel="noopener" target="_blank">{{ .Params.customerName }}</a>
                         {{ end }}
 
-
                         <div class="cont">
 							<div class="page-head">
 								<div class="demo-gallery">
-							    {{ if .Params.pictures }}
+							    {{ if .Params.projectpictures }}
 								<ul id="lightgallery">
-								  {{ range .Params.pictures }}
-							      <li data-responsive="#" data-src="{{ . }}">
+								  {{ range .Params.projectpictures }}
+							      <li data-responsive="#" data-src="{{ .src }}">
 							        <a href="#">
-							          <img src="{{ . }}">
+							          <img src="{{ .src }}">
 							          <div class="demo-gallery-poster">
 							            <img src="./zoom.png">
 							          </div>
@@ -60,9 +59,8 @@
 							    </ul>
 							    {{ end }}
 							  </div>
-							</div>	
-
-
+							</div>
+                        </div>
                     </article>
 
                 </div>

@@ -59,7 +59,9 @@ const project = {
                 me.activity.all = union(me.activity.all, item.activities.split(' '));
 
                 for (const element of item.activities.split(' ')) {
-                    me.byActivity[element] = union(me.byActivity[element], item);
+                    if (element && me.byActivity[element]) {
+                        me.byActivity[element] = union(me.byActivity[element], item);
+                    }
                 }
             }
             return this;
