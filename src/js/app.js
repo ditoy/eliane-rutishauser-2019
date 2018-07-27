@@ -109,7 +109,7 @@ function addActivityListener(id) {
  */
 
 if (document.getElementById('projects-filterable')) {
-    axios.get("/projects/index.json").then((r) => {
+    axios.get('/projects/index.json').then((r) => {
         projects = r.data;
         // console.log('JSON', projects);
     });
@@ -174,13 +174,57 @@ window.onload = function() {
     wrapper.style.opacity = 0;
     wrapper.style.paddingTop = 0;
     fadeIn(wrapper);
+
+    // attach scrollreveal
+    attachScrollReveal();
+};
+
+
+/**
+ * scrollreveal
+ */
+const attachScrollReveal = () => {
+
+    const revealOptions = {
+        duration: 800,
+        delay: 25,
+        useDelay: 'once',
+        reset: false,
+        origin: 'bottom',
+        distance: '10vh',
+        scale: 1,
+    };
+
+    const revealOptionsFooterContent = {
+        duration: 800,
+        delay: 100,
+        useDelay: 'always',
+        reset: true,
+        origin: 'bottom',
+        distance: '10vh',
+        scale: 1,
+    };
+
+    const revealOptionsHeader = {
+        duration: 800,
+        delay: 0,
+        useDelay: 'once',
+        reset: false,
+        origin: 'top',
+        scale: 1,
+    };
+
+    const sr = ScrollReveal();
+    sr.reveal('.header', revealOptionsHeader);
+    sr.reveal('.main p, .main a, .main li, .main img, h1, h2, h3, h4, h5, h6, .row, .main .large-card, .main .card, .reveal, .reveal *, .stripe *', revealOptions);
+    sr.reveal('.footer *', revealOptionsFooterContent, 20);
 };
 
 
 /**
  * action before unload event
  */
-window.addEventListener("beforeunload", (e) => { fadeOut(document.querySelector('.wrapper')); });
+window.addEventListener('beforeunload', (e) => { fadeOut(document.querySelector('.wrapper')); });
 
 
 /**
@@ -399,62 +443,6 @@ if (!!customersList) {
         });
     }
 }
-
-
-
-
-/**
- * scrollreveal
- *
- */
-
-const revealOptions = {
-    duration: 800,
-    delay: 10,
-    useDelay: 'once',
-    reset: false,
-    origin: 'bottom',
-    distance: '10vh',
-    scale: 1,
-    viewFactor: 0.25,
-    easing: 'cubic-bezier(0.15, 1.05, 0.9, 1)'
-};
-
-const revealOptionsFooterContent = {
-    duration: 800,
-    delay: 200,
-    useDelay: 'always',
-    reset: true,
-    origin: 'bottom',
-    scale: 1,
-    viewFactor: 0.15,
-    easing: 'cubic-bezier(0.15, 1.05, 0.9, 1)'
-};
-
-
-const revealOptionsHeader = {
-    duration: 800,
-    delay: 0,
-    useDelay: 'always',
-    reset: true,
-    origin: 'bottom',
-    distance: '20vh',
-    scale: { direction: 'up', power: '5%' },
-    viewFactor: 0.60,
-    easing: 'ease'
-};
-
-
-const sr = ScrollReveal();
-
-sr.reveal('.header .logo, .header a', revealOptionsHeader, 20);
-sr.reveal('.main p, .main a, .main li, .main img, .main h2, .main h3, .main h4, .main h5, .main h6, .main .row, .main .large-card, .main .card, .reveal, .reveal *, .stripe *', revealOptions);
-sr.reveal('.footer li, .footer .col-4, .footer a, .footer p', revealOptionsFooterContent, 20);
-
-
-
-
-
 
 /**
  * Home Slideshow
