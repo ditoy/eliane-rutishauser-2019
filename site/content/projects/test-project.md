@@ -1,17 +1,10 @@
 ---
-title:          "Test-Projekt 1"
-date:           "1989-12-03"
-position:       0
-active:         true
-draft:          false
-robotsExclude:  false
-imagethumb:     "/images/uploads/prairie-01.jpg"
-image:          "/images/uploads/prairie-01.jpg"
-year:           2018
-customerName:   "Kunde"
-customerUrl:    "Kundenwebsite.ch"       
-concept:        true
-planning:       true
+title: Test-Projekt 1
+date: '1989-12-03'
+active: true
+draft: false
+concept: true
+planning: true
 implementation: true
 activities:     "Bürodesign Schaufenstergestaltung Signaletik"
 pictures:

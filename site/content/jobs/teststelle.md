@@ -1,9 +1,7 @@
 ---
-title:          "Mediamatiker/in (80-100%)"
-date:           "2018-07-26"
-active:         true
-draft:          false
-robotsExclude:  true
+title: Mediamatiker/in 100%
+date: '2018-07-26T00:00:00+02:00'
+active: true
 ---
 Pro Infirmis setzt sich für ein selbstständiges und selbstbestimmtes Leben behinderter Menschen ein. Als grösste Dachorganisation im Behindertenbereich erbringt sie Dienstleistungen für Betroffene und deren Angehörige. Dazu steht in allen Sprachregionen ein Netzwerk von insgesamt 50 Beratungsstellen mit rund 1‘600 Mitarbeitenden zur Verfügung.
 
