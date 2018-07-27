@@ -1,11 +1,6 @@
 backend:
   name: git-gateway
-  accept_roles:
-    - admin
-    - editor
-  #repo: ditoy/3dimensional-website-2018 # Path to your Github repository
-  #branch: master # Branch to update (master by default)
-
+  branch: master
 
 display_url: https://www.3dimensional.ch
 

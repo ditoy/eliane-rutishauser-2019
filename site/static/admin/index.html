@@ -3,16 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
+    <title>3dimensional CMS</title>
     <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^1.7.0/dist/cms.css" />
+    <script async src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
     <script async src="https://unpkg.com/netlify-cms@^1.7.0/dist/cms.js"></script>
 </head>
 <body>
 <script>
-
-
-
-
     var registerCMS = function () {
 
         var ProjectPreview = createClass({
@@ -50,7 +47,6 @@
 
         CMS.registerPreviewTemplate("project", ProjectPreview);
     };
-
 
     window.onload = function () {
         registerCMS();
