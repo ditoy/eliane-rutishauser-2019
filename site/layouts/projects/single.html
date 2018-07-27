@@ -47,9 +47,9 @@
 							    {{ if .Params.projectpictures }}
 								<ul id="lightgallery">
 								  {{ range .Params.projectpictures }}
-							      <li data-responsive="#" data-src="{{ .src }}">
+							      <li data-responsive="#" data-src="{{ . }}">
 							        <a href="#">
-							          <img src="{{ .src }}">
+							          <img src="{{ . }}">
 							          <div class="demo-gallery-poster">
 							            <img src="./zoom.png">
 							          </div>
