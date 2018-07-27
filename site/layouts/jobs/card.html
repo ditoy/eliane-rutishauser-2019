@@ -1,4 +1,7 @@
-<div class="job">
+<div class="job" id="{{ .UniqueID }}">
+    <div class="more" data-target="{{ .UniqueID }}">
+        Mehr anzeigen ▼
+    </div>
     {{ if .Params.imagethumb }}
         <div class="featuredimageWrapper">
             <div class="featuredimage" style="background-image: url('{{ .Params.imagethumb }}');" title="{{ .Params.title }}"></div>
@@ -13,5 +16,7 @@
             </div>
         </div>
     </article>
+    <div class="less" data-target="{{ .UniqueID }}">
+        Weniger anzeigen ▲
+    </div>
 </div>
-

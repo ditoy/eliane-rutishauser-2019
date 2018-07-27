@@ -462,4 +462,23 @@ md = new MobileDetect(window.navigator.userAgent);
 
 
 
-
+/**
+ * slide down and slide up job descriptions on jobs page
+ */
+const attachJobSliders = () => {
+    const togglers = document.querySelectorAll('.jobs .more, .jobs .less');
+    forEach(togglers, (toggler) => {
+        toggler.addEventListener('click', (e) => {
+            e.preventDefault();
+            const target = document.getElementById(toggler.dataset.target);
+            debugger;
+            if (target.classList.contains('expanded')) {
+                target.classList.remove('expanded');
+            } else {
+                target.classList.add('expanded');
+            }
+            target.scrollIntoView();
+        });
+    });
+};
+attachJobSliders();
