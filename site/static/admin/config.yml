@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
   branch: master
+  accept_roles:
+    - admin
+    - editor
 
 display_url: https://www.3dimensional.ch
 
