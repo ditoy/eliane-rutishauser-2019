@@ -4,23 +4,24 @@
 {{ partial "head-site" . }}
 {{ partial "body" (dict "context" . "hero" true) }}
 <div class="wrapper">
-    <div    id="animated-grid">
+    <div id="animated-grid" class="rellax" data-rellax-speed="-0.9">
         {{ partial "svg/grid" . }}
     </div>
-    <div id="slides" class="hero">
+    <div id="slides" class="hero rellax" data-rellax-speed="-1">
         <div class="slide showing"></div>
         <div class="slide"></div>
         <div class="slide"></div>
     </div>
     <div class="claim">
         <div class="container">
-            <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
+            <h1 class="rellax" data-rellax-speed="-3">Wir lassen punkto Präzision keine Wünsche offen.</h1>
         </div>
     </div>
 
     {{ partial "header" . }}
 
     <div class="stripe gray">
+        <div class="spacer-5x"></div>
         <div class="container">
             <article class="main introduction">
                 {{ .Content }}

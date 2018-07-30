@@ -6,6 +6,11 @@ import {fadeIn, fadeOut, forEach} from 'ditoy-js-utils';
 const List = require('list.js');
 const Autogrow = require('textarea-autogrow');
 
+const Rellax = require('rellax');
+
+// let MobileDetect = require('mobile-detect');
+// let md = new MobileDetect(window.navigator.userAgent);
+
 
 // global var
 let projects = [];
@@ -217,7 +222,7 @@ const attachScrollReveal = () => {
 
     const sr = ScrollReveal();
     sr.reveal('.header', revealOptionsHeader);
-    sr.reveal('.main p, .main a, .main ul, .main img, .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main cite, .card, .reveal', revealOptionsMain);
+    sr.reveal('.main p, .main a, .main ul, .main img, .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main cite, .main .job, .card, .reveal', revealOptionsMain);
     sr.reveal('.footer *', revealOptionsFooter, 20);
 };
 
@@ -448,23 +453,32 @@ if (!!customersList) {
 /**
  * Home Slideshow
  */
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,8000);
+let attachSlider = () => {
+    let currentSlide = 0;
+    setInterval(nextSlide,8000);
+    function nextSlide(){
+        slides[currentSlide].className = 'slide';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].className = 'slide showing';
+    }
+};
 
-function nextSlide(){
-	slides[currentSlide].className = 'slide';
-	currentSlide = (currentSlide+1)%slides.length;
-	slides[currentSlide].className = 'slide showing';
+let slides = document.querySelectorAll('#slides .slide');
+if (slides.length > 0) {
+    attachSlider();
 }
 
+/**
+ * Home paralax scrolling
+ */
+let attachRellax = () => {
+    const rellax = new Rellax('.rellax');
+};
 
-
-
-
-var MobileDetect = require('mobile-detect'),
-md = new MobileDetect(window.navigator.userAgent);
-
+const rellaxes = document.querySelectorAll('.rellax');
+if (rellaxes.length > 0) {
+    attachRellax();
+}
 
 
 /**
