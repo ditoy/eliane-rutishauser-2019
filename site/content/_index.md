@@ -20,12 +20,12 @@ image:          ""
 
 
 {{< row >}}
+    {{< col 4 >}}
+        {{< icon ruler >}}
+    {{< /col >}}
     {{< col 8 >}}
         {{< heading "Die Planung" >}}
         Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus in odio nibh.
-    {{< /col >}}
-    {{< col 4 >}}
-        {{< icon ruler >}}
     {{< /col >}}
 {{< /row >}}
 

@@ -6,8 +6,9 @@
                     <div class="featuredimage" style="background-image: url('{{ .Params.imagethumb }}');" aria-label="{{ .Params.title }}"></div>
                 </div>
             {{ end }}
-
-            <h3 class="competence title" data-competence="{{ if eq .Params.concept true }}concept {{ end }}{{ if eq .Params.planning true }}planning {{ end }}{{ if eq .Params.implementation true }}implementation {{ end }}">{{ .Title }}</h3>
+            <h3 class="competence title" data-competence="{{ if eq .Params.concept true }}concept {{ end }}{{ if eq .Params.planning true }}planning {{ end }}{{ if eq .Params.implementation true }}implementation {{ end }}">
+                {{ .Title }}
+            </h3>
             <div class="teaser activity" data-activity="{{ .Params.activities }}">
 	            <p class="teaser_truncated">{{ .Params.teaser | truncate 100 }}</p>
             </div>

@@ -9,8 +9,9 @@
             <div class="container main">
                 <div class="project">
                     <article>
-
-                        <img class="overflow" src="{{ .Params.image }}">
+                        {{ if .Params.image }}
+                            <img class="overflow" src="{{ .Params.image }}">
+                        {{ end }}
 
                         <div class="icons bigger text-center">
                             {{ if eq .Params.concept true }}
@@ -23,6 +24,7 @@
                                 {{ partial "icon" (dict "context" . "icon" "saw") }}
                             {{ end }}
                         </div>
+                        <div class="clear"></div>
 
                         {{ partial "link-prev-next" . }}
 

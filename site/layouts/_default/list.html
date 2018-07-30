@@ -13,7 +13,6 @@
         <div class="spacer-3x"></div>
 
         <div class="cards">
-            <div class="cards-sizer"></div>
             {{  range $index, $page := .Data.Pages.ByParam "position" }}
                 {{ if and (isset .Params "active") (.Params.active) }}
                     {{ .Render "card" }}

@@ -1,62 +1,15 @@
-article {
+.nav-prev-next {
 
-  .author,
-  .date,
-  .wordcount,
-  .type,
-  .tag,
-  .category {
-    display: inline-block;
-    white-space: nowrap !important;
-    color: $c-white;
-    border-radius: 0.2em;
-    padding: 0.1em 0.5em;
-    margin: 0 0.5em 0.5em 0;
-    text-decoration: none;
+  img {
+    width: 30px;
   }
 
-  .author {
-    background: $c-gray;
+  .nav-prev img {
+    transform: rotate(180deg);
   }
 
-  .date {
-    background: $c-black;
-  }
-
-  .wordcount {
-    color: $c-gray;
-  }
-
-  .type {
-    background: $c-black;
-  }
-
-  .tag {
-    background: $c-black;
-  }
-
-  .category {
-    background: $c-black;
-  }
-
-  .postpre {
-    font-size: 0.9em;
-    color: $c-darkgray;
-    margin-bottom: 1em;
-  }
-
-  .nav-prev-next img {
-	width: 30px;	  
-  }
-  .nav-prev {
-	  img {
-	  transform: rotate(180deg);	  
-	}
-  }
-  
   .nav-prev:hover,
   .nav-next:hover {
-  	opacity: 0.4;
+    opacity: 0.4;
   }
-
 }
