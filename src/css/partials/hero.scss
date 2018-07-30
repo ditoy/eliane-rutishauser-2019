@@ -6,33 +6,30 @@ body.has-hero {
     right: 0;
     bottom: 0;
     min-width: 500px;
+    width: 75vw;
     max-width: 100vw;
     min-height: 750px;
-    height: 67vh;
+    height: 75vh;
     max-height: 100vh;
     overflow: hidden;
     text-align: left;
     z-index: ($z-hero + 2);
 
-    @include media(">=mega") {
-      max-width: 67vw;
+
+    @include media("<=tablet") {
+      max-width: 100%;
     }
 
+    @include media(">=desktop") {
+      max-width: 750px;
+    }
   }
 
   #animated-grid-svg {
     position: absolute;
     bottom: 0;
     right: 0;
-    max-width: 100%;
-
-    @include media("<=tablet") {
-      max-width: 100%;
-    }
-
-    @include media(">=mega") {
-      max-width: 750px;
-    }
+    width: 100%;
   }
 
 
