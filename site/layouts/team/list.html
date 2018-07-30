@@ -6,28 +6,31 @@
 <div class="wrapper">
   {{ partial "header" . }}
 
-  <div class="team gray">
-    <div class="stripe">
+  <div class="team">
+    <div class="stripe white">
+      <div class="container">
+        <div class="spacer-4x"></div>
+        <article class="main">
+          {{ .Content }}
+        </article>
+      </div>
+    </div>
+
+    <div class="stripe gray">
       <div class="container">
         <div class="cards">
           {{  range (.Data.Pages.ByParam "position") }}
-           {{ if .Params.active }}
-              {{ .Render "card"}}
-            {{ end }}
+          {{ if .Params.active }}
+          {{ .Render "card"}}
+          {{ end }}
           {{ end }}
         </div>
         <div class="clear"></div>
       </div>
     </div>
 
-    <div class="stripe">
-      <div class="container">
-        <article>
-          {{ .Content }}
-        </article>
-      </div>
-    </div>
   </div>
+
 
   {{ partial "footer" . }}
 </div>

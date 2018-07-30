@@ -45,6 +45,31 @@ body {
   padding: 0 2rem;
 }
 
+.stripe {
+  margin: 0;
+  padding: 5rem 0;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+
+  &.gray {
+    background-color: $c-lightgray;
+  }
+
+  &.white {
+    background-color: $c-white;
+  }
+
+  &.black {
+    background-color: $c-darkgray;
+
+    cite {
+      color: $c-lightgray;
+    }
+  }
+}
+
 /* clears */
 
 .clear {

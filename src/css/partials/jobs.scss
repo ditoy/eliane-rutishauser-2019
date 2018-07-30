@@ -1,5 +1,8 @@
-.jobs {
+body.jobs {
+  background-color: $c-white;
+}
 
+.jobs {
 
   // list (collapsed) state of job ad
   .job {
@@ -13,7 +16,7 @@
     .more, .less {
       width: 100%;
       height: 40px;
-      background: $c-lightgray;
+      background: $c-white;
       z-index: 100;
       text-align: center;
       padding: 0.6rem;

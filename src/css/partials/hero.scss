@@ -157,28 +157,6 @@ body.has-hero {
     }
   }
 
-
-  .stripe {
-    margin: 0;
-    padding: 5rem 0;
-
-    &:first-of-type {
-      padding-top: 0;
-    }
-
-    &.gray {
-      background-color: $c-lightgray;
-    }
-
-    &.black {
-      background-color: $c-darkgray;
-
-      cite {
-        color: $c-lightgray;
-      }
-    }
-  }
-
   .introduction .icon {
     float: none;
     width: 100%;
