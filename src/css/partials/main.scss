@@ -42,7 +42,11 @@ body {
   width: 100%;
   max-width: $w-container;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.2rem;
+
+  @include media(">=tablet") {
+    padding: 0 2rem;
+  }
 }
 
 .stripe {
