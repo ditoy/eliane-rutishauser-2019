@@ -17,7 +17,7 @@ ul.details {
   width: 100%;
 
   @include media("<=phone") {
-      top: 3px;
+    top: 3px;
   }
 }
 
@@ -38,6 +38,8 @@ ul.details {
 .cards {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-flow: row wrap;
 
   @include media("<=phone") {
     border: none;
@@ -47,19 +49,19 @@ ul.details {
 
 /* card sizing */
 .cards-sizer, .card {
-  width: percentage(1); // 1 col
+  display: inline-block;
+  width: 100%;
 
-  @include media(">=tablet") {
-    width: percentage(1/2); // 2 cols
+  @include media('>=tablet') {
+    width: 50%;
   }
 
-  @include media(">=desktop") {
-    width: percentage(1/3); // 3 cols
+  @include media('>=desktop') {
+    width: percentage(1/3);
   }
 }
 
 .card {
-  float: left;
   padding: 0;
 
   h3 {
@@ -87,28 +89,30 @@ ul.details {
 
 .card-inner {
   transition: $tr-scope $tr-speed $tr-ease-linear;
-  padding: 1rem;
-  margin: 0.6rem;
+  padding: 0;
+  margin: 0;
   border-radius: 1px;
   perspective: 1500px;
   transform-origin: 60% 40%;
-  @include media("<=phone") {
-	  padding: 0rem;
-	  margin: 0;
+
+  @include media(">=tablet") {
+    padding: 1rem;
+    margin: 0.6rem;
   }
+
   .icons {
-  	margin-top: 0.5rem !important;
+    margin-top: 0.5rem !important;
   }
 
   * {
     transition: $tr-scope $tr-speed $tr-ease-linear;
   }
 
-  	p {
-	  	font-size: 1rem;
-	  	line-height:  1.5rem;
-  	}
-   /* preps for hover fill effect */
+  p {
+    font-size: 1rem;
+    line-height:  1.5rem;
+  }
+  /* preps for hover fill effect */
   .featuredimageWrapper {
     background-color: $c-white;
     overflow: hidden;
@@ -122,7 +126,7 @@ ul.details {
   /* elevate and fill card on hover effect */
   &:hover {
     transition: $tr-scope $tr-speed $tr-ease-linear;
-	background: #ffffff;
+    background: #ffffff;
 
     .featuredimage {
       transition: transform $tr-speed $tr-ease-alt;

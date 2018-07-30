@@ -193,6 +193,7 @@ const attachScrollReveal = () => {
         useDelay: 'always',
         origin: 'bottom',
         scale: 1,
+        afterReveal: () => { equalize() }
     };
 
     const revealOptionsHeader = {
@@ -200,6 +201,7 @@ const attachScrollReveal = () => {
         delay: 0,
         origin: 'top',
         scale: 1,
+        afterReveal: () => { equalize() }
     };
 
     const revealOptionsFooter = {
@@ -208,6 +210,7 @@ const attachScrollReveal = () => {
         useDelay: 'always',
         origin: 'bottom',
         scale: 1,
+        afterReveal: () => { equalize() }
     };
 
 

@@ -32,15 +32,14 @@
 
             <div class="spacer-3x"></div>
 
-            <div class="cards" id="project-list">
-                <div class="cards-sizer"></div>
-                    <ul class="no-bullet list">
-                        {{  range $index, $page := .Data.Pages.ByParam "position" }}
-                            {{ if and (isset .Params "active") (.Params.active) }}
-                                {{ .Render "card" }}
-                            {{ end }}
+            <div id="project-list">
+                <ul class="cards list">
+                    {{  range $index, $page := .Data.Pages.ByParam "position" }}
+                        {{ if and (isset .Params "active") (.Params.active) }}
+                            {{ .Render "card" }}
                         {{ end }}
-                    </ul>
+                    {{ end }}
+                </ul>
             </div>
             <div class="clear"></div>
 
