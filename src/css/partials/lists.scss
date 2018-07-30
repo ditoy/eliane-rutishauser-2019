@@ -51,13 +51,16 @@ ul.details {
 .cards-sizer, .card {
   display: inline-block;
   width: 100%;
+  margin-bottom: 1.5rem;
 
   @include media('>=tablet') {
     width: 50%;
+    margin-bottom: 0;
   }
 
   @include media('>=desktop') {
     width: percentage(1/3);
+    margin-bottom: 0;
   }
 }
 

@@ -18,7 +18,7 @@
     left: 0;
     max-height: 0;
     width: 100%;
-    opacity: 0.2;
+    opacity: 1;
 
     @include media("<=tablet") {
       background-color: $c-darkgray;

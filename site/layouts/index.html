@@ -4,25 +4,17 @@
 {{ partial "head-site" . }}
 {{ partial "body" (dict "context" . "hero" true) }}
 <div class="wrapper">
-
+    <div    id="animated-grid">
+        {{ partial "svg/grid" . }}
+    </div>
     <div id="slides" class="hero">
-        <div class="slide showing">
-            <div class="container">
-                <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="container">
-                <h1>Lorem ipsum dolor sit amet, consetetur sadipscing</h1>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="container">
-                <h1>sed diam nonumy eirmod tempor invidunt ut labore.</h1>
-            </div>
-        </div>
-        <div id="animated-grid">
-            {{ partial "svg/grid" . }}
+        <div class="slide showing"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+    <div class="claim">
+        <div class="container">
+            <h1>Wir lassen punkto Präzision keine Wünsche offen.</h1>
         </div>
     </div>
 
@@ -101,7 +93,7 @@
         <div class="container main">
             <article>
                 <cite>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
                 </cite>
             </article>
         </div>
