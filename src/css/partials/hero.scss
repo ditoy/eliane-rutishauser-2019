@@ -5,30 +5,17 @@ body.has-hero {
     position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 500px;
-    width: 75vw;
-    max-width: 100vw;
-    min-height: 750px;
-    height: 65vh;
-    max-height: 100vh;
-    overflow: hidden;
     text-align: left;
     z-index: ($z-hero + 2);
 
-    @include media(">=tablet") {
-      max-width: 65vw;
+    #animated-grid-svg {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      min-width: 500px;
+      width: 50vw;
+      height: auto;
     }
-
-    @include media(">=desktop") {
-      max-width: 700px;
-    }
-  }
-
-  #animated-grid-svg {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
   }
 
 
@@ -76,6 +63,16 @@ body.has-hero {
       color: $c-white;
       text-shadow: 1px 1px 2px rgba($c-black, 0.5);
       text-align: left;
+      text-transform: none;
+      line-height: 135%;
+
+      @include media('>=tablet') {
+        padding-right: 25%;
+      }
+
+      @include media('>=desktop') {
+        padding-right: 33%;
+      }
     }
   }
 

@@ -453,32 +453,30 @@ if (!!customersList) {
 /**
  * Home Slideshow
  */
-let attachSlider = () => {
-    let currentSlide = 0;
-    setInterval(nextSlide,8000);
-    function nextSlide(){
-        slides[currentSlide].className = 'slide';
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].className = 'slide showing';
+const attachSlider = () => {
+    const slides = document.querySelectorAll('#slides .slide');
+    if (slides.length > 0) {
+        let currentSlide = 0;
+        const nextSlide = () => {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].className = 'slide showing';
+        };
+        setInterval(nextSlide, 8000);
     }
 };
+attachSlider();
 
-let slides = document.querySelectorAll('#slides .slide');
-if (slides.length > 0) {
-    attachSlider();
-}
 
 /**
- * Home paralax scrolling
+ * Home parallax scrolling with rellax.js
  */
-let attachRellax = () => {
-    const rellax = new Rellax('.rellax');
+const attachRellax = () => {
+    if (document.querySelectorAll('.rellax').length > 0) {
+        new Rellax('.rellax');
+    }
 };
-
-const rellaxes = document.querySelectorAll('.rellax');
-if (rellaxes.length > 0) {
-    attachRellax();
-}
+attachRellax();
 
 
 /**
@@ -486,18 +484,19 @@ if (rellaxes.length > 0) {
  */
 const attachJobSliders = () => {
     const togglers = document.querySelectorAll('.jobs .more, .jobs .less');
-    forEach(togglers, (toggler) => {
-        toggler.addEventListener('click', (e) => {
-            e.preventDefault();
-            const target = document.getElementById(toggler.dataset.target);
-            debugger;
-            if (target.classList.contains('expanded')) {
-                target.classList.remove('expanded');
-            } else {
-                target.classList.add('expanded');
-            }
-            target.scrollIntoView();
+    if (togglers.length > 0) {
+        forEach(togglers, (toggler) => {
+            toggler.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.getElementById(toggler.dataset.target);
+                if (target.classList.contains('expanded')) {
+                    target.classList.remove('expanded');
+                } else {
+                    target.classList.add('expanded');
+                }
+                target.scrollIntoView();
+            });
         });
-    });
+    }
 };
 attachJobSliders();
