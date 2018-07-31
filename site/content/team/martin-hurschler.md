@@ -7,7 +7,7 @@ draft:          false
 robotsExclude:  false
 firstname:      "Martin"
 lastname:       "Hurschler"
-function:       "Inhaber"
+function:       "Inhaber, Eidg. dipl. Techniker HF Innenarchitektur"
 email:          "hurschler@3dimensional.ch"
 phone:          "+41 44 123 45 67"
 linkedin:       null
