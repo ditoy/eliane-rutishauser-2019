@@ -17,8 +17,6 @@ image:          ""
         Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus in odio nibh.
     {{< /col >}}
 {{< /row >}}
-
-
 {{< row >}}
     {{< col 4 >}}
         {{< icon ruler >}}
@@ -28,8 +26,6 @@ image:          ""
         Donec at justo tempor, eleifend risus non, dignissim erat. Praesent non vulputate orci. In hac habitasse platea dictumst. Nunc scelerisque leo eu erat tristique hendrerit. Fusce a semper orci. Aenean pretium efficitur est non viverra. Phasellus in odio nibh.
     {{< /col >}}
 {{< /row >}}
-
-
 {{< row >}}
     {{< col 4 >}}
         {{< icon saw >}}

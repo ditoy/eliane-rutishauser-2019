@@ -178,37 +178,48 @@ body.has-hero {
     }
   }
 
-  .introduction .icon {
-    float: none;
-    width: 100%;
-    text-align: center;
+  .introduction {
 
-    img {
-      margin: 0 auto;
-      width: auto;
-      max-width: 150px;
-      height: auto;
-      max-height: 150px;
+    .row:nth-child(even) {
+      .col-4 {
+        float: right;
+      }
+
+      .col-8 {
+        float: left;
+      }
+
+      h3 {
+        margin: 0;
+        padding: 0;
+      }
     }
 
-    &:nth-of-type(odd) {
-      float: left;
-    }
+    .icon {
+      display: block;
+      margin: 0;
+      padding: 3em 0 0 0;
+      text-align: left;
 
-    &:nth-of-type(even) {
-      float: right;
-    }
-
-    @include media(">=tablet") {
-
-      width: 280px;
-      padding: 2em;
-      margin-top: 3em;
+      @include media('>=tablet') {
+        padding: 4em 0 0 0;
+        text-align: center;
+      }
 
       img {
+        margin: 0;
         width: 100%;
+        max-width: 80px;
         height: auto;
+        max-height: 75px;
+
+        @include media('>=tablet') {
+          margin: 0 auto;
+          max-width: 120px;
+          max-height: 110px;
+        }
       }
     }
   }
+
 }
