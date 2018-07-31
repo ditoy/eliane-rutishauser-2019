@@ -11,30 +11,6 @@ ul.details {
   }
 }
 
-.nav-prev-next {
-  position: relative;
-  top: 15px;
-  width: 100%;
-
-  @include media("<=phone") {
-    top: 3px;
-  }
-}
-
-.nav-prev {
-  display: inline-block;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-next {
-  display: inline-block;
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
 .cards {
   margin: 0;
   padding: 0;
@@ -126,8 +102,7 @@ ul.details {
   &:hover {
     transition: $tr-scope $tr-speed $tr-ease-linear;
     background: $c-white;
-    box-shadow: 2px 2px 0 rgba($c-black, 0.2);
-
+    box-shadow: 2px 2px 3px rgba($c-black, 0.1);
 
     .featuredimage {
       transition: transform $tr-speed $tr-ease-alt;

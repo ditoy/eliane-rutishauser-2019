@@ -24,11 +24,10 @@
                                 {{ partial "icon" (dict "context" . "icon" "saw") }}
                             {{ end }}
                         </div>
-                        <div class="clear"></div>
 
                         {{ partial "link-prev-next" . }}
 
-                        <h1>{{ .Title }}</h1>
+                        <h1 class="has-nav">{{ .Title }}</h1>
 
                         {{ if .Params.teaser }}
                         <h4 class="text-center">{{ .Params.teaser }}</h4>

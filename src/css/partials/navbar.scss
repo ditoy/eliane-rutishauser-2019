@@ -8,7 +8,7 @@
   height: 0;
   max-height: 0;
   width: 100%;
-  background-color: $c-darkgray;
+  background-color: rgba($c-darkgray, 0.95);
 
   @include media(">=desktop") {
     display: none;

@@ -9,12 +9,12 @@
             <div class="container">
                 <article>
                     {{ if .Params.image }}
-                    <img src="{{ .Params.image }}" alt="Bild {{ .Title }}" class="overflow">
+                        <img src="{{ .Params.image }}" alt="Bild {{ .Title }}" class="overflow staffimage">
                     {{ end }}
 
                     {{ partial "link-prev-next" . }}
 
-                    <h1>{{ .Title }}</h1>
+                    <h1 class="has-nav">{{ .Title }}</h1>
 
                     <p class="text-center">{{ .Params.function }}</p>
 

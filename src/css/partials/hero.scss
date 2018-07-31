@@ -174,11 +174,19 @@ body.has-hero {
       position: absolute;
       text-shadow: 0 1 0.2em #000;
       line-height: normal;
-
     }
   }
 
   .introduction {
+
+    .row h3 {
+      margin: 0.5rem 0;
+      padding: 0;
+
+      @include media('>=tablet') {
+        margin: 1rem 0;
+      }
+    }
 
     .row:nth-child(even) {
       .col-4 {
@@ -188,21 +196,16 @@ body.has-hero {
       .col-8 {
         float: left;
       }
-
-      h3 {
-        margin: 0;
-        padding: 0;
-      }
     }
 
     .icon {
       display: block;
       margin: 0;
-      padding: 3em 0 0 0;
+      padding: 2rem 0 0 0;
       text-align: left;
 
       @include media('>=tablet') {
-        padding: 4em 0 0 0;
+        padding: 3rem 0 0 0;
         text-align: center;
       }
 
