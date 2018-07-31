@@ -197,16 +197,14 @@ const attachScrollReveal = () => {
         delay: 250,
         useDelay: 'always',
         origin: 'bottom',
-        scale: 1,
-        afterReveal: () => { equalize() }
+        scale: 1
     };
 
     const revealOptionsHeader = {
         duration: 800,
         delay: 0,
         origin: 'top',
-        scale: 1,
-        afterReveal: () => { equalize() }
+        scale: 1
     };
 
     const revealOptionsFooter = {
@@ -214,15 +212,15 @@ const attachScrollReveal = () => {
         delay: 150,
         useDelay: 'always',
         origin: 'bottom',
-        scale: 1,
-        afterReveal: () => { equalize() }
+        scale: 1
     };
 
 
 
     const sr = ScrollReveal();
     sr.reveal('.header, .animated-menu-icon', revealOptionsHeader);
-    sr.reveal('.main p, .main a, .main ul, .main img, .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main cite, .main .job, .has-hero .col-8, .card, .reveal', revealOptionsMain);
+    sr.reveal('.main p, .main a, .main ul, .main img, .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main cite, '
+    + '.main .job, .has-hero .col-8, .card, .reveal', revealOptionsMain);
     sr.reveal('.footer *', revealOptionsFooter, 20);
 };
 

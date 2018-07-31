@@ -125,7 +125,9 @@ ul.details {
   /* elevate and fill card on hover effect */
   &:hover {
     transition: $tr-scope $tr-speed $tr-ease-linear;
-    background: #ffffff;
+    background: $c-white;
+    box-shadow: 2px 2px 0 rgba($c-black, 0.2);
+
 
     .featuredimage {
       transition: transform $tr-speed $tr-ease-alt;
