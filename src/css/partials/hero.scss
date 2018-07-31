@@ -5,7 +5,7 @@ body.has-hero {
     position: absolute;
     right: 0;
     bottom: 0;
-    text-align: left;
+    text-align: right;
     z-index: ($z-hero + 2);
 
     #animated-grid-svg {
@@ -13,8 +13,16 @@ body.has-hero {
       bottom: 0;
       right: 0;
       min-width: 500px;
-      width: 50vw;
+      width: 45vw;
       height: auto;
+
+      @include media('<=phone') {
+        min-width: auto;
+        width: auto;
+        height: 55vh;
+        max-height: 400px;
+        float: right;
+      }
     }
   }
 
