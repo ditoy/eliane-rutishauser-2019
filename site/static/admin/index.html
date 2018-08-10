@@ -86,10 +86,6 @@
                         h('a', {href: 'mailto:' + entry.getIn(['data', 'email']), target: '_blank'}, entry.getIn(['data', 'email'])),
                         h('br', {}),
                         h('a', {href: 'tel:' + entry.getIn(['data', 'phone']).replace(/\s/g,''), target: '_blank'}, entry.getIn(['data', 'phone'])),
-                        h('br', {}),
-                        h('a', {href: entry.getIn(['data', 'linkedin']), target: '_blank'}, entry.getIn(['data', 'linkedin'])),
-                        h('br', {}),
-                        h('a', {href: entry.getIn(['data', 'twitter']), target: '_blank'}, entry.getIn(['data', 'twitter'])),
                         h('br', {})
                     )
                 );

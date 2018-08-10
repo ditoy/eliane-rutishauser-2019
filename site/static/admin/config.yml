@@ -75,8 +75,6 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "kurzes Zitat", name: "quote", widget: "string", tagname: "h4", required: false }
       - { label: "E-Mail", name: "email", widget: "string", required: false }
       - { label: "Telefon", name: "phone", widget: "string", required: false }
-      - { label: "Instagram (Komma getrennt, ohne @)", name: "instagram", widget: "list", required: false }
-      - { label: "Website (Komma getrennt, ganze URL)", name: "web", widget: "list", required: false }
       - { label: "Thumbnail Bild (600x600 px)", name: "imagethumb", widget: "file" }
       - { label: "Bild (1200x760 px)", name: "image", widget: "file" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }

@@ -38,18 +38,6 @@
                             {{ .Params.phone }}</a>
                         {{ end }}
                         <br/>
-
-                        {{ if .Params.linkedin }}
-                        <a href="{{ .Params.linkedin }}" rel="noopener" target="_blank" class="nowrap">
-                            LinkedIn</a>
-                        {{ end }}
-
-                        {{ if .Params.web }}
-                        {{ range $index, $url := .Params.web }}
-                        <a href="{{ $url }}" rel="noopener" target="_blank" class="nowrap">
-                            Web {{ add 1 $index }}</a>
-                        {{ end }}
-                        {{ end }}
                     </div>
                 </article>
             </div>

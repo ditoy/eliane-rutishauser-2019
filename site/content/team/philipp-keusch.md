@@ -10,8 +10,6 @@ lastname:       "Keusch"
 function:       "Projektleiter / Eidg. dipl. Techniker HF Schreiner-Innenausbau Gestaltung"
 email:          "keusch@3dimensional.ch"
 phone:          "+41 44 123 45 67"
-linkedin:       null
-twitter:        null
 imagethumb:     "/images/uploads/philipp-keusch.png"
 image:          "/images/uploads/philipp-keusch.png"
 quote:          "Wir geben alles."
