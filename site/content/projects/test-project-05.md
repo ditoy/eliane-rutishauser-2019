@@ -1,7 +1,7 @@
 ---
 title: Test-Projekt 2
 date: '1989-12-03'
-active: true
+active: false
 draft: false
 concept: true
 planning: true
