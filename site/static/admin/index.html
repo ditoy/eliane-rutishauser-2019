@@ -12,22 +12,24 @@
 <script>
     var registerCMS = function () {
 
+        // stylesheets
+        CMS.registerPreviewStyle("/css/main.css");
+
+
+        // project view
+
         var ProjectPreview = createClass({
-
-
             preparePictures: function(pictures) {
                 var pics = [];
                 pictures.forEach(function (picture) { pics.push(h('img', {src: picture, style: {padding: '5px', width: 'calc(33% - 10px)', height: 'auto'}}))});
                 return pics;
             },
 
-
             render: function() {
                 var entry = this.props.entry;
 
                 var image = entry.getIn(['data', 'image']);
                 var imageBg = image && this.props.getAsset(image);
-
                 var imagethumb = entry.getIn(['data', 'imagethumb']);
                 var imagethumbBg = imagethumb && this.props.getAsset(imagethumb);
 
@@ -48,7 +50,7 @@
 
                         h('h1', {}, entry.getIn(['data', 'title'])),
                         h('h3', {}, entry.getIn(['data', 'teaser'])),
-                        imagethumbBg ? h('img', {src: imagethumbBg.toString(), width: '200px', height: 'auto'}) : null,
+                        imagethumbBg ? h('img', {src: imagethumbBg.toString(), className: 'thumb'}) : null,
                         imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto'}) : null
                     ),
                     h('article', {"className": "text"}, this.props.widgetFor('body')),
@@ -58,6 +60,44 @@
         });
 
         CMS.registerPreviewTemplate("project", ProjectPreview);
+
+
+
+        // team member view
+        var TeamPreview = createClass({
+            render: function() {
+                var entry = this.props.entry;
+
+                var image = entry.getIn(['data', 'image']);
+                var imageBg = image && this.props.getAsset(image);
+                var imagethumb = entry.getIn(['data', 'imagethumb']);
+                var imagethumbBg = imagethumb && this.props.getAsset(imagethumb);
+
+                return h('div', {},
+                    h('div', {className: "team"},
+                        h('h1', {}, entry.getIn(['data', 'title'])),
+                        h('p', {className: 'text-center'}, entry.getIn(['data', 'function'])),
+                        h('h4', {className: 'text-center'}, '"' + entry.getIn(['data', 'quote']) + '"'),
+                        imagethumbBg ? h('img', {src: imagethumbBg.toString(), className: 'thumb'}) : null,
+                        imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto', className: 'staffimage'}) : null,
+                        h('div', {className: 'spacer-4x'}),
+                        h('article', {"className": "text"}, this.props.widgetFor('body')),
+                        h('div', {className: 'spacer-4x'}),
+                        h('a', {href: 'mailto:' + entry.getIn(['data', 'email']), target: '_blank'}, entry.getIn(['data', 'email'])),
+                        h('br', {}),
+                        h('a', {href: 'tel:' + entry.getIn(['data', 'phone']).replace(/\s/g,''), target: '_blank'}, entry.getIn(['data', 'phone'])),
+                        h('br', {}),
+                        h('a', {href: entry.getIn(['data', 'linkedin']), target: '_blank'}, entry.getIn(['data', 'linkedin'])),
+                        h('br', {}),
+                        h('a', {href: entry.getIn(['data', 'twitter']), target: '_blank'}, entry.getIn(['data', 'twitter'])),
+                        h('br', {})
+                    )
+                );
+            }
+        });
+
+        CMS.registerPreviewTemplate("team", TeamPreview);
+
     };
 
     window.onload = function () {

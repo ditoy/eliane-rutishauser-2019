@@ -16,6 +16,12 @@ img,
     max-width: 100%;
   }
 
+  &.thumb {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
   svg {
     display: inline-block;
     max-width: 100% !important;

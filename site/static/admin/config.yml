@@ -65,12 +65,14 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields:
-      - { label: "Vor- & Nachname", name: "title", widget: "string", tagname: "h1" }
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
       - { label: "Rangfolge", name: "position", widget: "number" }
-      - { label: "Funktion", name: "function", widget: "string", tagname: "h3" }
       - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
       - { label: "Entwurf", name: "draft", widget: "boolean", default: true, required: false }
+      - { label: "Von Google-Suche ausschliessen", name: "robotsExclude", widget: "boolean", default: false, required: false }
+      - { label: "Vor- & Nachname", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Funktion", name: "function", widget: "string", tagname: "h3" }
+      - { label: "kurzes Zitat", name: "quote", widget: "string", tagname: "h4", required: false }
       - { label: "E-Mail", name: "email", widget: "string", required: false }
       - { label: "Telefon", name: "phone", widget: "string", required: false }
       - { label: "Instagram (Komma getrennt, ohne @)", name: "instagram", widget: "list", required: false }
