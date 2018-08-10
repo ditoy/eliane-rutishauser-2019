@@ -40,21 +40,22 @@
                 var planning = entry.getIn(['data', 'planning']) || false;
                 var implementation = entry.getIn(['data', 'implementation']) || false;
 
-
                 return h('div', {},
-                    h('div', {className: "cover"},
-
-                        concept ? h('img', {src: '/images/uploads/icon_bulb.svg', width: '30px', height: 'auto'}) : null,
-                        planning ? h('img', {src: '/images/uploads/icon_ruler.svg', width: '30px', height: 'auto'}) : null,
-                        implementation ? h('img', {src: '/images/uploads/icon_saw.svg', width: 'auto', height: '21px'}) : null,
-
-                        h('h1', {}, entry.getIn(['data', 'title'])),
-                        h('h3', {}, entry.getIn(['data', 'teaser'])),
+                    h('div', {className: "project"},
                         imagethumbBg ? h('img', {src: imagethumbBg.toString(), className: 'thumb'}) : null,
-                        imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto'}) : null
-                    ),
-                    h('article', {"className": "text"}, this.props.widgetFor('body')),
-                    hasPictures ? this.preparePictures(pictures) : null
+                        imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto'}) : null,
+                        h('div', {className: "icons bigger text-center"},
+                            concept ? h('img', {src: '/images/uploads/icon_bulb.svg', className: 'icon'}) : null,
+                            planning ? h('img', {src: '/images/uploads/icon_ruler.svg', className: 'icon'}) : null,
+                            implementation ? h('img', {src: '/images/uploads/icon_saw.svg', className: 'icon'}) : null
+                        ),
+                        h('h1', {}, entry.getIn(['data', 'title'])),
+                        h('h4', {className: 'text-center'}, entry.getIn(['data', 'teaser'])),
+                        h('div', {className: 'spacer-2x'}),
+                        h('article', {"className": "text-center"}, this.props.widgetFor('body')),
+                        h('div', {className: 'spacer-4x'}),
+                        hasPictures ? this.preparePictures(pictures) : null
+                    )
                 );
             }
         });
@@ -76,17 +77,17 @@
                 return h('div', {},
                     h('div', {className: "team"},
                         h('h1', {}, entry.getIn(['data', 'title'])),
-                        h('p', {className: 'text-center'}, entry.getIn(['data', 'function'])),
-                        h('h4', {className: 'text-center'}, '"' + entry.getIn(['data', 'quote']) + '"'),
+                        entry.getIn(['data', 'function']) ? h('p', {className: 'text-center'}, entry.getIn(['data', 'function'])) : null,
+                        entry.getIn(['data', 'quote']) ? h('h4', {className: 'text-center'}, '"' + entry.getIn(['data', 'quote']) + '"') : null,
                         imagethumbBg ? h('img', {src: imagethumbBg.toString(), className: 'thumb'}) : null,
                         imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto', className: 'staffimage'}) : null,
                         h('div', {className: 'spacer-4x'}),
                         h('article', {"className": "text"}, this.props.widgetFor('body')),
                         h('div', {className: 'spacer-4x'}),
-                        h('a', {href: 'mailto:' + entry.getIn(['data', 'email']), target: '_blank'}, entry.getIn(['data', 'email'])),
-                        h('br', {}),
-                        h('a', {href: 'tel:' + entry.getIn(['data', 'phone']).replace(/\s/g,''), target: '_blank'}, entry.getIn(['data', 'phone'])),
-                        h('br', {})
+                        entry.getIn(['data', 'email']) ? h('a', {href: 'mailto:' + entry.getIn(['data', 'email']), target: '_blank'}, entry.getIn(['data', 'email'])) : null,
+                        h('br'),
+                        entry.getIn(['data', 'phone']) ? h('a', {href: 'tel:' + entry.getIn(['data', 'phone']).replace(/\s/g,''), target: '_blank'}, entry.getIn(['data', 'phone'])) : null,
+                        h('br')
                     )
                 );
             }

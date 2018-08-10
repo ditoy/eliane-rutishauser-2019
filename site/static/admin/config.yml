@@ -22,18 +22,6 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown" }
 
-
-  - name: "job"
-    label: "Jobs"
-    folder: "site/content/jobs"
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - { label: "Stellenbezeichnung", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-      - { label: "Seiteninhalt", name: "body", widget: "markdown" }
-      - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
-
   - name: "project"
     label: "Projekte"
     folder: "site/content/projects"
@@ -57,6 +45,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "projectpictures"
         widget: "list"
         field: {label: "Bild", widget: "file"}
+        required: false
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
 
   - name: "team"
@@ -78,3 +67,14 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Thumbnail Bild (600x600 px)", name: "imagethumb", widget: "file" }
       - { label: "Bild (1200x760 px)", name: "image", widget: "file" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
+
+  - name: "job"
+    label: "Jobs"
+    folder: "site/content/jobs"
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields:
+      - { label: "Stellenbezeichnung", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Publikationsdatum", name: "date", widget: "datetime" }
+      - { label: "Seiteninhalt", name: "body", widget: "markdown" }
+      - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
