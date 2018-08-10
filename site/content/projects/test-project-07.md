@@ -6,13 +6,11 @@ draft: false
 concept: true
 planning: true
 implementation: true
-imagethumb: images/uploads/prairie-01.jpg
-image: /images/uploads/candyshop-01.jpg
+imagethumb:     /images/uploads/prairie-01.jpg
+image:          /images/uploads/prairie-01.jpg
 teaser: Kleiner Teaser eines Projekts. Class aptent taciti sociosqu
 activities:     "Eventgestaltung Display"
 ---
-Beschreibung des Projekts
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt sollicitudin dictum. Aliquam lacinia in metus a accumsan. Suspendisse sit amet neque dui. Proin ut euismod sem. Cras mi orci, tempus eu porta eget, cursus in nulla. Donec et blandit justo. Curabitur mollis vulputate tortor ut hendrerit. Sed consequat velit sed turpis dapibus, iaculis vestibulum nunc dapibus. Aliquam eget fermentum magna. Integer sed nisi cursus, congue nunc eget, feugiat lectus.
 
-
-
-![test](/images/uploads/3dimensional-hero-1.jpg)
+Aenean vitae est accumsan, convallis urna nec, condimentum risus. Nulla fermentum ipsum felis, id dictum lectus vulputate nec. Aenean pellentesque lectus risus, ac semper augue tempor viverra. Integer vitae fermentum risus. Sed id enim vehicula, euismod lacus id, commodo dolor. Praesent molestie nunc sed lacus cursus molestie. Phasellus fringilla id neque pharetra finibus. Nullam tristique tortor diam, sed pretium ipsum faucibus vitae.
