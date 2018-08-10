@@ -1,18 +1,16 @@
 ---
-title:          "Martin Hurschler"
-date:           "2018-07-01"
-position:       1
-active:         true
-draft:          false
-robotsExclude:  false
-firstname:      "Martin"
-lastname:       "Hurschler"
-function:       "Inhaber, Eidg. dipl. Techniker HF Innenarchitektur"
-email:          "hurschler@3dimensional.ch"
-phone:          "+41 44 123 45 67"
-imagethumb:     "/images/uploads/martin-hurschler.png"
-image:          "/images/uploads/martin-hurschler.png"
-quote:          "Wir verstehen uns als Partnerunternehmen bei dreidimensionalen Projekten."
+date: '2018-07-01'
+position: 1
+active: true
+draft: true
+robotsExclude: false
+title: Martin Hurschler
+function: 'Inhaber, Eidg. dipl. Techniker HF Innenarchitektur'
+quote: Wir verstehen uns als Partnerunternehmen bei dreidimensionalen Projekten.
+email: hurschler@3dimensional.ch
+phone: +41 44 123 45 67
+imagethumb: /images/uploads/martin-hurschler.png
+image: /images/uploads/martin-hurschler.png
 ---
 
 | | |
