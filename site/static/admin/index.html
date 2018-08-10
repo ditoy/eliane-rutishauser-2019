@@ -118,6 +118,27 @@
         });
         CMS.registerPreviewTemplate("job", JobPreview);
 
+
+        /**
+         * preview template for pages
+         */
+        var PagePreview = createClass({
+            render: function() {
+                var entry = this.props.entry;
+
+                return h('div', {},
+                    h('div', {className: "page netlify-preview"},
+                        h('div', {className: "summary"},
+                            h('h1', {}, entry.getIn(['data', 'title'])),
+                            h('div', {className: 'spacer-4x'}),
+                            h('article', {"className": "text"}, this.props.widgetFor('body'))
+                        )
+                    )
+                );
+            }
+        });
+        CMS.registerPreviewTemplate("page", PagePreview);
+
     };
 
 
