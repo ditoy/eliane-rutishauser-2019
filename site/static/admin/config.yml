@@ -74,7 +74,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields:
-      - { label: "Stellenbezeichnung", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-      - { label: "Seiteninhalt", name: "body", widget: "markdown" }
       - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
+      - { label: "Publikationsdatum", name: "date", widget: "datetime" }
+      - { label: "Stellenbezeichnung", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Seiteninhalt", name: "body", widget: "markdown" }

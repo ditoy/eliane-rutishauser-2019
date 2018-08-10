@@ -41,7 +41,7 @@
                 var implementation = entry.getIn(['data', 'implementation']) || false;
 
                 return h('div', {},
-                    h('div', {className: "project"},
+                    h('div', {className: "project netlify-preview"},
                         imagethumbBg ? h('img', {src: imagethumbBg.toString(), className: 'thumb'}) : null,
                         imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto'}) : null,
                         h('div', {className: "icons bigger text-center"},
@@ -75,7 +75,7 @@
                 var imagethumbBg = imagethumb && this.props.getAsset(imagethumb);
 
                 return h('div', {},
-                    h('div', {className: "team"},
+                    h('div', {className: "team netlify-preview"},
                         h('h1', {}, entry.getIn(['data', 'title'])),
                         entry.getIn(['data', 'function']) ? h('p', {className: 'text-center'}, entry.getIn(['data', 'function'])) : null,
                         entry.getIn(['data', 'quote']) ? h('h4', {className: 'text-center'}, '"' + entry.getIn(['data', 'quote']) + '"') : null,
@@ -94,6 +94,28 @@
         });
 
         CMS.registerPreviewTemplate("team", TeamPreview);
+
+
+        // job view
+        var JobPreview = createClass({
+            render: function() {
+                var entry = this.props.entry;
+
+                return h('div', {},
+                    h('div', {className: "job netlify-preview"},
+                        h('div', {className: "summary"},
+                            h('h2', {}, entry.getIn(['data', 'title'])),
+                            h('div', {className: 'spacer-4x'}),
+                            h('article', {"className": "text"}, this.props.widgetFor('body'))
+                        )
+                    )
+                );
+            }
+        });
+
+        CMS.registerPreviewTemplate("job", JobPreview);
+
+
 
     };
 
