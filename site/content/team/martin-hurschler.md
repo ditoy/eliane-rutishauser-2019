@@ -1,8 +1,8 @@
 ---
 date: '2018-07-01'
-position: 1
+position: '1'
 active: true
-draft: true
+draft: false
 robotsExclude: false
 title: Martin Hurschler
 function: 'Inhaber, Eidg. dipl. Techniker HF Innenarchitektur'
