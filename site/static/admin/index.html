@@ -12,12 +12,15 @@
 <script>
     var registerCMS = function () {
 
-        // stylesheets
+        /**
+          * register stylesheet with CMS applet
+          */
         CMS.registerPreviewStyle("/css/main.css");
 
 
-        // project view
-
+        /**
+         * preview template for projects
+         */
         var ProjectPreview = createClass({
             preparePictures: function(pictures) {
                 var pics = [];
@@ -33,7 +36,7 @@
                 var imagethumb = entry.getIn(['data', 'imagethumb']);
                 var imagethumbBg = imagethumb && this.props.getAsset(imagethumb);
 
-                var pictures = entry.getIn(['data', 'pictures']);
+                var pictures = entry.getIn(['data', 'projectpictures']);
                 var hasPictures = (pictures && pictures.size > 0);
 
                 var concept = entry.getIn(['data', 'concept']) || false;
@@ -59,12 +62,12 @@
                 );
             }
         });
-
         CMS.registerPreviewTemplate("project", ProjectPreview);
 
 
-
-        // team member view
+        /**
+         * preview template for team members
+         */
         var TeamPreview = createClass({
             render: function() {
                 var entry = this.props.entry;
@@ -92,11 +95,12 @@
                 );
             }
         });
-
         CMS.registerPreviewTemplate("team", TeamPreview);
 
 
-        // job view
+        /**
+         * preview template for job listings
+         */
         var JobPreview = createClass({
             render: function() {
                 var entry = this.props.entry;
@@ -112,13 +116,14 @@
                 );
             }
         });
-
         CMS.registerPreviewTemplate("job", JobPreview);
-
-
 
     };
 
+
+    /**
+     * register stylesheets and preview template with the Netlify CMS applet
+     */
     window.onload = function () {
         registerCMS();
     }
