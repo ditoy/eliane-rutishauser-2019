@@ -1,8 +1,9 @@
 ---
 title: Test-Projekt 2
-date: '1989-12-03'
+date: '2020-12-03T00:00:00+01:00'
 active: false
 draft: false
+Year: '2018'
 concept: true
 planning: true
 implementation: true
