@@ -43,7 +43,6 @@ body {
   max-width: $w-container;
   margin: 0 auto;
   padding: 0 1.2rem;
-  outline: 1px solid red;
 
   &:after {
     display: block;
@@ -52,7 +51,6 @@ body {
     content: ' ';
     width: 100%;
     height: 1px;
-    outline: 1px solid blue;
   }
 
   @include media(">=tablet") {
