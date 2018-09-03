@@ -133,10 +133,8 @@ body {
 }
 
 .equalize {
-	@include media(">=phone") {
-		min-height: inherit !important;
-		margin-bottom: 20px !important;
-	}
+    min-height: inherit !important;
+    margin-bottom: 20px !important;
 }
 
 
@@ -145,4 +143,3 @@ body {
 .netlify-preview {
   padding: 1.5em 1em 4em 1em;
 }
-
