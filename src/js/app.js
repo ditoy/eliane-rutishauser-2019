@@ -175,15 +175,8 @@ window.onload = function() {
 
     window.lightGallery(document.getElementById('lightgallery'));
 
-
-    // smooth page transitions
-    const wrapper = document.querySelector('.wrapper');
-    wrapper.style.opacity = 0;
-    wrapper.style.paddingTop = 0;
-    fadeIn(wrapper);
-
     // attach scrollreveal
-    attachScrollReveal();
+    // attachScrollReveal(); - turned off according to feedback from Pikka
 };
 
 

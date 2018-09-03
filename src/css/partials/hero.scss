@@ -37,7 +37,7 @@ body.has-hero {
     z-index: ($z-hero + 1);
   }
 
-  .slide{
+  .slide {
     position: absolute;
     left: 0;
     top: 0;
@@ -61,11 +61,6 @@ body.has-hero {
     text-align: center;
     width: 100%;
     z-index: ($z-hero + 3);
-
-    .container {
-      position: relative;
-      margin: 0 auto;
-    }
 
     h1 {
       color: $c-white;
