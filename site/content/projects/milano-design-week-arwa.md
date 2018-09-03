@@ -2,7 +2,7 @@
 title: 'Milano Design Week - arwa '
 date: '2018-09-03T11:33:19+02:00'
 active: true
-featured: false
+featured: true
 draft: true
 Year: '2018'
 concept: false
