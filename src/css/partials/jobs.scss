@@ -4,51 +4,18 @@ body.jobs {
 
 .jobs {
 
-  // list (collapsed) state of job ad
-  .job {
+
+  .job-wrapper {
     margin-bottom: 5rem;
-    height: 250px;
-    max-height: 250px;
-    overflow: hidden;
-    z-index: 98;
-    transition: $tr-scope $tr-speed $tr-ease;
-
-    .more, .less {
-      width: 100%;
-      height: 40px;
-      background: $c-white;
-      z-index: 100;
-      text-align: center;
-      padding: 0.6rem;
-      color: $c-darkgray;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: $tr-scope $tr-speed $tr-ease;
-
-      &:hover {
-        background: $c-darkgray;
-        color: $c-lightgray;
-        transition: $tr-scope $tr-speed $tr-ease;
-      }
-    }
-
-    .more {
-      display: block;
-      position: relative;
-      top: 210px;
-    }
-
-    .less {
-      display: none;
-    }
 
     // expanded state of job ad
     &.expanded {
-      height: auto;
-      max-height: none;
-      overflow: visible;
-      transition: $tr-scope $tr-speed $tr-ease;
+      .job {
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        transition: $tr-scope $tr-speed $tr-ease;
+      }
 
       .more {
         display: none;
@@ -58,6 +25,42 @@ body.jobs {
         display: block;
       }
     }
+  }
+
+  // list (collapsed) state of job ad
+  .job {
+    height: 0;
+    overflow: hidden;
+    z-index: 98;
+    transition: $tr-scope $tr-speed $tr-ease;
+  }
+
+  .more, .less {
+    width: 100%;
+    height: 40px;
+    background: $c-white;
+    z-index: 100;
+    text-align: center;
+    padding: 0.6rem;
+    color: $c-darkgray;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: $tr-scope $tr-speed $tr-ease;
+
+    &:hover {
+      background: $c-darkgray;
+      color: $c-lightgray;
+      transition: $tr-scope $tr-speed $tr-ease;
+    }
+  }
+
+  .more {
+    display: block;
+  }
+
+  .less {
+    display: none;
   }
 
 }

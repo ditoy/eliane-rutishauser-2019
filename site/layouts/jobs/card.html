@@ -1,22 +1,23 @@
-<div class="job" id="{{ .UniqueID }}">
-    <div class="more" data-target="{{ .UniqueID }}">
-        Mehr anzeigen ▼
-    </div>
-    {{ if .Params.imagethumb }}
-        <div class="featuredimageWrapper">
-            <div class="featuredimage" style="background-image: url('{{ .Params.imagethumb }}');" title="{{ .Params.title }}"></div>
-        </div>
-    {{ end }}
+<div class="job-wrapper" id="{{ .UniqueID }}">
     <article class="summary">
         <h2>{{ .Title }}</h2>
-
-        <div class="row">
-            <div class="col-12">
-                {{ .Content }}
+        <div class="job">
+            {{ if .Params.imagethumb }}
+            <div class="featuredimageWrapper">
+                <div class="featuredimage" style="background-image: url('{{ .Params.imagethumb }}');" title="{{ .Params.title }}"></div>
             </div>
+            {{ end }}
+                <div class="row">
+                    <div class="col-12">
+                        {{ .Content }}
+                    </div>
+                </div>
+        </div>
+        <div class="more" data-target="{{ .UniqueID }}">
+            Mehr anzeigen ▼
+        </div>
+        <div class="less" data-target="{{ .UniqueID }}">
+            Weniger anzeigen ▲
         </div>
     </article>
-    <div class="less" data-target="{{ .UniqueID }}">
-        Weniger anzeigen ▲
-    </div>
 </div>
