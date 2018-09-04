@@ -1,15 +1,14 @@
 ---
 title: Test-Projekt 4
 date: '1989-12-03'
-active: true
+active: false
 draft: false
 concept: true
 planning: true
 implementation: true
-imagethumb:     /images/uploads/prairie-01.jpg
-image:          /images/uploads/prairie-01.jpg
+imagethumb: /images/uploads/prairie-01.jpg
+image: /images/uploads/prairie-01.jpg
 teaser: Kleiner Teaser eines Projekts. Class aptent taciti sociosqu
-activities:     "Eventgestaltung Display"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt sollicitudin dictum. Aliquam lacinia in metus a accumsan. Suspendisse sit amet neque dui. Proin ut euismod sem. Cras mi orci, tempus eu porta eget, cursus in nulla. Donec et blandit justo. Curabitur mollis vulputate tortor ut hendrerit. Sed consequat velit sed turpis dapibus, iaculis vestibulum nunc dapibus. Aliquam eget fermentum magna. Integer sed nisi cursus, congue nunc eget, feugiat lectus.
 
