@@ -1,22 +1,16 @@
 ---
-title:          "Test-Projekt 6"
-date:           "1989-12-03"
-position:       3
-active:         true
-draft:          false
-robotsExclude:  false
-imagethumb:     /images/uploads/prairie-01.jpg
-image:          /images/uploads/prairie-01.jpg
-year:           2018
-customerName:   "Kunde"
-customerUrl:    "Kundenwebsite"       
-concept:        true
-planning:       false
+title: Test-Projekt 6
+date: '1989-12-03'
+active: false
+draft: false
+concept: true
+planning: false
 implementation: true
-pictures:       []
-activities:     "Rendering Signaletik"
-teaser:         "Mittlerer Teaser eines Projekts. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed.
-"
+imagethumb: /images/uploads/prairie-01.jpg
+image: /images/uploads/prairie-01.jpg
+teaser: >-
+  Mittlerer Teaser eines Projekts. Class aptent taciti sociosqu ad litora
+  torquent per conubia nostra, per inceptos himenaeos. Sed.
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt sollicitudin dictum. Aliquam lacinia in metus a accumsan. Suspendisse sit amet neque dui. Proin ut euismod sem. Cras mi orci, tempus eu porta eget, cursus in nulla. Donec et blandit justo. Curabitur mollis vulputate tortor ut hendrerit. Sed consequat velit sed turpis dapibus, iaculis vestibulum nunc dapibus. Aliquam eget fermentum magna. Integer sed nisi cursus, congue nunc eget, feugiat lectus.
 
