@@ -59,15 +59,30 @@ ul.details {
       text-decoration: none;
     }
   }
+
+  /* elevate and fill card on hover effect for larger screens only */
+  &:hover {
+    @include media(">=tablet") {
+      transition: $tr-scope $tr-speed $tr-ease-linear;
+      background: $c-white;
+      box-shadow: 1px 1px 1px 0 rgba($c-black, 0.1);
+    }
+
+    .featuredimage {
+      transition: transform $tr-speed $tr-ease-alt;
+      transform: scale(1.1);
+    }
+
+    a {
+      color: $c-darkgray;
+    }
+  }
 }
 
 .card-inner {
   transition: $tr-scope $tr-speed $tr-ease-linear;
   padding: 0;
   margin: 0;
-  border-radius: 1px;
-  perspective: 1500px;
-  transform-origin: 60% 40%;
 
   @include media(">=tablet") {
     padding: 1rem;
@@ -84,29 +99,12 @@ ul.details {
   }
   /* preps for hover fill effect */
   .featuredimageWrapper {
-    background-color: $c-white;
     overflow: hidden;
   }
 
   .featuredimage {
     transition: transform $tr-speed $tr-ease-alt;
     transform: scale(1);
-  }
-
-  /* elevate and fill card on hover effect */
-  &:hover {
-    transition: $tr-scope $tr-speed $tr-ease-linear;
-    background: $c-white;
-    box-shadow: 2px 2px 3px rgba($c-black, 0.1);
-
-    .featuredimage {
-      transition: transform $tr-speed $tr-ease-alt;
-      transform: scale(1.1);
-    }
-
-    a {
-      color: $c-darkgray;
-    }
   }
 
   /* linking of the card */
