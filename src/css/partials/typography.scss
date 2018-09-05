@@ -2,34 +2,54 @@ h1, h2, h3, h4, h5, h6 {
   color: $c-darkgray;
 }
 
-h1, h2 {
+h1 {
   font-family: $f-headings;
-  letter-spacing: -0.01em;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0 0 2rem 0;
   font-weight: 700;
   text-align: center;
 
   @include media(">=tablet") {
-    font-size: 2rem;
-  }
-
-  @include media(">=desktop") {
     font-size: 2.2rem;
   }
 
-  @include media(">=mega") {
-    font-size: 2.4rem;
+  @include media(">=desktop") {
+    font-size: 2.6rem;
   }
+
+  @include media(">=mega") {
+    font-size: 3rem;
+  }
+
   &.cite {
     color: $c-primary;
   }
 }
 
-h3 {
+.claim h1 {
+  font-family: $f-regular;
+  font-weight: 400;
+}
+
+.home h2,
+.jobs h2 {
+  @extend h1;
+}
+
+
+h2 {
+  font-family: $f-headings;
   display: block;
   font-size: 1.5rem;
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: $f-headings;
+  display: block;
+  font-size: 1.2rem;
   margin: 2rem 0;
   font-weight: 700;
 }
