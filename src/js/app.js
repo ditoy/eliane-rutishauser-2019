@@ -156,10 +156,12 @@ if (document.getElementById('projects-filterable')) {
  * action after onload event
  */
 window.onload = function() {
+
+    // equalize div heights and toggler position on resize events
     checkResize();
+    positionToggler();
 
     if (document.getElementById('projects-filterable')) {
-
         // prepare competence tag selector
         selectProjects('kompetenzen', competenceList);
 
@@ -173,12 +175,23 @@ window.onload = function() {
         addActivityListener('aufgaben');
     }
 
-    window.lightGallery(document.getElementById('lightgallery'));
+    if (document.getElementById('lightgallery')) {
+        window.lightGallery(document.getElementById('lightgallery'));
+    }
+
 
     // attach scrollreveal
     // attachScrollReveal(); - turned off according to feedback from Pikka
 };
 
+/**
+ * action after viewport was resized
+ */
+window.onresize = function() {
+    resized = true;
+    console.log(Math.random());
+    console.log(resized);
+};
 
 /**
  * scrollreveal
@@ -279,6 +292,23 @@ function equalize() {
 }
 
 /**
+ * position toggler within container
+ */
+
+function positionToggler() {
+    const containerMaxWidth = 1100;
+    const toggler = document.getElementById('toggler');
+    const container = document.querySelector('.container');
+    const body = document.querySelector('body');
+    if (body.offsetWidth > containerMaxWidth) {
+        console.log('positioning toggler');
+        toggler.style.right = ((body.offsetWidth - container.offsetWidth) / 2 + 30) + 'px';
+    } else {
+        toggler.style.right = '1rem';
+    }
+}
+
+/**
  * window resize event listener
  */
 
@@ -290,7 +320,9 @@ const checkResize = function() {
             if (window.requestAnimationFrame) {
                 window.requestAnimationFrame(equalize);
             }
+            positionToggler();
         }
+
         clearTimeout(timeout);
         timeout = setTimeout(checkResize, 50);
         resized = false;

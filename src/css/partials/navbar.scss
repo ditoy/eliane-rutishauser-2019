@@ -79,10 +79,11 @@ body.has-hero {
 
 /* animated hamburger menu icon -> changes to X when menu open */
 .toggler {
+  transition: none;
   z-index: $z-toggler;
-  position: fixed;
+  position: absolute;
   top: 2.5rem;
-  right: 2rem;
+  right: 1rem;
   border: none;
   outline: none;
   background: none;
