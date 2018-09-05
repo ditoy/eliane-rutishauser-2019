@@ -1,12 +1,12 @@
 ---
-title:          "Unser Team"
+title:          "Ihre Ansprechpartner"
 date:           "2018-07-01"
 draft:          false
 robotsExclude:  false
 imagethumb:     ""
 image:          ""
 ---
-# Unser Team
+# Ihre Ansprechpartner
 
 ### Lernen Sie unser interdisziplinäres Team aus erfahrenen Handwerkern kennen.
 
