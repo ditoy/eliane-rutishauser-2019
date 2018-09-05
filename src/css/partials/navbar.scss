@@ -15,6 +15,10 @@
     max-height: 100vh;
     opacity: 1;
     transition: $tr-scope $tr-speed $tr-ease-alt;
+
+    @include media('>=tablet') {
+      padding-top: 10vh;
+    }
   }
 }
 
@@ -31,7 +35,7 @@
   height: auto;
   z-index: $z-menu;
   padding: 0;
-  margin: 8rem 0 0 2rem;
+  margin: 8rem 0 0 0;
   text-align: center;
 
   li {
@@ -119,8 +123,7 @@ body.has-hero {
     width: 36px;
     transform: rotate(0deg);
     transition: $tr-scope $tr-speed-fast ease-out;
-    background-color: $c-mediumgray;
-    box-shadow: 1px 1px 1px rgba($c-black, 0.5);
+    background-color: $c-black;
   }
 
   div:nth-child(1) {
@@ -148,12 +151,22 @@ body.has-hero {
   }
 }
 
+/* has-hero color modifier for menu toggler */
+.has-hero {
+  .animated-menu-icon {
+    > div {
+      background-color: $c-white;
+      box-shadow: 1px 1px 2px 0 rgba($c-black, 0.5);
+    }
+  }
+}
+
 .animated-menu-icon.expanded {
 
   > div {
     width: 20px !important;
     background: $c-white;
-
+    box-shadow: none;
   }
 
   // rotate 1 and 4 from left

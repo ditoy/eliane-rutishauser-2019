@@ -74,6 +74,16 @@ ul.details {
     }
   }
 }
+.home {
+  .card {
+    &:hover {
+      @include media(">=tablet") {
+        background: $c-lightgray;
+        box-shadow: 1px 1px 1px 0 rgba($c-black, 0.2);
+      }
+    }
+  }
+}
 
 .card-inner {
   transition: $tr-scope $tr-speed $tr-ease-linear;

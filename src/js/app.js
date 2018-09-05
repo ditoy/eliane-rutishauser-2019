@@ -104,7 +104,6 @@ const project = {
 
 function addActivityListener(id) {
     document.getElementById(id).addEventListener('change', function(event) {
-        // console.log(event.target.value);
         let myprojects = project.selectedProjects;
         myprojects = intersect(myprojects, project.getByActivity(event.target.value));
         listProjects('project-list', myprojects);
@@ -118,7 +117,6 @@ function addActivityListener(id) {
 if (document.getElementById('projects-filterable')) {
     axios.get('/projects/index.json').then((r) => {
         projects = r.data;
-        // console.log('JSON', projects);
     });
 }
 
@@ -189,8 +187,6 @@ window.onload = function() {
  */
 window.onresize = function() {
     resized = true;
-    console.log(Math.random());
-    console.log(resized);
 };
 
 /**
@@ -301,7 +297,6 @@ function positionToggler() {
     const container = document.querySelector('.container');
     const body = document.querySelector('body');
     if (body.offsetWidth > containerMaxWidth) {
-        console.log('positioning toggler');
         toggler.style.right = ((body.offsetWidth - container.offsetWidth) / 2 + 30) + 'px';
     } else {
         toggler.style.right = '1rem';
