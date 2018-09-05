@@ -69,6 +69,11 @@ ul.details {
       box-shadow: 1px 1px 1px 0 rgba($c-black, 0.1);
     }
 
+    .featuredimage {
+      outline: 1px solid red;
+      filter: brightness(115%) grayscale(15%) contrast(75%);
+    }
+
     a {
       color: $c-darkgray;
     }
