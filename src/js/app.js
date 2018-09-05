@@ -1,7 +1,6 @@
-import ScrollReveal from 'scrollreveal';
 import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used!
 import * as axios from 'axios';
-import {fadeIn, fadeOut, forEach} from 'ditoy-js-utils';
+import {fadeOut, forEach} from 'ditoy-js-utils';
 
 const List = require('list.js');
 const Autogrow = require('textarea-autogrow');
@@ -176,10 +175,6 @@ window.onload = function() {
     if (document.getElementById('lightgallery')) {
         window.lightGallery(document.getElementById('lightgallery'));
     }
-
-
-    // attach scrollreveal
-    // attachScrollReveal(); - turned off according to feedback from Pikka
 };
 
 /**
@@ -188,44 +183,6 @@ window.onload = function() {
 window.onresize = function() {
     resized = true;
 };
-
-/**
- * scrollreveal
- */
-const attachScrollReveal = () => {
-
-    const revealOptionsMain = {
-        duration: 800,
-        delay: 250,
-        useDelay: 'always',
-        origin: 'bottom',
-        scale: 1
-    };
-
-    const revealOptionsHeader = {
-        duration: 800,
-        delay: 0,
-        origin: 'top',
-        scale: 1
-    };
-
-    const revealOptionsFooter = {
-        duration: 800,
-        delay: 150,
-        useDelay: 'always',
-        origin: 'bottom',
-        scale: 1
-    };
-
-
-
-    const sr = ScrollReveal();
-    sr.reveal('.header, .animated-menu-icon', revealOptionsHeader);
-    sr.reveal('.main p, .main a, .main ul, .main img, .main h1, .main h2, .main h3, .main h4, .main h5, .main h6, .main cite, '
-    + '.main .job, .has-hero .col-8, .card, .reveal', revealOptionsMain);
-    sr.reveal('.footer *', revealOptionsFooter, 20);
-};
-
 
 /**
  * action before unload event

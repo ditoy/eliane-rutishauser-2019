@@ -8,34 +8,35 @@
  */
 
 html {
-  font-size: 16px;
-}
-
-body {
-  font-family: $f-regular;
-  font-weight: 300;
   font-size: 15px;
-  line-height: 1.7;
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
-  background: $c-white;
-  overflow-x: hidden;
+  line-height: 1.55;
 
   @include media(">=tablet", "<desktop") {
     font-size: 16px;
-    line-height: 1.7;
+    line-height: 1.6;
   }
 
   @include media(">=desktop", "<mega") {
     font-size: 17px;
-    line-height: 1.7;
+    line-height: 1.65
   }
 
   @include media(">=mega") {
     font-size: 18px;
     line-height: 1.7;
   }
+}
+
+body {
+  font-family: $f-regular;
+  font-weight: 300;
+  font-size: inherit;
+  line-height: inherit;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  background: $c-white;
+  overflow-x: hidden;
 }
 
 .container {

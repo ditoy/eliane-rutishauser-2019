@@ -1,5 +1,15 @@
 /* fonts first */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin');
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=0762af11-af26-48b4-8551-00216e78932b&fontids=1475536,1475560");
+@font-face{
+  font-family:"Avenir LT W04_65 Medium1475536";
+  src:url("/fonts/1475536/4b08ce72-f57c-4113-84ba-56062e307075.eot?#iefix");
+  src:url("/fonts/1475536/4b08ce72-f57c-4113-84ba-56062e307075.eot?#iefix") format("eot"),url("/fonts/1475536/7839a002-2019-46e4-8db8-c8335356ceee.woff2") format("woff2"),url("/fonts/1475536/28433854-a1b7-4a30-b6a4-10c3a5c75494.woff") format("woff"),url("/fonts/1475536/edcbf576-7e55-423b-9ec9-cf526614a117.ttf") format("truetype");
+}
+@font-face{
+  font-family:"Avenir LT W04_95 Black1475560";
+  src:url("/fonts/1475560/f78abaf6-0dfb-4005-ab13-c97830e204ad.eot?#iefix");
+  src:url("/fonts/1475560/f78abaf6-0dfb-4005-ab13-c97830e204ad.eot?#iefix") format("eot"),url("/fonts/1475560/ef5800d8-b76d-43e8-87ff-81d455db24c0.woff2") format("woff2"),url("/fonts/1475560/1144e594-fd94-44b6-9cf8-171075a034cc.woff") format("woff"),url("/fonts/1475560/1e7f1e82-645f-42fe-abde-a2a6096e6906.ttf") format("truetype");
+}
 
 /* extensions */
 @import "../../node_modules/include-media/dist/include-media";
