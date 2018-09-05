@@ -106,6 +106,33 @@ body {
   margin: 0;
 }
 
+/* hides */
+.screen-reader-only {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-on-phone {
+  @include media("<=phone") {
+    display: none !important;
+  }
+}
+
+.hide-on-tablet {
+  @include media(">phone", "<desktop") {
+    display: none !important;
+  }
+}
+
+.hide-on-desktop {
+  @include media(">=desktop") {
+    display: none !important;
+  }
+}
+
 /* 404 page styling */
 .error404 {
 

@@ -37,6 +37,7 @@ ul.details {
 
 .card {
   padding: 0;
+  transition: $tr-scope $tr-speed $tr-ease-linear;
 
   h3 {
     font-family: $f-regular;
@@ -68,11 +69,6 @@ ul.details {
       box-shadow: 1px 1px 1px 0 rgba($c-black, 0.1);
     }
 
-    .featuredimage {
-      transition: transform $tr-speed $tr-ease-alt;
-      transform: scale(1.1);
-    }
-
     a {
       color: $c-darkgray;
     }
@@ -100,11 +96,6 @@ ul.details {
   /* preps for hover fill effect */
   .featuredimageWrapper {
     overflow: hidden;
-  }
-
-  .featuredimage {
-    transition: transform $tr-speed $tr-ease-alt;
-    transform: scale(1);
   }
 
   /* linking of the card */

@@ -1,1 +1,1 @@
-<img src="images/uploads/icon_{{ .icon }}.svg" class="icon" />
+<img src="images/uploads/icon_{{ .icon }}.svg" class="icon" alt="{{ if eq "bulb" .icon }}Idee{{ end }}{{ if eq "ruler" .icon }}Planung{{ end }}{{ if eq "saw" .icon }}Ausführung{{ end }}" title="{{ if eq "bulb" .icon }}Idee{{ end }}{{ if eq "ruler" .icon }}Planung{{ end }}{{ if eq "saw" .icon }}Ausführung{{ end }}" />

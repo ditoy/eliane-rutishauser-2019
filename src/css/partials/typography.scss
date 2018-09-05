@@ -72,28 +72,6 @@ hr {
   text-align: left !important;
 }
 
-.hide {
-  display: none;
-}
-
-.hide-on-phone {
-  @include media("<=phone") {
-    display: none !important;
-  }
-}
-
-.hide-on-tablet {
-  @include media(">phone", "<desktop") {
-    display: none !important;
-  }
-}
-
-.hide-on-desktop {
-  @include media(">=desktop") {
-    display: none !important;
-  }
-}
-
 .spacer-1x {
   display: block;
   padding-top: $spacer;
