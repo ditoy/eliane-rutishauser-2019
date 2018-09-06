@@ -1,5 +1,5 @@
 ---
-title: 'Milano Design Week - arwa '
+title: 'Duftender Seifenluster an der Milano Design Week '
 date: '2018-09-03T11:33:19+02:00'
 position: 1
 active: true
@@ -10,6 +10,8 @@ planning: true
 implementation: true
 imagethumb: /./images/uploads/img_7095-1.jpg
 image: /./images/uploads/img_7095.jpg
-teaser: Class aptent taciti sociosqu.
+teaser: >-
+  Planung und Produktion einer Infowand aus bedruckten Kartonschachteln und
+  eines Lusters aus 500kg Glycerinseifen.
 ---
-Aenean vitae est accumsan, convallis urna nec, condimentum risus. Nulla fermentum ipsum felis, id dictum lectus vulputate nec. Aenean pellentesque lectus risus, ac semper augue tempor viverra. Integer vitae fermentum risus. Sed id enim vehicula, euismod lacus id, commodo dolor. Praesent molestie nunc sed lacus cursus molestie. Phasellus fringilla id neque pharetra finibus. Nullam tristique tortor diam, sed pretium ipsum faucibus vitae.
+Der Stand mit dem imposanten Lüster in Form eines hängenden Wasserwirbels wurde für den schweizer Armaturen Hersteller arwa realisiert. Für die Umsetzung des sinnlichen Entwurfs von Büro Hindermann fanden 1200 Glycerinseifen der Firma Mettler und 100 bedruckte Kartonboxen Verwendung. Während der Wirbel das fliessende Wasser aus Armaturen und Duschbrausen verkörpert, vermittelt die Kartonwand den Besuchern Hintergründe zum Produktionsprozess der Armaturen.
