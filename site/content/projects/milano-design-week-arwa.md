@@ -11,7 +11,7 @@ implementation: true
 imagethumb: /./images/uploads/img_7095-1.jpg
 image: /./images/uploads/img_7095.jpg
 teaser: >-
-  Planung und Produktion einer Infowand aus bedruckten Kartonschachteln und
-  eines Lusters aus 500kg Glycerinseifen.
+  Bedruckte Kartonschachteln und eine halbe Tonne hängender Glycerinseifen
+  bilden eine sinnliche Installation.
 ---
 Der Stand mit dem imposanten Lüster in Form eines hängenden Wasserwirbels wurde für den schweizer Armaturen Hersteller arwa realisiert. Für die Umsetzung des sinnlichen Entwurfs von Büro Hindermann fanden 1200 Glycerinseifen der Firma Mettler und 100 bedruckte Kartonboxen Verwendung. Während der Wirbel das fliessende Wasser aus Armaturen und Duschbrausen verkörpert, vermittelt die Kartonwand den Besuchern Hintergründe zum Produktionsprozess der Armaturen.
