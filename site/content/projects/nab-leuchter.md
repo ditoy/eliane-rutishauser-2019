@@ -1,6 +1,7 @@
 ---
 title: NAB Leuchter
 date: '2018-09-04T09:24:34+02:00'
+position: 1
 active: true
 draft: false
 Year: '2011'
