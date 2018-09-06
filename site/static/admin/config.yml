@@ -7,8 +7,6 @@ backend:
 
 display_url: https://www.3dimensional.ch
 
-publish_mode: editorial_workflow
-
 media_folder: "site/static/images/uploads" # Folder where user uploaded files should go
 public_folder: "./images/uploads"
 
