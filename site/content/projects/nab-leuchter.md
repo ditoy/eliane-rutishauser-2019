@@ -10,10 +10,6 @@ planning: true
 implementation: true
 imagethumb: /./images/uploads/sdc14347-1.jpg
 image: /./images/uploads/sdc14347.jpg
-teaser: >-
-  Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia
-  scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet
-  arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-  inceptos.
+teaser: Kronleuchter werten die Tresorräume der Neue Aargauer Bank AG auf.
 ---
-Kronleuchter werten zudem die Tresorräume auf und lassen diese zu wahren Schmuckstücken werden.
+Funkelnde Schmuckstücke hängt die Neue Aargauer Bank AG in ihren Tresorräumen an die Decke. Die prunkvollen Kronleuchter hat das Büro Hindermann designt. Wir
