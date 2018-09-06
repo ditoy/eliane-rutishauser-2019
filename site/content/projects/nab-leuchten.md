@@ -2,7 +2,6 @@
 title: NAB Leuchten
 date: '2018-09-04T09:47:15+02:00'
 active: true
-featured: false
 draft: false
 Year: '2011'
 concept: false

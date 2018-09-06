@@ -7,6 +7,8 @@ backend:
 
 display_url: https://www.3dimensional.ch
 
+publish_mode: editorial_workflow
+
 media_folder: "site/static/images/uploads" # Folder where user uploaded files should go
 public_folder: "./images/uploads"
 
@@ -30,8 +32,8 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
+      - { label: "Rangfolge", name: "position", widget: "number", default: 20 }
       - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
-      - { label: "Featured", name: "featured", widget: "boolean", default: false, required: false }
       - { label: "Entwurf", name: "draft", widget: "boolean", default: true, required: false }
       - { label: "Jahr", name: "Year", widget: "date", format: "YYYY", required: false }
       - { label: "Referenz-URL", name: "reference", widget: "string", required: false }
@@ -55,7 +57,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields:
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-      - { label: "Rangfolge", name: "position", widget: "number" }
+      - { label: "Rangfolge", name: "position", widget: "number", default: 20 }
       - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
       - { label: "Entwurf", name: "draft", widget: "boolean", default: true, required: false }
       - { label: "Von Google-Suche ausschliessen", name: "robotsExclude", widget: "boolean", default: false, required: false }

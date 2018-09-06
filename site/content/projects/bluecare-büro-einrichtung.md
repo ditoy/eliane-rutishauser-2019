@@ -2,7 +2,6 @@
 title: Bluecare Büro Einrichtung
 date: '2018-09-04T10:27:16+02:00'
 active: true
-featured: false
 draft: false
 Year: '2013'
 concept: true
