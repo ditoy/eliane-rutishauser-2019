@@ -10,6 +10,6 @@ planning: true
 implementation: true
 imagethumb: /./images/uploads/sdc14347-1.jpg
 image: /./images/uploads/sdc14347.jpg
-teaser: Kronleuchter werten die Tresorräume der Neue Aargauer Bank AG auf.
+teaser: Kronleuchter für die Tresorräume der Neue Aargauer Bank AG.
 ---
 Funkelnde Schmuckstücke hängt die Neue Aargauer Bank AG in ihren Tresorräumen an die Decke. Die prunkvollen Kronleuchter hat das Büro Hindermann designt. Wir
