@@ -1,5 +1,5 @@
 ---
-title: NAB Leuchten
+title: Leuchtende Produktionsideen für kreative Köpfe.
 date: '2018-09-04T09:47:15+02:00'
 position: 1
 active: true
@@ -10,8 +10,6 @@ planning: true
 implementation: true
 imagethumb: /./images/uploads/sdc11580-1.jpg
 image: /./images/uploads/sdc11580.jpg
-teaser: >-
-  uspendisse sit amet neque dui. Proin ut euismod sem. Cras mi orci, tempus eu
-  porta eget, cursus in nulla.
+teaser: Realisation der neugestalteten Büroräumlichkeiten für jobs.ch
 ---
-Aenean vitae est accumsan, convallis urna nec, condimentum risus. Nulla fermentum ipsum felis, id dictum lectus vulputate nec. Aenean pellentesque lectus risus, ac semper augue tempor viverra. Integer vitae fermentum risus. Sed id enim vehicula, euismod lacus id, commodo dolor. Praesent molestie nunc sed lacus cursus molestie. Phasellus fringilla id neque pharetra finibus. Nullam tristique tortor diam, sed pretium ipsum faucibus vitae.
+Für die flexible Leuchte "lu_dion", deren clevers Design das Büro Hindermann kreierte, entwickelten wir eine leichte Rippenstruktur mit einem feinmaschigen Überzug aus Baumwollstrick. Über versteckte Umlaufrollen können die Leuchten bis an die Decke hochgezogen werden. Diese flexible Lösung ermöglicht es dem Team von jobs.ch die Kantine trotz geringer Raumhöhe sowohl als Sitzungsraum als auch als Präsentationsraum zu nutzen.
