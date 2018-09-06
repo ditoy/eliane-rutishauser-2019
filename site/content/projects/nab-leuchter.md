@@ -12,4 +12,4 @@ imagethumb: /./images/uploads/sdc14347-1.jpg
 image: /./images/uploads/sdc14347.jpg
 teaser: Produktion der Kronleuchter für die Tresorräume der Neue Aargauer Bank AG.
 ---
-Funkelnde Schmuckstücke hängt die Neue Aargauer Bank AG in ihren Tresorräumen an die Decke. Die prunkvollen Kronleuchter hat das Büro Hindermann designt. Wir
+Funkelnde Schmuckstücke hängen bei Neue Aargauer Bank AG in den Tresorräumen an die Decke. Die prunkvollen Kronleuchter hat das Büro Hindermann designt.
