@@ -14,4 +14,4 @@ teaser: >-
   Realisierung der Leuchten für die neugestalteten Büroräumlichkeiten bei
   jobs.ch
 ---
-Für die flexible Leuchte "lu_dion", deren clevers Design das Büro Hindermann kreierte, entwickelten wir eine leichte Rippenstruktur mit einem feinmaschigen Überzug aus Baumwollstrick. Über versteckte Umlaufrollen können die Leuchten bis an die Decke hochgezogen werden. Diese flexible Lösung ermöglichte es dem Team von jobs.ch die Kantine trotz geringer Raumhöhe sowohl als Sitzungsraum wie auch als Präsentationsraum zu nutzen.
+Für die flexible Leuchte "lu_dion", deren clevers Design das Büro Hindermann kreierte, entwickelten wir eine leichte Rippenstruktur mit einem feinmaschigen Überzug aus Baumwollstrick. Mittels versteckter Umlaufrollen können die Leuchten bis an die Decke hochgezogen werden. Diese flexible Lösung ermöglichte es dem Team von jobs.ch die Kantine trotz geringer Raumhöhe sowohl als Sitzungsraum wie auch als Präsentationsraum zu nutzen.
