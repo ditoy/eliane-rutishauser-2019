@@ -1,5 +1,5 @@
 ---
-title: Wanderausstellung Megatrends
+title: Die Zukunft beginnt heute
 date: 2018-09-18T14:47:46.027Z
 position: 20
 active: true
