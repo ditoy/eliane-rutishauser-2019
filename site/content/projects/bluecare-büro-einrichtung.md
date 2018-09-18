@@ -1,5 +1,5 @@
 ---
-title: Bluecare Büro Einrichtung
+title: Möblierung mit Stil
 date: '2018-09-04T10:27:16+02:00'
 position: 1
 active: true
