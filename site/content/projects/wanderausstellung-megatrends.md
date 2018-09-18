@@ -14,4 +14,4 @@ teaser: >-
   Megatrends - Eine Wanderausstellung zu den Themen Nachhaltigkeit, Multipolare
   Welt und Demographie
 ---
-Für Credit Suisse entstand in Zusammenarbeit mit Source Associates AG, Zürich, die eindrückliche Wanderausstellung Megatrends. In die Zukunft weisende Ausstellungskörper vermitteln aufschlussreiche Informationen im Bereich Nachhaltigkeit, Multipolare Welt und Demographie. Planung und Ausführung der auskragenden und schwebenden Körper forderten von uns bodenständige Lösungen in der Gegenwart.
+Für Credit Suisse entstand in Zusammenarbeit mit Source Associates AG die eindrückliche Wanderausstellung Megatrends. In die Zukunft weisende Ausstellungskörper vermitteln aufschlussreiche Informationen im Bereich Nachhaltigkeit, Multipolare Welt und Demographie. Planung und Ausführung der auskragenden und schwebenden Körper forderten von uns bodenständige Lösungen in der Gegenwart.
