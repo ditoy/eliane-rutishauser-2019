@@ -1,5 +1,5 @@
 ---
-title: Die Zukunft entsteht heute
+title: Die Zukunft entsteht heute - Megatrends
 date: 2018-09-18T14:47:46.027Z
 position: 20
 active: true
@@ -11,7 +11,7 @@ implementation: true
 imagethumb: /./images/uploads/sam_0379-1.jpg
 image: /./images/uploads/sam_0379.jpg
 teaser: >-
-  Megatrends - Eine Wanderausstellung zu den Themen Nachhaltigkeit, Multipolare
-  Welt und Demographie
+  Umsetzung der Wanderausstellung zu den Themen Nachhaltigkeit, Multipolare Welt
+  und Demographie
 ---
 Für Credit Suisse entstand in Zusammenarbeit mit Source Associates AG die eindrückliche Wanderausstellung Megatrends. In die Zukunft weisende Ausstellungskörper vermitteln aufschlussreiche Informationen im Bereich Nachhaltigkeit, Multipolare Welt und Demographie. Planung und Ausführung der auskragenden und schwebenden Körper forderten von uns bodenständige Lösungen in der Gegenwart.
