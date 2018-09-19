@@ -3,7 +3,7 @@ title: Das Tüpfelchen auf dem Turm
 date: 2018-09-19T12:01:51.270Z
 position: 20
 active: true
-draft: true
+draft: false
 Year: '2007'
 concept: false
 planning: true
