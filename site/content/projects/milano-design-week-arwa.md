@@ -1,5 +1,5 @@
 ---
-title: 'Duftender Seifenluster an der Milano Design Week '
+title: 'Duftender Seifenluster für die Milano Design Week '
 date: '2018-09-03T11:33:19+02:00'
 position: 1
 active: true
