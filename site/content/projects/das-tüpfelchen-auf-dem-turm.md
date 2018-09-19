@@ -11,7 +11,7 @@ implementation: true
 imagethumb: /./images/uploads/sdc11740-1.jpg
 image: /./images/uploads/sdc11740.jpg
 teaser: >-
-  Wann haben wir den Freitag-Tower neu beschriftet? Tip: Es war nicht an einem
-  Donnerstag ;-)
+  Wann haben wir den Freitag-Tower neu beschriftet? Kleiner Tip: Es war nicht an
+  einem Donnerstag ;-)
 ---
 3dimensional AG hat den Freitag-Tower sowohl aussen als auch innen beschriftet. Besondere Beachtung galt der gerippten Oberfläche der Ueberseecontainer. Die Schriften wurden passgenau auf das Relief des Untergrunds zugeschnitten und für das Re-Branding in einer eindrücklichen Umbeschriftungs-Aktion am Container appliziert.
