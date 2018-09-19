@@ -37,7 +37,7 @@ ul.details {
 
 .card {
   padding: 0;
-  transition: $tr-scope $tr-speed $tr-ease-linear;
+  transition: $tr-scope $tr-speed-fast $tr-ease-linear;
 
   h3 {
     font-family: $f-headings;
@@ -64,14 +64,14 @@ ul.details {
   /* elevate and fill card on hover effect for larger screens only */
   &:hover {
     @include media(">=tablet") {
-      transition: $tr-scope $tr-speed $tr-ease-linear;
+      transition: $tr-scope $tr-speed-slow $tr-ease-linear;
       background: $c-white;
       box-shadow: 1px 1px 1px 0 rgba($c-black, 0.1);
     }
 
     .featuredimage {
-      outline: 1px solid red;
-      filter: brightness(115%) grayscale(15%) contrast(75%);
+      transform: scale(1.1);
+      filter: brightness(120%) grayscale(5%) contrast(85%);
     }
 
     a {
