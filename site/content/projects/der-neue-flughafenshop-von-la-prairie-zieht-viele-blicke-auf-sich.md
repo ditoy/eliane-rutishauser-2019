@@ -5,9 +5,9 @@ position: 20
 active: true
 draft: false
 Year: '2018'
-concept: false
-planning: false
-implementation: false
+concept: true
+planning: true
+implementation: true
 imagethumb: /./images/uploads/la_prairie_flugh_shop_zh_6306_4x3.jpg
 image: /./images/uploads/la_prairie_flugh_shop_zh_6306_4x3.jpg
 teaser: >-
