@@ -5,9 +5,9 @@ position: 20
 active: true
 draft: false
 Year: '2013'
-concept: false
-planning: false
-implementation: false
+concept: true
+planning: true
+implementation: true
 imagethumb: /./images/uploads/img_9911-1.jpg
 image: /./images/uploads/img_9911.jpg
 teaser: >-
