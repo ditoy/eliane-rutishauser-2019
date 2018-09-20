@@ -14,4 +14,4 @@ teaser: >-
   Mit unserem Besucherleitsystem gelangen die Besucher der Privatklinik Hohenegg
   entspannt ans Ziel
 ---
-In Zusammenarbeit mit Ditoy GmbH gestaltete 3dimensional das Besucherleitsystem auf dem Areal der Privatklinik Hohenegg. Zurückhaltende Schlichtheit und eine ruhige Typografie erzeugen in jedem Raum eine klare Identität und lassen entspannte Orientierung durch sämtliche Gebäude und Räume entstehen.
+In Zusammenarbeit mit Ditoy GmbH gestaltete 3dimensional das Besucherleitsystem auf dem Areal der Privatklinik Hohenegg. Zurückhaltende Schlichtheit und eine ruhige Typografie erzeugen in jedem Raum eine klare Identität und lassen entspannte Orientierung in sämtlichen Gebäuden und Räumen entstehen.
