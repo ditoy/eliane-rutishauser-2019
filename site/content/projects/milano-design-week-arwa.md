@@ -8,8 +8,8 @@ Year: '2018'
 concept: false
 planning: true
 implementation: true
-imagethumb: /./images/uploads/img_7095-1.jpg
-image: /./images/uploads/img_7095.jpg
+imagethumb: 'https://ucarecdn.com/ed9db522-b6ca-4117-a19d-443153ecf4cf/'
+image: 'https://ucarecdn.com/2fbd0cbe-d359-41ec-8dd5-672c526e66ea/'
 teaser: >-
   Materialisiert aus bedruckten Kartonschachteln und einer halben Tonne
   hängender Glycerinseifen
