@@ -9,7 +9,7 @@ planning: true
 implementation: true
 image: 'https://ucarecdn.com/0651372f-c9e4-40a3-84ea-f68804bae44a/'
 teaser: >-
-  Der Erfolg von Intershop in der Immobilienwirtschaft basiert nicht zuletzt
-  darauf, sich richtig zu positionieren
+  Erfolg in der Immobilienwirtschaft basiert nicht zuletzt darauf, sich richtig
+  zu positionieren
 ---
 
