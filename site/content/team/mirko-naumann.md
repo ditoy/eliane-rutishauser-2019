@@ -1,18 +1,15 @@
 ---
-title:          "Mirko Naumann"
-date:           "2018-07-01"
-position:       3
-active:         true
-draft:          false
-robotsExclude:  false
-firstname:      "Mirko"
-lastname:       "Naumann"
-function:       "Teamleiter Produktion "
-email:          "naumann@3dimensional.ch"
-phone:          "+41 44 123 45 67"
-imagethumb:     "/images/uploads/mirko-naumann.jpg"
-image:          "/images/uploads/mirko-naumann.jpg"
-quote:          "Wir geben alles."
+date: '2018-07-01'
+position: 3
+active: true
+draft: false
+robotsExclude: false
+title: Mirko Naumann
+function: 'Teamleiter Produktion '
+quote: Wir geben alles.
+email: naumann@3dimensional.ch
+phone: +41 44 123 45 67
+image: 'https://ucarecdn.com/a08eca66-fa57-4de6-ba4c-14eebc12ba6c/'
 ---
 
 | | |
