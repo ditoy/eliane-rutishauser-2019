@@ -50,19 +50,19 @@ const project = {
             for (const item of projects) {
                 if (item.concept) {
                     me.competence.concept.push(item);
-                    me.activity.concept = union(me.activity.concept, item.activities.split(' '));
+                    me.activity.concept = union(me.activity.concept, item.activities.trim().split(' '));
                 }
                 if (item.planning) {
                     me.competence.planning.push(item);
-                    me.activity.planning = union(me.activity.planning, item.activities.split(' '));
+                    me.activity.planning = union(me.activity.planning, item.activities.trim().split(' '));
                 }
                 if (item.implementation) {
                     me.competence.implementation.push(item);
-                    me.activity.implementation = union(me.activity.implementation, item.activities.split(' '));
+                    me.activity.implementation = union(me.activity.implementation, item.activities.trim().split(' '));
                 }
-                me.activity.all = union(me.activity.all, item.activities.split(' '));
+                me.activity.all = union(me.activity.all, item.activities.trim().split(' '));
 
-                for (const element of item.activities.split(' ')) {
+                for (const element of item.activities.trim().split(' ')) {
                     if (element && me.byActivity[element]) {
                         me.byActivity[element] = union(me.byActivity[element], item);
                     }
