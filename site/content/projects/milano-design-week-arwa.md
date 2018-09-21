@@ -8,6 +8,7 @@ concept: false
 planning: true
 implementation: true
 image: 'https://ucarecdn.com/2fbd0cbe-d359-41ec-8dd5-672c526e66ea/'
+imageAlt: ''
 teaser: >-
   Materialisiert aus bedruckten Kartonschachteln und einer halben Tonne
   hängender Glycerinseifen

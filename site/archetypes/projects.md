@@ -5,6 +5,7 @@ position:       0
 draft:          true
 robotsExclude:  false
 image:          ""
+imageAlt:       ""
 year:           2018
 customerName:   "Kunde"
 customerUrl:    "Kundenwebsite"       
