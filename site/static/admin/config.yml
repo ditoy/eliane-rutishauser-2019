@@ -50,7 +50,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Teaser-Bild", name: "image", widget: "image" }
       - { label: "Teaser-Bild Titel / Alt", name: "imageAlt", widget: "string", required: false }
       - { label: "Teaser-Text", name: "teaser", widget: "text" }
-      - { label: "Projektbilder", name: "projectpictures", widget: "image", options: { media_library: { config: {multiple: true }}}}
+      - { label: "Projektbilder", name: "projectpictures", widget: "image", options: { media_library: { config: {multiple: true }}}, required: false }
 #      - label: "Projektbilder"
 #        name: "projectpictures"
 #        widget: "list"
