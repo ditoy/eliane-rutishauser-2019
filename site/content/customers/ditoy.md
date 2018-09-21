@@ -1,5 +1,5 @@
 ---
-title: Ditoy
-draft: true
+title: ditoy gmbh Digitalagentur
+draft: false
 ---
 
