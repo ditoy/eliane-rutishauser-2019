@@ -76,8 +76,7 @@ ul.details {
     .featuredimage {
       transition-delay: 100ms;
       transition: $tr-scope $tr-speed-fast $tr-ease;
-      transform: scale(1.07);
-      filter: brightness(107%) contrast(90%) opacity(90%);
+      transform: scale(1.08) ;
     }
 
     a {
