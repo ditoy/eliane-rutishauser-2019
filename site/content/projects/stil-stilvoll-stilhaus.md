@@ -8,7 +8,7 @@ Year: '2018'
 concept: false
 planning: true
 implementation: true
-image: /./images/uploads/sdc17232.jpg
+image: 'https://ucarecdn.com/c66ba378-99f4-4fca-87e0-57d57359d893/'
 teaser: Mehr Stil als Stilhaus geht nicht. Und wer hat's beschriftet?
 ---
 3dimensional zeichnete für die Produktion sämtlicher Beschriftungen in und am Stilhaus Rothrist verantwortlich.
