@@ -8,7 +8,7 @@ Year: '2018'
 concept: true
 planning: true
 implementation: true
-image: /./images/uploads/la_prairie_flugh_shop_zh_6306_4x3.jpg
+image: 'https://ucarecdn.com/357ab143-8a90-4437-8896-873c5f25f52f/'
 teaser: >-
   Der Schweizer Kosmetikhersteller präsentiert sich am Flughafen Zürich an
   bester Lage
