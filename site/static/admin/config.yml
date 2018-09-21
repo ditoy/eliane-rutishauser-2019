@@ -80,3 +80,12 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
       - { label: "Stellenbezeichnung", name: "title", widget: "string", tagname: "h1" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown" }
+
+  - name: "customer"
+    label: "Kundenliste"
+    folder: "site/content/customers"
+    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    fields:
+    - { label: "Kunde", name: "title", widget: "string", tagname: "h1" }
+    - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
