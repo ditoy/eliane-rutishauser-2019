@@ -8,7 +8,7 @@ Year: '2013'
 concept: true
 planning: true
 implementation: true
-image: /./images/uploads/img_9911.jpg
+image: 'https://ucarecdn.com/8421bbe5-6589-49c7-ad35-7cb51b3dcd72/'
 teaser: >-
   Mit unserem Besucherleitsystem gelangen die Besucher der Privatklinik Hohenegg
   entspannt ans Ziel
