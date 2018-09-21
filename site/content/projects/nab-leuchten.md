@@ -8,7 +8,7 @@ Year: '2011'
 concept: false
 planning: true
 implementation: true
-image: /./images/uploads/sdc11580.jpg
+image: 'https://ucarecdn.com/0ba10145-b7f3-44a0-a332-19b9c762f21d/'
 teaser: >-
   Realisierung der Leuchten für die neugestalteten Büroräumlichkeiten bei
   jobs.ch
