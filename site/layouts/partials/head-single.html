@@ -16,9 +16,9 @@
     {{ end }}
   {{ end }}
   {{ if .Params.image }}
-    <link rel="image_src" href="{{ .Params.image }}" />
-    <meta name="twitter:image" content="{{ .Params.image }}" />
-    <meta property="og:image" content="{{ .Params.image }}" />
+    <link rel="image_src" href="{{ .Params.image }}-/scale_crop/1024x768/center/" />
+    <meta name="twitter:image" content="{{ .Params.image }}-/scale_crop/1024x768/center/" />
+    <meta property="og:image" content="{{ .Params.image }}-/scale_crop/1024x768/center/" />
   {{ else }}
     <link rel="image_src" href="{{ .Site.Params.appImage }}" />
     <meta name="twitter:image" content="{{ .Site.Params.appImage }}" />
