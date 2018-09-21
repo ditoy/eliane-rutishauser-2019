@@ -8,7 +8,7 @@ Year: '2017'
 concept: false
 planning: true
 implementation: true
-image: /./images/uploads/20988111_1661275660559022_3554124131330819005_o.jpg
+image: 'https://ucarecdn.com/2a4e7cc8-49ca-49b1-8698-f2d260186b6a/'
 teaser: >-
   Bekannte Materialien neu interpretiert erzeugen eine spielerische Themenwelt
   nahe am Träumerischen
