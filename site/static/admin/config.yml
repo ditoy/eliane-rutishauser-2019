@@ -7,8 +7,8 @@ backend:
 
 display_url: https://www.3dimensional.ch
 
-#media_folder: "site/static/images/uploads" # Folder where user uploaded files should go
-#public_folder: "./images/uploads"
+media_folder: "site/static/images/uploads" # Folder where user uploaded files should go
+public_folder: "./images/uploads"
 
 media_library:
   name: uploadcare
@@ -47,14 +47,15 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         field: {label: "Aufgabenbereich", widget: "select", options: ['Shopdesign', 'Bürodesign', 'Rendering', 'Ausstellungsgestaltung', 'Schaufenstergestaltung', 'Eventgestaltung', 'Messegestaltung', 'Signaletik', 'Display', 'Point-of-Sale']}
         required: false
-      - { label: "Teaser-Bild", name: "image", widget: "file" }
+      - { label: "Teaser-Bild", name: "image", widget: "image" }
       - { label: "Teaser-Bild Titel / Alt", name: "imageAlt", widget: "string", required: false }
       - { label: "Teaser-Text", name: "teaser", widget: "text" }
-      - label: "Projektbilder"
-        name: "projectpictures"
-        widget: "list"
-        field: {label: "Bild", widget: "file"}
-        required: false
+      - { label: "Projektbilder", name: "projectpictures", widget: "image", options: { media_library: { config: {multiple: true }}}}
+#      - label: "Projektbilder"
+#        name: "projectpictures"
+#        widget: "list"
+#        field: {label: "Bild", widget: "image", default: "/images/uploads/prairie-02.jpg", required: false }
+#        required: false
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
 
   - name: "team"
