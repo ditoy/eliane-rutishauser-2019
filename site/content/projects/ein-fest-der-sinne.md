@@ -8,7 +8,7 @@ Year: '2013'
 concept: true
 planning: true
 implementation: true
-image: /./images/uploads/img_4374.jpg
+image: 'https://ucarecdn.com/fbfbff45-db0f-4041-84ac-4ebeffef7645/'
 teaser: >-
   Bewegtbilder, Ton und Objekte im Schaufenster der LGT sprechen Klein und Gross
   gleichermassen an
