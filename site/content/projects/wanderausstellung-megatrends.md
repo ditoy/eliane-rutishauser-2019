@@ -8,7 +8,7 @@ Year: '2008'
 concept: false
 planning: true
 implementation: true
-image: /./images/uploads/sam_0379.jpg
+image: 'https://ucarecdn.com/a98ceca3-e532-4606-92ed-3f4ac6ff2978/-/preview/'
 teaser: >-
   Megatrends - Wanderausstellung zu den Themen Nachhaltigkeit, Multipolare Welt
   und Demographie
