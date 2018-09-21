@@ -6,7 +6,6 @@
         "permalink" : "{{ $element.Permalink }}",
         "title" : "{{ $element.Params.title }}",
         "label" : "{{ $element.Params.title }}",
-        "imagethumb" : "{{ $element.Params.imagethumb }}",
         "teaser" : "{{ $element.Params.teaser }}",
         "teaser_truncated" : "{{ $element.Params.teaser| truncate 100 }}",
         "concept" : {{ if eq $element.Params.concept true }}true{{ else }}false{{ end }},
@@ -14,6 +13,6 @@
         "implementation" : {{ if eq $element.Params.implementation true }}true{{ else }}false{{ end }},
         "activities" : "{{ $element.Params.activities | default "" }}",
         "icons" : "{{ if eq $element.Params.concept true }}{{ $concept_icon }}{{ end }}{{ if eq $element.Params.planning true }}{{ $planning_icon }}{{ end }}{{ if eq $element.Params.implementation true }}{{ $implementation_icon }}{{ end }}",
-        "featuredimage" : "background-image: url('{{ $element.Params.imagethumb }}');"
+        "featuredimage" : "background-image: url('{{ $element.Params.image }}-/scale_crop/400x300/center/');"
     }{{ end }}
 ]

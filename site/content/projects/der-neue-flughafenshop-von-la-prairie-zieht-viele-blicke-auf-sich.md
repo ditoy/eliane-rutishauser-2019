@@ -8,7 +8,6 @@ Year: '2018'
 concept: true
 planning: true
 implementation: true
-imagethumb: /./images/uploads/la_prairie_flugh_shop_zh_6306_4x3.jpg
 image: /./images/uploads/la_prairie_flugh_shop_zh_6306_4x3.jpg
 teaser: >-
   Der Schweizer Kosmetikhersteller präsentiert sich am Flughafen Zürich an

@@ -5,7 +5,6 @@ position:       0
 active:         true
 draft:          true
 robotsExclude:  false
-imagethumb:     ""
 image:          ""
 year:           2018
 customerName:   "Kunde"

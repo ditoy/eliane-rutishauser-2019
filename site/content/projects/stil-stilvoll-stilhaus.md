@@ -8,7 +8,6 @@ Year: '2018'
 concept: false
 planning: true
 implementation: true
-imagethumb: /./images/uploads/sdc17232-1.jpg
 image: /./images/uploads/sdc17232.jpg
 teaser: Mehr Stil als Stilhaus geht nicht. Und wer hat's beschriftet?
 ---

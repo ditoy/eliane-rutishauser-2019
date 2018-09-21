@@ -8,7 +8,6 @@ Year: '2004'
 concept: true
 planning: true
 implementation: true
-imagethumb: /./images/uploads/dscn3255-1.jpg
 image: /./images/uploads/dscn3255.jpg
 teaser: Mit Eiweiss zur kraftstrotzenden Form für den perfekten Auftritt
 ---

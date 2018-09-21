@@ -8,7 +8,6 @@ Year: '2011'
 concept: false
 planning: true
 implementation: true
-imagethumb: /./images/uploads/sdc11580-1.jpg
 image: /./images/uploads/sdc11580.jpg
 teaser: >-
   Realisierung der Leuchten für die neugestalteten Büroräumlichkeiten bei

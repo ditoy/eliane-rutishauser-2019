@@ -37,11 +37,11 @@ ul.details {
 
 .card {
   padding: 0;
-  transition: $tr-scope $tr-speed-fast $tr-ease-linear;
+  transition-delay: 150ms;
+  transition: $tr-scope $tr-speed $tr-ease-linear;
 
   h3 {
     font-family: $f-headings;
-    transition: $tr-scope $tr-speed $tr-ease-alt;
     padding: 0.5rem 0 0 0;
     margin: 0.3rem 0;
     width: 100%;
@@ -61,17 +61,23 @@ ul.details {
     }
   }
 
+  .featuredimage {
+    transition: $tr-scope $tr-speed $tr-ease;
+  }
+
   /* elevate and fill card on hover effect for larger screens only */
   &:hover {
     @include media(">=tablet") {
-      transition: $tr-scope $tr-speed-slow $tr-ease-linear;
+      transition: $tr-scope $tr-speed-fast $tr-ease;
       background: $c-white;
       box-shadow: 1px 1px 1px 0 rgba($c-black, 0.1);
     }
 
     .featuredimage {
-      transform: scale(1.1);
-      filter: brightness(120%) grayscale(5%) contrast(85%);
+      transition-delay: 100ms;
+      transition: $tr-scope $tr-speed-fast $tr-ease;
+      transform: scale(1.07);
+      filter: brightness(107%) contrast(90%) opacity(90%);
     }
 
     a {
@@ -79,6 +85,7 @@ ul.details {
     }
   }
 }
+
 .home {
   .card {
     &:hover {
@@ -91,7 +98,6 @@ ul.details {
 }
 
 .card-inner {
-  transition: $tr-scope $tr-speed $tr-ease-linear;
   padding: 0;
   margin: 0;
 
@@ -100,14 +106,11 @@ ul.details {
     margin: 0.6rem;
   }
 
-  * {
-    transition: $tr-scope $tr-speed $tr-ease-linear;
-  }
-
   p {
     font-size: 1rem;
     line-height:  1.5rem;
   }
+
   /* preps for hover fill effect */
   .featuredimageWrapper {
     overflow: hidden;

@@ -8,7 +8,6 @@ Year: '2007'
 concept: false
 planning: true
 implementation: true
-imagethumb: /./images/uploads/sdc11740-1.jpg
 image: /./images/uploads/sdc11740.jpg
 teaser: >-
   Frage: An welchem Tag hat 3d den Freitag-Tower neu beschriftet? Kleiner Tip:

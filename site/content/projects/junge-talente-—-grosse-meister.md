@@ -8,7 +8,6 @@ Year: '2013'
 concept: false
 planning: true
 implementation: true
-imagethumb: /./images/uploads/img_1321-1.jpg
 image: /./images/uploads/img_1321.jpg
 teaser: 'Damit junge Solisten dereinst gross rauskommen braucht es die richtige Bühne '
 ---

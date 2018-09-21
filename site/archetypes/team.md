@@ -10,7 +10,6 @@ lastname:       "Nachname"
 function:       "Position"
 email:          "E-Mail"
 phone:          "Telefonnummer"
-imagethumb:     ""
 image:          ""
 quote:          ""
 ---

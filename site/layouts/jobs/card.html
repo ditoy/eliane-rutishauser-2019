@@ -2,9 +2,9 @@
     <article class="summary">
         <h2>{{ .Title }}</h2>
         <div class="job">
-            {{ if .Params.imagethumb }}
+            {{ if .Params.image }}
             <div class="featuredimageWrapper">
-                <div class="featuredimage" style="background-image: url('{{ .Params.imagethumb }}');" title="{{ .Params.title }}"></div>
+                <div class="featuredimage" style="background-image: url('{{ .Params.image }}-/scale_crop/400x300/center/');" title="{{ .Params.title }}"></div>
             </div>
             {{ end }}
                 <div class="row">

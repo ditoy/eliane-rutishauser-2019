@@ -8,7 +8,6 @@ Year: '2008'
 concept: false
 planning: true
 implementation: true
-imagethumb: /./images/uploads/sam_0379-1.jpg
 image: /./images/uploads/sam_0379.jpg
 teaser: >-
   Megatrends - Wanderausstellung zu den Themen Nachhaltigkeit, Multipolare Welt

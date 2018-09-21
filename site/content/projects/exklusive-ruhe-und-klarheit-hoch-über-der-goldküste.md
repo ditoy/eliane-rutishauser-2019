@@ -8,7 +8,6 @@ Year: '2013'
 concept: true
 planning: true
 implementation: true
-imagethumb: /./images/uploads/img_9911-1.jpg
 image: /./images/uploads/img_9911.jpg
 teaser: >-
   Mit unserem neuen Besucherleitsystem gelangen die Besucher der Privatklinik

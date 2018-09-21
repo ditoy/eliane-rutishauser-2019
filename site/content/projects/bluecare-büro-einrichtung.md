@@ -8,7 +8,6 @@ Year: '2013'
 concept: true
 planning: true
 implementation: false
-imagethumb: /./images/uploads/img_9926-1.jpg
 image: /./images/uploads/img_9926.jpg
 teaser: Neugestaltung der Bürowelt für den eHealth Dienstleister Bluecare
 ---

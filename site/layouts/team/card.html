@@ -1,9 +1,9 @@
 <div class="card equalize">
     <a href="{{ .Permalink }}">
         <div class="card-inner">
-            {{ if .Params.imagethumb }}
+            {{ if .Params.image }}
                 <div class="featuredimageWrapper">
-                    <div class="featuredimage" style="background-image: url('{{ .Params.imagethumb }}');" title="{{ .Params.title }}"></div>
+                    <div class="featuredimage" style="background-image: url('{{ .Params.image }}-/scale_crop/400x300/center/');" title="{{ .Params.title }}"></div>
                 </div>
             {{ end }}
 

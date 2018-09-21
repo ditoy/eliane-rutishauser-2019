@@ -9,7 +9,6 @@ function: 'Inhaber, Eidg. dipl. Techniker HF Innenarchitektur'
 quote: Wir verstehen uns als Partnerunternehmen bei dreidimensionalen Projekten.
 email: hurschler@3dimensional.ch
 phone: +41 44 123 45 67
-imagethumb: /images/uploads/martin-hurschler.png
 image: /images/uploads/martin-hurschler.png
 ---
 

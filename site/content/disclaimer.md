@@ -3,7 +3,6 @@ title:          "Disclaimer"
 date:           "2018-07-24"
 draft:          false
 robotsExclude:  false
-imagethumb:     ""
 image:          ""
 ---
 ## Einverständnis

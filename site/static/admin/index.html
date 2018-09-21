@@ -4,12 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3dimensional CMS</title>
-    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.0.0/dist/cms.css" />
+    <link rel="stylesheet" href="https://unpkg.com/netlify-cms@^2.1.0/dist/cms.css" />
     <script async src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script async src="https://unpkg.com/netlify-cms@^2.0.0/dist/cms.js"></script>
+    <script async src="https://unpkg.com/netlify-cms@^2.1.0/dist/cms.js"></script>
 </head>
 <body>
 <script>
+
+    /**
+     * Uploadcare config
+     */
+
+    UPLOADCARE_LOCALE = 'de';
+    UPLOADCARE_TABS = "file url instagram facebook dropbox gdrive gphotos flickr";
+    UPLOADCARE_PUBLIC_KEY = '51fe52694febf733ab27';
+
+
+    /**
+     * Netlify CMS config
+     */
+
     var registerCMS = function () {
 
         /**
@@ -32,8 +46,6 @@
 
                 var image = entry.getIn(['data', 'image']);
                 var imageBg = image && this.props.getAsset(image);
-                var imagethumb = entry.getIn(['data', 'imagethumb']);
-                var imagethumbBg = imagethumb && this.props.getAsset(imagethumb);
 
                 var pictures = entry.getIn(['data', 'projectpictures']);
                 var hasPictures = (pictures && pictures.size > 0);
@@ -44,7 +56,6 @@
 
                 return h('div', {},
                     h('div', {className: "project netlify-preview"},
-                        imagethumbBg ? h('img', {src: imagethumbBg.toString(), className: 'thumb'}) : null,
                         imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto'}) : null,
                         h('div', {className: "icons bigger text-center"},
                             concept ? h('img', {src: '/images/uploads/icon_bulb.svg', className: 'icon'}) : null,
@@ -74,15 +85,12 @@
 
                 var image = entry.getIn(['data', 'image']);
                 var imageBg = image && this.props.getAsset(image);
-                var imagethumb = entry.getIn(['data', 'imagethumb']);
-                var imagethumbBg = imagethumb && this.props.getAsset(imagethumb);
 
                 return h('div', {},
                     h('div', {className: "team netlify-preview"},
                         h('h1', {}, entry.getIn(['data', 'title'])),
                         entry.getIn(['data', 'function']) ? h('p', {className: 'text-center'}, entry.getIn(['data', 'function'])) : null,
                         entry.getIn(['data', 'quote']) ? h('h4', {className: 'text-center'}, '"' + entry.getIn(['data', 'quote']) + '"') : null,
-                        imagethumbBg ? h('img', {src: imagethumbBg.toString(), className: 'thumb'}) : null,
                         imageBg ? h('img', {src: imageBg.toString(), width: '100%', height: 'auto', className: 'staffimage'}) : null,
                         h('div', {className: 'spacer-4x'}),
                         h('article', {"className": "text"}, this.props.widgetFor('body')),

@@ -7,8 +7,13 @@ backend:
 
 display_url: https://www.3dimensional.ch
 
-media_folder: "site/static/images/uploads" # Folder where user uploaded files should go
-public_folder: "./images/uploads"
+#media_folder: "site/static/images/uploads" # Folder where user uploaded files should go
+#public_folder: "./images/uploads"
+
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 51fe52694febf733ab27
 
 collections: # A list of collections the CMS should be able to edit
 
@@ -38,7 +43,6 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Konzept", name: "concept", widget: "boolean", default: false, required: false }
       - { label: "Planung", name: "planning", widget: "boolean", default: false, required: false }
       - { label: "Umsetzung", name: "implementation", widget: "boolean", default: false, required: false }
-      - { label: "Thumbnail Teaser-Bild", name: "imagethumb", widget: "file" }
       - { label: "Teaser-Bild", name: "image", widget: "file" }
       - { label: "Teaser-Text", name: "teaser", widget: "text" }
       - label: "Projektbilder"
@@ -64,7 +68,6 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "kurzes Zitat", name: "quote", widget: "string", tagname: "h4", required: false }
       - { label: "E-Mail", name: "email", widget: "string", required: false }
       - { label: "Telefon", name: "phone", widget: "string", required: false }
-      - { label: "Thumbnail Bild (600x600 px)", name: "imagethumb", widget: "file" }
       - { label: "Bild (1200x760 px)", name: "image", widget: "file" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
 

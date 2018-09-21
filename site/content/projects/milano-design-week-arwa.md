@@ -8,7 +8,6 @@ Year: '2018'
 concept: false
 planning: true
 implementation: true
-imagethumb: /./images/uploads/img_7095-1.jpg
 image: /./images/uploads/img_7095.jpg
 teaser: >-
   Materialisiert aus bedruckten Kartonschachteln und einer halben Tonne

@@ -10,7 +10,6 @@ lastname:       "Naumann"
 function:       "Teamleiter Produktion "
 email:          "naumann@3dimensional.ch"
 phone:          "+41 44 123 45 67"
-imagethumb:     "/images/uploads/mirko-naumann.jpg"
 image:          "/images/uploads/mirko-naumann.jpg"
 quote:          "Wir geben alles."
 ---

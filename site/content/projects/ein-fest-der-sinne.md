@@ -8,7 +8,6 @@ Year: '2013'
 concept: true
 planning: true
 implementation: true
-imagethumb: /./images/uploads/img_4374-1.jpg
 image: /./images/uploads/img_4374.jpg
 teaser: >-
   Bewegtbilder, Ton und Objekte im Schaufenster der LGT sprechen Klein und Gross

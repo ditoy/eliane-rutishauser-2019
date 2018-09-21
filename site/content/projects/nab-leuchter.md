@@ -8,7 +8,6 @@ Year: '2011'
 concept: false
 planning: true
 implementation: true
-imagethumb: /./images/uploads/sdc14347-1.jpg
 image: /./images/uploads/sdc14347.jpg
 teaser: Umsetzung der Kronleuchter für die Tresorräume der Neue Aargauer Bank AG
 ---

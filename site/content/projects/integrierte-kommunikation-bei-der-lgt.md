@@ -8,7 +8,6 @@ Year: '2018'
 concept: true
 planning: true
 implementation: true
-imagethumb: /./images/uploads/dsc09823-1.jpg
 image: /./images/uploads/dsc09823.jpg
 teaser: >-
   Mit dem grossen Schaufenster am Flughafen Zürich führt LGT ihre Kampagne

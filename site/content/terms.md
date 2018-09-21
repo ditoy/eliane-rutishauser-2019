@@ -3,7 +3,6 @@ title:          "AGB"
 date:           "2018-07-24"
 draft:          false
 robotsExclude:  false
-imagethumb:     ""
 image:          ""
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet dolor enim. Duis tellus purus, posuere sit amet metus et, facilisis pretium nisi. Aenean consectetur venenatis euismod. Quisque et imperdiet arcu, ut scelerisque leo. Cras sit amet justo posuere, scelerisque diam mollis, sagittis massa. Nullam vitae rhoncus nibh, maximus suscipit massa. Proin ac purus velit. Etiam at massa ultricies, convallis nunc feugiat, accumsan nibh. Donec volutpat velit sit amet arcu pretium, sed ultricies arcu lacinia. Aliquam tristique consequat hendrerit. Sed finibus ornare convallis.
