@@ -6,31 +6,33 @@
 <div class="wrapper">
   {{ partial "header" . }}
 
-  <div class="team">
-    <div class="stripe white">
-      <div class="container">
-        <div class="spacer-4x"></div>
-        <article class="main">
-          {{ .Content }}
-        </article>
-      </div>
-    </div>
+  <div role="main">
 
-    <div class="stripe gray">
-      <div class="container">
-        <div class="cards">
-          {{  range (.Data.Pages.ByParam "position") }}
-            {{ .Render "card"}}
-          {{ end }}
+    <div class="team">
+      <div class="stripe white">
+        <div class="container">
+          <div class="spacer-4x"></div>
+          <article class="main">
+            {{ .Content }}
+          </article>
         </div>
-        <div class="clear"></div>
       </div>
-    </div>
+
+      <div class="stripe gray">
+        <div class="container">
+          <div class="cards">
+            {{  range (.Data.Pages.ByParam "position") }}
+            {{ .Render "card"}}
+            {{ end }}
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
 
   </div>
+</div>
 
-
-  {{ partial "footer" . }}
+{{ partial "footer" . }}
 </div>
 </body>
 {{ partial "schema/global" . }}

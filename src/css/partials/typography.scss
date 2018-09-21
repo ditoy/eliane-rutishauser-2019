@@ -44,6 +44,11 @@ h2 {
   font-size: 1.5rem;
   margin: 2rem 0;
   font-weight: 700;
+
+  &.teaser {
+    @extend h4;
+    font-family: $f-regular;
+  }
 }
 
 h3 {

@@ -7,7 +7,7 @@ image:          ""
 ---
 # Ihre Ansprechpartner
 
-### Lernen Sie unser interdisziplinäres Team aus erfahrenen Handwerkern kennen.
+## Lernen Sie unser interdisziplinäres Team aus erfahrenen Handwerkern kennen.
 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales dui pulvinar turpis rhoncus dapibus. Pellentesque 

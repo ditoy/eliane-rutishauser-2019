@@ -1,24 +1,24 @@
 <div class="nav-prev-next">
     {{ $mysection := ($.Site.GetPage "section" .Section).Pages }}
     {{ if .NextInSection }}
-        <a href="{{ .NextInSection.Permalink }}" class="nowrap nav-prev">
-	        <img src="/images/uploads/angle.svg" />
+        <a href="{{ .NextInSection.Permalink }}" class="nowrap nav-prev" aria-label="Zum vorherigen Eintrag">
+	        <img src="/images/uploads/angle.svg" alt="Zum vorherigen Eintrag" />
 	    </a>
     {{ else }}
         {{range last 1 $mysection }}
-            <a href="{{ .Permalink }}" class="nowrap nav-prev">
-	            <img src="/images/uploads/angle.svg" />
+            <a href="{{ .Permalink }}" class="nowrap nav-prev" aria-label="Zum vorherigen Eintrag">
+	            <img src="/images/uploads/angle.svg" alt="Zum vorherigen Eintrag" />
             </a>
         {{ end }}
     {{ end }}
     {{ if .PrevInSection }}
-        <a href="{{ .PrevInSection.Permalink }}" class="nowrap nav-next">
-	        <img src="/images/uploads/angle.svg" />
+        <a href="{{ .PrevInSection.Permalink }}" class="nowrap nav-next" aria-label="Zum nächsten Eintrag">
+	        <img src="/images/uploads/angle.svg" alt="Zum nächsten Eintrag" />
         </a>
     {{ else }}
         {{ range first 1 $mysection }}
-            <a href="{{ .Permalink }}" class="nowrap nav-next">
-	            <img src="/images/uploads/angle.svg" />
+            <a href="{{ .Permalink }}" class="nowrap nav-next" aria-label="Zum nächsten Eintrag">
+	            <img src="/images/uploads/angle.svg" alt="Zum nächsten Eintrag" />
             </a>
         {{ end }}
     {{ end }}

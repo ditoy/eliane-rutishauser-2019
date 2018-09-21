@@ -2,7 +2,7 @@
 title: Kontakt
 date: '2018-07-01'
 ---
-### Neu an der Oberwiesenstrasse 4 in 8304 Wallisellen
+## Neu an der Oberwiesenstrasse 4 in 8304 Wallisellen
 
 3dimensional AG\
 Innenarchitektur, Gestaltung, Kommunikation\
