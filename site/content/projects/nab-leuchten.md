@@ -2,7 +2,6 @@
 title: Leuchtende Produktionsideen für kreative Köpfe
 date: '2018-09-04T09:47:15+02:00'
 position: 1
-active: true
 draft: false
 Year: '2011'
 concept: false

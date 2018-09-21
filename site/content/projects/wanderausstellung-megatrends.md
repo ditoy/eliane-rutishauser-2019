@@ -2,7 +2,6 @@
 title: Die Zukunft entsteht heute
 date: 2018-09-18T14:47:46.027Z
 position: 20
-active: true
 draft: false
 Year: '2008'
 concept: false

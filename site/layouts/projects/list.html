@@ -35,9 +35,7 @@
             <div id="project-list">
                 <ul class="cards list">
                     {{  range $index, $page := .Data.Pages.ByParam "position" }}
-                        {{ if and (isset .Params "active") (.Params.active) }}
-                            {{ .Render "card" }}
-                        {{ end }}
+                        {{ .Render "card" }}
                     {{ end }}
                 </ul>
             </div>

@@ -2,7 +2,6 @@
 title: Ein Fest der Sinne
 date: 2018-09-20T09:47:31.817Z
 position: 20
-active: true
 draft: false
 Year: '2013'
 concept: true

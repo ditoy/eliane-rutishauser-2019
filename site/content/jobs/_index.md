@@ -1,7 +1,6 @@
 ---
 title: Jobs
 date: '2018-07-26'
-active: true
 ---
 Wir freuen uns, dass Sie sich für eine Anstellung in unserem Unternehmen interessieren. Leider haben wir zur Zeit keine offenen Stellen.
 

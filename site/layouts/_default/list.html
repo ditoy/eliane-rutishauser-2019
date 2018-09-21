@@ -14,9 +14,7 @@
 
         <div class="cards">
             {{  range $index, $page := .Data.Pages.ByParam "position" }}
-                {{ if and (isset .Params "active") (.Params.active) }}
-                    {{ .Render "card" }}
-                {{ end }}
+                {{ .Render "card" }}
             {{ end }}
         </div>
         <div class="clear"></div>

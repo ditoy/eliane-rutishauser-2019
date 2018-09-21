@@ -1,7 +1,6 @@
 ---
 date: '2018-07-01'
 position: 1
-active: true
 draft: false
 robotsExclude: false
 title: Martin Hurschler

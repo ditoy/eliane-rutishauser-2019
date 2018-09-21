@@ -2,7 +2,6 @@
 title: Nur in einem sinnlichen Raum wird gut Essen noch besser
 date: 2018-09-21T07:39:59.212Z
 position: 20
-active: true
 draft: false
 Year: '2017'
 concept: false

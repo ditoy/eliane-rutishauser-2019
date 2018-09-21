@@ -2,7 +2,6 @@
 title: Junge Talente — Grosse Meister
 date: 2018-09-19T12:37:11.268Z
 position: 20
-active: true
 draft: false
 Year: '2013'
 concept: false

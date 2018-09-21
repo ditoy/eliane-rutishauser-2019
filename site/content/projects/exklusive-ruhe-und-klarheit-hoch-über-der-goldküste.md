@@ -2,7 +2,6 @@
 title: Exklusive Ruhe und Klarheit hoch über der Goldküste
 date: 2018-09-19T08:09:55.781Z
 position: 20
-active: true
 draft: false
 Year: '2013'
 concept: true

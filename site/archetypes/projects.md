@@ -2,7 +2,6 @@
 title:          "{{ replace .TranslationBaseName "-" " " | title }}"
 date:           "{{ .Date }}"
 position:       0
-active:         true
 draft:          true
 robotsExclude:  false
 image:          ""

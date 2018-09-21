@@ -2,7 +2,6 @@
 title: Sowas von einem Kraftladen im Puls 5
 date: 2018-09-19T13:47:23.068Z
 position: 20
-active: true
 draft: false
 Year: '2004'
 concept: true

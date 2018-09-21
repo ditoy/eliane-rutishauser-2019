@@ -36,8 +36,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
       - { label: "Rangfolge", name: "position", widget: "number", default: 20 }
-      - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
-      - { label: "Entwurf", name: "draft", widget: "boolean", default: true, required: false }
+      - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
       - { label: "Jahr", name: "Year", widget: "date", format: "YYYY", required: false }
       - { label: "Referenz-URL", name: "reference", widget: "string", required: false }
       - { label: "Konzept", name: "concept", widget: "boolean", default: false, required: false }
@@ -60,8 +59,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
       - { label: "Rangfolge", name: "position", widget: "number", default: 20 }
-      - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
-      - { label: "Entwurf", name: "draft", widget: "boolean", default: true, required: false }
+      - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
       - { label: "Von Google-Suche ausschliessen", name: "robotsExclude", widget: "boolean", default: false, required: false }
       - { label: "Vor- & Nachname", name: "title", widget: "string", tagname: "h1" }
       - { label: "Funktion", name: "function", widget: "string", tagname: "h3" }
@@ -77,7 +75,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields:
-      - { label: "Aktiv", name: "active", widget: "boolean", default: true, required: false }
+      - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
       - { label: "Stellenbezeichnung", name: "title", widget: "string", tagname: "h1" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown" }
