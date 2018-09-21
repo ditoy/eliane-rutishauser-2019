@@ -8,7 +8,7 @@ Year: '2011'
 concept: false
 planning: true
 implementation: true
-image: /./images/uploads/sdc14347.jpg
+image: 'https://ucarecdn.com/a3d0befc-f8d7-48ce-ac1f-8a1c2779cb26/'
 teaser: Umsetzung der Kronleuchter für die Tresorräume der Neue Aargauer Bank AG
 ---
 Glanzvolle Schmuckstücke hängen bei Neue Aargauer Bank AG im Tresorraum an der Decke. Die prunkvollen Kronleuchter wurden durch das Bureau Hindermann designt und die Ausführung bei 3dimensional geplant und umgesetzt.
