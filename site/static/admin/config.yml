@@ -50,12 +50,11 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Teaser-Bild", name: "image", widget: "image" }
       - { label: "Teaser-Bild Titel / Alt", name: "imageAlt", widget: "string", required: false }
       - { label: "Teaser-Text", name: "teaser", widget: "text" }
-      - { label: "Projektbilder", name: "projectpictures", widget: "image", options: { media_library: { config: {multiple: true }}}, required: false }
-#      - label: "Projektbilder"
-#        name: "projectpictures"
-#        widget: "list"
-#        field: {label: "Bild", widget: "image", default: "/images/uploads/prairie-02.jpg", required: false }
-#        required: false
+      - label: "Projektbilder"
+        name: "projectpictures"
+        widget: "list"
+        field: {label: "Bild", widget: "image", default: "", required: false }
+        required: false
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
 
   - name: "team"
