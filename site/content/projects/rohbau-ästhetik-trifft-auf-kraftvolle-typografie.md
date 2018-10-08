@@ -1,5 +1,5 @@
 ---
-title: Rohbau-asthetik trifft auf kraftvolle Typografie
+title: Rohbauästhetik trifft auf kraftvolle Typografie
 date: 2018-10-08T12:52:14.131Z
 position: '10'
 draft: false
