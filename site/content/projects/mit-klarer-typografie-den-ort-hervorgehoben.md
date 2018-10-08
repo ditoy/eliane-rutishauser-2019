@@ -1,5 +1,5 @@
 ---
-title: Mit klarer Typografie den Ort hervorgehoben
+title: Mit klarer Typografie den Ort hervorheben
 date: 2018-10-08T11:35:18.979Z
 position: 20
 draft: false
