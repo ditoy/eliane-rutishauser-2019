@@ -14,4 +14,4 @@ teaser: >-
   Entweder man liebt Sichtbeton oder nicht. Aber frisches grün, das mögen doch
   alle, oder?
 ---
-
+lorem ipsum dolor sit amet.
