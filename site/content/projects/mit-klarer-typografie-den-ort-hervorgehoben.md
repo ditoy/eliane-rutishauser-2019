@@ -13,4 +13,4 @@ projectpictures:
   - null
   - null
 ---
-Die Beschriftung des Atelier- und Geschäftshauses von Arndt Geiger Herrmann Architekten unterstreicht eine Haltung der Sachlichkeit, welche den grösst möglichen Ausdruck mit der kleinst möglichen Zahl an Mitteln sucht. Welche andere dreidimensionale Figur als der Kubus könnte dies besser sichtbar machen?
+Die Beschriftung des Atelier- und Geschäftshauses von Arndt Geiger Herrmann Architekten unterstreicht eine Haltung der Sachlichkeit, welche den grösst möglichen Ausdruck mit der kleinst möglichen Zahl an Mitteln sucht. Welche dreidimensionale Figur - wenn nicht der Kubus - könnte diesen Anspruch am deutlichsten sichtbar machen?
