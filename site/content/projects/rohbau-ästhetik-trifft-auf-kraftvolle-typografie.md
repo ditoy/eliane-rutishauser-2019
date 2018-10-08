@@ -14,4 +14,4 @@ teaser: >-
   Entweder man liebt Sichtbeton oder nicht. Aber frisches grün, das mögen doch
   alle, oder?
 ---
-lorem ipsum dolor sit amet.
+Auf dem Spinnerei-Areal der Blumer Söhne + Cie. AG steht das historische Spinnereigebäude, welches seinen Mietern eine zeitgemässe Nutzung als Geschäftsräume und ein besonderes Erlebnis bietet. Für die Beschriftung der neu ausgebauten Gebäude und Räume hat 3dimensional eine ebenso klare wie kräftige Form gefunden.
