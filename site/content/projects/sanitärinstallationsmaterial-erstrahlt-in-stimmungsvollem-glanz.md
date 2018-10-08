@@ -13,4 +13,4 @@ teaser: >-
   Die bekannten schwarzen Kunststoffrohre von Geberit erstrahlen in ungewohntem
   Glanz
 ---
-
+Mit dem Entwurf des Leuchters reagiert das Bureau Hindermann in einer überraschenden Neuinterpreation der Materialien, welche bei Sanitärinstallationen üblicherweise im Versteckten eingesetzt werden. Hier treten sie sichtbar in den Mittelpunkt und inszenieren die Produktwelt von Geberit stimmungsvoll und präzis. Kreativ und mit Feingefühl hat 3dimensional bei der Umsetzung den Glanz der Materialien hevorgeholt und sie elegant in Form gebracht.
