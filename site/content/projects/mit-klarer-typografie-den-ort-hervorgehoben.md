@@ -1,5 +1,5 @@
 ---
-title: Mit klarer Typografie die Bedeutung des Orts betonen
+title: Mit klarer Typografie die Bedeutung des Orts markieren
 date: 2018-10-08T11:35:18.979Z
 position: 20
 draft: false
