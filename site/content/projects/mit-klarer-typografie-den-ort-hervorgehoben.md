@@ -8,7 +8,7 @@ concept: true
 planning: true
 implementation: true
 image: 'https://ucarecdn.com/7d04066e-5439-4aa0-811f-2e315bb80a44/'
-teaser: 'Es braucht nicht viel, aber das muss sitzen'
+teaser: 'Es braucht nicht viel, aber dieses wenige muss sitzen'
 projectpictures:
   - null
   - null
