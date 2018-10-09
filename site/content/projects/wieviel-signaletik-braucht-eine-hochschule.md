@@ -9,7 +9,7 @@ planning: true
 implementation: true
 image: 'https://ucarecdn.com/27774543-52c1-4a63-aac0-e95aa72932cb/'
 teaser: >-
-  Externe Besucher, Studierende und Mitarbeiter - Sie alle benötigen ein
+  Externe Besucher, Studierende und Mitarbeiter — Sie alle benötigen ein
   Leitsystem, das sie rasch ans Ziel führt
 ---
 
