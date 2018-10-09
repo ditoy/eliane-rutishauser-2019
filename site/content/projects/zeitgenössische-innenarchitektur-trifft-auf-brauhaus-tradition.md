@@ -1,5 +1,5 @@
 ---
-title: Zeitgenössische Innenarchitektur trifft auf Brauhaus Tradition
+title: Zeitgenössische Innenarchitektur und Brauhaus Tradition
 date: 2018-10-09T08:26:47.927Z
 position: 20
 draft: false
