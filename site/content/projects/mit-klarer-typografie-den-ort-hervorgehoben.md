@@ -1,5 +1,5 @@
 ---
-title: Mit klarer Formsprache die Bedeutung des Orts markieren
+title: Klare Formensprache schafft räumliche Identität
 date: 2018-10-08T11:35:18.979Z
 position: 20
 draft: false
