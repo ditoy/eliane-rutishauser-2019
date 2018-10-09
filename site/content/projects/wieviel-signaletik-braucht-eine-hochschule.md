@@ -12,4 +12,4 @@ teaser: >-
   Externe Besucher, Studierende und Mitarbeiter benötigen ein Leitsystem, das
   sie zum Ziel führt
 ---
-In der komplexen Raumstruktur eines Hochschulgebäudes seinen Weg zu finden, ist nicht einfach. Das durchgängige und verständliche Leitsystem, welches 3dimensional für die Interkantonale Hochschule für Heilpädagogik HfH in Zürich umgesetzt hat, erleichtert diese Aufgabe enorm.
+In der komplexen Raumstruktur eines Hochschulgebäudes seinen Weg zu finden, ist nicht einfach. Das durchgängige und verständliche Leitsystem, welches 3dimensional für die Interkantonale Hochschule für Heilpädagogik HfH in Zürich umgesetzt hat, erleichtert diese Aufgabe allen Besuchern des Gebäudes enorm.
