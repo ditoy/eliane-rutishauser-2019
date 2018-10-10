@@ -2,15 +2,15 @@
   <meta charset="utf-8">
   <title>{{ if and (.Title) (not (eq .Permalink "/")) }}{{ .Title | plainify }} – {{ $.Site.Params.appTitleShort }}{{ else }}{{ $.Site.Title }}{{ end }}</title>
   {{ partial "head-common" . }}
-  <meta name="description" content="{{ .Site.Params.appDescription }}" />
-  <link rel="image_src" href="{{ .Site.Params.appImage }}" />
+  <meta name="description" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appDescription }}{{ end }}" />
+  <link rel="image_src" href="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="{{ .Site.Params.appImage }}" />
-  <meta name="twitter:title" content="{{ .Site.Params.appTitle }}" />
-  <meta name="twitter:description" content="{{ .Site.Params.appDescription }}" />
+  <meta name="twitter:image" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
+  <meta name="twitter:title" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitle }}{{ end }}" />
+  <meta name="twitter:description" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appDescription }}{{ end }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="{{ .Site.Params.appTitle }}" />
-  <meta property="og:description" content="{{ .Site.Params.appDescription }}" />
-  <meta property="og:url" content="{{ .Site.Params.appSitemapUrl }}{{ .Permalink }}" />
-  <meta property="og:image" content="{{ .Site.Params.appImage }}" />
+  <meta property="og:title" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitle }}{{ end }}" />
+  <meta property="og:description" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appDescription }}{{ end }}" />
+  <meta property="og:url" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appSitemapUrl }}{{ .Permalink }}{{ end }}" />
+  <meta property="og:image" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
 </head>

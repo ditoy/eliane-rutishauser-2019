@@ -3,22 +3,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name='language' content='DE' />
     <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="{{ .Site.Params.appKeywords }}" />
-    <meta name="apple-mobile-web-app-title" content="{{ .Site.Params.appTitle }}" />
+    <meta name="keywords" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appKeywords }}{{ end }}" />
+    <meta name="apple-mobile-web-app-title" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitle }}{{ end }}" />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-    <meta name='application-name' content='{{ .Site.Params.appTitle }}' />
-    <meta name="google-site-verification" content="{{ .Site.Params.appGoogleVerification }}" />
-    <meta property="og:site_name" content="{{ .Site.Params.appTitle }}" />
+    <meta name='application-name' content='{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitle }}{{ end }}' />
+    <meta name="google-site-verification" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appGoogleVerification }}{{ end }}" />
+    <meta property="og:site_name" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitle }}{{ end }}" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png"  href="favicon.ico" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ .Site.Params.appColor }}" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appColor }}{{ end }}" />
     <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <meta name='msapplication-navbutton-color' content='{{ .Site.Params.appColor }}' />
-    <meta name="msapplication-TileColor" content="{{ .Site.Params.appColor }}" />
-    <meta name="theme-color" content="{{ .Site.Params.appColor }}" />
+    <meta name='msapplication-navbutton-color' content='{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appColor }}{{ end }}' />
+    <meta name="msapplication-TileColor" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appColor }}{{ end }}" />
+    <meta name="theme-color" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appColor }}{{ end }}" />
     <!-- polyfills & shims -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
     <!-- critical path css -->

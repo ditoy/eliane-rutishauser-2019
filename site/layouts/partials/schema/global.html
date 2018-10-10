@@ -2,15 +2,15 @@
 {
 	"@context" : "http://schema.org",
 	"@type" : "Organization",
-	"name" : "{{ .Site.Params.appPublisher }}",
-	"logo" : "{{ .Site.Params.appLogo }}",
-	"url" : "{{ .Site.Params.appUrl }}",
+	"name" : "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appPublisher }}{{ end }}",
+	"logo" : "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appLogo }}{{ end }}",
+	"url" : "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appUrl }}{{ end }}",
 	"address": {
 		"@type": "PostalAddress",
-		"addressLocality": "{{ .Site.Params.appAddress.city }}",
-		"addressCountry" : "{{ .Site.Params.appAddress.country }}",
-		"postalCode": "{{ .Site.Params.appAddress.zip }}",
-		"streetAddress": "{{ .Site.Params.appAddress.street }}"
+		"addressLocality": "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appAddress.city }}{{ end }}",
+		"addressCountry" : "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appAddress.country }}{{ end }}",
+		"postalCode": "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appAddress.zip }}{{ end }}",
+		"streetAddress": "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appAddress.street }}{{ end }}"
 	}
 }
 </script>

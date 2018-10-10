@@ -15,10 +15,10 @@
 	"articleBody": "{{ .Plain }}",
 	"publisher": {
 		"@type": "Organization",
-		"name": "{{ .Site.Params.appPublisher }}",
+		"name": "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appPublisher }}{{ end }}",
 		"logo" : {
 		    "type": "ImageObject",
-		    "url": "{{ .Site.Params.appUrl }}"
+		    "url": "{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appUrl }}{{ end }}"
         }
 	}
 }

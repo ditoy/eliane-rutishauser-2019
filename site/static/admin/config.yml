@@ -22,8 +22,9 @@ collections: # A list of collections the CMS should be able to edit
     files:
       - label: "Globale Einstellungen"
         name: "configuration_index"
-        file: "site/configuration/_index.md"
+        file: "site/content/configuration/config.md"
         fields:
+          - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
           - { label: "appColor", name: "appColor", widget: "string", tagname: "p" }
           - { label: "appTitle", name: "appTitle", widget: "string", tagname: "p" }
           - { label: "appTitleShort", name: "appTitleShort", widget: "string", tagname: "p" }

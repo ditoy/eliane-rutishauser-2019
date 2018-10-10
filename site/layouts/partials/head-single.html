@@ -9,7 +9,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ .Summary | plainify | truncate 280 "..." }}" />
-  <meta property="og:url" content="{{ .Site.Params.appSitemapUrl }}{{ .Permalink }}" />
+  <meta property="og:url" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appSitemapUrl }}{{ .Permalink }}{{ end }}" />
   {{ if .Params.authors }}
     {{ range .Params.authors }}
       <meta property="og:author" content="{{ . | plainify }}" />
@@ -20,8 +20,8 @@
     <meta name="twitter:image" content="{{ .Params.image }}-/scale_crop/1024x768/center/" />
     <meta property="og:image" content="{{ .Params.image }}-/scale_crop/1024x768/center/" />
   {{ else }}
-    <link rel="image_src" href="{{ .Site.Params.appImage }}" />
-    <meta name="twitter:image" content="{{ .Site.Params.appImage }}" />
-    <meta property="og:image" content="{{ .Site.Params.appImage }}" />
+    <link rel="image_src" href="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
+    <meta name="twitter:image" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
+    <meta property="og:image" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
   {{ end }}
 </head>

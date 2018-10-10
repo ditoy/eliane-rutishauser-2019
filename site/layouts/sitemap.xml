@@ -1,7 +1,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{ range .Data.Pages }}{{ if not .Params.robotsExclude }}
     <url>
-      <loc>{{ .Site.Params.appSitemapUrl }}{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
+      <loc>{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appSitemapUrl }}{{ end }}{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
       <lastmod>{{ safeHTML ( dateFormat "2006-01-02" .Lastmod ) }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}
       <changefreq>{{ . }}</changefreq>{{ end }}
     </url>
