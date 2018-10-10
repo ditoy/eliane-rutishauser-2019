@@ -9,7 +9,7 @@ planning: true
 implementation: true
 image: 'https://ucarecdn.com/27774543-52c1-4a63-aac0-e95aa72932cb/'
 teaser: >-
-  Externe Besucher, Studierende und Mitarbeiter brauchen klare Singale, um ans
+  Externe Besucher, Studierende und Mitarbeiter wollen klare Singale, um ans
   Ziel zu kommen
 ---
 In der komplexen Raumstruktur eines Hochschulgebäudes seinen Weg zu finden, ist nicht einfach. Das durchgängige und verständliche Leitsystem, welches 3dimensional für die Interkantonale Hochschule für Heilpädagogik HfH in Zürich umgesetzt hat, erleichtert diese Aufgabe allen Besuchern des Gebäudes enorm.
