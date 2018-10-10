@@ -17,6 +17,23 @@ media_library:
 
 collections: # A list of collections the CMS should be able to edit
 
+  - label: "Konfiguration"
+    name: "configuration"
+    files:
+      - label: "Globale Einstellungen"
+        name: "configuration_index"
+        file: "site/configuration/_index.md"
+        fields:
+          - { label: "appColor", name: "appColor", widget: "string", tagname: "p" }
+          - { label: "appTitle", name: "appTitle", widget: "string", tagname: "p" }
+          - { label: "appTitleShort", name: "appTitleShort", widget: "string", tagname: "p" }
+          - { label: "appPublisher", name: "appPublisher", widget: "string", tagname: "p" }
+          - { label: "appDescription", name: "appDescription", widget: "string", tagname: "p" }
+          - { label: "appKeywords", name: "appKeywords", widget: "string", tagname: "p" }
+          - { label: "appImage", name: "appImage", widget: "string", tagname: "p" }
+          - { label: "appSitemapUrl", name: "appSitemapUrl", widget: "string", tagname: "p" }
+          - { label: "appGoogleVerification", name: "appGoogleVerification", widget: "string", tagname: "p" }
+
   - label: "Index-Seiten"
     name: "page_index"
     files:

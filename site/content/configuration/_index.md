@@ -1,7 +1,7 @@
 ---
 title:          "Site Configuration"
 date:           "2018-10-10"
-draft:          true
+draft:          false
 appColor:       "#B6C229"
 appTitle:       "3dimensional: Innenarchitektur, Gestaltung und dreidimensionale Kommunikation"
 appTitleShort:  "3dimensional"
@@ -11,8 +11,9 @@ appKeywords:    "3dimensional, 3 dimensional, Innenarchitektur, Gestltung, Innen
 appImage:       "images/uploads/3dimensional-hero-1.jpg"
 appSitemapUrl:  "https://www.3dimensional.ch"
 appGoogleVerification:  "123xyz-google-hash"
+---
+
 referenceCompetences:
   - "Idee"
   - "Planung"
   - "Ausführung"
----
