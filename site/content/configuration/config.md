@@ -22,6 +22,5 @@ referenceCompetences:
   - Idee
   - Planung
   - Ausführung
-  - Test
 ---
 
