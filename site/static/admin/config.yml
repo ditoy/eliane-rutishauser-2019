@@ -34,6 +34,8 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "appImage", name: "appImage", widget: "string", tagname: "p" }
           - { label: "appSitemapUrl", name: "appSitemapUrl", widget: "string", tagname: "p" }
           - { label: "appGoogleVerification", name: "appGoogleVerification", widget: "string", tagname: "p" }
+          - { label: "referenceCompetences", name: "referenceCompetences", widget: "list", tagname: "p" }
+
 
   - label: "Index-Seiten"
     name: "page_index"

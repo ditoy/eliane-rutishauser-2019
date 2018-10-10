@@ -49,7 +49,7 @@
     {{ partial "footer" . }}
 </div>
 <script>
-    var competenceList = [ {{ range $index, $element := .Site.Params.referenceCompetences }}{{ if $index }}, {{ end }}"{{ $element }}"{{ end }} ];
+    var competenceList = [ {{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ range $index, $element := .Params.referenceCompetences }}{{ if $index }}, {{ end }}"{{ $element }}"{{ end }}{{ end }} ];
 </script>
 </body>
 {{partial "javascript" . }}
