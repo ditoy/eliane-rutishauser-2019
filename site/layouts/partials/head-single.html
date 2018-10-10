@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ if .Title }}{{ .Title | plainify }} – {{ $.Site.Params.appTitleShort }}{{ else }}{{ $.Site.Title }}{{ end }}</title>
+  <title>{{ if .Title }}{{ .Title | plainify }} – {{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitleShort }}{{ end }}{{ else }}{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitle }}{{ end }}{{ end }}</title>
   {{ partial "head-common" . }}
   <meta name="description" content="{{ .Summary | plainify | truncate 280 "..." }}" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -9,7 +9,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ .Summary | plainify | truncate 280 "..." }}" />
-  <meta property="og:url" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appSitemapUrl }}{{ .Permalink }}{{ end }}" />
+  <meta property="og:url" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appSitemapUrl }}{{ end }}{{ .Permalink }}" />
   {{ if .Params.authors }}
     {{ range .Params.authors }}
       <meta property="og:author" content="{{ . | plainify }}" />

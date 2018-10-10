@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ if and (.Title) (not (eq .Permalink "/")) }}{{ .Title | plainify }} – {{ $.Site.Params.appTitleShort }}{{ else }}{{ $.Site.Title }}{{ end }}</title>
+  <title>{{ if and (.Title) (not (eq .Permalink "/")) }}{{ .Title | plainify }} – {{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitleShort }}{{ end }}{{ else }}{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appTitle }}{{ end }}{{ end }}</title>
   {{ partial "head-common" . }}
   <meta name="description" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appDescription }}{{ end }}" />
   <link rel="image_src" href="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
