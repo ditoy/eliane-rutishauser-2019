@@ -10,7 +10,7 @@ implementation: true
 image: 'https://ucarecdn.com/4ca15ba9-0e68-4eaa-bd81-c91f01c0b162/'
 imageAlt: ''
 teaser: >-
-  Die Signaletik für das Mathilde Escher Heim leitet sowohl Bewohner wie auch
-  Besucher zum Ziel
+  Die Signaletik für das Mathilde Escher Heim bringt sowohl Bewohner wie auch
+  Besucher an ihr Ziel
 ---
 
