@@ -13,4 +13,4 @@ teaser: >-
   Die Signaletik für das Mathilde Escher Heim bringt sowohl Bewohner wie auch
   Besucher an ihr Ziel
 ---
-Das Heim für Menschen mit Körperbehinderung der Mathilde Escher Stiftung bietet seinen Bewohnern vielfältige Arbeitsplätze und Therapien an. In der komplexen Gebäudestruktur jederzeit den richtigen Raum zu finden, ist eine Herausforderung, welche durch die clevere Signaletik von 3dimensional nun ein Leichtes geworden ist.
+Das Heim für Menschen mit Körperbehinderung der Mathilde Escher Stiftung bietet seinen Bewohnern vielfältige Arbeitsplätze und Therapien an. In der komplexen Gebäudestruktur jederzeit den richtigen Raum zu finden, ist eine Herausforderung, welche durch die clevere Signaletik von 3dimensional nun um vieles leichter geworden ist.
