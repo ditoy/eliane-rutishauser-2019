@@ -19,8 +19,9 @@ appImage: images/uploads/3dimensional-hero-1.jpg
 appSitemapUrl: 'https://www.3dimensional.ch'
 appGoogleVerification: 123xyz-google-hash
 referenceCompetences:
-  - "Idee"
-  - "Planung"
-  - "Ausführung"
+  - Idee
+  - Planung
+  - Ausführung
+  - Test
 ---
 
