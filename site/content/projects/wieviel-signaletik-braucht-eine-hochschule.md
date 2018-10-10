@@ -1,5 +1,5 @@
 ---
-title: Wieviel Signaletik braucht eine Hochschule?
+title: Wieviel Signaletik braucht eigentlich eine Hochschule?
 date: 2018-10-09T13:48:23.301Z
 position: 20
 draft: false
