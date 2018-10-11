@@ -9,7 +9,7 @@ planning: true
 implementation: true
 image: 'https://ucarecdn.com/b688eeae-8a01-4a6b-bd18-db6f959e50d7/'
 teaser: >-
-  Seit Starfriseur Björn Axén 1963 die Marke gründete, ist sie Referenz für
-  beste Haarpflegeprodukte
+  Seit Starfriseur Björn Axén 1963 das Unternehmen gründete, steht es für beste
+  Haarpflegeprodukte
 ---
 
