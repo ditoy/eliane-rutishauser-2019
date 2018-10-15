@@ -12,4 +12,4 @@ teaser: >-
   In Sachen Uhren präsentiert die Schweiz ihren Gästen am Flughafen Zürich
   Exzellenz
 ---
-
+Wer am Flughafen Zürich abhebt, erlebt, warum die Schweiz weltweit als das führende Land der Uhrenproduktion gilt. Die luxuriösen Vitrinen zeigen zeitlos schöne Präzisionsuhren für qualitätsbewusste Reisende. 3dimensional setzt die anspruchsvollen Promotionen in hochwertiger Materialisierung gewohnt präzis und zuverlässig um.
