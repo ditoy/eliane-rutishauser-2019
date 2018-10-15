@@ -12,4 +12,4 @@ teaser: >-
   Führende Köpfe aus der Kreativwirtschaft präsentieren ihre Sicht auf kommende
   Trends
 ---
-
+Das Publikum erfährt in Vorträgen und Präsentationen, wie sich bekannte Innovatoren aus den angewandten Künsten die Zukunft des Designs vorstellen. Zusammen mit Source Associates hat 3dimensional die räumlichen Kommunikationsmittel für den Event umgesetzt.
