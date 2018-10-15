@@ -9,7 +9,7 @@ planning: true
 implementation: true
 image: 'https://ucarecdn.com/72ec9d18-2f93-4036-ab91-fecb8226892d/'
 teaser: >-
-  Führende Köpfe aus der Welt des Designs und der Kreativwirtschaft präsentieren
-  ihre Sicht auf kommende Trends
+  Führende Köpfe aus der Kreativwirtschaft präsentieren ihre Sicht auf kommende
+  Trends
 ---
 
