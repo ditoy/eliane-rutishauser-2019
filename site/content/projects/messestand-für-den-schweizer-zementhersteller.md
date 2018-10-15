@@ -14,4 +14,4 @@ teaser: >-
 projectpictures:
   - null
 ---
-
+Den Stand für den schweizer Baustoffhersteller Holcim an der Swissbau Messe hat Source Associates entworfen und 3dimensional umgesetzt. Basierend auf der klassischen Grundform eines Hauses entstanden mehrere Module, welche den interessierten Besuchern Informationen rund um das Themenfeld der Baustoffe präsentieren.
