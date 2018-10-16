@@ -12,4 +12,4 @@ teaser: >-
   Was gibt es Schöneres, als während der Weihnachtszeit in den geschmückten
   Gassen zu flanieren?
 ---
-
+Zusammen mit IWC Schaffhausen hat 3dimensional den Weihnachtsbaum für den Zürcher Weinplatz gestaltet und aufgestellt. Die geschmückten Gassen der Zürcher Altstadt sind während der Weihnatszeit ein beliebtes Ziel für Stadtbummel mit festlichem Ambiente.
