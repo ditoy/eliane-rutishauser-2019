@@ -7,7 +7,7 @@ Year: '2017'
 concept: false
 planning: true
 implementation: true
-image: 'https://ucarecdn.com/13b29732-625f-4d58-b9cf-9cce95c5dd92/'
+image: 'https://ucarecdn.com/f851e298-947f-4e1c-ab18-6a2904351182/'
 teaser: >-
   Was gibt es Schöneres, als während der Weihnachtszeit in den geschmückten
   Gassen zu flanieren?
