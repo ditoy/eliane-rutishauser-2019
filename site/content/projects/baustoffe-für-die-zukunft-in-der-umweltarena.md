@@ -12,4 +12,4 @@ teaser: >-
   Optimo Tour — Einführungskampagne für nachhaltigen CO₂ reduzierten Zement von
   Holcim
 ---
-
+Die Herstellung von Zement war lange ein Prozess, der gewaltige Mengen an CO₂ freisetzt. Holcim entwickelte darum den neuen innovativen CO₂ reduzierten Standardzement, der für fast alle Anwendungen geeignet ist. 3dimensional hat zusammen mit Source Associates das Display für die Einführungskampagne dieses einzigartigen Zements umgesetzt.
