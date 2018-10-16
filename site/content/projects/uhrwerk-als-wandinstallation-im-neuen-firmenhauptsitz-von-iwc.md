@@ -1,5 +1,5 @@
 ---
-title: Uhrwerk als Wandinstallation im neuen Firmenhauptsitz von IWC
+title: Uhrwerk als Wandinstallation am neuen Hauptsitz von IWC Schaffhausen
 date: 2018-10-16T13:43:05.453Z
 position: 20
 draft: false
