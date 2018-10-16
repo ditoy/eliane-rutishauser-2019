@@ -1,5 +1,5 @@
 ---
-title: 'Stimmungsvolles Funkeln im Weihnachtsschaufenster '
+title: 'Stimmungsvolles Funkeln im weihnachtlichen Schaufenster '
 date: 2018-10-16T09:22:43.685Z
 position: 20
 draft: false
