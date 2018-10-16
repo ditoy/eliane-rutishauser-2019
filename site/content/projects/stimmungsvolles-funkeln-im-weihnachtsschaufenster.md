@@ -10,4 +10,4 @@ implementation: true
 image: 'https://ucarecdn.com/d88adbc8-672c-431e-913a-56e40abfacd6/'
 teaser: Die Weihnachtszeit bringt nicht nur Kinderaugen zum Glitzern und Glänzen
 ---
-Für IWC Schaffhausen hat 3dimensional die Produktion und das Handling der weltweiten Auslieferung der Weihnachtschaufenster für alle IWC Stores übernommen. Hochglanz Oberflächen und die hochpräzise Ausführung bringen zur Weihnachtszeit in den Metropolen dieser Welt edlen Glanz in die Schaufenster des renommierten Schweizer Uhrenherstellers.
+Für IWC Schaffhausen hat 3dimensional die Produktion und das Handling der weltweiten Auslieferung der Weihnachtschaufenster in alle IWC Stores übernommen. Hochglanz Oberflächen und die hochpräzise Ausführung bringen zur Weihnachtszeit in den Metropolen dieser Welt edlen Glanz in die Schaufenster des renommierten Schweizer Uhrenherstellers.
