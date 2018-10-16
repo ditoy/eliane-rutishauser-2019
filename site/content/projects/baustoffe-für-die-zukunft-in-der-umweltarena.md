@@ -8,6 +8,8 @@ concept: false
 planning: true
 implementation: true
 image: 'https://ucarecdn.com/5fc59f47-cf53-44e3-b191-6ff083e2b3db/'
-teaser: Einführungskampagne für nachhaltigen CO₂ reduzierten Zement von Holcim
+teaser: >-
+  Optimo Tour — Einführungskampagne für nachhaltigen CO₂ reduzierten Zement von
+  Holcim
 ---
 
