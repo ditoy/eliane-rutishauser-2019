@@ -8,6 +8,8 @@ concept: false
 planning: true
 implementation: true
 image: 'https://ucarecdn.com/6a5311ce-8dc6-4baa-bc8b-c538642fdf13/'
-teaser: ' Die sprichwörtliche Genauigkeit Schweizer Uhrwerke in den grossen Massstab übersetzt'
+teaser: ' Die sprichwörtliche Genauigkeit in den grossen Massstab übersetzt'
+projectpictures:
+  - null
 ---
-
+Was eine Schweizer Uhr so unvergleichlich macht, ist ihr Uhrwerk. IWC Schaffhausen unterstreicht mit der Wandinstallation am neuen Hauptsitz die herausragende Bedeutung, welche diesem Präzisionsinstrument zukommt. 3dimensional hat das Uhrwerk in den grossen Massstab übersetzt. Jedes Zahnrad ist handgeschliffen. Genau wie beim kleinen Bruder.
