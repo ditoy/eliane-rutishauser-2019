@@ -7,7 +7,7 @@ Year: '2018'
 concept: false
 planning: true
 implementation: true
-image: 'https://ucarecdn.com/47226b4f-7ba9-4ded-beca-b32a23bef11f/'
+image: 'https://ucarecdn.com/df76938f-a1ab-4212-a645-3e9963768907/'
 teaser: >-
   Zeit ihres Bestehens hat die Manufaktur aus Schaffhausen innovative Uhren
   produziert
