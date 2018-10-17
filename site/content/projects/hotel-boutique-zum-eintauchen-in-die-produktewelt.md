@@ -12,4 +12,4 @@ teaser: >-
   Im Grand Resort Bad Ragaz bietet La Prairie zusätzlich zum Spa-Erlebnis nun
   auch eine Boutique
 ---
-
+Als führendes Wellbeing & Health Resort Europas bietet das Resort im 36.5° warmen Wasser Thermal Spa und ein aussergewöhnliches und authentisches Spa-Erlebnis. Neu beraten nun auch fachkundige Beauty Advisors jeden Gast individuell in der neuen La Prairie-Boutique. Mit Abschluss der Planung und Umsetzung der Boutique dürfen wir bei 3dimensional auf ein weiteres erfolgreich realisiertes Projekt in Zusammenarbeit mit La Prairie stolz sein.
