@@ -12,4 +12,4 @@ teaser: >-
   Präsentation der exquisiten und innovativen Zeitmesser von Carl F. Bucherer an
   der Messe in Basel
 ---
-
+Jährlich im Frühling stellen Produzenten aus den Bereichen Uhren, Schmuck, Edelsteine und verwandten Branchen ihre Neuheiten an der Messe in Basel aus. Für die Präsentation der Uhren von Carl F. Bucherer, welche seit 1888 in Luzern gefertigt werden, hat 3dimensional für die aufwändige Produktion verantwortlich gezeichnet.
