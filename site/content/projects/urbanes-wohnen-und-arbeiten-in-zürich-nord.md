@@ -12,4 +12,4 @@ teaser: >-
   Hochmoderne Räume in Neu-Oerlikon, wo urbane Gegenwart auf industrielle
   Vergangenheit trifft
 ---
-Der Osterwalder Tower bietet auf 15 Geschossen attraktiven Wohn- und Geschäftsraum. Wohnungen, Atelier- und Ladenflächen sowie Büros bilden einen urbanen Nutzungsmix in einem Quartier, das mit seinen fünf grossen Parks auch viele Grünflächen umfasst. 3dimensional hat das Beschriftungskonzept zusammen mit Pikka GmbH sowohl für den Innen- als auch den Aussenraum des Gebäudes umgesetzt.
+Der Osterwalder Tower bietet auf 15 Geschossen attraktiven Wohn- und Geschäftsraum. Wohnungen, Atelier- und Ladenflächen sowie Büros bilden einen urbanen Nutzungsmix in einem Quartier, das mit seinen fünf grossen Parks auch viele Grünflächen umfasst. 3dimensional hat das Beschriftungskonzept zusammen mit Pikka GmbH sowohl für den Innen- als auch den Aussenraum des Neubaus umgesetzt.
