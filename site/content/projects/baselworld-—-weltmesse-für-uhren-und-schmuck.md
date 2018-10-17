@@ -10,6 +10,6 @@ implementation: true
 image: 'https://ucarecdn.com/7a4d1311-3fc5-4e5a-8a6a-202794e1a07e/'
 teaser: >-
   Präsentation der exquisiten und innovativen Zeitmesser von Carl F. Bucherer an
-  der renommierten Messe in Basel
+  der Messe in Basel
 ---
 
