@@ -12,11 +12,11 @@
 
         <div class="spacer-3x"></div>
 
-        <div class="cards">
+        <ul class="cards">
             {{  range $index, $page := .Data.Pages.ByParam "position" }}
                 {{ .Render "card" }}
             {{ end }}
-        </div>
+        </ul>
         <div class="clear"></div>
     </div>
 

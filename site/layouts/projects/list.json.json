@@ -1,4 +1,4 @@
-{{ $concept_icon := "<img src='images/uploads/icon_bulb.svg' class='icon' />" }}{{ $planning_icon := "<img src='images/uploads/icon_ruler.svg' class='icon' />" }}{{ $implementation_icon := "<img src='images/uploads/icon_saw.svg' class='icon' />" }}[
+{{ $concept_icon := "<li><img src='images/uploads/icon_bulb.svg' class='icon' alt='Idee' /></li>" }}{{ $planning_icon := "<li><img src='images/uploads/icon_ruler.svg' class='icon' alt='Planung' /></li>" }}{{ $implementation_icon := "<li><img src='images/uploads/icon_saw.svg' class='icon' alt='Ausführung' /></li>" }}[
 {{ $collection := (where .Site.Pages "Section" "projects") }}
     {{ range $index, $element := ($collection.ByParam "position") }}
         {{ if ne $element.Permalink "/projects/" }}

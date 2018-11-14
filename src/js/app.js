@@ -205,11 +205,15 @@ if (toggler) {
         if (menu.classList.contains('expanded')) {
             // close nav
             menu.classList.remove('expanded');
+            menu.setAttribute('aria-hidden', 'true');
+            toggler.setAttribute('aria-expanded', 'false');
             togglericon.classList.remove('expanded');
             rootElement.style.overflow = 'auto';
         } else {
             // open nav
             menu.classList.add('expanded');
+            menu.setAttribute('aria-hidden', 'false');
+            toggler.setAttribute('aria-expanded', 'true');
             togglericon.classList.add('expanded');
             rootElement.style.overflow = 'hidden'; // disable scroll on body when menu open
         }
@@ -372,7 +376,7 @@ function listProjects(id, list) {
         item: '<li class="card equalize"><a class="permalink link" href=""><div class="card-inner"> <div class="featuredimageWrapper">' +
         '<div class="featuredimage label" style="" aria-label=""></div></div>' +
         '<h3 class="competence title" data-competence=""></h3><div class="teaser activity" data-activity=""><p class="teaser_truncated"></p>' +
-        '</div><div class="icons"></div></div></a><div class="clear"></div></li>'
+        '</div><ul class="icons"></ul></div></a><div class="clear"></div></li>'
     };
 
     // console.log('LIST.JS', list);

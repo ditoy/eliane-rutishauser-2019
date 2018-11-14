@@ -1,5 +1,5 @@
-<header role="banner">
-    <div id="collapsible">
+<header>
+    <div id="collapsible" aria-hidden="true">
         <ul class="menu" id="menu">
             <li>
                 <a href="/projects/">
@@ -23,7 +23,7 @@
             </li>
         </ul>
     </div>
-    <button id="toggler" class="toggler" type="button" aria-label="Menü">
+    <button id="toggler" class="toggler" type="button" aria-label="Menü" aria-controls="collapsible" aria-expanded="false">
         <div class="animated-menu-icon" id="togglericon">
             <div></div>
             <div></div>

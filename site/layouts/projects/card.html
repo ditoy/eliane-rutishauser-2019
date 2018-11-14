@@ -12,17 +12,17 @@
             <div class="teaser activity" data-activity="{{ .Params.activities }}">
 	            <p class="teaser_truncated">{{ .Params.teaser | truncate 100 }}</p>
             </div>
-            <div class="icons">
+            <ul class="icons">
                 {{ if eq .Params.concept true }}
-                    {{ partial "icon" (dict "context" . "icon" "bulb") }}
+                    <li>{{ partial "icon" (dict "context" . "icon" "bulb") }}</li>
                 {{ end }}
                 {{ if eq .Params.planning true }}
-                    {{ partial "icon" (dict "context" . "icon" "ruler") }}
+                    <li>{{ partial "icon" (dict "context" . "icon" "ruler") }}</li>
                 {{ end }}
                 {{ if eq .Params.implementation true }}
-                    {{ partial "icon" (dict "context" . "icon" "saw") }}
+                    <li>{{ partial "icon" (dict "context" . "icon" "saw") }}</li>
                 {{ end }}
-            </div>
+            </ul>
         </div>
     </a>
     <div class="clear"></div>
