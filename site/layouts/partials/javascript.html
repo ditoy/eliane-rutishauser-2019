@@ -1,4 +1,5 @@
 <script async type="application/javascript" src="app.js"></script>
+<script async type="application/javascript" src="sw.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116326681-1"></script>
 <noscript id="deferred-styles">
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
@@ -10,16 +11,19 @@
     if (document.cookie.indexOf(gaOptOut + '=true') > -1) {
         window[gaOptOut] = true;
     }
+
     function gaTrackOptOut() {
         document.cookie = gaOptOut + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
         window[gaOptOut] = true;
         alert('The Google Analytics Opt-Out-Cookie has been set.');
     }
+
     // google analytics tracking
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', gaId, { 'anonymize_ip': true });
+
     // deferred loading of stylesheets
     var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
@@ -36,5 +40,21 @@
         raf(function() { window.setTimeout(loadDeferredStyles, 0); });
     } else {
         window.addEventListener('load', loadDeferredStyles);
+    }
+
+    // register service worker
+    if(location.hostname !== "localhost") {
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/sw.js', { scope: '/' })
+                .then(function(registration) {
+                    console.log('Service Worker Registered');
+                });
+            navigator.serviceWorker
+                .ready
+                .then(function(registration) {
+                    console.log('Service Worker Ready');
+                });
+        }
     }
 </script>

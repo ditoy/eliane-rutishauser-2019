@@ -3,19 +3,28 @@
     {{ partial "head-site" . }}
     {{ partial "body" . }}
     {{ partial "header" . }}
-                <div class="error404">
-                    <h1>
-                        Fehler 404
-                        <code>ʕʘ̅͜ʘ̅ʔ</code>
-                    </h1>
-                    <p>Leider existiert die angeforderte Seite nicht.</p>
-                    <p>
-                        <a href="/">Hier geht es zur Startseite</a>
-                    </p>
-                </div>
+
+    <div role="main">
+        <div class="stripe">
+            <div class="spacer-5x"></div>
+            <div class="container">
+                <article class="main introduction">
+                    <div class="error404">
+                        <h1>
+                            Fehler 404
+                            <code>ʕʘ̅͜ʘ̅ʔ</code>
+                        </h1>
+                        <p>Leider existiert die angeforderte Seite nicht.</p>
+                        <p>
+                            <a href="/">Hier geht es zur Startseite</a>
+                        </p>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
+
+    {{ partial "footer" . }}
 </body>
 {{ partial "schema/global" . }}
 {{ partial "javascript" . }}
