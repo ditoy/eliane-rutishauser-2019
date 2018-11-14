@@ -1,6 +1,6 @@
 import lightGallery from 'lightgallery.js'; // ATTENTION: this is actually used!
 import * as axios from 'axios';
-import {forEach} from 'ditoy-js-utils';
+import {fadeOut, forEach} from 'ditoy-js-utils';
 
 const List = require('list.js');
 const Autogrow = require('textarea-autogrow');
@@ -183,6 +183,14 @@ window.onload = function() {
 window.onresize = function() {
     resized = true;
 };
+
+/**
+ * action before unload event (does not work on Safari)
+ */
+const ua = navigator.userAgent.toLowerCase();
+if (ua.indexOf('safari') === -1 || ua.indexOf('chrome') >= -1) {
+    window.addEventListener('beforeunload', (e) => { fadeOut(document.querySelector('.wrapper')); });
+}
 
 /**
  * menu toggle
