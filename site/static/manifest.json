@@ -1,6 +1,12 @@
 {
   "name": "3dimensional AG",
   "short_name": "3dimensional",
+  "theme_color": "#b6c227",
+  "background_color": "#b6c227",
+  "display": "standalone",
+  "orientation": "portrait",
+  "Scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
@@ -43,9 +49,5 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "orientation" : "portrait",
-  "background_color": "#B6C227",
-  "theme_color": "#B6C227"
+  "splash_pages": null
 }
