@@ -1,12 +1,9 @@
-# 3dimensional-website-2018
+# Hugo Boilerplate
 
-Website Relaunch für die 3dimensional AG basierend auf dem Hugo Static Site Generator. 
+Please duplicate the repository according to [https://github.com/ditoy/hugo-boilerplate](https://github.com/ditoy/hugo-boilerplate) to start a new Hugo-based project (including a gulp-based asset pipeline, Netlify CMS).
 
-### Development
+## Development
 
     brew install hugo
     npm install 
     npm start
-
-### Design Konzept von der Pikka
-https://xd.adobe.com/view/778df050-4b50-4779-6973-fa9517de94ba-01bc/
