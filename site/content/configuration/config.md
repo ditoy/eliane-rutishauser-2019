@@ -1,9 +1,9 @@
 ---
 title: Site Configuration
 appColor: '#B6C229'
-appTitle: '3dimensional: Innenarchitektur, Gestaltung und dreidimensionale Kommunikation'
-appTitleShort: 3dimensional
-appPublisher: 3dimensional AG
+appTitle: 'Eliane Rutishauser'
+appTitleShort: 'Eliane Rutishauser'
+appPublisher: 'Eliane Rutishauser'
 appDescription: >-
   3dimensional entwickelt Lösungen, die exakt auf Ihre Bedürfnisse zugeschnitten
   sind. Damit können wir Ihnen ein Optimum an Leistungen zu realistischen
