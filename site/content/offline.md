@@ -5,4 +5,4 @@ draft: false
 author: "Dietrich Rordorf"
 type:   "offline"
 ---
-Du bist leider offline. Versuche es nochmals mit einer Internetverbindung.
+<p class="text-center">Du bist leider offline. Versuche es nochmals mit einer Internetverbindung.</p>

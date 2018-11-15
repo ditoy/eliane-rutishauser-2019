@@ -8,7 +8,7 @@ const CACHE_VERSION = 1;
 const BASE_CACHE_FILES = [
     '/css/main.css',
     '/app.js',
-    '/manifest.json',
+    '/manifest.json'
 ];
 
 const OFFLINE_CACHE_FILES = [
