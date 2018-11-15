@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="de">
-    {{ partial "head-single" . }}
-    {{ partial "body" . }}
-        <div class="wrapper">
-            {{ partial "header" . }}
+{{ partial "head-single" . }}
+<body id="root" class="{{ .Type }} {{ .File.TranslationBaseName }}">
+<div class="wrapper">
+    {{ partial "header" . }}
 
-            <div class="stripe" role="main">
-                <div class="container main">
-                    <h1>{{ .Title }}</h1>
-                    <article>
-                        {{ .Content }}
-                    </article>
-                </div>
-            </div>
-            {{ partial "footer" . }}
+    <div class="stripe" role="main">
+        <div class="container main">
+            <h1>{{ .Title }}</h1>
+            <article>
+                {{ .Content }}
+            </article>
         </div>
-    </body>
-    {{ partial "schema/global" . }}
-    {{ partial "javascript" . }}
+    </div>
+    {{ partial "footer" . }}
+</div>
+</body>
+{{ partial "schema/global" . }}
+{{ partial "javascript" . }}
 </html>

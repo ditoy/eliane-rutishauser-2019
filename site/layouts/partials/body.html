@@ -1,5 +1,0 @@
-{{ if isset . "context" }}
-    <body id="root" class="{{ .context.Type }} {{ .context.File.TranslationBaseName }}{{ if eq true .hero }} has-hero{{ end }}">
-{{ else }}
-    <body id="root" class="{{ .Type }} {{ .File.TranslationBaseName }}">
-{{ end }}

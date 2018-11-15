@@ -8,26 +8,12 @@
   margin-right: auto;
   max-width: $w-container;
 
-/*
-  @include media('>=tablet', '<desktop') {
+  @include media("<mega" ) {
     width: 80%;
   }
-
-  @include media('>=mega') {
-     width: 75%;
-    max-width: $w-container;
+  @include media("<tablet" ) {
+    width: 90%;
   }
-*/
-
-
-    @include media("<mega" ) {
-			width: 80%;
-	}
-  	  @include media("<tablet" ) {
-			width: 90%;
-	}
-
-
 }
 
 .row {

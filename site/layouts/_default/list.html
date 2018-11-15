@@ -1,10 +1,9 @@
 <!doctype html>
 <html lang="de">
 {{partial "head-site" . }}
-{{ partial "body" . }}
+<body id="root" class="{{ .Type }} {{ .File.TranslationBaseName }}">
 <div class="wrapper">
     {{ partial "header" . }}
-
     <div class="container main" role="main">
         <h1>{{ .Title }}</h1>
 

@@ -1,12 +1,12 @@
 /* hyperlinks */
 
 a {
-	color: $c-green;
+	color: $c-primary;
 	text-decoration: none;
 }
 
 a:hover {
-	color:	$c-darkgray;
+	color:	$c-lightgray;
 }
 
 a,
@@ -19,7 +19,7 @@ button {
   }
 
   &.btn {
-    border: 2px solid $c-black;;
+    border: 2px solid $c-primary;
   }
 
   &:not(.btn) {
@@ -30,30 +30,4 @@ button {
       transition: $tr-scope $tr-speed $tr-ease;
     }
   }
-
-  &.nowrap {
-    white-space: nowrap !important;
-  }
-
-  &.nav {
-    color: $c-gray;
-  }
-
-  &.padded-x {
-    display: inline-block;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  &.padded-y {
-    display: inline-block;
-    padding-bottom: 0.7rem;
-    padding-right: 0.5rem;
-  }
-
-  .svg-inline--fa {
-    position: relative;
-    top: 0.6rem;
-  }
-
 }

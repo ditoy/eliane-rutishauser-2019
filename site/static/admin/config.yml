@@ -5,7 +5,7 @@ backend:
     - admin
     - editor
 
-display_url: https://www.3dimensional.ch
+display_url: http://www.elianerutishauser.com
 
 media_folder: "site/static/images/uploads" # Folder where user uploaded files should go
 public_folder: "./images/uploads"
@@ -34,115 +34,34 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "appImage", name: "appImage", widget: "string", tagname: "p" }
           - { label: "appSitemapUrl", name: "appSitemapUrl", widget: "string", tagname: "p" }
           - { label: "appGoogleVerification", name: "appGoogleVerification", widget: "string", tagname: "p" }
-          - { label: "referenceCompetences", name: "referenceCompetences", widget: "list", tagname: "p" }
-
 
   - label: "Index-Seiten"
     name: "page_index"
     files:
-      - label: "Index / Landingpage"
+      - label: "Landingpage"
         name: "index"
         file: "site/content/_index.md"
         fields:
           - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
           - { label: "Publikationsdatum", name: "date", widget: "datetime" }
           - { label: "Seiteninhalt", name: "body", widget: "markdown" }
-      - label: "Index Projekte"
-        name: "projects_index"
-        file: "site/content/projects/_index.md"
+      - label: "Archiv"
+        name: "archive"
+        file: "site/content/posts/_index.md"
         fields:
           - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
           - { label: "Publikationsdatum", name: "date", widget: "datetime" }
+          - { label: "Bild", name: "image", widget: "image" }
           - { label: "Seiteninhalt", name: "body", widget: "markdown" }
-      - label: "Index Team"
-        name: "team_index"
-        file: "site/content/team/_index.md"
-        fields:
-        - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
-        - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-        - { label: "Seiteninhalt", name: "body", widget: "markdown" }
-      - label: "Index Jobs"
-        name: "jobs_index"
-        file: "site/content/jobs/_index.md"
-        fields:
-        - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
-        - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-        - { label: "Seiteninhalt", name: "body", widget: "markdown" }
 
-  - name: "page"
-    label: "Weitere Seiten"
-    folder: "site/content"
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-      - { label: "Seiteninhalt", name: "body", widget: "markdown" }
-
-  - name: "project"
-    label: "Projekte"
-    folder: "site/content/projects"
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-      - { label: "Rangfolge", name: "position", widget: "number", default: 20 }
-      - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
-      - { label: "Jahr", name: "Year", widget: "date", format: "YYYY", required: false }
-      - { label: "Referenz-URL", name: "reference", widget: "string", required: false }
-      - { label: "Konzept", name: "concept", widget: "boolean", default: false, required: false }
-      - { label: "Planung", name: "planning", widget: "boolean", default: false, required: false }
-      - { label: "Umsetzung", name: "implementation", widget: "boolean", default: false, required: false }
-      - label: "Aufgabenbereiche"
-        name: "activities"
-        widget: "list"
-        field: {label: "Aufgabenbereich", widget: "select", options: ['Shopdesign', 'Bürodesign', 'Rendering', 'Ausstellungsgestaltung', 'Schaufenstergestaltung', 'Eventgestaltung', 'Messegestaltung', 'Signaletik', 'Display', 'Point-of-Sale']}
-        required: false
-      - { label: "Teaser-Bild", name: "image", widget: "image" }
-      - { label: "Teaser-Bild Titel / Alt", name: "imageAlt", widget: "string", required: false }
-      - { label: "Teaser-Text", name: "teaser", widget: "text" }
-      - label: "Projektbilder"
-        name: "projectpictures"
-        widget: "list"
-        field: {label: "Bild", widget: "image", default: "", required: false }
-        required: false
-      - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
-
-  - name: "team"
-    label: "Mitarbeiter"
-    folder: "site/content/team"
+  - name: "posts"
+    label: "Posts"
+    folder: "site/content/posts"
     slug: "{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields:
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-      - { label: "Rangfolge", name: "position", widget: "number", default: 20 }
       - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
       - { label: "Von Google-Suche ausschliessen", name: "robotsExclude", widget: "boolean", default: false, required: false }
-      - { label: "Vor- & Nachname", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Funktion", name: "function", widget: "string", tagname: "h3" }
-      - { label: "kurzes Zitat", name: "quote", widget: "string", tagname: "h4", required: false }
-      - { label: "E-Mail", name: "email", widget: "string", required: false }
-      - { label: "Telefon", name: "phone", widget: "string", required: false }
-      - { label: "Mitarbeiter-Bild", name: "image", widget: "file" }
+      - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
-
-  - name: "job"
-    label: "Jobs"
-    folder: "site/content/jobs"
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
-      - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-      - { label: "Stellenbezeichnung", name: "title", widget: "string", tagname: "h1" }
-      - { label: "Seiteninhalt", name: "body", widget: "markdown" }
-
-  - name: "customer"
-    label: "Kundenliste"
-    folder: "site/content/customers"
-    slug: "{{slug}}"
-    create: true # Allow users to create new documents in this collection
-    fields:
-    - { label: "Kunde", name: "title", widget: "string", tagname: "h1" }
-    - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }

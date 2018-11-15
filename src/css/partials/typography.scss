@@ -1,5 +1,10 @@
+body,
+td {
+  font-family: $f-regular;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  color: $c-darkgray;
+  color: $c-primary;
 }
 
 h1 {
@@ -21,22 +26,7 @@ h1 {
   @include media(">=mega") {
     font-size: 2.8rem;
   }
-
-  &.cite {
-    color: $c-primary;
-  }
 }
-
-.claim h1 {
-  font-family: $f-regular;
-  font-weight: 400;
-}
-
-.home h2,
-.jobs h2 {
-  @extend h1;
-}
-
 
 h2 {
   font-family: $f-headings;
@@ -160,43 +150,9 @@ hr {
   }
 }
 
-cite {
-  @extend h3;
-  font-style: normal;
-  width: 100%;
-  padding: 0;
-  display: inline-block;
-  text-align: center;
-  margin: 0;
-
-  @include media(">=tablet") {
-    padding: 0 3em;
-  }
-
-  &:before,
-  &:after {
-    display: inline;
-  }
-
-  &:before {
-    content: "« ";
-  }
-
-  &:after {
-    content: " »";
-  }
-}
-
 ul {
   &.no-bullet {
     list-style: none;
     padding: 0;
-  }
-}
-
-li {
-  &.text-heading {
-    font-weight: 700;
-    font-size: 1.4rem;
   }
 }

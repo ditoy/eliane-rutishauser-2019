@@ -5,7 +5,6 @@ $w-container:   1100px;
 
 
 // colors
-$c-green:       #B6C227;
 $c-white:       #FFF;
 $c-lightgray:   #F3F3F3;
 $c-mediumgray:  #E5E5E5;
@@ -13,7 +12,7 @@ $c-gray:        #6A6A6A;
 $c-darkgray:    #363636;
 $c-black:       #171717;
 
-$c-primary:     #b6c229;
+$c-primary:     $c-white;
 $c-secondary:   $c-darkgray;
 
 
@@ -26,8 +25,8 @@ $spacer:        1em;
 
 
 // fonts
-$f-regular:     "Avenir LT W04_65 Medium1475536", Helvetica, Arial, sans-serif;
-$f-headings:    "Avenir LT W04_95 Black1475560", Helvetica, Arial, sans-serif;
+$f-regular:     Helvetica, Arial, sans-serif;
+$f-headings:    Helvetica, Arial, sans-serif;
 
 
 // transitions
@@ -42,16 +41,3 @@ $tr-ease-linear:cubic-bezier(0.15, 0.45, 0.85, 1);
 
 // breakpoints (for include-media)
 $breakpoints:   (phone: 600px, tablet: 768px, desktop: 1200px, mega: 1600px);
-
-
-// z-indexes
-$z-hero:        9940;
-$z-header:      9950;
-$z-navbar:      9960;
-$z-collapsible: 9970;
-$z-menu:        9980;
-$z-toggler:     9990;
-$z-toggler-l1:  9994;
-$z-toggler-l2:  9992;
-$z-toggler-l3:  9994;
-$z-toggler-l4:  9992;

@@ -28,6 +28,8 @@ html {
 }
 
 body {
+  background: $c-black;
+  color: $c-white;
   font-family: $f-regular;
   font-weight: 300;
   font-size: inherit;
@@ -35,7 +37,6 @@ body {
   min-height: 100%;
   padding: 0;
   margin: 0;
-  background: $c-white;
   overflow-x: hidden;
 }
 
@@ -56,31 +57,6 @@ body {
 
   @include media(">=tablet") {
     padding: 0 2rem;
-  }
-}
-
-.stripe {
-  margin: 0;
-  padding: 5rem 0;
-
-  &:first-of-type {
-    padding-top: 0;
-  }
-
-  &.gray {
-    background-color: $c-lightgray;
-  }
-
-  &.white {
-    background-color: $c-white;
-  }
-
-  &.black {
-    background-color: $c-darkgray;
-
-    cite {
-      color: $c-lightgray;
-    }
   }
 }
 
@@ -144,19 +120,6 @@ body {
     font-family: monospace;
     color: $c-gray;
   }
-
-}
-
-.contact article {
-	text-align: center;
-	a {
-		color: $c-green;
-		text-decoration: none;
-	}
-
-	a:hover {
-		color: $c-darkgray;
-	}
 
 }
 

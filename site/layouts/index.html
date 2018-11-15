@@ -1,127 +1,26 @@
 <!doctype html>
-{{ partial "head-3dimensional" }}
+{{ partial "head-eliane" }}
 <html lang="de">
 {{ partial "head-site" . }}
-{{ partial "body" (dict "context" . "hero" true) }}
-<div class="wrapper home">
-    <div role="complementary">
-        <div id="animated-grid" class="rellax" data-rellax-speed="-0.5">
-            {{ partial "svg/grid" . }}
-        </div>
-        <div id="slides" class="hero rellax" data-rellax-speed="-1">
-            <div class="slide showing"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-        </div>
-        <div class="claim">
-            <div class="container">
-                <h1 class="rellax" data-rellax-speed="-3">Wir lassen punkto Präzision keine Wünsche offen.</h1>
-            </div>
-        </div>
-    </div>
-
+<body id="root" class="{{ .Type }} {{ .File.TranslationBaseName }}">
     {{ partial "header" . }}
+    <div class="container" role="main">
+        <h1>{{ .Title }}</h1>
+        <article>
+            {{ .Content }}
+        </article>
 
-    <div role="main">
-
-        <div class="stripe gray">
-            <div class="spacer-5x"></div>
-            <div class="container">
-                <article class="main introduction">
-                    {{ .Content }}
-                </article>
-            </div>
-        </div>
-
-        <div class="stripe">
-            <div class="container projects main">
-                <article>
-                    <h2>Referenzen</h2>
-                    <ul class="cards">
-                        {{ $collection := (where .Site.Pages "Section" "projects") }}
-                        {{ range first 6 ($collection.ByParam "position") }}
-                        {{ .Render "card" }}
-                        {{ end }}
-                    </ul>
-                    <div class="clear"></div>
-                </article>
-            </div>
-        </div>
-
-        <div class="stripe black">
-            <div class="container main">
-                <article>
-                    <cite>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
-                    </cite>
-                </article>
-            </div>
-        </div>
-
-        <div class="stripe">
-            <div class="container team main">
-                <article>
-                    <h2>Team</h2>
-                    <div class="cards">
-                        {{ $collection := (where .Site.Pages "Section" "team") }}
-                        {{ range first 6 ($collection.ByParam "position") }}
-                        {{ .Render "card" }}
-                        {{ end }}
-                    </div>
-                    <div class="clear"></div>
-                </article>
-            </div>
-        </div>
-
-        <div class="stripe gray">
-            <div class="container">
-                <article>
-                    <h2>3dimensional auf Instagram</h2>
-                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                    <iframe src="//lightwidget.com/widgets/f8777cf4d5c8560a9e09943a10de4cd1.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-                </article>
-                <div class="clear"></div>
-            </div>
-        </div>
-
-        <div class="stripe">
-            <div class="container">
-                <h2>Kunden</h2>
-                <article class="text-left customers">
-                    {{ $alfa := (slice "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M" "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z") }}
-                    {{ $collection := sort (where .Site.Pages "Section" "customers") ".File.LogicalName" }}
-                    {{ range $alfa }}
-                    <ul class="no-bullet">
-                        {{ $current := . }}
-                        <li class="text-heading">{{ $current }}</li>
-                        {{ range $collection }}
-                        {{ if eq (lower (substr .Params.title 0 1)) (lower $current) }}
-                        <li>{{ .Params.title }}</li>
-                        {{ end }}
-                        {{ end }}
-                    </ul>
-                    {{ end }}
-                </article>
-            </div>
-        </div>
-
-        <div class="stripe gray">
-            <div class="container main">
-                <article>
-                    <cite>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed lacus augue. Nullam nec commodo.
-                    </cite>
-                </article>
-            </div>
+        <div class="posts">
+            <ul class="cards">
+                {{ range first 50 .Data.Pages }}
+                {{ .Render "card"}}
+                {{ end }}
+            </ul>
         </div>
     </div>
-
     {{ partial "footer" . }}
-
 </div>
-
 </body>
 {{ partial "schema/global" . }}
 {{ partial "javascript" . }}
 </html>
-         
