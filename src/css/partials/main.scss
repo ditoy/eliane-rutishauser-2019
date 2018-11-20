@@ -142,6 +142,10 @@ article {
   margin-bottom: 2em;
   background: $c-white;
 
+  @include media('<=phone') {
+    box-shadow: 6px 6px 0 lighten($c-black, 25%);
+  }
+
   img {
     display: block;
     width: 100%;
