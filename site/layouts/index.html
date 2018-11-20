@@ -4,20 +4,25 @@
 {{ partial "head-site" . }}
 <body id="root" class="{{ .Type }} {{ .File.TranslationBaseName }}">
     {{ partial "header" . }}
-    <div class="container" role="main">
-        <h1>{{ .Title }}</h1>
-        <hr>
-        <div class="posts">
+    <div class="stripe">
+        <div class="container" role="main">
+            <h1>{{ .Title }}</h1>
+            <hr>
             <ul class="cards">
                 {{ range where .Data.Pages "Section" "posts" }}
                     {{ .Render "card"}}
                 {{ end }}
             </ul>
+            <hr>
+            <article>
+                {{ .Content }}
+            </article>
+            <div class="actions">
+                <a class="btn" href="/posts/">
+                    Mehr Bilder entdecken
+                </a>
+            </div>
         </div>
-        <hr>
-        <article>
-            {{ .Content }}
-        </article>
     </div>
     {{ partial "footer" . }}
 </div>

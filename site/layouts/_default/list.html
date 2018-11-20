@@ -4,23 +4,22 @@
 <body id="root" class="{{ .Type }} {{ .File.TranslationBaseName }}">
 <div class="wrapper">
     {{ partial "header" . }}
-    <div class="container main" role="main">
-        <h1>{{ .Title }}</h1>
+    <div class="stripe">
+        <div class="container main" role="main">
+            <article>
+                <h1>{{ .Title }}</h1>
 
-        {{ .Content }}
+                {{ .Content }}
 
-        <div class="spacer-3x"></div>
-
-        <ul class="cards">
-            {{  range $index, $page := .Data.Pages.ByParam "position" }}
-                {{ .Render "card" }}
-            {{ end }}
-        </ul>
-        <div class="clear"></div>
+                <ul class="cards">
+                    {{  range $index, $page := .Data.Pages.ByParam "position" }}
+                    {{ .Render "card" }}
+                    {{ end }}
+                </ul>
+                <div class="clear"></div>
+            </article>
+        </div>
     </div>
-
-    <div class="spacer-10x"></div>
-
     {{ partial "footer" . }}
 </div>
 </body>

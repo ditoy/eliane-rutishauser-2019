@@ -19,15 +19,25 @@ button {
   }
 
   &.btn {
+    padding: 0.4em 1em;
     border: 2px solid $c-primary;
-  }
+    outline: 1px solid $c-black;
 
-  &:not(.btn) {
     &:focus,
     &:hover,
     &:visited:hover,
     &:visited:focus {
-      transition: $tr-scope $tr-speed $tr-ease;
+      background: $c-white;
+      color: $c-black;
+      border: 2px solid lighten($c-black, 20%);
+      outline: 14px solid lighten($c-black, 20%);
     }
+  }
+
+  &:focus,
+  &:hover,
+  &:visited:hover,
+  &:visited:focus {
+    transition: $tr-scope $tr-speed $tr-ease;
   }
 }
