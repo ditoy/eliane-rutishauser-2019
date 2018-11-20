@@ -3,6 +3,6 @@ date: '2018-11-17'
 draft: false
 robotsExclude: false
 title: Testbild Klap
-image: 'https://ucarecdn.com/d2caf127-25d7-4597-aa6a-f418f37686a8/'
+image: 'https://ucarecdn.com/63d6a11a-5deb-4543-9db7-624696a48e26/'
 ---
 Ein eindrückliches Bild.
