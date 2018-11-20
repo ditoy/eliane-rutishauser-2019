@@ -131,3 +131,25 @@ const checkResize = function() {
         resized = false;
     }
 ;
+
+/**
+ * youtube video url handling
+ */
+
+function youtube_parser (url) {
+    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+    var match = url.match(regExp);
+    return (match && match[7].length === 11) ? match[7] : false;
+}
+
+let elements = document.querySelectorAll('[data-youtube]');
+forEach(elements, (element) => {
+    let youtubeId = youtube_parser(element.dataset.youtube);
+    let height = Math.round(element.clientWidth / 16 * 9);
+    let embed = '<iframe frameborder="0" width="100%" height="' + height + '" ' +
+        'src="https://www.youtube.com/embed/' + encodeURI(youtubeId) + '?modestbranding=1&autohide=1&showinfo=0&controls=0">' +
+        '</iframe>'
+    ;
+    element.innerHTML = embed;
+    console.log(embed);
+});

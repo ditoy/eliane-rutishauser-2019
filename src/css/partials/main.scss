@@ -137,13 +137,31 @@ article {
 }
 
 .image {
+  border: 3px solid $c-white;
+  box-shadow: 12px 12px 0 lighten($c-black, 25%);
+  margin-bottom: 2em;
+  background: $c-white;
+
   img {
     display: block;
     width: 100%;
     height: auto;
     margin: 0 auto;
-    border: 3px solid $c-white;
-    box-shadow: 12px 12px 0 lighten($c-black, 25%);
+  }
+
+  .youtube {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    outline: 0 none;
+  }
+
+  iframe {
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    outline: 0 none;
   }
 }
 

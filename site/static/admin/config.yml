@@ -64,4 +64,5 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Von Google-Suche ausschliessen", name: "robotsExclude", widget: "boolean", default: false, required: false }
       - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
       - { label: "Bild", name: "image", widget: "image" }
+      - { label: "YouTube Link", name: "youtube", widget: "string" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
