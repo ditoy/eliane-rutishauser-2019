@@ -3,6 +3,6 @@ date: '2018-11-15'
 draft: false
 robotsExclude: false
 title: Testbild
-image: 'https://ucarecdn.com/8db246e1-ff73-45cb-8868-35c4b7b02b3e/'
+image: 'https://ucarecdn.com/d2caf127-25d7-4597-aa6a-f418f37686a8/'
 ---
 Ein wahrlich tolles Bild.
