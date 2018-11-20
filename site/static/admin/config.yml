@@ -51,7 +51,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
           - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-          - { label: "Bild", name: "image", widget: "image" }
           - { label: "Seiteninhalt", name: "body", widget: "markdown" }
 
   - name: "posts"
@@ -64,4 +63,5 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
       - { label: "Von Google-Suche ausschliessen", name: "robotsExclude", widget: "boolean", default: false, required: false }
       - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Bild", name: "image", widget: "image" }
       - { label: "Seiteninhalt", name: "body", widget: "markdown", required: false }
