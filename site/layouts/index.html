@@ -6,17 +6,18 @@
     {{ partial "header" . }}
     <div class="container" role="main">
         <h1>{{ .Title }}</h1>
-        <article>
-            {{ .Content }}
-        </article>
-
+        <hr>
         <div class="posts">
             <ul class="cards">
-                {{ range first 50 .Data.Pages }}
-                {{ .Render "card"}}
+                {{ range where .Data.Pages "Section" "posts" }}
+                    {{ .Render "card"}}
                 {{ end }}
             </ul>
         </div>
+        <hr>
+        <article>
+            {{ .Content }}
+        </article>
     </div>
     {{ partial "footer" . }}
 </div>

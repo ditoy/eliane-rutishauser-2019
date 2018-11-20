@@ -60,6 +60,17 @@ body {
   }
 }
 
+article {
+  padding: 2em 0;
+}
+
+footer {
+  padding: 2em 0;
+  background: lighten($c-black, 7%);
+  color: darken($c-white, 25%);
+  font-size: 0.9em;
+}
+
 /* clears */
 
 .clear {
