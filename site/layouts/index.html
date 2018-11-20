@@ -9,7 +9,7 @@
             <h1>{{ .Title }}</h1>
             <hr>
             <ul class="cards">
-                {{ range where .Data.Pages "Section" "posts" }}
+                {{ range first 1 (where .Data.Pages "Section" "posts") }}
                     {{ .Render "card"}}
                 {{ end }}
             </ul>
