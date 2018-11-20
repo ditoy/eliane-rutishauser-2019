@@ -144,14 +144,34 @@ function youtube_parser (url) {
     return (match && match[7].length === 11) ? match[7] : false;
 }
 
-let elements = document.querySelectorAll('[data-youtube]');
-forEach(elements, (element) => {
-    let youtubeId = youtube_parser(element.dataset.youtube);
-    let height = Math.round(element.clientWidth / 16 * 9);
-    let embed = '<iframe frameborder="0"  width="100%" height="' + height + '" ' +
-        'allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ' +
-        'src="https://www.youtube.com/embed/' + encodeURI(youtubeId) + '?controls=0&rel=0">' +
-        '</iframe>'
-    ;
-    element.innerHTML = embed;
-});
+function embed_youtube_videos() {
+    let elements = document.querySelectorAll('[data-youtube]');
+    forEach(elements, (element) => {
+        let youtubeId = youtube_parser(element.dataset.youtube);
+        let height = Math.round(element.clientWidth / 16 * 9);
+        let embed = '<iframe frameborder="0"  width="100%" height="' + height + '" ' +
+            'allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ' +
+            'src="https://www.youtube.com/embed/' + encodeURI(youtubeId) + '?controls=0&rel=0">' +
+            '</iframe>'
+        ;
+        element.innerHTML = embed;
+    });
+
+}
+
+function add_youtube_thumbnails() {
+    let elements = document.querySelectorAll('[data-youtubethumb]');
+    forEach(elements, (element) => {
+        let youtubeId = youtube_parser(element.dataset.youtubethumb);
+        let featuredImgSrc = "url('https://i1.ytimg.com/vi/" + encodeURI(youtubeId) + "/0.jpg')";
+        element.style.backgroundImage = featuredImgSrc;
+        console.log(element.style);
+    });
+}
+
+// maxicard & single layouts
+embed_youtube_videos();
+
+// list & card layouts
+add_youtube_thumbnails();
+

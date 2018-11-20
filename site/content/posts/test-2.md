@@ -4,6 +4,5 @@ draft: false
 robotsExclude: false
 title: Testbild Klup
 image: 'https://ucarecdn.com/c277bf6a-3235-4a6c-b170-ce4cdd0b79ad/'
-youtube: 'https://www.youtube.com/watch?v=mgTVEEjf7RI&t=0m49s'
 ---
 Ein grossartig tolles Bild.
