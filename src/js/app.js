@@ -105,6 +105,8 @@ function equalize() {
             return elem.offsetHeight;
         }));
 
+        console.log('tallest: ' + tallest);
+
         for (const child of children) {
             child.style.minHeight = (tallest + 1) + 'px';
         }
@@ -146,10 +148,10 @@ let elements = document.querySelectorAll('[data-youtube]');
 forEach(elements, (element) => {
     let youtubeId = youtube_parser(element.dataset.youtube);
     let height = Math.round(element.clientWidth / 16 * 9);
-    let embed = '<iframe frameborder="0" width="100%" height="' + height + '" ' +
-        'src="https://www.youtube.com/embed/' + encodeURI(youtubeId) + '?modestbranding=1&autohide=1&showinfo=0&controls=0">' +
+    let embed = '<iframe frameborder="0"  width="100%" height="' + height + '" ' +
+        'allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ' +
+        'src="https://www.youtube.com/embed/' + encodeURI(youtubeId) + '?controls=0&rel=0">' +
         '</iframe>'
     ;
     element.innerHTML = embed;
-    console.log(embed);
 });

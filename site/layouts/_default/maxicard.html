@@ -1,0 +1,17 @@
+<li class="card equalize">
+    <a class="link permalink" href="{{ .Permalink }}">
+        <div class="card-inner">
+            {{ if .Params.youtube }}
+                <div class="youtube" data-youtube="{{ .Params.youtube }}"></div>
+            {{ else if .Params.image }}
+                <div class="featuredimageWrapper">
+                    <div class="featuredimage" style="background-image: url('{{ .Params.image }}-/scale_crop/800x600/center/');" aria-label="{{ .Params.title }}"></div>
+                </div>
+            {{ end }}
+            <h2>
+                {{ .Title }}
+            </h2>
+        </div>
+    </a>
+    <div class="clear"></div>
+</li>

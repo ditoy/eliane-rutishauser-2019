@@ -1,5 +1,5 @@
 ---
-date: '2018-11-15'
+date: '2018-11-16'
 draft: false
 robotsExclude: false
 title: Testbild Klup

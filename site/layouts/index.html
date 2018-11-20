@@ -10,7 +10,7 @@
             <hr>
             <ul class="cards">
                 {{ range first 1 (where .Data.Pages "Section" "posts") }}
-                    {{ .Render "card"}}
+                    {{ .Render "maxicard"}}
                 {{ end }}
             </ul>
             <hr>
