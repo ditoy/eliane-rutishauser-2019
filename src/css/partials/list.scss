@@ -16,7 +16,7 @@
   margin: 0 0 1em 0;
   padding: 0;
   border: 2px solid $c-primary;
-  outline: 1px solid $c-black;
+  box-shadow: 2px 2px 0 $c-black;
   transition: $tr-scope $tr-ease $tr-speed;
 
   h2 {
@@ -42,8 +42,8 @@
 
   &:hover {
     background: $c-white;
-    border: 2px solid lighten($c-black, 20%);
-    outline: 16px solid lighten($c-black, 20%);
+    border: 2px solid transparent;
+    box-shadow: 12px 12px 0 lighten($c-black, 25%);
     transition: $tr-scope $tr-ease $tr-speed;
 
     h2 {

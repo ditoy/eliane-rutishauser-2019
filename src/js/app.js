@@ -72,15 +72,13 @@ if (toggler) {
             menu.classList.remove('expanded');
             menu.setAttribute('aria-hidden', 'true');
             toggler.setAttribute('aria-expanded', 'false');
-            togglericon.classList.remove('expanded');
-            rootElement.style.overflow = 'auto';
+            togglericon.innerHTML = "▲";
         } else {
             // open nav
             menu.classList.add('expanded');
             menu.setAttribute('aria-hidden', 'false');
             toggler.setAttribute('aria-expanded', 'true');
-            togglericon.classList.add('expanded');
-            rootElement.style.overflow = 'hidden'; // disable scroll on body when menu open
+            togglericon.innerHTML = "▼";
         }
     };
     toggler.addEventListener('click', function() {

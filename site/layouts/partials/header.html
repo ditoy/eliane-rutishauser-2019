@@ -1,4 +1,26 @@
 <header>
-    MENU
+    <div id="toggler">
+        <span id="togglericon">▲</span>
+        <span class="label">
+            MENU
+        </span>
+    </div>
+    <div id="collapsible">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/about/">Über Eliane</a>
+            </li>
+            {{ range .Site.Menus.main }}
+                {{ if ne "Configurations" .Name}}
+                    <li>
+                        <a href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </div>
     <div class="clear"></div>
 </header>

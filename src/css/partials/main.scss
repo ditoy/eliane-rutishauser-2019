@@ -40,6 +40,73 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  text-align: center;
+  padding: 0;
+  margin: 0 0 1em 0;
+  background: $c-white;
+  color: $c-black;
+  font-weight: 700;
+  transition: $tr-scope $tr-speed $tr-ease;
+
+  &:hover {
+    background: darken($c-white, 10%);
+    transition: $tr-scope $tr-speed $tr-ease;
+  }
+
+  .label {
+    padding: 0.6em 0;
+  }
+
+  a {
+    color: $c-black;
+
+    &:focus,
+    &:hover,
+    &:visited:hover,
+    &:visited:focus {
+      transition: $tr-scope $tr-speed $tr-ease;
+      color: red;
+    }
+  }
+}
+
+#toggler {
+  display: block;
+  padding: 1em;
+}
+
+#collapsible {
+  display: none;
+
+  &.expanded {
+    display: block;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 0.6em 1em;
+    width: 100%;
+    transition: $tr-scope $tr-speed $tr-ease;
+
+    &:hover {
+      background: $c-white;
+      transition: $tr-scope $tr-speed $tr-ease;
+    }
+  }
+}
+
 .stripe {
   background: $c-black;
 }
@@ -74,6 +141,8 @@ article {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    border: 3px solid $c-white;
+    box-shadow: 12px 12px 0 lighten($c-black, 25%);
   }
 }
 
@@ -153,7 +222,6 @@ footer {
 
 .equalize {
     min-height: inherit !important;
-    margin-bottom: 20px !important;
 }
 
 

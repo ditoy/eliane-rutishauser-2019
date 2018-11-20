@@ -21,7 +21,7 @@ button {
   &.btn {
     padding: 0.4em 1em;
     border: 2px solid $c-primary;
-    outline: 1px solid $c-black;
+    box-shadow: 2px 2px 0 $c-black;
 
     &:focus,
     &:hover,
@@ -29,8 +29,8 @@ button {
     &:visited:focus {
       background: $c-white;
       color: $c-black;
-      border: 2px solid lighten($c-black, 20%);
-      outline: 14px solid lighten($c-black, 20%);
+      border: 2px solid transparent;
+      box-shadow: 8px 8px 0 lighten($c-black, 25%);
     }
   }
 
