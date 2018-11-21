@@ -1,14 +1,6 @@
 <div class="clear"></div>
 <footer>
     <div class="container">
-        <p>
-            <strong>Eliane Rutishauser</strong><br>
-            Strasse 123<br>
-            CH-8000 Zürich
-        </p>
-        <p>
-            Tel. +41 44 123 45 67<br>
-            E-Mail: info@test.ch
-        </p>
+        {{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appFooter | safeHTML }}{{ end }}
     </div>
 </footer>
