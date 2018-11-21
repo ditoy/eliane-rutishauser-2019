@@ -10,9 +10,11 @@
             <article class="main introduction">
                 <div class="error404">
                     <h1>
-                        Fehler 404
+                        {{ .Title }}
                     </h1>
-                    <p class="text-center">Leider existiert die angeforderte Seite nicht.</p>
+                    <div class="text-center">
+                        {{ .Content }}
+                    </div>
                     <div class="spacer-3x"></div>
                     <p class="text-center">
                         <a href="/" class="btn">Hier geht es zur Startseite</a>

@@ -107,8 +107,6 @@ function equalize() {
             return elem.offsetHeight;
         }));
 
-        console.log('tallest: ' + tallest);
-
         for (const child of children) {
             child.style.minHeight = (tallest + 1) + 'px';
         }
@@ -167,7 +165,6 @@ function add_youtube_thumbnails() {
         let youtubeId = youtube_parser(element.dataset.youtubethumb);
         let featuredImgSrc = "url('https://i1.ytimg.com/vi/" + encodeURI(youtubeId) + "/0.jpg')";
         element.style.backgroundImage = featuredImgSrc;
-        console.log(element.style);
     });
 }
 
