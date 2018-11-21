@@ -74,6 +74,37 @@ header {
 #toggler {
   display: block;
   padding: 1em;
+  cursor: pointer;
+  transition: $tr-scope $tr-ease $tr-speed-fast;
+
+  .label {
+    letter-spacing: 0;
+    transition: $tr-scope $tr-ease $tr-speed-fast;
+  }
+
+
+  &:hover,
+  &:focus {
+    .label {
+      letter-spacing: 0.2em;
+      transition: $tr-scope $tr-ease $tr-speed-fast;
+    }
+  }
+
+  #togglericon {
+    display: inline-block;
+    transition: $tr-scope $tr-ease $tr-speed-fast;
+  }
+
+  &.expanded {
+    color: lighten($c-black, 35%);
+    transition: $tr-scope $tr-ease $tr-speed-fast;
+
+    #togglericon {
+      transform: rotate(180deg);
+      transition: $tr-scope $tr-ease $tr-speed-fast;
+    }
+  }
 }
 
 #collapsible {
