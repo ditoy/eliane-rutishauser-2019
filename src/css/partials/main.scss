@@ -209,6 +209,19 @@ footer {
   padding: 2em 0;
   color: darken($c-white, 30%);
   font-size: 0.8rem;
+
+  a {
+    color: darken($c-white, 30%);
+    border: 1px solid transparent;
+    border-bottom-color: darken($c-white, 30%);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $c-white;
+      background: $c-white;
+      color: $c-black;
+    }
+  }
 }
 
 /* clears */

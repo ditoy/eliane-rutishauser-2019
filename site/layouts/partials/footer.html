@@ -1,6 +1,6 @@
 <div class="clear"></div>
 <footer>
     <div class="container">
-        {{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appFooter | safeHTML }}{{ end }}
+        {{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appFooter | markdownify }}{{ end }}
     </div>
 </footer>
