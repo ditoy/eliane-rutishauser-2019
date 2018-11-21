@@ -6,11 +6,9 @@
     {{ partial "header" . }}
     <div class="stripe">
         <div class="container main" role="main">
+            <h1>{{ .Title }}</h1>
             <article>
-                <h1>{{ .Title }}</h1>
-
                 {{ .Content }}
-
                 <ul class="cards">
                     {{  range $index, $page := .Data.Pages.ByParam "position" }}
                     {{ .Render "card" }}
