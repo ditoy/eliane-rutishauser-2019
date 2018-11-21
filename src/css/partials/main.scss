@@ -78,7 +78,7 @@ header {
   transition: $tr-scope $tr-ease $tr-speed-fast;
 
   .label {
-    letter-spacing: 0;
+    letter-spacing: 0.1em;
     transition: $tr-scope $tr-ease $tr-speed-fast;
   }
 
@@ -92,7 +92,7 @@ header {
     transition: $tr-scope $tr-ease $tr-speed-fast;
 
     .label {
-      letter-spacing: 0.2em;
+      letter-spacing: 0.3em;
       transition: $tr-scope $tr-ease $tr-speed-fast;
     }
 
@@ -104,10 +104,14 @@ header {
 }
 
 #collapsible {
-  display: none;
+  overflow: hidden;
+  height: auto;
+  max-height: 200px;
+  transition: max-height $tr-ease $tr-speed;
 
-  &.expanded {
-    display: block;
+  &.collapsed {
+    max-height: 0;
+    transition: max-height $tr-ease $tr-speed-fast;
   }
 
   ul {

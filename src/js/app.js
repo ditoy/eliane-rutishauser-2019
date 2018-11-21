@@ -60,27 +60,23 @@ if (ua.indexOf('safari') === -1 || ua.indexOf('chrome') >= -1) {
  */
 
 const  menu = document.getElementById('collapsible'),
-    toggler = document.getElementById('toggler'),
-    togglericon = document.getElementById('togglericon')
+    toggler = document.getElementById('toggler')
 ;
 if (toggler) {
     // toggle the navigation UI
-    const rootElement = document.getElementById('root');
     const toggleNavigation = function() {
-        if (menu.classList.contains('expanded')) {
-            // close nav
-            menu.classList.remove('expanded');
-            menu.setAttribute('aria-hidden', 'true');
-            toggler.classList.remove('expanded');
-            toggler.setAttribute('aria-expanded', 'false');
-            // togglericon.innerHTML = "▲";
-        } else {
+        if (menu.classList.contains('collapsed')) {
             // open nav
-            menu.classList.add('expanded');
+            menu.classList.remove('collapsed');
             menu.setAttribute('aria-hidden', 'false');
             toggler.classList.add('expanded');
             toggler.setAttribute('aria-expanded', 'true');
-            // togglericon.innerHTML = "▼";
+        } else {
+            // close nav
+            menu.classList.add('collapsed');
+            menu.setAttribute('aria-hidden', 'true');
+            toggler.classList.remove('expanded');
+            toggler.setAttribute('aria-expanded', 'false');
         }
     };
     toggler.addEventListener('click', function() {

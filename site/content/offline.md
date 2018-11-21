@@ -5,4 +5,4 @@ date: '2018-11-15'
 robotsExclude: true
 type: 'offline'
 ---
-Du bist offline. Bitte versuche es nochmals mit einer Internetverbindung.
+<p class="text-center">Du bist offline. Bitte versuche es nochmals mit einer Internetverbindung.</p>
