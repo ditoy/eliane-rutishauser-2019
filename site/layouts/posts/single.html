@@ -13,7 +13,7 @@
                     <div class="youtube" data-youtube="{{ .Params.youtube }}"></div>
                 {{ else if .Params.image }}
                     <a href="{{ .Params.image }}">
-                        <img src="{{ .Params.image }}-/scale_crop/800x600/center/" alt="{{ .Title }}" />
+                        <img src="{{ .Params.image }}-/resize/800x/" alt="{{ .Title }}" />
                     </a>
                 {{ end }}
             </div>
