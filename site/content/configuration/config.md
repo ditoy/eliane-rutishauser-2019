@@ -2,15 +2,6 @@
 title: Site Configuration
 appFooter: |-
   Eliane Rutishauser\
-  Hermetschloostrasse 77\
-  CH-8048 Zürich
-
-  Tel. +41 78 825 30 22\
-  E-Mail: 
-
-   
-
-  Eliane Rutishauser\
   Strasse 123\
   CH-8000 Zürich
 
