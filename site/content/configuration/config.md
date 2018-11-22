@@ -2,10 +2,10 @@
 title: Site Configuration
 appFooter: |-
   Eliane Rutishauser\
-  Strasse 123\
-  CH-8000 Zürich
+  Hermetschloostrasse 77\
+  CH-8048 Zürich
 
-  Tel. +41 44 123 45 67\
+  Tel. +41 78 825 30 22\
   E-Mail: <mailto:assistant@elianerutishauser.com>
 appColor: '#161616'
 appTitle: Eliane Rutishauser
