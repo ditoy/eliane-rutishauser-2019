@@ -147,7 +147,7 @@ function embed_youtube_videos() {
         let height = Math.round(element.offsetWidth / 16 * 9);
         let embed = '<iframe frameborder="0"  width="100%" height="' + height + '" ' +
             'allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ' +
-            'src="https://www.youtube.com/embed/' + encodeURI(youtubeId) + '?controls=0&rel=0">' +
+            'src="https://www.youtube.com/embed/' + encodeURI(youtubeId) + '?controls=0&rel=0" title="YouTube Video">' +
             '</iframe>'
         ;
         element.innerHTML = embed;
