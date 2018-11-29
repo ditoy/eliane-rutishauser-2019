@@ -11,7 +11,7 @@
                 {{ .Content }}
                 <ul class="cards">
                     {{  range $index, $page := .Data.Pages.ByParam "position" }}
-                    {{ .Render "card" }}
+                        {{ .Render "card" }}
                     {{ end }}
                 </ul>
                 <div class="clear"></div>

@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  background: lighten($c-black, 5%);
+  background: $c-black;
   color: $c-white;
   font-family: $f-regular;
   font-weight: 300;
@@ -44,8 +44,8 @@ header {
   text-align: center;
   padding: 0;
   margin: 0;
-  background: $c-white;
-  color: $c-black;
+  background: black;
+  color: $c-gray;
   font-weight: 700;
   transition: $tr-scope $tr-speed $tr-ease;
 
@@ -59,7 +59,7 @@ header {
   }
 
   a {
-    color: $c-black;
+    color: $c-gray;
 
     &:focus,
     &:hover,
@@ -168,14 +168,7 @@ article {
 }
 
 .image {
-  border: 3px solid $c-white;
-  box-shadow: 12px 12px 0 lighten($c-black, 25%);
   margin-bottom: 2em;
-  background: $c-white;
-
-  @include media('<=phone') {
-    box-shadow: 6px 6px 0 lighten($c-black, 25%);
-  }
 
   img {
     display: block;

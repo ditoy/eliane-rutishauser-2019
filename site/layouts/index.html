@@ -3,28 +3,18 @@
 <html lang="de">
 {{ partial "head-site" . }}
 <body id="root" class="{{ .Type }} {{ .File.TranslationBaseName }}">
-    {{ partial "header" . }}
     <div class="stripe">
         <div class="container" role="main">
-            <h1>{{ .Title }}</h1>
-            <hr>
-            <ul class="cards">
+            <ul class="cards maxicards">
                 {{ range first 1 (where .Data.Pages "Section" "posts") }}
                     {{ .Render "maxicard"}}
                 {{ end }}
             </ul>
-            <hr>
             <article>
                 {{ .Content }}
             </article>
-            <div class="actions">
-                <a class="btn" href="/posts/">
-                    Mehr entdecken
-                </a>
-            </div>
         </div>
     </div>
-    {{ partial "footer" . }}
 </div>
 </body>
 {{ partial "schema/global" . }}

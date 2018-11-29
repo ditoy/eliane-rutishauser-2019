@@ -10,12 +10,15 @@
   }
 }
 
+.maxicards {
+  margin-top: 5em;
+}
+
 .card {
   display: block;
   width: 100%;
   margin: 0 0 20px 0;
   padding: 0;
-  border: 2px solid $c-primary;
   box-shadow: 2px 2px 0 $c-black;
   transition: $tr-scope $tr-ease $tr-speed;
 
@@ -46,14 +49,9 @@
   }
 
   &:hover {
-    background: $c-white;
-    border: 2px solid transparent;
-    box-shadow: 12px 12px 0 lighten($c-black, 25%);
+    background: lighten($c-black, 5%);
+    box-shadow: 12px 12px 0 black;
     transition: $tr-scope $tr-ease $tr-speed;
-
-    h2 {
-      color: $c-black;
-    }
   }
 }
 

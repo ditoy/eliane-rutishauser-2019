@@ -8,18 +8,16 @@
     <div class="stripe" role="main">
         <div class="container main">
             <h1>{{ .Title }}</h1>
+            <article>
+                {{ .Content }}
+            </article>
             <div class="image">
                 {{ if .Params.youtube }}
                     <div class="youtube" data-youtube="{{ .Params.youtube }}"></div>
                 {{ else if .Params.image }}
-                    <a href="{{ .Params.image }}">
-                        <img src="{{ .Params.image }}-/resize/800x/" alt="{{ .Title }}" />
-                    </a>
+                    <img src="{{ .Params.image }}-/resize/800x/" alt="{{ .Title }}" />
                 {{ end }}
             </div>
-            <article>
-                {{ .Content }}
-            </article>
             <div class="actions">
                 <a class="btn" href="/posts/">
                     Mehr entdecken

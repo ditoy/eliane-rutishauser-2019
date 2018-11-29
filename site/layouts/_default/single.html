@@ -8,16 +8,14 @@
     <div class="stripe" role="main">
         <div class="container main">
             <h1>{{ .Title }}</h1>
-            {{ if .Params.image }}
-                <div class="image">
-                    <a href="{{ .Params.image }}">
-                        <img src="{{ .Params.image }}-/resize/800x/" alt="{{ .Title }}" />
-                    </a>
-                </div>
-            {{ end }}
             <article>
                 {{ .Content }}
             </article>
+            {{ if .Params.image }}
+                <div class="image">
+                    <img src="{{ .Params.image }}-/resize/800x/" alt="{{ .Title }}" />
+                </div>
+            {{ end }}
             <div class="actions">
                 <a class="btn" href="/posts/">
                     Mehr entdecken
