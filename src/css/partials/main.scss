@@ -50,7 +50,7 @@ header {
   transition: $tr-scope $tr-speed $tr-ease;
 
   &:hover {
-    background: darken($c-white, 10%);
+    background: lighten($c-black, 10%);
     transition: $tr-scope $tr-speed $tr-ease;
   }
 
@@ -66,7 +66,7 @@ header {
     &:visited:hover,
     &:visited:focus {
       transition: $tr-scope $tr-speed $tr-ease;
-      color: red;
+      color: $c-white;
     }
   }
 }
@@ -132,7 +132,7 @@ header {
     transition: $tr-scope $tr-speed $tr-ease;
 
     &:hover {
-      background: $c-white;
+      background: lighten($c-black, 20%);
       transition: $tr-scope $tr-speed $tr-ease;
     }
   }

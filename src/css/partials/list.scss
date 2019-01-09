@@ -11,21 +11,16 @@
 }
 
 .maxicards {
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .card {
   display: block;
   width: 100%;
+  max-height: 60vh !important;
   margin: 0 0 20px 0;
   padding: 0;
-  box-shadow: 2px 2px 0 $c-black;
   transition: $tr-scope $tr-ease $tr-speed;
-
-  @include media('<=phone') {
-    box-shadow: 6px 6px 0 lighten($c-black, 25%);
-  }
-
 
   h2 {
     font-family: $f-headings;
@@ -47,40 +42,14 @@
       text-decoration: none;
     }
   }
-
-  &:hover {
-    background: lighten($c-black, 5%);
-    box-shadow: 12px 12px 0 black;
-    transition: $tr-scope $tr-ease $tr-speed;
-  }
 }
 
 /* archive page modifier */
 .posts {
   .card {
-    width: calc(50% - 24px);
-    float: left;
-
-    @include media('<=phone') {
-      width: calc(50% - 16px);
-      box-shadow: 6px 6px 0 lighten($c-black, 25%);
-    }
-
-    &:nth-of-type(even) {
-      margin: 0 0 36px 12px;
-
-      @include media('<=phone') {
-        margin: 0 0 24px 12px;
-      }
-    }
-
-    &:nth-of-type(odd) {
-      margin: 0 12px 36px 0;
-
-      @include media('<=phone') {
-        margin: 0 12px 24px 0;
-      }
-    }
+    width: 100%;
+    float: none;
+    margin: 0 0 36px 0;
   }
 }
 
@@ -107,10 +76,11 @@
   }
 
   .featuredimage {
-    width: 100%;
+    width: 50%;
+    margin: 0 16px 0 0;
     height: 0;
     display: block;
-    padding-bottom: percentage(3/4);
+    padding-bottom: percentage(1/2);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

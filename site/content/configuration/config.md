@@ -6,7 +6,9 @@ appFooter: |-
   CH-8048 Zürich
 
   Tel. +41 78 825 30 22\
-  E-Mail: <mailto:er-at-elianerutishauser.com>
+  E-Mail: <mailto:er-at-elianerutishauser.com>\
+  \
+  [Eliane Rutishauser auf Kleio](https://eliane-rutishauser.kleio.com/)
 appColor: '#161616'
 appTitle: Eliane Rutishauser
 appTitleShort: Eliane Rutishauser

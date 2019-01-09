@@ -7,22 +7,11 @@
 
     <div class="stripe" role="main">
         <div class="container main">
+            {{ .Params.year }}
             <h1>{{ .Title }}</h1>
             <article>
                 {{ .Content }}
             </article>
-            <div class="image">
-                {{ if .Params.youtube }}
-                    <div class="youtube" data-youtube="{{ .Params.youtube }}"></div>
-                {{ else if .Params.image }}
-                    <img src="{{ .Params.image }}-/resize/800x/" alt="{{ .Title }}" />
-                {{ end }}
-            </div>
-            <div class="actions">
-                <a class="btn" href="/posts/">
-                    Mehr entdecken
-                </a>
-            </div>
         </div>
     </div>
     {{ partial "footer" . }}
