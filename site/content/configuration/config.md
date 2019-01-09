@@ -9,7 +9,7 @@ appFooter: |-
   E-Mail: <mailto:er-at-elianerutishauser.com>\
   \
   [Eliane Rutishauser auf Kleio](https://eliane-rutishauser.kleio.com/)
-appColor: '#161616'
+appColor: '#000000'
 appTitle: Eliane Rutishauser
 appTitleShort: Eliane Rutishauser
 appPublisher: Eliane Rutishauser
