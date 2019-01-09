@@ -1,5 +1,5 @@
 ---
-date: 2019-01-09T13:52:53.599Z
+date: 2017-01-09T13:52:00.000Z
 draft: false
 robotsExclude: false
 title: Neues Werk
