@@ -10,15 +10,10 @@
   }
 }
 
-.maxicards {
-  margin-top: 2em;
-}
-
 .card {
   display: block;
   width: 100%;
-  max-height: 60vh !important;
-  margin: 0 0 20px 0;
+  margin: 0;
   padding: 0;
   transition: $tr-scope $tr-ease $tr-speed;
 
@@ -44,23 +39,9 @@
   }
 }
 
-/* archive page modifier */
-.posts {
-  .card {
-    width: 100%;
-    float: none;
-    margin: 0 0 36px 0;
-  }
-}
-
 .card-inner {
-  padding: 1rem;
-  margin: 0.6rem;
-
-  @include media('<=phone') {
-    padding: 0.5rem;
-    margin: 0.4rem;
-  }
+  padding: 0;
+  margin: 0;
 
   p {
     font-size: 1rem;
@@ -76,14 +57,17 @@
   }
 
   .featuredimage {
-    width: 50%;
-    margin: 0 16px 0 0;
+    width: 250px;
     height: 0;
-    display: block;
-    padding-bottom: percentage(1/2);
+    margin: 0;
+    padding-bottom: percentage(2/3);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    @include media('<=phone') {
+      width: 100%;
+    }
 
     &.youtubethumb {
       transform: scale(1.2);
@@ -92,5 +76,99 @@
 
   .featuredimageWrapper {
     overflow: hidden;
+    display: block;
+    float: left;
+    margin: 0 0 3rem 0;
+
+    @include media('<=phone') {
+      float: none;
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  .legend {
+    display: block;
+    float: right;
+    width: calc(100% - 280px);
+    color: $c-white;
+    margin: 0 0 3rem 0;
+
+    .text {
+      font-size: 0.9rem;
+      padding-top: 1rem;
+
+      * {
+        font-size: inherit !important;
+      }
+    }
+
+    @include media('<=phone') {
+      float: none;
+      width: 100%;
+      margin: 0 0 5rem 0;
+    }
+
+    a {
+      color: $c-white;
+    }
+  }
+}
+
+/* archive page modifier */
+.posts {
+  .card {
+    width: 100%;
+    float: none;
+    margin: 0 0 36px 0;
+  }
+}
+
+/* landing page maxicard modifier */
+.maxicards {
+  display: block;
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  max-height: 90vh;
+  width: 100%;
+  max-width: 90vw;
+  overflow: hidden;
+
+  @include media('>=mega') {
+    max-width: 1600px;
+    max-height: 1067px;
+  }
+
+  .card {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+
+    .card-inner {
+      display: block;
+      float: none;
+      margin: 0;
+      padding: 0;
+
+      .featuredimageWrapper {
+        float: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .featuredimage {
+        float: none;
+        margin: 0;
+        max-height: 90vh;
+        width: 100%;
+      }
+    }
   }
 }

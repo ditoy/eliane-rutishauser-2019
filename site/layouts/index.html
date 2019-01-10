@@ -2,20 +2,14 @@
 {{ partial "head-eliane" }}
 <html lang="de">
 {{ partial "head-site" . }}
-<body id="root" class="{{ .Type }} {{ .File.TranslationBaseName }}">
-    <div class="stripe">
-        <div class="container" role="main">
-            <ul class="cards maxicards">
-                {{ range first 1 (where .Data.Pages "Section" "posts") }}
-                    {{ .Render "maxicard"}}
-                {{ end }}
-            </ul>
-            <article>
-                {{ .Content }}
-            </article>
-        </div>
+<body id="root" class="home {{ .Type }} {{ .File.TranslationBaseName }}">
+    <div role="main">
+        <ul class="cards maxicards">
+            {{ range first 1 (where .Data.Pages "Section" "posts").ByDate }}
+                {{ .Render "maxicard"}}
+            {{ end }}
+        </ul>
     </div>
-</div>
 </body>
 {{ partial "schema/global" . }}
 {{ partial "javascript" . }}

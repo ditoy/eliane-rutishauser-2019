@@ -1,14 +1,19 @@
-<li class="card equalize">
-    <a class="link permalink" href="{{ .Permalink }}">
-        <div class="card-inner">
-            <div class="featuredimageWrapper">
-                {{ if .Params.youtube }}
-                    <div class="featuredimage youtubethumb" data-youtubethumb="{{ .Params.youtube }}" aria-label="{{ .Params.title }}"></div>
-                {{ else if .Params.image }}
-                    <div class="featuredimage" style="background-image: url('{{ .Params.image }}-/scale_crop/400x300/center/');" aria-label="{{ .Params.title }}"></div>
-                {{ end }}
+<li class="card">
+    <div class="card-inner">
+        <div class="featuredimageWrapper">
+            {{ if .Params.youtube }}
+                <div class="featuredimage youtubethumb" data-youtubethumb="{{ .Params.youtube }}" aria-label="{{ .Params.title }}"></div>
+            {{ else if .Params.image }}
+                <div class="featuredimage" style="background-image: url('{{ .Params.image }}-/scale_crop/400x300/center/');" aria-label="{{ .Params.title }}"></div>
+            {{ end }}
+        </div>
+        <div class="legend">
+            {{ .Params.year }}<br/>
+            <strong>{{ .Title }}</strong><br/>
+            <div class="text">
+                {{ .Content }}
             </div>
         </div>
-    </a>
+    </div>
     <div class="clear"></div>
 </li>

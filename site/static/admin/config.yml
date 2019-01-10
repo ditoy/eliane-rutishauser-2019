@@ -61,7 +61,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields:
       - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-      - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: true, required: false }
+      - { label: "Nicht auf Website publizieren", name: "draft", widget: "boolean", default: false, required: false }
       - { label: "Von Google-Suche ausschliessen", name: "robotsExclude", widget: "boolean", default: false, required: false }
       - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
       - { label: "Jahr / Datum", name: "year", widget: "string", tagname: "strong" }

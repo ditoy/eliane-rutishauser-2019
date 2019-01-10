@@ -5,7 +5,7 @@
                 {{ if .Params.youtube }}
                     <div class="featuredimage youtubethumb" data-youtubethumb="{{ .Params.youtube }}" aria-label="{{ .Params.title }}"></div>
                 {{ else if .Params.image }}
-                    <div class="featuredimage" style="background-image: url('{{ .Params.image }}-/scale_crop/800x600/center/');" aria-label="{{ .Params.title }}"></div>
+                    <div class="featuredimage" style="background-image: url('{{ .Params.image }}-/scale_crop/1024x768/center/');" aria-label="{{ .Params.title }}"></div>
                 {{ end }}
             </div>
         </div>
