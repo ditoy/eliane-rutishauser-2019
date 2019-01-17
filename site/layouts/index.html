@@ -5,7 +5,7 @@
 <body id="root" class="home {{ .Type }} {{ .File.TranslationBaseName }}">
     <div role="main">
         <ul class="cards maxicards">
-            {{ range first 1 (where .Data.Pages "Section" "posts").ByDate }}
+            {{ range first 1 (where .Data.Pages "Section" "posts").ByDate.Reverse }}
                 {{ .Render "maxicard"}}
             {{ end }}
         </ul>

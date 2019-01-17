@@ -10,7 +10,7 @@
             <article>
                 {{ .Content }}
                 <ul class="cards">
-                    {{  range $index, $page := .Data.Pages.ByDate }}
+                    {{  range $index, $page := .Data.Pages.ByDate.Reverse }}
                         {{ .Render "card" }}
                     {{ end }}
                 </ul>

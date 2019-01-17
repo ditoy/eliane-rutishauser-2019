@@ -57,13 +57,19 @@
   }
 
   .featuredimage {
-    width: 250px;
-    height: 0;
+    display: block;
+    width: 100%;
+    height: auto;
     margin: 0;
-    padding-bottom: percentage(2/3);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
 
     @include media('<=phone') {
       width: 100%;
@@ -79,6 +85,7 @@
     display: block;
     float: left;
     margin: 0 0 3rem 0;
+    max-width: 280px;
 
     @include media('<=phone') {
       float: none;
@@ -92,6 +99,7 @@
     width: calc(100% - 280px);
     color: $c-white;
     margin: 0 0 3rem 0;
+    padding-left: 2rem;
 
     .text {
       font-size: 0.9rem;
@@ -160,7 +168,9 @@
         float: none;
         margin: 0;
         padding: 0;
+        max-width: 100%;
         width: 100%;
+        height: 100%;
       }
 
       .featuredimage {
@@ -168,6 +178,11 @@
         margin: 0;
         max-height: 90vh;
         width: 100%;
+
+        img {
+          width: auto;
+          height: auto;
+        }
       }
     }
   }
