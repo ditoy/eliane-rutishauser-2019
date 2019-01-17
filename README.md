@@ -1,8 +1,6 @@
-# Hugo Boilerplate
+# Eliane Rutishauser new mini website 2019
 
-Please duplicate the repository according to [https://github.com/ditoy/hugo-boilerplate](https://github.com/ditoy/hugo-boilerplate) to start a new Hugo-based project (including a gulp-based asset pipeline, Netlify CMS).
-
-## Development
+### Development
 
     brew install hugo
     npm install 
