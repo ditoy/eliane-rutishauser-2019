@@ -15,7 +15,7 @@ appTitleShort: Eliane Rutishauser
 appPublisher: Eliane Rutishauser
 appDescription: Eliane Rutishauser ist freischaffende Künstlerin und Fotografin.
 appKeywords: 'Eliane, Rutishauser, Kunst, Künstlerin, Fotografie, Zürich, Berlin'
-appImage: images/uploads/3dimensional-hero-1.jpg
+appImage: 'https://ucarecdn.com/dcfc3b2b-86dd-4f96-b7f5-4a1dcf566f70/-/resize/800x/'
 appSitemapUrl: 'https://www.elianerutishauser.com'
 appGoogleVerification: 123xyz-google-hash
 ---
