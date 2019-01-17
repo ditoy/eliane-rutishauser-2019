@@ -36,24 +36,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "appSitemapUrl", name: "appSitemapUrl", widget: "string", tagname: "p" }
           - { label: "appGoogleVerification", name: "appGoogleVerification", widget: "string", tagname: "p" }
 
-  - label: "Index-Seiten"
-    name: "page_index"
-    files:
-      - label: "Landingpage"
-        name: "index"
-        file: "site/content/_index.md"
-        fields:
-          - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
-          - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-          - { label: "Seiteninhalt", name: "body", widget: "markdown" }
-      - label: "Archiv"
-        name: "archive"
-        file: "site/content/posts/_index.md"
-        fields:
-          - { label: "Titel", name: "title", widget: "string", tagname: "h1" }
-          - { label: "Publikationsdatum", name: "date", widget: "datetime" }
-          - { label: "Seiteninhalt", name: "body", widget: "markdown" }
-
   - name: "pages"
     label: "Pages"
     folder: "site/content"
