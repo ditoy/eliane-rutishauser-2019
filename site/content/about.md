@@ -1,6 +1,6 @@
 ---
-title: Eliane Rutishauser
 date: '2018-11-15'
+title: Eliane Rutishauser
 ---
 1963 * in Schaffhausen\
 Freischaffende Künstlerin und Fotografin\
