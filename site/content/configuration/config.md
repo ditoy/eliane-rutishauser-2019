@@ -1,5 +1,6 @@
 ---
 title: Site Configuration
+robotsExclude: true
 appFooter: |-
   Eliane Rutishauser\
   Hermetschloostrasse 77\
