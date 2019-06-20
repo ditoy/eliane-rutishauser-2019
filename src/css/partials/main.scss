@@ -50,7 +50,7 @@ header {
   transition: $tr-scope $tr-speed $tr-ease;
 
   &:hover {
-    background: lighten($c-black, 10%);
+    background: lighten($c-black, 15%);
     transition: $tr-scope $tr-speed $tr-ease;
   }
 
@@ -92,7 +92,7 @@ header {
     transition: $tr-scope $tr-ease $tr-speed-fast;
 
     .label {
-      letter-spacing: 0.3em;
+      letter-spacing: 0.4em;
       transition: $tr-scope $tr-ease $tr-speed-fast;
     }
 

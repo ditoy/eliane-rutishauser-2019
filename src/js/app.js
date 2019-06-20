@@ -32,10 +32,14 @@ import {fadeOut, forEach} from 'ditoy-js-utils';
 /**
  * action after onload event
  */
-window.onload = function() {
+window.addEventListener('load', (event) => {
     // equalize div heights
     checkResize();
-};
+
+    // add a .loaded class to body
+    const body = document.querySelector('body');
+    body.classList.add('loaded');
+});
 
 
 /**

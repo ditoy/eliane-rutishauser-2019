@@ -19,3 +19,18 @@
 /* typography, text */
 @import "partials/typography";
 @import "partials/links";
+
+
+/* load effect wrapper */
+
+.wrapper {
+  transition: $tr-scope $tr-speed $tr-ease;
+  opacity: 0;
+}
+
+body.loaded {
+  .wrapper {
+    transition: $tr-scope $tr-speed $tr-ease;
+    opacity: 1;
+  }
+}
