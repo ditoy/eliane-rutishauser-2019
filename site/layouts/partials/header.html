@@ -14,7 +14,7 @@
                 <a href="/about/">Über Eliane</a>
             </li>
             {{ range .Site.Menus.main }}
-                {{ if ne "Configurations" .Name}}
+                {{ if ne "Site Configuration" .Name}}
                     <li>
                         <a href="{{ .URL }}">{{ .Name }}</a>
                     </li>

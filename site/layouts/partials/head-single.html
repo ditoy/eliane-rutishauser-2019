@@ -10,18 +10,18 @@
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:description" content="{{ .Summary | plainify | truncate 280 "..." }}" />
   <meta property="og:url" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appSitemapUrl }}{{ end }}{{ .Permalink }}" />
-  {{ if .Params.authors }}
-    {{ range .Params.authors }}
-      <meta property="og:author" content="{{ . | plainify }}" />
-    {{ end }}
+{{ if .Params.authors }}
+  {{ range .Params.authors }}
+    <meta property="og:author" content="{{ . | plainify }}" />
   {{ end }}
-  {{ if .Params.image }}
-    <link rel="image_src" href="{{ .Params.image }}-/scale_crop/1200x630/center/-/format/jpg/" />
-    <meta name="twitter:image" content="{{ .Params.image }}-/scale_crop/1200x630/center/-/format/jpg/" />
-    <meta property="og:image" content="{{ .Params.image }}-/scale_crop/1200x630/center/-/format/jpg/" />
-  {{ else }}
-    <link rel="image_src" href="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
-    <meta name="twitter:image" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
-    <meta property="og:image" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
-  {{ end }}
+{{ end }}
+{{ if .Params.image }}
+  <link rel="image_src" href="{{ .Params.image }}-/scale_crop/1200x630/center/-/format/jpg/" />
+  <meta name="twitter:image" content="{{ .Params.image }}-/scale_crop/1200x630/center/-/format/jpg/" />
+  <meta property="og:image" content="{{ .Params.image }}-/scale_crop/1200x630/center/-/format/jpg/" />
+{{ else }}
+  <link rel="image_src" href="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
+  <meta name="twitter:image" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
+  <meta property="og:image" content="{{ with ($.Site.GetPage "page" "configuration/config.md") }}{{ .Params.appImage }}{{ end }}" />
+{{ end }}
 </head>
