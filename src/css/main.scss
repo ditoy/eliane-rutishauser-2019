@@ -23,13 +23,15 @@
 
 /* load effect wrapper */
 
-.wrapper {
+.wrapper,
+.maxicards {
   transition: $tr-scope $tr-speed $tr-ease;
   opacity: 0;
 }
 
 body.loaded {
-  .wrapper {
+  .wrapper,
+  .maxicards {
     transition: $tr-scope $tr-speed $tr-ease;
     opacity: 1;
   }
