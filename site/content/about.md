@@ -11,7 +11,9 @@ Mitglied der Künstlerinnengruppe mit, 2000 - 2008: [www.mitimnetz.ch](http://ww
 
 **2018**
 
-Seriell, Gruppenausstellung in der Kunsthalle Vebikus Schaffhausen
+Seriell, Gruppenausstellung in der Kunsthalle Vebikus Schaffhausen              Schnelle Vorbeifahrten, Kunstparcours, Paulinenaue, D
+
+
 
 **2017**
 
