@@ -1,6 +1,6 @@
 ---
 date: 2019-07-25T20:33:05.468Z
-draft: true
+draft: false
 robotsExclude: false
 title: Shadow aus der Serie "Tagesresten"
 year: '2019'
